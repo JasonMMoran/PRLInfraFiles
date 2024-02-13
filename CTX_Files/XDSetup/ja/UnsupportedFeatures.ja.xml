@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Group>
+	<ProductReleases>
+		<ProductRelease>
+			<ProductVersion>180</ProductVersion>
+			<ProductDisplay>2006</ProductDisplay>
+			<UnsupportedFeatures>
+				<UnsupportedFeatureName>セルフサービス パスワード リセット</UnsupportedFeatureName>
+				<UnsupportedFeatureName>Citrix ライセンス管理コンソール</UnsupportedFeatureName>			
+			</UnsupportedFeatures>
+		</ProductRelease>
+		<ProductRelease>
+			<ProductVersion>170</ProductVersion>
+			<ProductDisplay>2003</ProductDisplay>
+			<UnsupportedFeatures>
+				<UnsupportedFeatureName>Personal vDisk</UnsupportedFeatureName>
+				<UnsupportedFeatureName>AppDisk</UnsupportedFeatureName>
+				<UnsupportedFeatureName>Citrix Virtual Apps and Desktops Premium エディションの AppDNA アプリケーション移行コンポーネント</UnsupportedFeatureName>
+				<UnsupportedFeatureName>Windows 10 1709 以前のバージョンにおける Citrix Indirect Display Driver (IDD) グラフィック アダプターのサポート</UnsupportedFeatureName>
+				<UnsupportedFeatureName>GRID 9 より前のディスプレイ ドライバーを使用する NVIDIA GPU (NVENC) ハードウェア エンコーディング</UnsupportedFeatureName>
+				<UnsupportedFeatureName>Microsoft .NET Framework 4.8 より前のバージョンでの Delivery Controller、Studio、Director、StoreFront、および VDA</UnsupportedFeatureName>
+				<UnsupportedFeatureName>Windows Server 2012 R2 での Delivery Controller、Studio、Director、および VDA</UnsupportedFeatureName>
+				<UnsupportedFeatureName>Windows 10 x86 プラットフォームにおける VDA</UnsupportedFeatureName>
+				<UnsupportedFeatureName>32 ビット (x86) マシンにおける Studio</UnsupportedFeatureName>
+				<UnsupportedFeatureName>Microsoft SQL Server 2016 より前のバージョンでのサイト、構成ログ、監視データベース</UnsupportedFeatureName>
+			</UnsupportedFeatures>
+		</ProductRelease>
+		<ProductRelease>
+			<ProductVersion>160</ProductVersion>
+			<ProductDisplay>1912 および 1912 LTSR</ProductDisplay>
+			<UnsupportedFeatures>
+				<UnsupportedFeatureName>StoreFront でのデスクトップ アプライアンス サイト上のデスクトップへのユーザー アクセス</UnsupportedFeatureName>
+				<UnsupportedFeatureName>StoreFront 3.12 における StoreFront と Citrix Online (GoTo 製品) の統合</UnsupportedFeatureName>
+				<UnsupportedFeatureName>Flash リダイレクト</UnsupportedFeatureName>
+			</UnsupportedFeatures>
+		</ProductRelease>
+		<ProductRelease>
+			<ProductVersion>150</ProductVersion>
+			<ProductDisplay>1909</ProductDisplay>
+			<UnsupportedFeatures>
+				<UnsupportedFeatureName>シームレス アプリケーションでの Excel フック (Microsoft Excel 2010 のブックごとに個別のタスクバーアイコンを作成するために使用)</UnsupportedFeatureName>
+				<UnsupportedFeatureName>Windows 10 x86 プラットフォームにおける VDA (1912 LTSR では引き続き有効</UnsupportedFeatureName>
+			</UnsupportedFeatures>
+		</ProductRelease>
+		<ProductRelease>
+			<ProductVersion>140</ProductVersion>
+			<ProductDisplay>1906</ProductDisplay>
+			<UnsupportedFeatures>
+				<UnsupportedFeatureName>インストール メディアからの Citrix Smart Tools Agent の削除</UnsupportedFeatureName>
+				<UnsupportedFeatureName>すべての Citrix Virtual Apps and Desktops (および、XenApp および XenDesktop) バージョンでの Citrix Smart Scale</UnsupportedFeatureName>
+			</UnsupportedFeatures>
+		</ProductRelease>
+		<ProductRelease>
+			<ProductVersion>130</ProductVersion>
+			<ProductDisplay>1903</ProductDisplay>
+			<UnsupportedFeatures>
+				<UnsupportedFeatureName>Citrix Receiver for Web クラシック エクスペリエンス (「緑色の泡」のユーザー インターフェイス</UnsupportedFeatureName>
+				<UnsupportedFeatureName>Framehawk ディスプレイ リモート処理テクノロジ</UnsupportedFeatureName>
+				<UnsupportedFeatureName>Red Hat Enterprise Linux/CentOS 7.5 での Linux VDA</UnsupportedFeatureName>
+				<UnsupportedFeatureName>StoreFront 内で製品終了に達した次の製品の Delivery Controllerオプション: VDI-in-a-Box および XenMobile (9.0 以前)</UnsupportedFeatureName>
+			</UnsupportedFeatures>
+		</ProductRelease>
+		<ProductRelease>
+			<ProductVersion>120</ProductVersion>
+			<ProductDisplay>1808</ProductDisplay>
+			<UnsupportedFeatures>
+				<UnsupportedFeatureName>Microsoft .NET Framework 4.8 より前のバージョンでの Delivery Controller、Studio、Director、StoreFront、および VDA</UnsupportedFeatureName>
+				<UnsupportedFeatureName>Red Hat Enterprise Linux 7.3 での Linux VDA</UnsupportedFeatureName>
+			</UnsupportedFeatures>
+		</ProductRelease>
+	</ProductReleases>
+</Group>

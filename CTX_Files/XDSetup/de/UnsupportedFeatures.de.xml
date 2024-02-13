@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Group>
+	<ProductReleases>
+		<ProductRelease>
+			<ProductVersion>180</ProductVersion>
+			<ProductDisplay>2006</ProductDisplay>
+			<UnsupportedFeatures>
+				<UnsupportedFeatureName>Self-Service-Kennwortzurücksetzung</UnsupportedFeatureName>
+				<UnsupportedFeatureName>Citrix License Administration Console</UnsupportedFeatureName>
+			</UnsupportedFeatures>
+		</ProductRelease>
+		<ProductRelease>
+			<ProductVersion>170</ProductVersion>
+			<ProductDisplay>2003</ProductDisplay>
+			<UnsupportedFeatures>
+				<UnsupportedFeatureName>Personal vDisk</UnsupportedFeatureName>
+				<UnsupportedFeatureName>AppDisks</UnsupportedFeatureName>
+				<UnsupportedFeatureName>AppDNA-Anwendungsmigrationskomponente der Citrix Virtual Apps and Desktops Premium Edition</UnsupportedFeatureName>
+				<UnsupportedFeatureName>Unterstützung des IDD-Grafikadapters (Citrix Indirect Display Driver) unter Windows 10, Version 1709 und früher</UnsupportedFeatureName>
+				<UnsupportedFeatureName>Hardwarecodierung mit NVIDIA GPUs (NVENC) mit GRID 9 oder früheren Anzeigetreibern</UnsupportedFeatureName>
+				<UnsupportedFeatureName>Microsoft .NET Framework-Versionen vor 4.8 für Delivery Controller, Studio, Director, StoreFront und VDAs</UnsupportedFeatureName>
+				<UnsupportedFeatureName>Windows Server 2012 R2 für Delivery Controller, Studio, Director und VDAs</UnsupportedFeatureName>
+				<UnsupportedFeatureName>Windows 10 x86-Plattformen für VDAs</UnsupportedFeatureName>
+				<UnsupportedFeatureName>32-Bit-Maschinen (x86) für Studio</UnsupportedFeatureName>
+				<UnsupportedFeatureName>Microsoft SQL Server-Versionen vor 2016 für Site-, Konfigurationsprotokollierungs- und Überwachungsdatenbanken</UnsupportedFeatureName>
+			</UnsupportedFeatures>
+		</ProductRelease>
+		<ProductRelease>
+			<ProductVersion>160</ProductVersion>
+			<ProductDisplay>1912 und 1912 LTSR</ProductDisplay>
+			<UnsupportedFeatures>
+				<UnsupportedFeatureName>StoreFront-Unterstützung für Benutzer, die auf Desktops auf Desktopgerätesites zugreifen</UnsupportedFeatureName>
+				<UnsupportedFeatureName>StoreFront-Integration mit Citrix Online (GoTo-Produkt) für StoreFront 3.12</UnsupportedFeatureName>
+				<UnsupportedFeatureName>Flash-Umleitung</UnsupportedFeatureName>
+			</UnsupportedFeatures>
+		</ProductRelease>
+		<ProductRelease>
+			<ProductVersion>150</ProductVersion>
+			<ProductDisplay>1909</ProductDisplay>
+			<UnsupportedFeatures>
+				<UnsupportedFeatureName>Excel-Hook in Seamlessanwendungen (zum Erstellen separater Taskleistensymbole für jede Microsoft Excel 2010-Arbeitsmappe)</UnsupportedFeatureName>
+				<UnsupportedFeatureName>Windows 10 x86-Plattformen für VDAs. (Bleibt gültig für 1912 LTSR</UnsupportedFeatureName>
+			</UnsupportedFeatures>
+		</ProductRelease>
+		<ProductRelease>
+			<ProductVersion>140</ProductVersion>
+			<ProductDisplay>1906</ProductDisplay>
+			<UnsupportedFeatures>
+				<UnsupportedFeatureName>Entfernen von Citrix Smart Tools Agent vom Installationsmedium</UnsupportedFeatureName>
+				<UnsupportedFeatureName>Citrix Smart Scale in allen Versionen von Citrix Virtual Apps and Desktops (sowie XenApp und XenDesktop)</UnsupportedFeatureName>
+			</UnsupportedFeatures>
+		</ProductRelease>
+		<ProductRelease>
+			<ProductVersion>130</ProductVersion>
+			<ProductDisplay>1903</ProductDisplay>
+			<UnsupportedFeatures>
+				<UnsupportedFeatureName>Klassische Benutzeroberfläche von Citrix Receiver für Web (Benutzeroberfläche mit grünen Blasen</UnsupportedFeatureName>
+				<UnsupportedFeatureName>Framehawk-Technologie für Anzeigeremoting</UnsupportedFeatureName>
+				<UnsupportedFeatureName>Red Hat Enterprise Linux/CentOS 7.5 für Linux VDA</UnsupportedFeatureName>
+				<UnsupportedFeatureName>Delivery Controller-Optionen für End-of-Life-Produkte in StoreFront: VDI-in-a-Box und XenMobile (9.0 und früher)</UnsupportedFeatureName>
+			</UnsupportedFeatures>
+		</ProductRelease>
+		<ProductRelease>
+			<ProductVersion>120</ProductVersion>
+			<ProductDisplay>1808</ProductDisplay>
+			<UnsupportedFeatures>
+				<UnsupportedFeatureName>Microsoft .NET Framework-Versionen vor 4.8 für Delivery Controller, Studio, Director, StoreFront und VDAs</UnsupportedFeatureName>
+				<UnsupportedFeatureName>Red Hat Enterprise Linux 7.3 für Linux VDAs</UnsupportedFeatureName>
+			</UnsupportedFeatures>
+		</ProductRelease>
+	</ProductReleases>
+</Group>
