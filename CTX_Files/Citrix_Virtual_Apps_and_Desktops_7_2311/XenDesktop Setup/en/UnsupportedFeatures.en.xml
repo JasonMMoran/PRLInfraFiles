@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Group>
+	<ProductReleases>
+		<ProductRelease>
+			<ProductVersion>180</ProductVersion>
+			<ProductDisplay>2006</ProductDisplay>
+			<UnsupportedFeatures>
+				<UnsupportedFeatureName>Self-Service Password Reset</UnsupportedFeatureName>
+				<UnsupportedFeatureName>Citrix License Administration Console</UnsupportedFeatureName>			
+			</UnsupportedFeatures>
+		</ProductRelease>
+		<ProductRelease>
+			<ProductVersion>170</ProductVersion>
+			<ProductDisplay>2003</ProductDisplay>
+			<UnsupportedFeatures>
+				<UnsupportedFeatureName>Personal vDisks</UnsupportedFeatureName>
+				<UnsupportedFeatureName>AppDisks</UnsupportedFeatureName>
+				<UnsupportedFeatureName>AppDNA application migration component of Citrix Virtual Apps and Desktops Premium edition</UnsupportedFeatureName>
+				<UnsupportedFeatureName>Citrix Indirect Display Driver (IDD) graphics adapter support on Windows 10 version 1709 and earlier</UnsupportedFeatureName>
+				<UnsupportedFeatureName>Hardware encoding with NVIDIA GPUs (NVENC) using GRID 9 or earlier display drivers</UnsupportedFeatureName>
+				<UnsupportedFeatureName>Microsoft .NET Framework versions earlier than 4.8 for Delivery Controllers, Studio, Director, StoreFront, and VDAs</UnsupportedFeatureName>
+				<UnsupportedFeatureName>Windows Server 2012 R2 for Delivery Controllers, Studio, Director, and VDAs</UnsupportedFeatureName>
+				<UnsupportedFeatureName>Windows 10 x86 platforms for VDAs</UnsupportedFeatureName>
+				<UnsupportedFeatureName>32-bit (x86) machines for Studio</UnsupportedFeatureName>
+				<UnsupportedFeatureName>Microsoft SQL Server versions earlier than 2016 for site, configuration logging, and monitor databases</UnsupportedFeatureName>
+			</UnsupportedFeatures>
+		</ProductRelease>
+		<ProductRelease>
+			<ProductVersion>160</ProductVersion>
+			<ProductDisplay>1912 and 1912 LTSR</ProductDisplay>
+			<UnsupportedFeatures>
+				<UnsupportedFeatureName>StoreFront support for users accessing desktops on Desktop Appliance sites</UnsupportedFeatureName>
+				<UnsupportedFeatureName>StoreFront integration with Citrix Online (GoTo product) for StoreFront 3.12</UnsupportedFeatureName>
+				<UnsupportedFeatureName>Flash Redirection</UnsupportedFeatureName>
+			</UnsupportedFeatures>
+		</ProductRelease>
+		<ProductRelease>
+			<ProductVersion>150</ProductVersion>
+			<ProductDisplay>1909</ProductDisplay>
+			<UnsupportedFeatures>
+				<UnsupportedFeatureName>Excel hook in seamless applications (for creating separate taskbar icons for each Microsoft Excel 2010 workbook)</UnsupportedFeatureName>
+				<UnsupportedFeatureName>Windows 10 x86 platforms for VDAs. (Still valid on 1912 LTSR</UnsupportedFeatureName>
+			</UnsupportedFeatures>
+		</ProductRelease>
+		<ProductRelease>
+			<ProductVersion>140</ProductVersion>
+			<ProductDisplay>1906</ProductDisplay>
+			<UnsupportedFeatures>
+				<UnsupportedFeatureName>Removal of Citrix Smart Tools Agent from installation media</UnsupportedFeatureName>
+				<UnsupportedFeatureName>Citrix Smart Scale in all Citrix Virtual Apps and Desktops (and XenApp and XenDesktop) versions</UnsupportedFeatureName>
+			</UnsupportedFeatures>
+		</ProductRelease>
+		<ProductRelease>
+			<ProductVersion>130</ProductVersion>
+			<ProductDisplay>1903</ProductDisplay>
+			<UnsupportedFeatures>
+				<UnsupportedFeatureName>Citrix Receiver for Web classic experience (“green bubbles” user interface</UnsupportedFeatureName>
+				<UnsupportedFeatureName>Framehawk display remoting technology</UnsupportedFeatureName>
+				<UnsupportedFeatureName>Red Hat Enterprise Linux/CentOS 7.5 for Linux VDA</UnsupportedFeatureName>
+				<UnsupportedFeatureName>Delivery Controller options for end-of-life products within StoreFront: VDI-in-a-Box, and XenMobile (9.0 and earlier)</UnsupportedFeatureName>
+			</UnsupportedFeatures>
+		</ProductRelease>
+		<ProductRelease>
+			<ProductVersion>120</ProductVersion>
+			<ProductDisplay>1808</ProductDisplay>
+			<UnsupportedFeatures>
+				<UnsupportedFeatureName>Microsoft .NET Framework versions earlier than 4.8 for Delivery Controllers, Studio, Director, StoreFront, and VDAs</UnsupportedFeatureName>
+				<UnsupportedFeatureName>Red Hat Enterprise Linux 7.3 for Linux VDAs</UnsupportedFeatureName>
+			</UnsupportedFeatures>
+		</ProductRelease>
+	</ProductReleases>
+</Group>

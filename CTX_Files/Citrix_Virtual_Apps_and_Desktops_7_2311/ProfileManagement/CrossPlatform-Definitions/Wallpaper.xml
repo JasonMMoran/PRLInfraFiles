@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Copyright 2009-2011 Citrix Systems, Inc. All Rights Reserved. -->
+
+<GroupDefinitions Version="4.0.0.0" GUID="435CAC5C-23B2-4284-816D-6C1E5594B928">
+
+    <Group Name="Wallpaper" GUID="993acf90-b95a-4926-9429-9b4022355699">
+
+        <Object Name="Wallpaper file" GUID="bfb1b2d4-9266-4c4d-a375-97928ac13e6c">
+            <Platform>
+                <Wallpaper>
+                    <!-- This object enables Cross-platform support for the wallpaper file. -->
+                </Wallpaper>
+            </Platform>
+        </Object>
+
+        <Object Name="TileWallPaper" GUID="12ec3e77-03e9-4cc8-b7b6-5d67d6b5b2d2">
+            <Platform>
+                <!-- Tiled, centred, stretched, etc -->
+                <RegValue>
+                    <Key>Control Panel\Desktop</Key>
+                    <ValueName>TileWallPaper</ValueName>
+                    <Type>REG_SZ</Type>
+                </RegValue>
+            </Platform>
+        </Object>
+                
+        <Object Name="WallPaperStyle" GUID="02fda3dc-aa6b-4aa9-a83a-e4b4dde39c6f">
+            <Platform>
+                <RegValue>
+                    <Key>Control Panel\Desktop</Key>
+                    <ValueName>WallPaperStyle</ValueName>
+                    <Type>REG_SZ</Type>
+                </RegValue>
+            </Platform>
+        </Object>
+                
+        <Object Name="Background Colour" GUID="400e83af-b509-490e-b9d6-6fbd696f0c73">
+            <Platform>
+                <!-- Solid colours used if no wallpaper set -->                
+                <RegValue>
+                    <Key>Control Panel\Colors</Key>
+                    <ValueName>Background</ValueName>
+                    <Type>REG_SZ</Type>
+                </RegValue>
+            </Platform>
+        </Object>
+
+    </Group>
+
+</GroupDefinitions>

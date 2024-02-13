@@ -1,0 +1,2673 @@
+;
+; Copyright Citrix Systems, Inc. All Rights Reserved.
+
+;
+; Machine settings
+;
+
+CLASS MACHINE
+
+CATEGORY "Citrix"
+
+    CATEGORY !!UserProfileManager
+
+        POLICY !!ServiceActive
+            #if version >= 4
+                SUPPORTED !!Supported_upm_2_0_0
+            #endif
+            EXPLAIN !!ServiceActive_Help
+            KEYNAME "Software\Policies\Citrix\UserProfileManager"
+            VALUENAME   "ServiceActive"
+            VALUEON     NUMERIC 1
+            VALUEOFF        NUMERIC 0
+        END POLICY
+
+        POLICY !!ProcessedGroups
+            #if version >= 4
+                SUPPORTED !!Supported_upm_1_0_0
+            #endif
+            EXPLAIN !!ProcessedGroups_Help
+
+            KEYNAME "Software\Policies\Citrix\UserProfileManager\ProcessedGroups"
+            VALUENAME "Enabled"
+            VALUEON NUMERIC 1
+            VALUEOFF NUMERIC 0
+
+            PART !!ProcessedGroups_Part LISTBOX ADDITIVE
+                KEYNAME "Software\Policies\Citrix\UserProfileManager\ProcessedGroups\List"
+            END PART
+
+        END POLICY
+
+        POLICY !!ExcludedGroups
+            #if version >= 4
+                SUPPORTED !!Supported_upm_5_0_0
+            #endif
+            EXPLAIN !!ExcludedGroups_Help
+            KEYNAME "Software\Policies\Citrix\UserProfileManager\ExcludedGroups"
+            VALUENAME "Enabled"
+            VALUEON     NUMERIC 1
+            VALUEOFF    NUMERIC 0
+
+            PART !!ExcludedGroups_Part LISTBOX ADDITIVE
+                KEYNAME "Software\Policies\Citrix\UserProfileManager\ExcludedGroups\List"
+            END PART
+        END POLICY
+
+        POLICY !!ProcessAdmins
+            #if version >= 4
+                SUPPORTED !!Supported_upm_1_0_0
+            #endif
+            EXPLAIN !!ProcessAdmins_Help
+            KEYNAME "Software\Policies\Citrix\UserProfileManager"
+            VALUENAME "ProcessAdmins"
+            VALUEON     NUMERIC 1
+            VALUEOFF        NUMERIC 0
+        END POLICY
+
+        POLICY !!DATPath
+            #if version >= 4
+                SUPPORTED !!Supported_upm_1_0_0
+            #endif
+            EXPLAIN !!DATPath_Help
+            KEYNAME "Software\Policies\Citrix\UserProfileManager"
+            PART !!DATPath_Part EDITTEXT REQUIRED
+                VALUENAME "PathToUserStore"
+                DEFAULT   "Windows"
+            END PART
+
+        END POLICY
+
+        POLICY !!MigrateUserStore
+            #if version >= 4
+                SUPPORTED !!Supported_upm_19_09
+            #endif
+            EXPLAIN !!MigrateUserStore_Help
+            KEYNAME "Software\Policies\Citrix\UserProfileManager"
+            PART !!MigrateUserStore_Part EDITTEXT REQUIRED
+                VALUENAME "MigrateUserStore"
+                DEFAULT   ""
+            END PART
+
+        END POLICY          
+        POLICY !!PSMidSessionWriteBack
+            #if version >= 4
+                SUPPORTED !!Supported_upm_3_0_0
+            #endif
+            EXPLAIN !!PSMidSessionWriteBack_Help
+            KEYNAME "Software\Policies\Citrix\UserProfileManager"
+            VALUENAME "PSMidSessionWriteBack"
+            VALUEON     NUMERIC 1
+            VALUEOFF    NUMERIC 0
+        END POLICY
+        POLICY !!PSMidSessionWriteBackReg
+            #if version >= 4
+                SUPPORTED !!Supported_upm_5_6_0
+            #endif
+            EXPLAIN !!PSMidSessionWriteBackReg_Help
+            KEYNAME "Software\Policies\Citrix\UserProfileManager"
+            VALUENAME "PSMidSessionWriteBackReg"
+            VALUEON     NUMERIC 1
+            VALUEOFF    NUMERIC 0
+        END POLICY
+        POLICY !!PSMidSessionWriteBackSessionLock
+            #if version >= 4
+                SUPPORTED !!Supported_upm_23_03
+            #endif
+            EXPLAIN !!PSMidSessionWriteBackSessionLock_Help
+            KEYNAME "Software\Policies\Citrix\UserProfileManager"
+            VALUENAME "PSMidSessionWriteBackSessionLock"
+            VALUEON     NUMERIC 1
+            VALUEOFF    NUMERIC 0
+        END POLICY
+        POLICY !!OfflineSupport
+            #if version >= 4
+                SUPPORTED !!Supported_upm_4_0_0
+            #endif
+            EXPLAIN !!OfflineSupport_Help
+            KEYNAME "Software\Policies\Citrix\UserProfileManager"
+            VALUENAME "OfflineSupport"
+            VALUEON     NUMERIC 1
+            VALUEOFF    NUMERIC 0
+        END POLICY
+
+
+        CATEGORY !!ProfileHandling
+
+            POLICY !!DeleteCachedProfilesOnLogoff
+                #if version >= 4
+                    SUPPORTED !!Supported_upm_2_0_0
+                #endif
+                EXPLAIN !!DeleteCachedProfilesOnLogoff_Help
+                KEYNAME "Software\Policies\Citrix\UserProfileManager"
+                VALUENAME "DeleteCachedProfilesOnLogoff"
+                VALUEON     NUMERIC 1
+                VALUEOFF    NUMERIC 0
+            END POLICY
+
+            POLICY !!ProfileDeleteDelay
+                #if version >= 4
+                    SUPPORTED !!Supported_upm_5_0_0
+                #endif
+                EXPLAIN !!ProfileDeleteDelay_Help
+                KEYNAME "Software\Policies\Citrix\UserProfileManager"
+                PART !!ProfileDeleteDelay_Part NUMERIC REQUIRED SPIN 10
+                    VALUENAME "ProfileDeleteDelay"
+                    DEFAULT 0
+                    MAX     600
+                    MIN     0
+                END PART
+            END POLICY
+
+            POLICY !!MigrateWindowsProfilesToUserStore
+                #if version >= 4
+                    SUPPORTED !!Supported_upm_2_0_0
+                #endif
+                EXPLAIN !!MigrateWindowsProfilesToUserStore_Help
+                KEYNAME "Software\Policies\Citrix\UserProfileManager"
+                VALUENAME "MigrateWindowsProfilesToUserStoreEnabled"
+                VALUEON     NUMERIC 1
+                VALUEOFF    NUMERIC 0
+                PART !!MigrateWindowsProfilesToUserStore_Part                DROPDOWNLIST REQUIRED
+                    VALUENAME "MigrateWindowsProfilesToUserStore"
+                    ITEMLIST
+                            NAME !!MigrateWindowsProfilesToUserStoreEnum_All        VALUE NUMERIC 1     DEFAULT
+                            NAME !!MigrateWindowsProfilesToUserStoreEnum_Local      VALUE NUMERIC 2
+                            NAME !!MigrateWindowsProfilesToUserStoreEnum_Roaming    VALUE NUMERIC 3
+                            NAME !!MigrateWindowsProfilesToUserStoreEnum_None       VALUE NUMERIC 4     
+                    END ITEMLIST
+                END PART
+            END POLICY
+            
+            POLICY !!ApplicationProfilesAutoMigration
+                #if version >= 4
+                    SUPPORTED !!Supported_upm_19_09
+                #endif
+                EXPLAIN !!ApplicationProfilesAutoMigration_Help
+                KEYNAME "Software\Policies\Citrix\UserProfileManager"
+                VALUENAME "ApplicationProfilesAutoMigrationEnabled"
+                VALUEON     NUMERIC 1
+                VALUEOFF    NUMERIC 0
+            END POLICY
+
+            POLICY !!LocalProfileConflictHandling
+                #if version >= 4
+                    SUPPORTED !!Supported_upm_2_0_0
+                #endif
+                EXPLAIN !!LocalProfileConflictHandling_Help
+                KEYNAME "Software\Policies\Citrix\UserProfileManager"
+                PART !!LocalProfileConflictHandling_Part_1                   TEXT
+                END PART
+                PART !!LocalProfileConflictHandling_Part                   DROPDOWNLIST REQUIRED
+                    VALUENAME "LocalProfileConflictHandling"
+                    ITEMLIST
+                            NAME !!LocalProfileConflictHandlingEnum_Use         VALUE NUMERIC 1     DEFAULT
+                            NAME !!LocalProfileConflictHandlingEnum_Delete      VALUE NUMERIC 2
+                            NAME !!LocalProfileConflictHandlingEnum_Rename      VALUE NUMERIC 3
+                    END ITEMLIST
+                END PART
+            END POLICY
+
+            POLICY !!TemplateProfile
+                #if version >= 4
+                    SUPPORTED !!Supported_upm_2_0_0
+                #endif
+                EXPLAIN !!TemplateProfile_Help
+                KEYNAME "Software\Policies\Citrix\UserProfileManager"
+
+                PART !!TemplateProfilePath EDITTEXT REQUIRED
+                    VALUENAME "TemplateProfilePath"
+                END PART
+
+                PART !!TemplateProfileOverridesLocalProfile CHECKBOX
+                    VALUENAME "TemplateProfileOverridesLocalProfile"
+                    VALUEON     NUMERIC 1
+                    VALUEOFF        NUMERIC 0
+                END PART
+
+                PART !!TemplateProfileOverridesRoamingProfile CHECKBOX
+                    VALUENAME "TemplateProfileOverridesRoamingProfile"
+                    VALUEON     NUMERIC 1
+                    VALUEOFF        NUMERIC 0
+                END PART
+
+                PART !!TemplateProfileIsMandatory CHECKBOX
+                    VALUENAME "TemplateProfileIsMandatory"
+                    VALUEON     NUMERIC 1
+                    VALUEOFF    NUMERIC 0
+                END PART
+            END POLICY
+
+        END CATEGORY
+
+        CATEGORY !!AdvancedSettings
+
+            POLICY !!LoadRetries
+                #if version >= 4
+                    SUPPORTED !!Supported_upm_1_0_0
+                #endif
+                EXPLAIN !!LoadRetries_Help
+                KEYNAME "Software\Policies\Citrix\UserProfileManager"
+                PART !!LoadRetries_Part NUMERIC REQUIRED SPIN 1
+                    VALUENAME "LoadRetries"
+                    DEFAULT 5
+                    MAX     100
+                    MIN     0
+                END PART
+            END POLICY
+
+            POLICY !!ProcessCookieFiles
+                #if version >= 4
+                    SUPPORTED !!Supported_upm_3_1_0
+                #endif
+                EXPLAIN !!ProcessCookieFiles_Help
+                KEYNAME "Software\Policies\Citrix\UserProfileManager"
+                VALUENAME "ProcessCookieFiles"
+                VALUEON     NUMERIC 1
+                VALUEOFF    NUMERIC 0
+            END POLICY
+
+            POLICY !!DisableDynamicConfig
+                #if version >= 4
+                    SUPPORTED !!Supported_upm_5_0_0
+                #endif
+                EXPLAIN !!DisableDynamicConfig_Help
+                KEYNAME "Software\Policies\Citrix\UserProfileManager"
+                VALUENAME "DisableDynamicConfig"
+                VALUEON     NUMERIC 1
+                VALUEOFF    NUMERIC 0
+            END POLICY
+
+            POLICY !!LogoffRatherThanTempProfile
+                #if version >= 4
+                    SUPPORTED !!Supported_upm_4_1_1
+                #endif
+                EXPLAIN !!LogoffRatherThanTempProfile_Help
+                KEYNAME "Software\Policies\Citrix\UserProfileManager"
+                VALUENAME "LogoffRatherThanTempProfile"
+                VALUEON     NUMERIC 1
+                VALUEOFF    NUMERIC 0
+            END POLICY
+
+            POLICY !!CEIPEnabled
+                #if version >= 4
+                    SUPPORTED !!Supported_upm_5_6_0
+                #endif
+                EXPLAIN !!CEIPEnabled_Help
+                KEYNAME "Software\Policies\Citrix\UserProfileManager"
+                VALUENAME   "CEIPEnabled"
+                VALUEON     NUMERIC 1
+                VALUEOFF    NUMERIC 0
+            END POLICY
+            
+            POLICY !!OutlookSearchRoamingEnabled
+                #if version >= 4
+                    SUPPORTED !!Supported_upm_7_18
+                #endif
+                EXPLAIN !!OutlookSearchRoamingEnabled_Help
+
+                KEYNAME "Software\Policies\Citrix\UserProfileManager"
+                VALUENAME "OutlookSearchRoamingEnabled"
+                VALUEON     NUMERIC 1
+                VALUEOFF    NUMERIC 0
+            END POLICY
+
+            POLICY !!OutlookEdbBackupEnabled
+                #if version >= 4
+                    SUPPORTED !!Supported_upm_19_09
+                #endif
+                EXPLAIN !!OutlookEdbBackupEnabled_Help
+
+                KEYNAME "Software\Policies\Citrix\UserProfileManager"
+                VALUENAME "OutlookEdbBackupEnabled"
+                VALUEON     NUMERIC 1
+                VALUEOFF    NUMERIC 0
+            END POLICY
+
+            POLICY !!OutlookSearchRoamingConcurrentSession
+                #if version >= 4
+                    SUPPORTED !!Supported_upm_22_06
+                #endif
+                EXPLAIN !!OutlookSearchRoamingConcurrentSession_Help
+                KEYNAME "Software\Policies\Citrix\UserProfileManager"
+                VALUENAME "OutlookSearchRoamingConcurrentSessionEnabled"
+                VALUEON     NUMERIC 1
+                VALUEOFF    NUMERIC 0
+                PART !!OutlookSearchRoamingConcurrentSession_Part NUMERIC REQUIRED SPIN 1024
+                    VALUENAME "OutlookOstVhdxMaxNum"
+                    DEFAULT 2
+                    MAX     10
+                    MIN     1
+                END PART
+            END POLICY
+
+            POLICY !!FSLogixProfileContainerSupport
+                #if version >= 4
+                    SUPPORTED !!Supported_upm_20_03
+                #endif
+                EXPLAIN !!FSLogixProfileContainerSupport_Help
+                KEYNAME "Software\Policies\Citrix\UserProfileManager"
+                VALUENAME "FSLogixProfileContainerSupport"
+                VALUEON     NUMERIC 1
+                VALUEOFF    NUMERIC 0
+            END POLICY
+
+            POLICY !!MultiSiteReplication
+                #if version >= 4
+                    SUPPORTED !!Supported_upm_21_06
+                #endif
+                EXPLAIN !!MultiSiteReplication_Help
+
+                KEYNAME "Software\Policies\Citrix\UserProfileManager\MultipleRemoteStoreReplication"
+                VALUENAME "Enabled"
+                VALUEON NUMERIC 1
+                VALUEOFF NUMERIC 0
+
+                PART !!MultiSiteReplication_Part LISTBOX ADDITIVE
+                    KEYNAME "Software\Policies\Citrix\UserProfileManager\MultipleRemoteStoreReplication\List"
+                END PART
+            END POLICY
+
+            POLICY !!CredBasedAccessEnabled
+                #if version >= 4
+                    SUPPORTED !!Supported_upm_21_06
+                #endif
+                EXPLAIN !!CredBasedAccessEnabled_Help
+                KEYNAME "Software\Policies\Citrix\UserProfileManager"
+                VALUENAME "CredBasedAccessEnabled"
+                VALUEON     NUMERIC 1
+                VALUEOFF    NUMERIC 0
+            END POLICY
+
+            POLICY !!VhdStorePath
+                #if version >= 4
+                    SUPPORTED !!Supported_upm_21_12
+                #endif
+                EXPLAIN !!VhdStorePath_Help
+                KEYNAME "Software\Policies\Citrix\UserProfileManager"
+                PART !!VhdStorePath_Part EDITTEXT REQUIRED
+                    VALUENAME "PathToVhdStore"
+                    DEFAULT   ""
+                END PART
+            END POLICY
+            
+            POLICY !!EnableVolumeReattach
+                #if version >= 4
+                    SUPPORTED !!Supported_upm_22_03
+                #endif
+                EXPLAIN !!EnableVolumeReattach_Help
+                KEYNAME "Software\Policies\Citrix\UserProfileManager"
+                VALUENAME "EnableVolumeReattach"
+                VALUEON     NUMERIC 1
+                VALUEOFF    NUMERIC 0
+            END POLICY
+
+            POLICY !!SyncGpoStateEnabled
+                #if version >= 4
+                    SUPPORTED !!Supported_upm_22_06
+                #endif
+                EXPLAIN !!SyncGpoStateEnabled_Help
+                KEYNAME "Software\Policies\Citrix\UserProfileManager"
+                VALUENAME "SyncGpoStateEnabled"
+                VALUEON     NUMERIC 1
+                VALUEOFF    NUMERIC 0
+            END POLICY
+
+            POLICY !!OneDriveContainer
+                #if version >= 4
+                    SUPPORTED !!Supported_upm_22_06
+                #endif
+                EXPLAIN !!OneDriveContainer_Help
+
+                KEYNAME "Software\Policies\Citrix\UserProfileManager\OneDriveContainer"
+                VALUENAME "Enabled"
+                VALUEON NUMERIC 1
+                VALUEOFF NUMERIC 0
+
+                PART !!OneDriveContainer_Part LISTBOX ADDITIVE
+                    KEYNAME "Software\Policies\Citrix\UserProfileManager\OneDriveContainer\List"
+                END PART
+            END POLICY
+
+            POLICY !!FreeRatio4Compaction
+                #if version >= 4
+                    SUPPORTED !!Supported_upm_23_03
+                #endif
+                EXPLAIN !!FreeRatio4Compaction_Help
+                KEYNAME "Software\Policies\Citrix\UserProfileManager"
+                PART !!FreeRatio4Compaction_Part NUMERIC REQUIRED SPIN 1
+                    VALUENAME "CompactVHDFreePortion"
+                    DEFAULT 20
+                    MAX     100
+                    MIN     0
+                END PART
+            END POLICY
+            
+            POLICY !!NLogoffs4Compaction
+                #if version >= 4
+                    SUPPORTED !!Supported_upm_23_03
+                #endif
+                EXPLAIN !!NLogoffs4Compaction_Help
+                KEYNAME "Software\Policies\Citrix\UserProfileManager"
+                PART !!NLogoffs4Compaction_Part NUMERIC REQUIRED SPIN 1
+                    VALUENAME "CompactVHDIterations"
+                    DEFAULT 5
+                    MAX     100
+                    MIN     1
+                END PART
+            END POLICY
+            
+            POLICY !!NDefrag4Compaction
+                #if version >= 4
+                    SUPPORTED !!Supported_upm_23_03
+                #endif
+                EXPLAIN !!NDefrag4Compaction_Help
+                KEYNAME "Software\Policies\Citrix\UserProfileManager"
+                VALUENAME "CompactVHDnDefrag"
+                VALUEON     NUMERIC 1
+                VALUEOFF    NUMERIC 0
+            END POLICY
+			
+            POLICY !!UserGroupLevelConfigEnabled
+                #if version >= 4
+                    SUPPORTED !!Supported_upm_23_05
+                #endif
+                EXPLAIN !!UserGroupLevelConfigEnabled_Help
+
+                KEYNAME "Software\Policies\Citrix\UserProfileManager"
+                VALUENAME "UserGroupLevelConfigEnabled"
+                VALUEON     NUMERIC 1
+                VALUEOFF    NUMERIC 0
+            END POLICY
+			
+
+			POLICY !!OrderedGroups
+				#if version >= 4
+					SUPPORTED !!Supported_upm_23_05
+				#endif
+				EXPLAIN !!OrderedGroups_Help
+				KEYNAME "Software\Policies\Citrix\UserProfileManager"
+				PART !!OrderedGroups_Part EDITTEXT REQUIRED
+					VALUENAME "OrderedGroups"
+					DEFAULT   ""
+				END PART
+
+			END POLICY			
+
+            POLICY !!VhdContainerCapacity
+                #if version >= 4
+                    SUPPORTED !!Supported_upm_23_08
+                #endif
+                EXPLAIN !!VhdContainerCapacity_Help
+                KEYNAME "Software\Policies\Citrix\UserProfileManager"
+                PART !!VhdContainerCapacity_Part NUMERIC REQUIRED SPIN 10
+                    VALUENAME "VhdCapacity"
+                    DEFAULT 50
+                    MAX     9999
+                    MIN     1
+                END PART
+            END POLICY
+            
+            POLICY !!VhdAutoExpansionThreshold
+                #if version >= 4
+                    SUPPORTED !!Supported_upm_23_08
+                #endif
+                EXPLAIN !!VhdAutoExpansionThreshold_Help
+                KEYNAME "Software\Policies\Citrix\UserProfileManager"
+                PART !!VhdAutoExpansionThreshold_Part NUMERIC REQUIRED SPIN 10
+                    VALUENAME "AutoExtendThreshold"
+                    DEFAULT 90
+                    MAX     100
+                    MIN     0
+                END PART
+            END POLICY
+            
+            POLICY !!VhdAutoExpansionIncrement
+                #if version >= 4
+                    SUPPORTED !!Supported_upm_23_08
+                #endif
+                EXPLAIN !!VhdAutoExpansionIncrement_Help
+                KEYNAME "Software\Policies\Citrix\UserProfileManager"
+                PART !!VhdAutoExpansionIncrement_Part NUMERIC REQUIRED SPIN 10
+                    VALUENAME "AutoExtendSize"
+                    DEFAULT 10
+                    MAX     9999
+                    MIN     1
+                END PART
+            END POLICY
+            
+            POLICY !!VhdAutoExpansionLimit
+                #if version >= 4
+                    SUPPORTED !!Supported_upm_23_08
+                #endif
+                EXPLAIN !!VhdAutoExpansionLimit_Help
+                KEYNAME "Software\Policies\Citrix\UserProfileManager"
+                PART !!VhdAutoExpansionLimit_Part NUMERIC REQUIRED SPIN 10
+                    VALUENAME "AutoExtendLimit"
+                    DEFAULT 80
+                    MAX     9999
+                    MIN     1
+                END PART
+            END POLICY
+
+            POLICY !!UwpAppsRoaming
+                #if version >= 4
+                    SUPPORTED !!Supported_upm_23_08
+                #endif
+                EXPLAIN !!UwpAppsRoaming_Help
+                KEYNAME "Software\Policies\Citrix\UserProfileManager"
+                VALUENAME "EnableUwpAppsRoaming"
+                VALUEON     NUMERIC 1
+                VALUEOFF    NUMERIC 0
+            END POLICY
+
+			POLICY !!UserStoreSelection
+                #if version >= 4
+                    SUPPORTED !!Supported_upm_23_11
+                #endif
+                EXPLAIN !!UserStoreSelection_Help
+                KEYNAME "Software\Policies\Citrix\UserProfileManager"
+                PART !!UserStoreSelection_Part                   DROPDOWNLIST REQUIRED
+                    VALUENAME "SelectBestPerfUS"
+                    ITEMLIST
+                            NAME !!UserStoreSelectionEnum_Config         VALUE NUMERIC 0     DEFAULT
+                            NAME !!UserStoreSelectionEnum_AccPerf        VALUE NUMERIC 1
+                    END ITEMLIST
+                END PART
+            END POLICY
+
+        END CATEGORY
+
+        CATEGORY !!ProfileContainerSettings
+
+                POLICY !!ProfileContainer
+                    #if version >= 4
+                        SUPPORTED !!Supported_upm_20_09
+                    #endif
+                    EXPLAIN !!ProfileContainer_Help
+
+                    KEYNAME "Software\Policies\Citrix\UserProfileManager\ProfileContainer"
+                    VALUENAME "Enabled"
+                    VALUEON NUMERIC 1
+                    VALUEOFF NUMERIC 0
+
+                    PART !!ProfileContainer_Part LISTBOX ADDITIVE
+                        KEYNAME "Software\Policies\Citrix\UserProfileManager\ProfileContainer\List"
+                    END PART
+                END POLICY
+
+                POLICY !!ProfileContainerLocalCache
+                    #if version >= 4
+                        SUPPORTED !!Supported_upm_21_03
+                    #endif
+                    EXPLAIN !!ProfileContainerLocalCache_Help
+
+                    KEYNAME "Software\Policies\Citrix\UserProfileManager"
+                    VALUENAME "ProfileContainerLocalCache"
+                    VALUEON NUMERIC 1
+                    VALUEOFF NUMERIC 0
+
+                END POLICY
+                
+                POLICY !!ProfileContainerExclusionListDir
+                    #if version >= 4
+                        SUPPORTED !!Supported_upm_20_09
+                    #endif
+                    EXPLAIN !!ProfileContainerExclusionListDir_Help
+
+                    KEYNAME "Software\Policies\Citrix\UserProfileManager\ProfileContainerExclusionListDir"
+                    VALUENAME "Enabled"
+                    VALUEON NUMERIC 1
+                    VALUEOFF NUMERIC 0
+
+                    PART !!ProfileContainerExclusionListDir_Part LISTBOX ADDITIVE
+                        KEYNAME "Software\Policies\Citrix\UserProfileManager\ProfileContainerExclusionListDir\List"
+                    END PART
+                END POLICY
+
+                POLICY !!ProfileContainerInclusionListDir
+                    #if version >= 4
+                        SUPPORTED !!Supported_upm_20_09
+                    #endif
+                    EXPLAIN !!ProfileContainerInclusionListDir_Help
+
+                    KEYNAME "Software\Policies\Citrix\UserProfileManager\ProfileContainerInclusionListDir"
+                    VALUENAME "Enabled"
+                    VALUEON NUMERIC 1
+                    VALUEOFF NUMERIC 0
+
+                    PART !!ProfileContainerInclusionListDir_Part LISTBOX ADDITIVE
+                        KEYNAME "Software\Policies\Citrix\UserProfileManager\ProfileContainerInclusionListDir\List"
+                    END PART
+                END POLICY
+                
+                POLICY !!ProfileContainerExclusionListFile
+                    #if version >= 4
+                        SUPPORTED !!Supported_upm_21_12
+                    #endif
+                    EXPLAIN !!ProfileContainerExclusionListFile_Help
+
+                    KEYNAME "Software\Policies\Citrix\UserProfileManager\ProfileContainerExclusionListFile"
+                    VALUENAME "Enabled"
+                    VALUEON NUMERIC 1
+                    VALUEOFF NUMERIC 0
+
+                    PART !!ProfileContainerExclusionListFile_Part LISTBOX ADDITIVE
+                        KEYNAME "Software\Policies\Citrix\UserProfileManager\ProfileContainerExclusionListFile\List"
+                    END PART
+                END POLICY
+
+                POLICY !!ProfileContainerInclusionListFile
+                    #if version >= 4
+                        SUPPORTED !!Supported_upm_21_12
+                    #endif
+                    EXPLAIN !!ProfileContainerInclusionListFile_Help
+
+                    KEYNAME "Software\Policies\Citrix\UserProfileManager\ProfileContainerInclusionListFile"
+                    VALUENAME "Enabled"
+                    VALUEON NUMERIC 1
+                    VALUEOFF NUMERIC 0
+
+                    PART !!ProfileContainerInclusionListFile_Part LISTBOX ADDITIVE
+                        KEYNAME "Software\Policies\Citrix\UserProfileManager\ProfileContainerInclusionListFile\List"
+                    END PART
+                END POLICY
+                
+                POLICY !!EnableVHDDiskCompaction
+                    #if version >= 4
+                        SUPPORTED !!Supported_upm_23_03
+                    #endif
+                    EXPLAIN !!EnableVHDDiskCompaction_Help
+
+                    KEYNAME "Software\Policies\Citrix\UserProfileManager"
+                    VALUENAME "EnableVHDCompact"
+                    VALUEON NUMERIC 1
+                    VALUEOFF NUMERIC 0
+
+                END POLICY
+		
+		POLICY !!EnableVHDAutoExtend
+                    #if version >= 4
+                        SUPPORTED !!Supported_upm_23_08
+                    #endif
+                    EXPLAIN !!EnableVHDAutoExtend_Help
+
+                    KEYNAME "Software\Policies\Citrix\UserProfileManager"
+                    VALUENAME "AutoExtend"
+                    VALUEON NUMERIC 1
+                    VALUEOFF NUMERIC 0
+                END POLICY
+		
+           POLICY !!DisableConcurrentAccessToVHDContainers
+                #if version >= 4
+                    SUPPORTED !!Supported_upm_23_08
+                #endif
+                EXPLAIN !!DisableConcurrentAccessToVHDContainers_Help
+                KEYNAME "Software\Policies\Citrix\UserProfileManager"
+                PART !!DisableConcurrentAccessToVHDContainers_Intro TEXT
+                END PART		
+
+                PART !!DisableConcurrentAccessToProfileContainer CHECKBOX
+                VALUENAME "DisableConcurrentAccessToProfileContainer"
+                DEFCHECKED
+                VALUEON NUMERIC 1
+                VALUEOFF NUMERIC 0
+                END PART
+                PART !!DisableConcurrentAccessToOneDriveContainer CHECKBOX
+                VALUENAME "DisableConcurrentAccessToOneDriveContainer"
+                DEFCHECKED
+                VALUEON NUMERIC 1
+                VALUEOFF NUMERIC 0
+                END PART
+           END POLICY
+		   POLICY !!PreventLoginWhenMountFailed
+			#if version >= 4
+			SUPPORTED !!Supported_upm_23_11
+			#endif
+			EXPLAIN !!PreventLoginWhenMountFailed_Help
+			KEYNAME "Software\Policies\Citrix\UserProfileManager"
+			PART !!PreventLoginWhenMountFailed_Part EDITTEXT 
+			VALUENAME "PreventLoginWhenProfileContainerMountFailed"
+			VALUEON ""
+			DEFAULT   ""
+			END PART
+		   END POLICY		   
+			POLICY !!GroupsToAccessProfileContainer
+				#if version >= 4
+					SUPPORTED !!Supported_upm_23_11
+				#endif
+				EXPLAIN !!GroupsToAccessProfileContainer_Help
+
+				KEYNAME "Software\Policies\Citrix\UserProfileManager\GroupsToAccessProfileContainer"
+				VALUENAME "Enabled"
+				VALUEON NUMERIC 1
+				VALUEOFF NUMERIC 0
+
+				PART !!GroupsToAccessProfileContainer_Part LISTBOX ADDITIVE
+					KEYNAME "Software\Policies\Citrix\UserProfileManager\GroupsToAccessProfileContainer\List"
+				END PART
+			END POLICY
+        END CATEGORY
+
+        CATEGORY !!LogSettings
+
+            POLICY !!DebugMode
+                #if version >= 4
+                    SUPPORTED !!Supported_upm_1_0_0
+                #endif
+                EXPLAIN !!DebugMode_Help
+                KEYNAME "Software\Policies\Citrix\UserProfileManager"
+                VALUENAME   "LoggingEnabled"
+                VALUEON     NUMERIC 1
+                VALUEOFF    NUMERIC 0
+            END POLICY
+
+            POLICY !!LogLevel
+                #if version >= 4
+                    SUPPORTED !!Supported_upm_1_0_0
+                #endif
+                EXPLAIN !!LogLevel_Help
+                KEYNAME "Software\Policies\Citrix\UserProfileManager"
+                PART !!LogLevel_Intro TEXT
+                END PART
+                PART !!LogLevel_Warnings CHECKBOX
+                    VALUENAME "LogLevelWarnings"
+                    DEFCHECKED
+                    VALUEON NUMERIC 1
+                    VALUEOFF NUMERIC 0
+                END PART
+                PART !!LogLevel_Information CHECKBOX
+                    VALUENAME "LogLevelInformation"
+                    DEFCHECKED
+                    VALUEON NUMERIC 1
+                    VALUEOFF NUMERIC 0
+                END PART
+                PART !!LogLevel_FileSystemNotification CHECKBOX
+                    VALUENAME "LogLevelFileSystemNotification"
+                    VALUEON NUMERIC 1
+                    VALUEOFF NUMERIC 0
+                END PART
+                PART !!LogLevel_FileSystemActions CHECKBOX
+                    VALUENAME "LogLevelFileSystemActions"
+                    VALUEON NUMERIC 1
+                    VALUEOFF NUMERIC 0
+                END PART
+                PART !!LogLevel_RegistryActions CHECKBOX
+                    VALUENAME "LogLevelRegistryActions"
+                    VALUEON NUMERIC 1
+                    VALUEOFF NUMERIC 0
+                END PART
+                PART !!LogLevel_RegistryDifference CHECKBOX
+                    VALUENAME "LogLevelRegistryDifference"
+                    VALUEON NUMERIC 1
+                    VALUEOFF NUMERIC 0
+                END PART
+                PART !!LogLevel_ActiveDirectoryActions CHECKBOX
+                    VALUENAME "LogLevelActiveDirectoryActions"
+                    VALUEON NUMERIC 1
+                    VALUEOFF NUMERIC 0
+                END PART
+                PART !!LogLevel_PolicyUserLogon CHECKBOX
+                    VALUENAME "LogLevelPolicyUserLogon"
+                    VALUEON NUMERIC 1
+                    VALUEOFF NUMERIC 0
+                END PART
+                PART !!LogLevel_Logon CHECKBOX
+                    VALUENAME "LogLevelLogon"
+                    VALUEON NUMERIC 1
+                    VALUEOFF NUMERIC 0
+                END PART
+                PART !!LogLevel_Logoff CHECKBOX
+                    VALUENAME "LogLevelLogoff"
+                    VALUEON NUMERIC 1
+                    VALUEOFF NUMERIC 0
+                END PART
+                PART !!LogLevel_UserName CHECKBOX
+                    VALUENAME "LogLevelUserName"
+                    DEFCHECKED
+                    VALUEON NUMERIC 1
+                    VALUEOFF NUMERIC 0
+                END PART
+            END POLICY
+
+            POLICY !!MaxLogSize
+                #if version >= 4
+                    SUPPORTED !!Supported_upm_1_0_0
+                #endif
+                EXPLAIN !!MaxLogSize_Help
+                KEYNAME "Software\Policies\Citrix\UserProfileManager"
+                PART !!MaxLogSize_Part NUMERIC REQUIRED SPIN 1024
+                    VALUENAME "MaxLogSize"
+                    DEFAULT 10485760
+                    MAX     104857600
+                    MIN     131072
+                END PART
+            END POLICY
+
+            POLICY !!DebugFilePath
+                #if version >= 4
+                    SUPPORTED !!Supported_upm_2_1_0
+                #endif
+                EXPLAIN !!DebugFilePath_Help
+                KEYNAME "Software\Policies\Citrix\UserProfileManager"
+                PART !!DebugFilePath_Part EDITTEXT
+                    VALUENAME "PathToLogFile"
+                END PART
+            END POLICY
+
+        END CATEGORY
+
+        CATEGORY !!RegistrySettings
+
+            POLICY !!ExclusionList
+                #if version >= 4
+                    SUPPORTED !!Supported_upm_1_0_0
+                #endif
+                EXPLAIN !!ExclusionList_Help
+
+                KEYNAME "Software\Policies\Citrix\UserProfileManager\ExclusionListRegistry"
+                VALUENAME "Enabled"
+                VALUEON NUMERIC 1
+                VALUEOFF NUMERIC 0
+
+                PART !!ExclusionList_Part LISTBOX ADDITIVE
+                    KEYNAME "Software\Policies\Citrix\UserProfileManager\ExclusionListRegistry\List"
+                END PART
+           END POLICY
+           POLICY !!DefaultExclusionList
+                #if version >= 4
+                    SUPPORTED !!Supported_upm_5_5_0
+                #endif
+                EXPLAIN !!DefaultExclusionList_Help
+                KEYNAME "Software\Policies\Citrix\UserProfileManager\DefaultExclusionListRegistry"
+                VALUENAME "Enabled"
+                VALUEON NUMERIC 1
+                VALUEOFF NUMERIC 0
+
+                PART !!ExclusionDefaultReg01 CHECKBOX
+                VALUENAME "ExclusionDefaultRegistry01"
+                DEFCHECKED
+                VALUEON NUMERIC 1
+                VALUEOFF NUMERIC 0
+                END PART
+                PART !!ExclusionDefaultReg02 CHECKBOX
+                VALUENAME "ExclusionDefaultRegistry02"
+                DEFCHECKED
+                VALUEON NUMERIC 1
+                VALUEOFF NUMERIC 0
+                END PART
+                PART !!ExclusionDefaultReg03 CHECKBOX
+                VALUENAME "ExclusionDefaultRegistry03"
+                DEFCHECKED
+                VALUEON NUMERIC 1
+                VALUEOFF NUMERIC 0
+                END PART
+           END POLICY
+           POLICY !!IncludeListRegistry
+                #if version >= 4
+                    SUPPORTED !!Supported_upm_1_0_0
+                #endif
+                EXPLAIN !!IncludeListRegistry_Help
+
+                KEYNAME "Software\Policies\Citrix\UserProfileManager\InclusionListRegistry"
+                VALUENAME "Enabled"
+                VALUEON NUMERIC 1
+                VALUEOFF NUMERIC 0
+
+                PART !!IncludeListRegistry_Part LISTBOX ADDITIVE
+                    KEYNAME "Software\Policies\Citrix\UserProfileManager\InclusionListRegistry\List"
+                END PART
+            END POLICY
+            POLICY !!LastKnownGoodRegistry
+                #if version >= 4
+                    SUPPORTED !!Supported_upm_5_5_0
+                #endif
+                EXPLAIN !!LastKnownGoodRegistry_Help
+                KEYNAME "Software\Policies\Citrix\UserProfileManager"
+                VALUENAME "LastKnownGoodRegistry"
+                VALUEON     NUMERIC 1
+                VALUEOFF    NUMERIC 0
+            END POLICY
+        END CATEGORY
+
+        CATEGORY !!FileSystemSettings
+
+            POLICY !!ExclusionListSyncFiles
+                #if version >= 4
+                    SUPPORTED !!Supported_upm_2_0_0
+                #endif
+                EXPLAIN !!ExclusionListSyncFiles_Help
+
+                KEYNAME "Software\Policies\Citrix\UserProfileManager\SyncExclusionListFiles"
+                VALUENAME "Enabled"
+                VALUEON NUMERIC 1
+                VALUEOFF NUMERIC 0
+
+                PART !!ExclusionListSyncFiles_Part LISTBOX ADDITIVE
+                    KEYNAME "Software\Policies\Citrix\UserProfileManager\SyncExclusionListFiles\List"
+                END PART
+            END POLICY
+
+            POLICY !!DefaultExclusionListSyncDir
+                #if version >= 4
+                    SUPPORTED !!Supported_upm_5_5_0
+                #endif
+                EXPLAIN !!DefaultExclusionListSyncDir_Help
+                KEYNAME "Software\Policies\Citrix\UserProfileManager\DefaultSyncExclusionListDir"
+                VALUENAME "Enabled"
+                VALUEON NUMERIC 1
+                VALUEOFF NUMERIC 0
+
+                PART !!ExclusionDefaultDir01 CHECKBOX
+                VALUENAME "ExclusionDefaultDir01"
+                DEFCHECKED
+                VALUEON NUMERIC 1
+                VALUEOFF NUMERIC 0
+                END PART
+                PART !!ExclusionDefaultDir02 CHECKBOX
+                VALUENAME "ExclusionDefaultDir02"
+                DEFCHECKED
+                VALUEON NUMERIC 1
+                VALUEOFF NUMERIC 0
+                END PART
+
+                PART !!ExclusionDefaultDir03 CHECKBOX
+                VALUENAME "ExclusionDefaultDir03"
+                DEFCHECKED
+                VALUEON NUMERIC 1
+                VALUEOFF NUMERIC 0
+                END PART
+
+                PART !!ExclusionDefaultDir04 CHECKBOX
+                VALUENAME "ExclusionDefaultDir04"
+                DEFCHECKED
+                VALUEON NUMERIC 1
+                VALUEOFF NUMERIC 0
+                END PART
+
+                PART !!ExclusionDefaultDir05 CHECKBOX
+                VALUENAME "ExclusionDefaultDir05"
+                DEFCHECKED
+                VALUEON NUMERIC 1
+                VALUEOFF NUMERIC 0
+                END PART
+                
+                PART !!ExclusionDefaultDir06 CHECKBOX
+                VALUENAME "ExclusionDefaultDir06"
+                DEFCHECKED
+                VALUEON NUMERIC 1
+                VALUEOFF NUMERIC 0
+                END PART
+                PART !!ExclusionDefaultDir07 CHECKBOX
+                VALUENAME "ExclusionDefaultDir07"
+                DEFCHECKED
+                VALUEON NUMERIC 1
+                VALUEOFF NUMERIC 0
+                END PART
+
+                PART !!ExclusionDefaultDir08 CHECKBOX
+                VALUENAME "ExclusionDefaultDir08"
+                DEFCHECKED
+                VALUEON NUMERIC 1
+                VALUEOFF NUMERIC 0
+                END PART
+
+                PART !!ExclusionDefaultDir09 CHECKBOX
+                VALUENAME "ExclusionDefaultDir09"
+                DEFCHECKED
+                VALUEON NUMERIC 1
+                VALUEOFF NUMERIC 0
+                END PART
+
+                PART !!ExclusionDefaultDir10 CHECKBOX
+                VALUENAME "ExclusionDefaultDir10"
+                DEFCHECKED
+                VALUEON NUMERIC 1
+                VALUEOFF NUMERIC 0
+                END PART
+
+                PART !!ExclusionDefaultDir11 CHECKBOX
+                VALUENAME "ExclusionDefaultDir11"
+                DEFCHECKED
+                VALUEON NUMERIC 1
+                VALUEOFF NUMERIC 0
+                END PART
+
+                PART !!ExclusionDefaultDir12 CHECKBOX
+                VALUENAME "ExclusionDefaultDir12"
+                DEFCHECKED
+                VALUEON NUMERIC 1
+                VALUEOFF NUMERIC 0
+                END PART
+
+                PART !!ExclusionDefaultDir13 CHECKBOX
+                VALUENAME "ExclusionDefaultDir13"
+                DEFCHECKED
+                VALUEON NUMERIC 1
+                VALUEOFF NUMERIC 0
+                END PART
+
+                PART !!ExclusionDefaultDir14 CHECKBOX
+                VALUENAME "ExclusionDefaultDir14"
+                DEFCHECKED
+                VALUEON NUMERIC 1
+                VALUEOFF NUMERIC 0
+                END PART
+
+                PART !!ExclusionDefaultDir15 CHECKBOX
+                VALUENAME "ExclusionDefaultDir15"
+                DEFCHECKED
+                VALUEON NUMERIC 1
+                VALUEOFF NUMERIC 0
+                END PART
+
+                PART !!ExclusionDefaultDir16 CHECKBOX
+                VALUENAME "ExclusionDefaultDir16"
+                DEFCHECKED
+                VALUEON NUMERIC 1
+                VALUEOFF NUMERIC 0
+                END PART
+
+                PART !!ExclusionDefaultDir17 CHECKBOX
+                VALUENAME "ExclusionDefaultDir17"
+                DEFCHECKED
+                VALUEON NUMERIC 1
+                VALUEOFF NUMERIC 0
+                END PART
+
+                PART !!ExclusionDefaultDir18 CHECKBOX
+                VALUENAME "ExclusionDefaultDir18"
+                DEFCHECKED
+                VALUEON NUMERIC 1
+                VALUEOFF NUMERIC 0
+                END PART
+
+                PART !!ExclusionDefaultDir19 CHECKBOX
+                VALUENAME "ExclusionDefaultDir19"
+                DEFCHECKED
+                VALUEON NUMERIC 1
+                VALUEOFF NUMERIC 0
+                END PART
+
+                PART !!ExclusionDefaultDir20 CHECKBOX
+                VALUENAME "ExclusionDefaultDir20"
+                DEFCHECKED
+                VALUEON NUMERIC 1
+                VALUEOFF NUMERIC 0
+                END PART
+
+                PART !!ExclusionDefaultDir21 CHECKBOX
+                VALUENAME "ExclusionDefaultDir21"
+                DEFCHECKED
+                VALUEON NUMERIC 1
+                VALUEOFF NUMERIC 0
+                END PART
+
+                PART !!ExclusionDefaultDir22 CHECKBOX
+                VALUENAME "ExclusionDefaultDir22"
+                DEFCHECKED
+                VALUEON NUMERIC 1
+                VALUEOFF NUMERIC 0
+                END PART
+
+                PART !!ExclusionDefaultDir23 CHECKBOX
+                VALUENAME "ExclusionDefaultDir23"
+                DEFCHECKED
+                VALUEON NUMERIC 1
+                VALUEOFF NUMERIC 0
+                END PART
+
+                PART !!ExclusionDefaultDir24 CHECKBOX
+                VALUENAME "ExclusionDefaultDir24"
+                DEFCHECKED
+                VALUEON NUMERIC 1
+                VALUEOFF NUMERIC 0
+                END PART
+
+                PART !!ExclusionDefaultDir25 CHECKBOX
+                VALUENAME "ExclusionDefaultDir25"
+                DEFCHECKED
+                VALUEON NUMERIC 1
+                VALUEOFF NUMERIC 0
+                END PART
+
+                PART !!ExclusionDefaultDir26 CHECKBOX
+                VALUENAME "ExclusionDefaultDir26"
+                DEFCHECKED
+                VALUEON NUMERIC 1
+                VALUEOFF NUMERIC 0
+                END PART
+
+                PART !!ExclusionDefaultDir27 CHECKBOX
+                VALUENAME "ExclusionDefaultDir27"
+                DEFCHECKED
+                VALUEON NUMERIC 1
+                VALUEOFF NUMERIC 0
+                END PART
+
+                PART !!ExclusionDefaultDir28 CHECKBOX
+                VALUENAME "ExclusionDefaultDir28"
+                DEFCHECKED
+                VALUEON NUMERIC 1
+                VALUEOFF NUMERIC 0
+                END PART
+
+                PART !!ExclusionDefaultDir29 CHECKBOX
+                VALUENAME "ExclusionDefaultDir29"
+                DEFCHECKED
+                VALUEON NUMERIC 1
+                VALUEOFF NUMERIC 0
+                END PART
+
+                PART !!ExclusionDefaultDir30 CHECKBOX
+                VALUENAME "ExclusionDefaultDir30"
+                DEFCHECKED
+                VALUEON NUMERIC 1
+                VALUEOFF NUMERIC 0
+                END PART
+           END POLICY
+            POLICY !!ExclusionListSyncDir
+                #if version >= 4
+                    SUPPORTED !!Supported_upm_2_0_0
+                #endif
+                EXPLAIN !!ExclusionListSyncDir_Help
+
+                KEYNAME "Software\Policies\Citrix\UserProfileManager\SyncExclusionListDir"
+                VALUENAME "Enabled"
+                VALUEON NUMERIC 1
+                VALUEOFF NUMERIC 0
+
+                PART !!ExclusionListSyncDir_Part LISTBOX ADDITIVE
+                    KEYNAME "Software\Policies\Citrix\UserProfileManager\SyncExclusionListDir\List"
+                END PART
+            END POLICY
+            POLICY !!LogonExclusionCheck
+                #if version >= 4
+                    SUPPORTED !!Supported_upm_7_15
+                #endif
+                EXPLAIN !!LogonExclusionCheck_Help
+                KEYNAME "Software\Policies\Citrix\UserProfileManager"
+                PART !!LogonExclusionCheck_Part_1                   TEXT
+                END PART
+                PART !!LogonExclusionCheck_Part                   DROPDOWNLIST REQUIRED
+                    VALUENAME "LogonExclusionCheck"
+                    ITEMLIST
+                            NAME !!LogonExclusionCheckEnum_Disable     VALUE NUMERIC 0     DEFAULT
+                            NAME !!LogonExclusionCheckEnum_Ignore      VALUE NUMERIC 1
+                            NAME !!LogonExclusionCheckEnum_Delete      VALUE NUMERIC 2
+                    END ITEMLIST
+                END PART
+            END POLICY
+            
+            POLICY !!LargeFileHandlingList
+                #if version >= 4
+                    SUPPORTED !!Supported_upm_7_16
+                #endif
+                EXPLAIN !!LargeFileHandlingList_Help
+
+                KEYNAME "Software\Policies\Citrix\UserProfileManager\LargeFileHandlingList"
+                VALUENAME "Enabled"
+                VALUEON NUMERIC 1
+                VALUEOFF NUMERIC 0
+
+                PART !!LargeFileHandlingList_Part LISTBOX ADDITIVE
+                    KEYNAME "Software\Policies\Citrix\UserProfileManager\LargeFileHandlingList\List"
+                END PART
+            END POLICY
+            CATEGORY !!FSSynchronization
+
+                POLICY !!SyncDirList
+                    #if version >= 4
+                        SUPPORTED !!Supported_upm_1_0_0
+                    #endif
+                    EXPLAIN !!SyncDirList_Help
+
+                    KEYNAME "Software\Policies\Citrix\UserProfileManager\SyncDirList"
+                    VALUENAME "Enabled"
+                    VALUEON NUMERIC 1
+                    VALUEOFF NUMERIC 0
+
+                    PART !!SyncDirList_Part LISTBOX ADDITIVE
+                        KEYNAME "Software\Policies\Citrix\UserProfileManager\SyncDirList\List"
+                    END PART
+                END POLICY
+                POLICY !!SyncFileList
+                    #if version >= 4
+                        SUPPORTED !!Supported_upm_1_0_0
+                    #endif
+                    EXPLAIN !!SyncFileList_Help
+
+                    KEYNAME "Software\Policies\Citrix\UserProfileManager\SyncFileList"
+                    VALUENAME "Enabled"
+                    VALUEON NUMERIC 1
+                    VALUEOFF NUMERIC 0
+
+                    PART !!SyncFileList_Part LISTBOX ADDITIVE
+                        KEYNAME "Software\Policies\Citrix\UserProfileManager\SyncFileList\List"
+                    END PART
+                END POLICY
+
+                POLICY !!MirrorFoldersList
+                    #if version >= 4
+                        SUPPORTED !!Supported_upm_3_1_0
+                    #endif
+                    EXPLAIN !!MirrorFoldersList_Help
+
+                    KEYNAME "Software\Policies\Citrix\UserProfileManager\MirrorFoldersList"
+                    VALUENAME "Enabled"
+                    VALUEON NUMERIC 1
+                    VALUEOFF NUMERIC 0
+
+                    PART !!MirrorFoldersList_Part LISTBOX ADDITIVE
+                        KEYNAME "Software\Policies\Citrix\UserProfileManager\MirrorFoldersList\List"
+                    END PART
+                END POLICY
+
+                POLICY !!AccelerateFolderMirroring
+                    #if version >= 4
+                        SUPPORTED !!Supported_upm_21_06
+                    #endif
+                    EXPLAIN !!AccelerateFolderMirroring_Help
+                    KEYNAME "Software\Policies\Citrix\UserProfileManager"
+                    VALUENAME "AccelerateFolderMirroring"
+                    VALUEON     NUMERIC 1
+                    VALUEOFF    NUMERIC 0
+                END POLICY
+
+            END CATEGORY
+
+        END CATEGORY
+
+        CATEGORY !!PSSettings
+
+            POLICY !!PSEnabled
+                #if version >= 4
+                    SUPPORTED !!Supported_upm_3_0_0
+                #endif
+                EXPLAIN !!PSEnabled_Help
+                KEYNAME "Software\Policies\Citrix\UserProfileManager"
+                VALUENAME "PSEnabled"
+                VALUEON     NUMERIC 1
+                VALUEOFF    NUMERIC 0
+            END POLICY
+
+            POLICY !!PSForFoldersEnabled
+                #if version >= 4
+                    SUPPORTED !!Supported_upm_21_03
+                #endif
+                EXPLAIN !!PSForFoldersEnabled_Help
+                KEYNAME "Software\Policies\Citrix\UserProfileManager"
+                VALUENAME "PSForFoldersEnabled"
+                VALUEON     NUMERIC 1
+                VALUEOFF    NUMERIC 0
+            END POLICY
+            
+            POLICY !!PSForPendingAreaEnabled
+                #if version >= 4
+                    SUPPORTED !!Supported_upm_22_06
+                #endif
+                EXPLAIN !!PSForPendingAreaEnabled_Help
+                KEYNAME "Software\Policies\Citrix\UserProfileManager"
+                VALUENAME "PSForPendingAreaEnabled"
+                VALUEON     NUMERIC 1
+                VALUEOFF    NUMERIC 0
+            END POLICY
+            
+            POLICY !!PSAlwaysCache
+                #if version >= 4
+                    SUPPORTED !!Supported_upm_3_0_0
+                #endif
+                EXPLAIN !!PSAlwaysCache_Help
+                KEYNAME "Software\Policies\Citrix\UserProfileManager"
+                VALUENAME "PSAlwaysCache"
+                VALUEON     NUMERIC 1
+                VALUEOFF    NUMERIC 0
+
+                PART !!PSAlwaysCache_Part NUMERIC REQUIRED SPIN 1
+                    VALUENAME "PSAlwaysCacheSize"
+                    DEFAULT 0
+                    MAX     104857600
+                    MIN     0
+                END PART
+            END POLICY
+
+            POLICY !!PSPendingLockTimeout
+                #if version >= 4
+                    SUPPORTED !!Supported_upm_3_0_0
+                #endif
+                EXPLAIN !!PSPendingLockTimeout_Help
+                KEYNAME "Software\Policies\Citrix\UserProfileManager"
+                PART !!PSPendingLockTimeout NUMERIC REQUIRED SPIN 1
+                    VALUENAME "PSPendingLockTimeout"
+                    DEFAULT 1
+                    MAX     366
+                    MIN     1
+                END PART
+            END POLICY
+
+            POLICY !!PSUserGroups
+                #if version >= 4
+                    SUPPORTED !!Supported_upm_3_0_0
+                #endif
+                EXPLAIN !!PSUserGroups_Help
+                KEYNAME "Software\Policies\Citrix\UserProfileManager\PSUserGroupsList"
+                VALUENAME "Enabled"
+                VALUEON NUMERIC 1
+                VALUEOFF NUMERIC 0
+
+                PART !!PSUserGroups_Part LISTBOX ADDITIVE
+                    KEYNAME "Software\Policies\Citrix\UserProfileManager\PSUserGroupsList\List"
+                END PART
+            END POLICY
+
+            POLICY !!StreamingExclusionList
+                #if version >= 4
+                    SUPPORTED !!Supported_upm_5_8_0
+                #endif
+                EXPLAIN !!StreamingExclusionList_Help
+
+                KEYNAME "Software\Policies\Citrix\UserProfileManager\StreamingExclusionList"
+                VALUENAME "Enabled"
+                VALUEON NUMERIC 1
+                VALUEOFF NUMERIC 0
+
+                PART !!StreamingExclusionList_Part LISTBOX ADDITIVE
+                    KEYNAME "Software\Policies\Citrix\UserProfileManager\StreamingExclusionList\List"
+                END PART
+            END POLICY
+        END CATEGORY
+
+        CATEGORY !!CPSettings
+
+            POLICY !!CPEnable
+                #if version >= 4
+                    SUPPORTED !!Supported_upm_4_0_0
+                #endif
+                EXPLAIN !!CPEnable_Help
+                KEYNAME "Software\Policies\Citrix\UserProfileManager"
+                VALUENAME "CPEnabled"
+                VALUEON   NUMERIC 1
+                VALUEOFF  NUMERIC 0
+            END POLICY
+
+            POLICY !!CPUserGroups
+                #if version >= 4
+                    SUPPORTED !!Supported_upm_4_0_0
+                #endif
+                EXPLAIN !!CPUserGroups_Help
+                KEYNAME "Software\Policies\Citrix\UserProfileManager\CPUserGroupList"
+                VALUENAME "Enabled"
+                VALUEON   NUMERIC 1
+                VALUEOFF  NUMERIC 0
+
+                PART !!CPUserGroups_Part LISTBOX ADDITIVE
+                    KEYNAME "Software\Policies\Citrix\UserProfileManager\CPUserGroupList\List"
+                END PART
+            END POLICY
+
+            POLICY !!CPSchemaPath
+                #if version >= 4
+                    SUPPORTED !!Supported_upm_4_0_0
+                #endif
+                EXPLAIN !!CPSchemaPath_Help
+                KEYNAME "Software\Policies\Citrix\UserProfileManager"
+                PART !!CPSchemaPathData EDITTEXT REQUIRED
+                    VALUENAME "CPSchemaPath"
+                END PART
+            END POLICY
+
+            POLICY !!CPPath
+                #if version >= 4
+                    SUPPORTED !!Supported_upm_4_0_0
+                #endif
+                EXPLAIN !!CPPath_Help
+                KEYNAME "Software\Policies\Citrix\UserProfileManager"
+                PART !!CPPathData EDITTEXT REQUIRED
+                    VALUENAME "CPPath"
+                END PART
+            END POLICY
+
+            POLICY !!CPMigrationFromBaseProfileToCPStore
+                #if version >= 4
+                    SUPPORTED !!Supported_upm_4_0_0
+                #endif
+                EXPLAIN !!CPMigrationFromBaseProfileToCPStore_Help
+                KEYNAME "Software\Policies\Citrix\UserProfileManager"
+                VALUENAME "CPMigrationFromBaseProfileToCPStore"
+                VALUEON   NUMERIC 1
+                VALUEOFF  NUMERIC 0
+            END POLICY
+
+        END CATEGORY
+
+        CATEGORY !!XenAppOptimizationSettings
+
+            POLICY !!XenAppOptimizationEnabled
+                #if version >= 4
+                    SUPPORTED !!Supported_upm_7_16
+                #endif
+                EXPLAIN !!XenAppOptimizationEnabled_Help
+                KEYNAME "Software\Policies\Citrix\UserProfileManager"
+                VALUENAME "XenAppOptimizationEnabled"
+                VALUEON   NUMERIC 1
+                VALUEOFF  NUMERIC 0
+            END POLICY
+
+            POLICY !!XenAppOptimizationDefinitionPath
+                #if version >= 4
+                    SUPPORTED !!Supported_upm_7_16
+                #endif
+                EXPLAIN !!XenAppOptimizationDefinitionPath_Help
+                KEYNAME "Software\Policies\Citrix\UserProfileManager"
+                PART !!XenAppOptimizationDefinitionPathData EDITTEXT REQUIRED
+                    VALUENAME "XenAppOptimizationDefinitionPath"
+                END PART
+            END POLICY
+        END CATEGORY
+
+        CATEGORY !!FileDeduplicationSettings
+
+            POLICY !!SharedStoreFileInclusionList
+                #if version >= 4
+                    SUPPORTED !!Supported_upm_22_09
+                #endif
+                EXPLAIN !!SharedStoreFileInclusionList_Help
+
+                KEYNAME "Software\Policies\Citrix\UserProfileManager\SharedStoreFileInclusionList"
+                VALUENAME "Enabled"
+                VALUEON NUMERIC 1
+                VALUEOFF NUMERIC 0
+
+                PART !!SharedStoreFileInclusionList_Part LISTBOX ADDITIVE
+                    KEYNAME "Software\Policies\Citrix\UserProfileManager\SharedStoreFileInclusionList\List"
+                END PART
+            END POLICY
+
+            POLICY !!SharedStoreFileExclusionList
+                #if version >= 4
+                    SUPPORTED !!Supported_upm_22_09
+                #endif
+                EXPLAIN !!SharedStoreFileExclusionList_Help
+
+                KEYNAME "Software\Policies\Citrix\UserProfileManager\SharedStoreFileExclusionList"
+                VALUENAME "Enabled"
+                VALUEON NUMERIC 1
+                VALUEOFF NUMERIC 0
+
+                PART !!SharedStoreFileExclusionList_Part LISTBOX ADDITIVE
+                    KEYNAME "Software\Policies\Citrix\UserProfileManager\SharedStoreFileExclusionList\List"
+                END PART
+            END POLICY
+
+            POLICY !!SharedStoreProfileContainerFileSizeLimit
+                #if version >= 4
+                    SUPPORTED !!Supported_upm_23_11
+                #endif
+                EXPLAIN !!SharedStoreProfileContainerFileSizeLimit_Help
+                KEYNAME "Software\Policies\Citrix\UserProfileManager"
+                PART !!SharedStoreProfileContainerFileSizeLimit_Part NUMERIC REQUIRED SPIN 1
+                    VALUENAME "SharedStoreProfileContainerFileSizeLimit"
+                    DEFAULT 256
+                    MAX     1048576
+                    MIN     256
+                END PART
+            END POLICY
+        END CATEGORY
+        CATEGORY !!AppAccessControlSettings
+            POLICY !!AppAccessControl
+                #if version >= 4
+                    SUPPORTED !!Supported_upm_23_03
+                #endif
+                EXPLAIN !!AppAccessControl_Help
+                KEYNAME "Software\Policies\Citrix\UserProfileManager"
+                PART !!AppAccessControl_Part EDITTEXT REQUIRED
+                    VALUENAME "AppAccessControlRules"
+                    MAXLEN 60000
+                    DEFAULT   ""
+                END PART
+            END POLICY
+        END CATEGORY
+
+    END CATEGORY
+
+END CATEGORY
+
+
+;
+; User settings
+;
+
+CLASS USER
+
+CATEGORY "Citrix"
+
+    CATEGORY !!UserProfileManager
+
+        CATEGORY !!FolderRedirection
+
+            POLICY !!FRAdminAccess
+                #if version >= 5
+                    SUPPORTED !!Supported_upm_5_0_0
+                #endif
+                EXPLAIN !!FRAdminAccess_Help
+                KEYNAME "Software\Policies\Citrix\UserProfileManager"
+                PART !!FRAdminAccess_Part CHECKBOX
+                    VALUENAME "FRAdminAccess"
+                    CLIENTEXT {26F29E43-DA55-459d-A045-5FEB25F8AB15}
+                    VALUEON NUMERIC 1
+                    VALUEOFF NUMERIC 0
+                END PART
+            END POLICY
+
+            POLICY !!FRIncDomainName
+                #if version >= 5
+                    SUPPORTED !!Supported_upm_5_0_0
+                #endif
+                EXPLAIN !!FRIncDomainName_Help
+                KEYNAME "Software\Policies\Citrix\UserProfileManager"
+                PART !!FRIncDomainName_Part CHECKBOX
+                    VALUENAME "FRIncDomainName"
+                    CLIENTEXT {26F29E43-DA55-459d-A045-5FEB25F8AB15}
+                    VALUEON NUMERIC 1
+                    VALUEOFF NUMERIC 0
+                END PART
+            END POLICY
+
+            CATEGORY !!FRAppData
+
+                POLICY !!FRAppDataEnable
+                    #if version >= 5
+                        SUPPORTED !!Supported_upm_5_0_0
+                    #endif
+                    EXPLAIN !!FRAppDataEnable_Help
+                    KEYNAME "Software\Policies\Citrix\UserProfileManager"
+                    PART !!FRAppData_Part DROPDOWNLIST REQUIRED
+                        VALUENAME "FRAppDataEnabled"
+                        CLIENTEXT {26F29E43-DA55-459d-A045-5FEB25F8AB15}
+                        ITEMLIST
+                            NAME !!FRAppDataEnum_RedirectUncPath VALUE NUMERIC 1 DEFAULT
+                        END ITEMLIST
+                    END PART
+                    PART !!FRAppDataPath_Part EDITTEXT REQUIRED
+                        VALUENAME "FRAppDataPath"
+                        CLIENTEXT {26F29E43-DA55-459d-A045-5FEB25F8AB15}
+                        DEFAULT ""
+                    END PART
+                END POLICY
+
+            END CATEGORY
+
+            CATEGORY !!FRDesktop
+
+                POLICY !!FRDesktopEnable
+                    #if version >= 5
+                        SUPPORTED !!Supported_upm_5_0_0
+                    #endif
+                    EXPLAIN !!FRDesktopEnable_Help
+                    KEYNAME "Software\Policies\Citrix\UserProfileManager"
+                    PART !!FRDesktop_Part DROPDOWNLIST REQUIRED
+                        VALUENAME "FRDesktopEnabled"
+                        CLIENTEXT {26F29E43-DA55-459d-A045-5FEB25F8AB15}
+                        ITEMLIST
+                            NAME !!FRDesktopEnum_RedirectUncPath VALUE NUMERIC 1 DEFAULT
+                        END ITEMLIST
+                    END PART
+                    PART !!FRDesktopPath_Part EDITTEXT REQUIRED
+                        VALUENAME "FRDesktopPath"
+                        CLIENTEXT {26F29E43-DA55-459d-A045-5FEB25F8AB15}
+                        DEFAULT ""
+                    END PART
+                END POLICY
+
+            END CATEGORY
+
+            CATEGORY !!FRStartMenu
+
+                POLICY !!FRStartMenuEnable
+                    #if version >= 5
+                        SUPPORTED !!Supported_upm_5_0_0
+                    #endif
+                    EXPLAIN !!FRStartMenuEnable_Help
+                    KEYNAME "Software\Policies\Citrix\UserProfileManager"
+                    PART !!FRStartMenu_Part DROPDOWNLIST REQUIRED
+                        VALUENAME "FRStartMenuEnabled"
+                        CLIENTEXT {26F29E43-DA55-459d-A045-5FEB25F8AB15}
+                        ITEMLIST
+                            NAME !!FRStartMenuEnum_RedirectUncPath VALUE NUMERIC 1 DEFAULT
+                        END ITEMLIST
+                    END PART
+                    PART !!FRStartMenuPath_Part EDITTEXT REQUIRED
+                        VALUENAME "FRStartMenuPath"
+                        DEFAULT ""
+                    END PART
+                END POLICY
+
+            END CATEGORY
+
+            CATEGORY !!FRDocuments
+
+                POLICY !!FRDocumentsEnable
+                    #if version >= 5
+                        SUPPORTED !!Supported_upm_5_0_0
+                    #endif
+                    EXPLAIN !!FRDocumentsEnable_Help
+                    KEYNAME "Software\Policies\Citrix\UserProfileManager"
+                    PART !!FRDocuments_Part DROPDOWNLIST REQUIRED
+                        VALUENAME "FRDocumentsEnabled"
+                        CLIENTEXT {26F29E43-DA55-459d-A045-5FEB25F8AB15}
+                        ITEMLIST
+                            NAME !!FRDocumentsEnum_RedirectUncPath VALUE NUMERIC 1 DEFAULT
+                            NAME !!FRDocumentsEnum_RedirectRelativeHome VALUE NUMERIC 2
+                        END ITEMLIST
+                    END PART
+                    PART !!FRDocumentsPath_Part EDITTEXT
+                        VALUENAME "FRDocumentsPath"
+                        CLIENTEXT {26F29E43-DA55-459d-A045-5FEB25F8AB15}
+                        DEFAULT ""
+                    END PART
+                END POLICY
+
+            END CATEGORY
+
+            CATEGORY !!FRPictures
+
+                POLICY !!FRPicturesEnable
+                    #if version >= 5
+                        SUPPORTED !!Supported_upm_5_0_0
+                    #endif
+                    EXPLAIN !!FRPicturesEnable_Help
+                    KEYNAME "Software\Policies\Citrix\UserProfileManager"
+                    PART !!FRPictures_Part DROPDOWNLIST REQUIRED
+                        VALUENAME "FRPicturesEnabled"
+                        CLIENTEXT {26F29E43-DA55-459d-A045-5FEB25F8AB15}
+                        ITEMLIST
+                            NAME !!FRPicturesEnum_RedirectUncPath VALUE NUMERIC 1 DEFAULT
+                            NAME !!FRPicturesEnum_RedirectRelativeDocuments VALUE NUMERIC 3
+                        END ITEMLIST
+                    END PART
+                    PART !!FRPicturesPath_Part EDITTEXT
+                        VALUENAME "FRPicturesPath"
+                        CLIENTEXT {26F29E43-DA55-459d-A045-5FEB25F8AB15}
+                        DEFAULT ""
+                    END PART
+                END POLICY
+
+            END CATEGORY
+
+            CATEGORY !!FRMusic
+
+                POLICY !!FRMusicEnable
+                    #if version >= 5
+                        SUPPORTED !!Supported_upm_5_0_0
+                    #endif
+                    EXPLAIN !!FRMusicEnable_Help
+                    KEYNAME "Software\Policies\Citrix\UserProfileManager"
+                    PART !!FRMusic_Part DROPDOWNLIST REQUIRED
+                        VALUENAME "FRMusicEnabled"
+                        CLIENTEXT {26F29E43-DA55-459d-A045-5FEB25F8AB15}
+                        ITEMLIST
+                            NAME !!FRMusicEnum_RedirectUncPath VALUE NUMERIC 1 DEFAULT
+                            NAME !!FRMusicEnum_RedirectRelativeDocuments VALUE NUMERIC 3
+                        END ITEMLIST
+                    END PART
+                    PART !!FRMusicPath_Part EDITTEXT
+                        VALUENAME "FRMusicPath"
+                        CLIENTEXT {26F29E43-DA55-459d-A045-5FEB25F8AB15}
+                        DEFAULT ""
+                    END PART
+                END POLICY
+
+            END CATEGORY
+
+            CATEGORY !!FRVideos
+
+                POLICY !!FRVideosEnable
+                    #if version >= 5
+                        SUPPORTED !!Supported_upm_5_0_0
+                    #endif
+                    EXPLAIN !!FRVideosEnable_Help
+                    KEYNAME "Software\Policies\Citrix\UserProfileManager"
+                    PART !!FRVideos_Part DROPDOWNLIST REQUIRED
+                        VALUENAME "FRVideosEnabled"
+                        CLIENTEXT {26F29E43-DA55-459d-A045-5FEB25F8AB15}
+                        ITEMLIST
+                            NAME !!FRVideosEnum_RedirectUncPath VALUE NUMERIC 1 DEFAULT
+                            NAME !!FRVideosEnum_RedirectRelativeDocuments VALUE NUMERIC 3
+                        END ITEMLIST
+                    END PART
+                    PART !!FRVideosPath_Part EDITTEXT
+                        VALUENAME "FRVideosPath"
+                        CLIENTEXT {26F29E43-DA55-459d-A045-5FEB25F8AB15}
+                        DEFAULT ""
+                    END PART
+                END POLICY
+
+            END CATEGORY
+
+            CATEGORY !!FRFavorites
+
+                POLICY !!FRFavoritesEnable
+                    #if version >= 5
+                        SUPPORTED !!Supported_upm_5_0_0
+                    #endif
+                    EXPLAIN !!FRFavoritesEnable_Help
+                    KEYNAME "Software\Policies\Citrix\UserProfileManager"
+                    PART !!FRFavorites_Part DROPDOWNLIST REQUIRED
+                        VALUENAME "FRFavoritesEnabled"
+                        CLIENTEXT {26F29E43-DA55-459d-A045-5FEB25F8AB15}
+                        ITEMLIST
+                            NAME !!FRFavoritesEnum_RedirectUncPath VALUE NUMERIC 1 DEFAULT
+                        END ITEMLIST
+                    END PART
+                    PART !!FRFavoritesPath_Part EDITTEXT REQUIRED
+                        VALUENAME "FRFavoritesPath"
+                        CLIENTEXT {26F29E43-DA55-459d-A045-5FEB25F8AB15}
+                        DEFAULT ""
+                    END PART
+                END POLICY
+
+            END CATEGORY
+
+            CATEGORY !!FRContacts
+
+                POLICY !!FRContactsEnable
+                    #if version >= 5
+                        SUPPORTED !!Supported_upm_5_0_0
+                    #endif
+                    EXPLAIN !!FRContactsEnable_Help
+                    KEYNAME "Software\Policies\Citrix\UserProfileManager"
+                    PART !!FRContacts_Part DROPDOWNLIST REQUIRED
+                        VALUENAME "FRContactsEnabled"
+                        CLIENTEXT {26F29E43-DA55-459d-A045-5FEB25F8AB15}
+                        ITEMLIST
+                            NAME !!FRContactsEnum_RedirectUncPath VALUE NUMERIC 1 DEFAULT
+                        END ITEMLIST
+                    END PART
+                    PART !!FRContactsPath_Part EDITTEXT REQUIRED
+                        VALUENAME "FRContactsPath"
+                        CLIENTEXT {26F29E43-DA55-459d-A045-5FEB25F8AB15}
+                        DEFAULT ""
+                    END PART
+                END POLICY
+
+            END CATEGORY
+
+            CATEGORY !!FRDownloads
+
+                POLICY !!FRDownloadsEnable
+                    #if version >= 5
+                        SUPPORTED !!Supported_upm_5_0_0
+                    #endif
+                    EXPLAIN !!FRDownloadsEnable_Help
+                    KEYNAME "Software\Policies\Citrix\UserProfileManager"
+                    PART !!FRDownloads_Part DROPDOWNLIST REQUIRED
+                        VALUENAME "FRDownloadsEnabled"
+                        CLIENTEXT {26F29E43-DA55-459d-A045-5FEB25F8AB15}
+                        ITEMLIST
+                            NAME !!FRDownloadsEnum_RedirectUncPath VALUE NUMERIC 1 DEFAULT
+                        END ITEMLIST
+                    END PART
+                    PART !!FRDownloadsPath_Part EDITTEXT REQUIRED
+                        VALUENAME "FRDownloadsPath"
+                        CLIENTEXT {26F29E43-DA55-459d-A045-5FEB25F8AB15}
+                        DEFAULT ""
+                    END PART
+                END POLICY
+
+            END CATEGORY
+
+            CATEGORY !!FRLinks
+
+                POLICY !!FRLinksEnable
+                    #if version >= 5
+                        SUPPORTED !!Supported_upm_5_0_0
+                    #endif
+                    EXPLAIN !!FRLinksEnable_Help
+                    KEYNAME "Software\Policies\Citrix\UserProfileManager"
+                    PART !!FRLinks_Part DROPDOWNLIST REQUIRED
+                        VALUENAME "FRLinksEnabled"
+                        CLIENTEXT {26F29E43-DA55-459d-A045-5FEB25F8AB15}
+                        ITEMLIST
+                            NAME !!FRLinksEnum_RedirectUncPath VALUE NUMERIC 1 DEFAULT
+                        END ITEMLIST
+                    END PART
+                    PART !!FRLinksPath_Part EDITTEXT REQUIRED
+                        VALUENAME "FRLinksPath"
+                        CLIENTEXT {26F29E43-DA55-459d-A045-5FEB25F8AB15}
+                        DEFAULT ""
+                    END PART
+                END POLICY
+
+            END CATEGORY
+
+            CATEGORY !!FRSearches
+
+                POLICY !!FRSearchesEnable
+                    #if version >= 5
+                        SUPPORTED !!Supported_upm_5_0_0
+                    #endif
+                    EXPLAIN !!FRSearchesEnable_Help
+                    KEYNAME "Software\Policies\Citrix\UserProfileManager"
+                    PART !!FRSearches_Part DROPDOWNLIST REQUIRED
+                        VALUENAME "FRSearchesEnabled"
+                        CLIENTEXT {26F29E43-DA55-459d-A045-5FEB25F8AB15}
+                        ITEMLIST
+                            NAME !!FRSearchesEnum_RedirectUncPath VALUE NUMERIC 1 DEFAULT
+                        END ITEMLIST
+                    END PART
+                    PART !!FRSearchesPath_Part EDITTEXT REQUIRED
+                        VALUENAME "FRSearchesPath"
+                        CLIENTEXT {26F29E43-DA55-459d-A045-5FEB25F8AB15}
+                        DEFAULT ""
+                    END PART
+                END POLICY
+
+            END CATEGORY
+
+            CATEGORY !!FRSavedGames
+
+                POLICY !!FRSavedGamesEnable
+                    #if version >= 5
+                        SUPPORTED !!Supported_upm_5_0_0
+                    #endif
+                    EXPLAIN !!FRSavedGamesEnable_Help
+                    KEYNAME "Software\Policies\Citrix\UserProfileManager"
+                    PART !!FRSavedGames_Part DROPDOWNLIST REQUIRED
+                        VALUENAME "FRSavedGamesEnabled"
+                        CLIENTEXT {26F29E43-DA55-459d-A045-5FEB25F8AB15}
+                        ITEMLIST
+                            NAME !!FRSavedGamesEnum_RedirectUncPath VALUE NUMERIC 1 DEFAULT
+                        END ITEMLIST
+                    END PART
+                    PART !!FRSavedGamesPath_Part EDITTEXT REQUIRED
+                        VALUENAME "FRSavedGamesPath"
+                        CLIENTEXT {26F29E43-DA55-459d-A045-5FEB25F8AB15}
+                        DEFAULT ""
+                    END PART
+                END POLICY
+
+            END CATEGORY
+
+        END CATEGORY
+
+    END CATEGORY
+
+END CATEGORY
+
+
+[strings]
+
+;
+; Required product version
+;
+
+Supported_upm_1_0_0="Profile Management 1.0.0 or later"
+Supported_upm_2_0_0="Profile Management 2.0.0 or later"
+Supported_upm_2_1_0="Profile Management 2.1.0 or later"
+Supported_upm_3_0_0="Profile Management 3.0.0 or later"
+Supported_upm_3_1_0="Profile Management 3.1.0 or later"
+Supported_upm_3_2_0="Profile Management 3.2.0 or later"
+Supported_upm_4_0_0="Profile Management 4.0.0 or later"
+Supported_upm_4_1_1="Profile Management 4.1.1 or later"
+Supported_upm_5_0_0="Profile Management 5.0.0 or later"
+Supported_upm_5_5_0="Profile Management 5.5.0 or later"
+Supported_upm_5_6_0="Profile Management 5.6.0 or later"
+Supported_upm_5_8_0="Profile Management 5.8.0 or later"
+Supported_upm_7_15="Profile Management 7.15 or later"
+Supported_upm_7_16="Profile Management 7.16 or later"
+Supported_upm_7_18="Profile Management 7.18 or later"
+Supported_upm_19_03="Profile Management 1903 or later"
+Supported_upm_19_09="Profile Management 1909 or later"
+Supported_upm_19_12="Profile Management 1912 or later"
+Supported_upm_20_03="Profile Management 2003 or later"
+Supported_upm_20_09="Profile Management 2009 or later"
+Supported_upm_21_03="Profile Management 2103 or later"
+Supported_upm_21_06="Profile Management 2106 or later"
+Supported_upm_21_12="Profile Management 2112 or later"
+Supported_upm_22_03="Profile Management 2203 or later"
+Supported_upm_22_06="Profile Management 2206 or later"
+Supported_upm_22_09="Profile Management 2209 or later"
+Supported_upm_23_03="Profile Management 2303 or later"
+Supported_upm_23_05="Profile Management 2305 or later"
+Supported_upm_23_08="Profile Management 2308 or later"
+Supported_upm_23_11="Profile Management 2311 or later"
+;
+; Profile management settings
+;
+
+UserProfileManager="Profile Management"
+
+ServiceActive="Enable Profile management"
+ServiceActive_Help="Applies to: both file-based and container-based profile solutions\n\nBy default, to facilitate deployment, Profile management does not process logons or logoffs.\n\nTurn on processing by enabling this setting.\n\nIf this setting is not configured here, the value from the .ini file is used.\n\nIf this setting is not configured here or in the .ini file, Profile management does not process Windows user profiles in any way."
+
+ProcessedGroups="Processed groups"
+ProcessedGroups_Part="Processed groups"
+ProcessedGroups_Part_gpfx="Processed groups"
+ProcessedGroups_Help="Applies to: both file-based and container-based profile solutions\n\nBoth computer local groups and domain groups (local, global and universal) can be used. Domain groups should be specified in the format: <DOMAIN NAME>\<GROUP NAME>.\n\nIf this setting is configured here, Profile management processes only members of these user groups.\n\nIf this setting is disabled, Profile management processes all users.\n\nIf this setting is not configured here, the value from the .ini file is used.\n\nIf this setting is not configured here or in the .ini file, members of all user groups are processed."
+
+ExcludedGroups="Excluded groups"
+ExcludedGroups_Help="Applies to: both file-based and container-based profile solutions\n\nYou can use computer local groups and domain groups (local, global, and universal) to prevent particular user profiles from being processed. Specify domain groups in the form <DOMAIN NAME>\<GROUP NAME>. \n\nIf this setting is configured here, Profile management excludes members of these user groups. \n\nIf this setting is disabled, Profile management does not exclude any users. \n\nIf this setting is not configured here, the value from the .ini file is used. \n\nIf this setting is not configured here or in the .ini file, no members of any groups are excluded."
+ExcludedGroups_Part="Excluded groups"
+ExcludedGroups_Part_gpfx="Excluded groups"
+
+ProcessAdmins="Process logons of local administrators"
+ProcessAdmins_Help="Applies to: both file-based and container-based profile solutions\n\nSpecifies whether logons of members of the local group "Administrators" are processed by Profile management.\n\nIf this setting is disabled, logons by local administrators are not processed by Profile management.\n\nIf this setting is not configured here, the value from the .ini file is used.\n\nIf this setting is not configured here or in the .ini file, administrators will not be processed."
+
+DATPath="Path to user store"
+DATPath_Part="Absolute path or path relative to the home directory"
+DATPath_Part_gpfx="Path to user store"
+DATPath_Help="Applies to: both file-based and container-based profile solutions\n\nSets the path to the directory in which the user settings (registry changes and synchronized files) are saved (user store).\n\nThe path can be an absolute UNC path or a path relative to the home directory.\n\nIn both cases, the following types of variables can be used: system environment variables enclosed in percent signs and attributes of the Active Directory user object enclosed in hashes.\n\nExamples:\nThe folder Windows\%ProfileVer% stores the user settings in the subfolder called Windows\W2k3 of the user store (if %ProfileVer% is a system environment variable resolving to W2k3).\n\n\\server\share\#SAMAccountName# stores the user settings to the UNC path \\server\share\JohnSmith (if #SAMAccountName# resolves to JohnSmith for the current user).\n\nUser environment variables cannot be used, except for %username% and %userdomain%.\n\nIf this setting is disabled, the user settings are saved in the Windows subdirectory of the home directory.\n\nIf this setting is not configured here, the setting from the .ini file is used.\n\nIf this setting is not configured here or in the .ini file, the Windows directory on the home drive is used."
+
+MigrateUserStore="Migrate user store"
+MigrateUserStore_Part="Enter the user store path that you previously used"
+MigrateUserStore_Part_gpfx="Migrate user store"
+MigrateUserStore_Help="Applies to: file-based profile solution only\n\nSpecifies the path to the folder where the user settings (registry changes and synchronized files) were previously saved (the user store path that you previously used).\n\nIf this setting is configured, the user settings stored in the previous user store are migrated to the current user store specified in the "Path to user store" policy setting.\n\nThe path can be an absolute UNC path or a path relative to the home directory.\n\nIn both cases, you can use the following types of variables: system environment variables enclosed in percent signs and attributes of the Active Directory user object enclosed in hash signs.\n\nExamples:\nThe folder Windows\%ProfileVer% stores the user settings in the subfolder called Windows\W2k3 of the user store (if %ProfileVer% is a system environment variable resolving to W2k3).\n\n\\server\share\#SAMAccountName# stores the user settings to the UNC path \\server\share\JohnSmith (if #SAMAccountName# resolves to JohnSmith for the current user).\n\nYou can use user environment variables except %username% and %userdomain%.\n\nIf this setting is disabled, the user settings are still saved in the current user store.\n\nIf this setting is not configured here, the setting from the .ini file is used.\n\nIf this setting is not configured here or in the .ini file, the user settings are still saved in the current user store.\n\nIf the path you configured here points to the same location as the "Path to user store" policy setting, this policy setting does not take effect."
+
+ProfileHandling="Profile handling"
+
+DeleteCachedProfilesOnLogoff="Delete locally cached profiles on logoff"
+DeleteCachedProfilesOnLogoff_Help="Applies to: file-based profile solution only\n\nSpecifies whether locally cached profiles are deleted after logoff.\n\nIf this setting is enabled, a user's local profile cache is deleted after they have logged off. This is recommended for terminal servers.\n\nIf this setting is disabled cached profiles are not deleted.\n\nIf this setting is not configured here, the value from the .ini file is used.\n\nIf this setting is not configured here or in the .ini file, cached profiles are not deleted."
+
+ProfileDeleteDelay="Delay before deleting cached profiles"
+ProfileDeleteDelay_Part="Delay (seconds)"
+ProfileDeleteDelay_Part_gpfx="Delay before deleting cached profiles"
+ProfileDeleteDelay_Help="Applies to: file-based profile solution only\n\nWorks only if 'Delete locally cached profiles on logoff' is enabled. Sets an optional extension to the delay before locally cached profiles are deleted at logoff. A value of 0 deletes the profiles immediately during logoff processing. Checks take place every minute, so a value of 60 ensures that profiles are deleted between one and two minutes after users have logged off (depending on when the last check took place). Extending the delay is useful if you know that a process keeps files or the user registry hive open during logoff. With large profiles, this can also speed up logoff.\n\nIf this policy is not configured here, the value from the .ini file is used.\n\nIf this policy is not configured here or in the .ini file, profiles are deleted immediately."
+
+ApplicationProfilesAutoMigration="Automatic migration of existing application profiles"
+ApplicationProfilesAutoMigration_Help="Applies to: file-based profile solution only\n\nThis setting enables or disables the automatic migration of existing application profiles across different operating systems. The application profiles include both the application data in the AppData folder and the registry entries under HKEY_CURRENT_USER\SOFTWARE. This setting can be useful in cases where you want to migrate your application profiles across different operating systems. \n\nFor example, suppose you upgrade your operating system (OS) from Windows 10 version 1803 to Windows 10 version 1809. If this setting is enabled, Profile Management automatically migrates the existing application settings to Windows 10 version 1809 the first time each user logs on. As a result, the application data in the AppData folder and the registry entries under HKEY_CURRENT_USER\SOFTWARE are migrated.\n\nIf there are multiple existing application profiles, Profile Management performs the migration in the following order of priority:\n1. Migrates profiles of the same OS type (Desktop OS to Desktop OS and Server OS to Server OS).\n2. Migrates profiles of the same Windows OS family; for example, Windows 8 to Windows 8.1, or Windows 10 version 1803 to Windows 10 version 1809.\n3. Migrates profiles of an earlier version of the OS; for example, Windows 7 to Windows 10, or Windows Server 2012 to Windows Server 2016.\n4. Migrates from the profiles of the closest OS.\n\nNote:You must specify the short name of the operating system by including the variable "!CTX_OSNAME!" in the user store path so that Profile Management can locate the existing application profiles.\n\nIf this setting is not configured here, the setting from the .ini file is used.\nIf this setting is not configured here or in the .ini file, it is disabled by default."
+
+MigrateWindowsProfilesToUserStore="Migration of existing profiles"
+MigrateWindowsProfilesToUserStore_Help="Applies to: file-based profile solution only\n\nProfile management can migrate existing profiles "on the fly" during logon if the user has no profile in the user store.\n\nThe following event takes place during logon: if an existing Windows profile is found and the user does not yet have a Citrix user profile in the user store, the Windows profile is migrated (copied) to the user store on the fly. After this process, the user store profile is used by Profile management in the current and any other session configured with the path to the same user store.\n\nIf this setting is enabled, profile migration can be activated for roaming and local profiles (the default), roaming profiles only, local profiles only, or profile migration can be disabled altogether.\n\nIf profile migration is disabled and no Citrix user profile exists in the user store, the existing Windows mechanism for creating new profiles is used as in a setup without Profile management.\n\nIf this setting is not configured here, the value from the .ini file is used.\n\nIf this setting is not configured here or in the .ini file, all types of existing profiles are migrated."
+MigrateWindowsProfilesToUserStore_Part="Types of user profiles to be migrated if the user store is empty"
+MigrateWindowsProfilesToUserStore_Part_gpfx="Migration of existing profiles"
+MigrateWindowsProfilesToUserStoreEnum_All="Local and Roaming"
+MigrateWindowsProfilesToUserStoreEnum_Local="Local"
+MigrateWindowsProfilesToUserStoreEnum_Roaming="Roaming"
+MigrateWindowsProfilesToUserStoreEnum_None="None"
+
+LocalProfileConflictHandling="Local profile conflict handling"
+LocalProfileConflictHandling_Help="Applies to: file-based profile solution only\n\nThis setting configures what Profile management does if both a profile in the user store and a local Windows user profile (not a Citrix user profile) exist.\n\nIf this setting is disabled or set to the default value of "Use local profile", Profile management uses the local profile, but does not change it in any way.\n\nIf this setting is set to "Delete local profile", Profile management deletes the local Windows user profile, and then imports the Citrix user profile from the user store.\n\nIf this setting is set to "Rename local profile", Profile management renames the local Windows user profile (in order to back it up) and then imports the profile from the user store.\n\nIf this setting is not configured here, the value from the .ini file is used.\n\nIf this setting is not configured here or in the .ini file, existing local profiles are used."
+; Note: LocalProfileConflictHandling_Part_1 and LocalProfileConflictHandling_Part form a two line
+; control in the ADM group policy dialog. The two strings effectively form one sentence and should be
+; arranged to look reasonable in the ADM dialog - probably so they are approximately equal in length
+LocalProfileConflictHandling_Part_1="If both a local Windows user profile and a"
+LocalProfileConflictHandling_Part="Citrix user profile in the user store both exist"
+LocalProfileConflictHandling_Part_gpfx="Local profile conflict handling"
+LocalProfileConflictHandlingEnum_Use="Use local profile"
+LocalProfileConflictHandlingEnum_Delete="Delete local profile"
+LocalProfileConflictHandlingEnum_Rename="Rename local profile"
+
+TemplateProfile="Template profile"
+TemplateProfile_Help="Applies to: both file-based and container-based profile solutions\n\nBy default, new user profiles are created from the default user profile on the computer where a user first logs on. Profile management can alternatively use a centrally stored template when creating new user profiles. Template profiles are identical to normal profiles in that they reside in any file share on the network. Use UNC notation to specifying paths to templates. Users need read access to a template profile.\n\nIf this setting is disabled, templates are not used.\n\nIf this setting is enabled, Profile management uses the template instead of the local default profile when creating new user profiles.\n\nIf a user has no Citrix user profile, but a local Windows user profile exists, by default the local profile is used (and migrated to the user store, if this is not disabled). This can be changed by enabling the setting "Template profile overrides local profile".\n\nIf this setting is not configured here, the value from the .ini file is used.\n\nIf this setting is not configured here or in the .ini file, no template is used."
+TemplateProfilePath="Path to the template profile:"
+TemplateProfileOverridesLocalProfile="Template profile overrides local profile"
+TemplateProfileOverridesRoamingProfile="Template profile overrides roaming profile"
+TemplateProfileIsMandatory="Template profile used as a Citrix mandatory profile for all logons"
+
+AdvancedSettings="Advanced settings"
+
+LoadRetries="Number of retries when accessing locked files"
+LoadRetries_Part="Number of retries"
+LoadRetries_Help="Applies to: both file-based and container-based profile solutions\n\nSets the number of retries when accessing locked files.\n\nIf this setting is disabled the default value of five retries is used.\n\nIf this setting is not configured here, the value from the .ini file is used.\n\nIf this setting is not configured here or in the .ini file, the default value of five retries is used."
+LoadRetries_Part_gpfx="Number of retries when accessing locked files"
+
+ProcessCookieFiles="Process Internet cookie files on logoff"
+ProcessCookieFiles_Help="Applies to: file-based profile solution only\n\nSome deployments leave extra Internet cookies that are not referenced by the file index.dat. The extra cookies left in the file system after sustained browsing can lead to profile bloat. Enable this setting to force processing of index.dat and remove the extra cookies. The setting might slightly increase logoff time. Enable this setting only when you experience the issue.\n\nIf this setting is not configured here, the value from the .ini file is used.\n\nIf this setting is not configured here or in the .ini file, no processing of index.dat takes place."
+
+DisableDynamicConfig="Disable automatic configuration"
+DisableDynamicConfig_Help="Applies to: both file-based and container-based profile solutions\n\nProfile management 5.x examines its environment and configures itself accordingly. To disable this for troubleshooting or to retain the settings you used in an earlier version, enable this setting.\n\nIf this setting is not configured here, the value from the .ini file is used.\n\nIf this setting is not configured here or in the .ini file, automatic configuration is turned on so Profile management settings might change if the environment changes."
+
+LogoffRatherThanTempProfile="Log off user if a problem is encountered"
+LogoffRatherThanTempProfile_Help="Applies to: both file-based and container-based profile solutions\n\nIf a problem is encountered when the user logs on (for example, if the user store is unavailable) a temporary profile is provided.\n\nAlternatively, enabling this setting displays an error message and logs the user off.\n\nIf this setting is not configured here, the value from the .ini file is used.\n\nIf this setting is not configured here or in the .ini file, a temporary profile is provided."
+
+LastKnownGoodRegistry="NTUSER.DAT backup"
+LastKnownGoodRegistry_Help="Applies to: file-based profile solution only\n\nBy default, the NTUSER.DAT backup policy is enabled to back up the last good load NTUSER.DAT and roll back to it if NTUSER.DAT is corrupt.\n\nIf you do not configure this setting here, Profile Management uses the settings from the .ini file.\n\nIf you do not configure this setting here or in the .ini file, Profile Management does not backup the NTUSER.DAT."
+
+CEIPEnabled="Customer Experience Improvement Program"
+CEIPEnabled_Help="Applies to: both file-based and container-based profile solutions\n\nBy default, the Customer Experience Improvement Program is enabled to help improve the quality and performance of Citrix products by sending anonymous statistics and usage information.\n\nIf this setting is not configured here, the value from the .ini file is used.\n\n"
+
+
+UserGroupLevelConfigEnabled="Enable user-level policy settings"
+UserGroupLevelConfigEnabled_Help="Applies to: both file-based and container-based profile solutions\n\nBy default, Profile Management policies work at a machine level. With this policy enabled, Profile Management policies can work at a user level - it can be for an individual user or a user group.\n\nWhen a session starts, Profile Management determines the policy settings to apply by prioritizing user settings over user group settings, and user group settings over machine settings.\n\nIf this setting is not configured here, the value from the .ini file is used.\n\nIf this setting is configured neither here nor in the .ini file, it is disabled.\n\n"
+
+OrderedGroups="Set priority order for user groups"
+OrderedGroups_Part="Priority order for user groups"
+OrderedGroups_Part_gpfx="Set priority order for user groups"
+OrderedGroups_Help="Applies to: both file-based and container-based profile solutions\n\nSpecify the priority order for user groups. The order determines which group takes precedence when a user belongs to multiple groups with different policy settings. In the Priority order for user groups field, enter the Security Identifiers (SIDs) or domain names of the groups in descending order of priority, separated by semicolons (;).\n\nExample:\nctxxa.local\groupb;S-1-5-21-674278408-26188528-2146851469-1174;ctxxa.local\groupc;\n\nWhen a user belongs to multiple groups with different policy settings, consider the following:\n\n - If the user belongs to one or more groups defined in this policy, the group with the highest priority takes precedence. \n\n - If the user doesn't belong to any of the groups defined in this policy, the group with the SID listed earliest in alphabetical order takes precedence. \n\nIf this setting is not configured here, the value from the .ini file is used.\n\nIf this setting is configured neither here nor in the .ini file, no priority order is specified."
+
+
+OutlookSearchRoamingEnabled="Enable search index roaming for Outlook"
+OutlookSearchRoamingEnabled_Help="Applies to: both file-based and container-based profile solutions\n\nAllow user-based Outlook search experience by automatically roaming Outlook search data along with user profile. This requires extra spaces in the user store to store search index for Outlook.\n\n You must log off and then log on again for this policy to take effect."
+
+OutlookEdbBackupEnabled="Outlook search index database - backup and restore"
+OutlookEdbBackupEnabled_Help="Applies to: both file-based and container-based profile solutions\n\nThis setting configures what Profile Management does during logon when search index roaming for Outlook is enabled.\n\nIf this setting is enabled, Profile Management saves a backup of the search index database each time the database is mounted successfully on logon. Profile Management treats the backup as the good copy of the search index database. When an attempt to mount the search index database fails because the database becomes corrupted, Profile Management automatically reverts the search index database to the last known good copy.\n\nNote: Profile Management deletes the previously saved backup after a new backup is saved successfully. The backup consumes the available storage space of the VHDX files."
+
+OutlookSearchRoamingConcurrentSession="Enable concurrent session support for Outlook search data roaming"
+OutlookSearchRoamingConcurrentSession_Part="Maximum number of VHDX disks for storing Outlook OST files"
+OutlookSearchRoamingConcurrentSession_Part_gpfx="Maximum number of VHDX disks for storing Outlook OST files"
+OutlookSearchRoamingConcurrentSession_Help="Applies to: both file-based and container-based profile solutions\n\nProvides native Outlook search experience in concurrent sessions. Use this policy with the Search index roaming for Outlook policy.\n\nWith this policy enabled, each concurrent session uses a separate Outlook OST file.\n\nBy default, only two VHDX disks can be used to store Outlook OST files (one file per disk). If more sessions start, their Outlook OST files are stored in the local user profiles. You can specify the maximum number of VHDX disks for storing Outlook OST files.\n\nExample:\nYou set the number to 3. As a result, Profile Management stores Outlook OST files on the VHDX disks for the first, second, and third concurrent sessions. It stores the OST file for the fourth concurrent session in the local profile instead."
+
+FSLogixProfileContainerSupport="Enable multi-session write-back for profile containers"
+FSLogixProfileContainerSupport_Help="Applies to: both file-based and container-based profile solutions\n\nEnables write-back for profile containers in multi-session scenarios. If enabled, changes in all sessions are written back to profile containers. Otherwise, only changes in the first session are saved because only the first session is in read/write mode in profile containers. Citrix Profile Management profile containers are supported starting with Citrix Profile Management 2103. FSLogix Profile Container is supported starting with Citrix Profile Management 2003.\n\nTo use this policy for FSLogix Profile Container, ensure that the following prerequisites are met:\n1.The FSLogix Profile Container feature is installed and enabled.\n2.Profile type is set to "Try for read-write profile and fallback to read-only" in FSLogix."
+
+MultiSiteReplication="Replicate user stores"
+MultiSiteReplication_Part="Paths to replicate a user store"
+MultiSiteReplication_Part_gpfx="Replicate user stores - Paths to replicate a user store"
+MultiSiteReplication_Help="Applies to: both file-based and container-based profile solutions\n\nLets you replicate a user store to multiple paths in addition to the path that the Path to user store policy specifies, on each logon and logoff. To synchronize to the user store files and folders modified during a session, enable active write back.\n\n Starting with Profile Management version 2209, this feature is available for the full profile container. You can replicate the container to multiple paths. Replicated containers provide profile redundancy for user logon but not for in-session failover.\n\n Note: Enabling the policy can increase system I/O and might prolong logoffs. \n\nFor Profile Management version 2112 or later, you can separate VHDX files from the replicated user store and store them to different paths. To do so, add the path for VHDX files after the path to the replicated user store, and separate the two paths with a vertical bar (|). \nExample: \\path_a|\\path_b indicates that the user store (with VHDX files excluded) is stored in \\path_a and VHDX files are stored in \\path_b."
+
+CredBasedAccessEnabled="Enable credential-based access to user stores"
+CredBasedAccessEnabled_Help="Applies to: both file-based and container-based profile solutions\n\nBy default, Profile Management impersonates the current user to access user stores. Therefore, it requires the current user to have permission to directly access the user stores. Enable this feature if you do not want Profile Management to impersonate the current user when accessing user stores. You can put user stores in storage repositories (for example, Azure Files) that the current user has no permission to access.\n\nTo ensure that Profile Management can access user stores, save the profile storage server's credentials in Workspace Environment Management or Windows Credential Manager. We recommend that you use Workspace Environment Management to eliminate the need to configure the same credentials for each machine where Profile Management runs. If you use Windows Credential Manager, use the Local System account to securely save the credentials. \n\nNote: Starting with Profile Management version 2212, this feature is available for both file-based and VHDX-based Profile Management solutions. For Profile Management versions earlier than 2212, this feature is available only for the VHDX-based Profile Management solution.\n\nIf this setting is not configured here, the value from the .ini file is used. If this setting is configured neither here nor in the .ini file, it is disabled by default.\n\n"
+
+VhdStorePath="Customize storage path for VHDX files"
+VhdStorePath_Part="Path to store VHDX files"
+VhdStorePath_Part_gpfx="Customize storage path for VHDX files"
+VhdStorePath_Help="Applies to: both file-based and container-based profile solutions\n\nBy default, Profile Management stores VHDX files in the user store. With this policy enabled, you can specify a separate path to store VHDX files.\n\nPolicies that use VHDX files include the following: Profile container, Search index roaming for Outlook, and Accelerate folder mirroring. VHDX files of different policies are stored in different folders under the storage path."
+
+AppAccessControl="App access control"
+AppAccessControl_Part="App access control rules"
+AppAccessControl_Part_gpfx="App access control"
+AppAccessControl_Help="Applies to: both file-based and container-based profile solutions\n\nControls user access to applications based on your rules. Enter the rules created using the PowerShell script CPM_App_Access_Control_Config.ps1.\n\nThe script is available with the Profile Management installation package. For more information, see the Profile Management documentation."
+
+EnableVolumeReattach="Automatically reattach VHDX disks in sessions"
+EnableVolumeReattach_Help="Applies to: both file-based and container-based profile solutions\n\nThis policy applies only to VHDX disks that Profile Management uses.\n\nWith the policy enabled, when a VHDX disk is detached in a session, Profile Management can detect the event and then reattach the disk automatically."
+
+SyncGpoStateEnabled="Enable asynchronous processing for user Group Policy on logon"
+SyncGpoStateEnabled_Help="Applies to: both file-based and container-based profile solutions\n\nWindows provides two processing modes for user Group Policy: synchronous and asynchronous. Windows uses a registry value to determine the processing mode for the next user logon. If the registry value doesn't exist, synchronous mode is applied. The registry value is a machine-level setting and doesn't roam with users. Thus, asynchronous mode will not be applied as expected if users:\n Log on to different machines.\n Log on to the same machine where the Delete locally cached profiles on logoff policy is enabled.\n\nWith this policy enabled, Citrix Profile Management lets the registry value roam with users. As a result, processing mode is applied each time users log on.\n\nFor asynchronous mode to take effect on Windows Server machines, make sure that you install the Remote Desktop Session Host role and set the Group Policies as follows:\n Computer Config | Admin Templates | System | Logon | Always wait for the network at computer startup and logon: Disabled\n Computer Config | Admin Templates | System | Group Policy | Allow asynchronous user Group Policy processing when logging on through Remote Desktop Services: Enabled"
+
+OneDriveContainer="Enable OneDrive container"
+OneDriveContainer_Part="List of OneDrive folders"
+OneDriveContainer_Part_gpfx="OneDrive container - List of OneDrive folders"
+OneDriveContainer_Help="Applies to: both file-based and container-based profile solutions\n\nWith this policy enabled, Profile Management stores OneDrive folders on a VHDX disk. The disk is attached during logons and detached during logoffs. The policy lets OneDrive folders roam with users.\n\nSpecify OneDrive folders as paths relative to the user profile. For example, if a OneDrive folder is located at "%userprofile%\OneDrive - Citrix", add "OneDrive - Citrix" to the list.\n\nStarting with Profile Management version 2311, this policy supports OneDrive synchronization between concurrent sessions."
+
+FreeRatio4Compaction="Free space ratio to trigger VHD disk compaction"
+FreeRatio4Compaction_Part="Free space ratio (percent)"
+FreeRatio4Compaction_Help="Applies to: both file-based and container-based profile solutions\n\nLets you specify the free space ratio to trigger VHD disk compaction. When the free space ratio exceeds the specified value on user logoff, disk compaction is triggered.\n\nFree space ratio = (current VHD file size - required minimum VHD file size*) / current VHD file size\n\n* Obtained using the GetSupportedSize method of the MSFT_Partition class from the Microsoft Windows operating system.\n\nIf this setting is not configured here, the value from the .ini file is used.\n\nIf this setting is not configured here or in the .ini file, the default value 20 (%) is used."
+FreeRatio4Compaction_Part_gpfx="Free space ratio to trigger VHD disk compaction"
+
+NLogoffs4Compaction="Number of logoffs to trigger VHD disk compaction"
+NLogoffs4Compaction_Part="Number of logoffs"
+NLogoffs4Compaction_Help="Applies to: both file-based and container-based profile solutions\n\nLets you specify the number of user logoffs to trigger VHD disk compaction.\n\nWhen the number of logoffs since the last compaction reaches the specified value, disk compaction is triggered again.\n\nIf this setting is not configured here, the value from the .ini file is used.\n\nIf this setting is not configured here or in the .ini file, the default value 5 is used."
+NLogoffs4Compaction_Part_gpfx="Number of logoffs to trigger VHD disk compaction"
+
+NDefrag4Compaction="Disable defragmentation for VHD disk compaction"
+NDefrag4Compaction_Help="Applies to: both file-based and container-based profile solutions\n\nLets you specify whether to disable file defragmentation for VHD disk compaction. \n\nWhen VHD disk compaction is enabled, the VHD disk file is first automatically defragmented using the Windows built-in 'defrag' tool, and then compacted. VHD disk defragmentation produces better compaction results while disabling it can save system resources.\n\nIf this policy is not configured here, the value from the .ini file is used.\n\nIf this policy is not configured here or in the .ini file, the defragmentation is enabled by default."
+
+VhdContainerCapacity="Default capacity of VHD containers"
+VhdContainerCapacity_Part="Default capacity (in GB)"
+VhdContainerCapacity_Part_gpfx="Default capacity of VHD containers"
+VhdContainerCapacity_Help="Applies to: both file-based and container-based profile solutions\n\nSpecifies the default storage capacity (in GB) of VHD containers.\n\nIf this policy is not configured here, the value from the .ini file is used.\n\nIf this policy is not configured either here or in the .ini file, the default is 50 (GB)."
+
+VhdAutoExpansionThreshold="Profile container auto-expansion threshold"
+VhdAutoExpansionThreshold_Part="Auto-expansion threshold (percent)"
+VhdAutoExpansionThreshold_Part_gpfx="Profile container auto-expansion threshold"
+VhdAutoExpansionThreshold_Help="Applies to: both file-based and container-based profile solutions\n\nSpecifies the utilization percentage of storage capacity at which profile containers trigger auto-expansion.\n\nIf this policy is not configured here, the value from the .ini file is used.\n\nIf this policy is not configured here or in the .ini file, the default is 90 (%) of storage capacity."
+
+VhdAutoExpansionIncrement="Profile container auto-expansion increment"
+VhdAutoExpansionIncrement_Part="Auto-expansion increment (in GB)"
+VhdAutoExpansionIncrement_Part_gpfx="Profile container auto-expansion increment"
+VhdAutoExpansionIncrement_Help="Applies to: both file-based and container-based profile solutions\n\nSpecifies the amount of storage capacity (in GB) by which profile containers automatically expand when auto-expansion is triggered.\n\nIf this policy is not configured here, the value from the .ini file is used.\n\nIf this policy is not configured either here or in the .ini file, the default is 10 (GB)."
+
+VhdAutoExpansionLimit="Profile container auto-expansion limit"
+VhdAutoExpansionLimit_Part="Auto-expansion limit (in GB)"
+VhdAutoExpansionLimit_Part_gpfx="Profile container auto-expansion limit"
+VhdAutoExpansionLimit_Help="Applies to: both file-based and container-based profile solutions\n\nSpecifies the maximum storage capacity (in GB) to which profile containers can automatically expand when auto-expansion is triggered.\n\nIf this policy is not configured here, the value from the .ini file is used.\n\nIf this policy is not configured either here or in the .ini file, the default is 80 (GB)."
+
+UwpAppsRoaming="UWP app roaming"
+UwpAppsRoaming_Help="Applies to: both file-based and container-based profile solutions\n\nLets UWP (Universal Windows Platform) apps roam with users. As a result, users can access the same UWP apps from different devices.\n\nWith this policy enabled, Profile Management lets UWP apps roam with users by storing the apps on separate VHDX disks. Those disks are attached during user logons and detached during user logoffs.\n\nIf this setting is not configured here, the value from the .ini file is used.\n\nIf this setting is configured neither here nor in the .ini file, this feature is disabled."
+
+UserStoreSelection="User store selection method"
+UserStoreSelection_Help="Specifies the method by which Profile Management selects a user store when multiple user stores are available. This setting applies when you have configured replicated user stores in addition to the user store.\nWhen multiple user stores are available, Profile Management first selects those with the latest profile. If multiple options remain, it further selects one based on your chosen method:\n- Configuration order. Selects the earliest configured store.\n- Access performance. Selects the store with the best access performance.\n\nIf this setting is not configured here, the value from the .ini file is used.\n\nIf this setting is not configured here or in the .ini file, "Configuration order" is used."
+UserStoreSelection_Part="Selection method:"
+UserStoreSelection_Part_gpfx="User store selection method"
+UserStoreSelectionEnum_Config="Configuration order"
+UserStoreSelectionEnum_AccPerf="Access performance"
+
+ProfileContainerSettings="Profile container settings"
+
+ProfileContainer="Profile container"
+ProfileContainer_Part="List of folders to contain on the profile disk"
+ProfileContainer_Part_gpfx="Profile container - List of folders to be contained in profile disk"
+ProfileContainer_Help="Applies to: both file-based and container-based profile solutions\n\nA profile container is a VHDX based profile solution that lets you specify the folders to contain on the profile disk. The profile container attaches the profile disk containing those folders, thus eliminating the need to save a copy of the folders to the local profile. Doing so decreases logon times.\n\nTo use a profile container, enable this policy and add the relative paths of the folders to the list. Citrix recommends that you include the folders containing large cache files in the list. For example, add the Citrix Files content cache folder to the list: AppData\Local\Citrix\Citrix Files\PartCache\n\nTo enable a profile container for the entire user profile, add an asterisk (*) to the list. The following user profiles (if any) are automatically migrated to the container upon its first use:\n\n-    Local Windows user profile\n-    User profiles from the Citrix file-based profile solution\n\nIf this setting is not configured here, the value from the .ini file is used. If this setting is configured neither here nor in the .ini file, it is disabled by default."
+
+ProfileContainerExclusionListDir="Folders to exclude from profile container"
+ProfileContainerExclusionListDir_Part="List of folders to exclude from profile container"
+ProfileContainerExclusionListDir_Part_gpfx="Folders to exclude in profile container"
+ProfileContainerExclusionListDir_Help="Applies to: both file-based and container-based profile solutions\n\nList of folders to exclude from the profile container.\n\nEnter folders to exclude as relative paths to the user profile.\n\nWildcards are supported but they are not applied recursively.\n\nExamples:\nDesktop specifies the Desktop folder.\n\nDownloads\* specifies all immediate subfolders of the Downloads folder.\n\nIf this setting is disabled, no folder is excluded.\n\nIf this setting is not configured here, the value from the .ini file is used.\n\nIf this setting is not configured here or in the .ini file, no folder is excluded."
+
+ProfileContainerInclusionListDir="Folders to include in profile container"
+ProfileContainerInclusionListDir_Part="List of folders to keep in the profile container"
+ProfileContainerInclusionListDir_Part_gpfx="Folders to include in profile container"
+ProfileContainerInclusionListDir_Help="Applies to: both file-based and container-based profile solutions\n\nList of folders to keep in the profile container when their parent folders are excluded.\n\nFolders on this list must be subfolders of the excluded folders. Otherwise, this setting does not work.\n\nWildcards are supported but they are not applied recursively.\n\nDisabling this setting has the same effect as enabling it and configuring an empty list.\n\nIf this setting is not configured here, the value from the .ini file is used.\n\nIf this setting is not configured here or in the .ini file, folders not on the exclusion list are included in the profile container."
+
+ProfileContainerExclusionListFile="Files to exclude from profile container"
+ProfileContainerExclusionListFile_Part="List of files to exclude from profile container"
+ProfileContainerExclusionListFile_Part_gpfx="Files to exclude in profile container"
+ProfileContainerExclusionListFile_Help="Applies to: both file-based and container-based profile solutions\n\nList of files to exclude from the profile container.\n\nSpecify files to exclude in the form of relative paths to the user profile. You can use wildcards. Wildcards in file names are applied recursively while wildcards in folder names are not. You can use the vertical bar (|) to restrict the policy only to the current folder so that the policy does not apply to the subfolders.\n\nIf this setting is disabled, no files are excluded.\n\nIf this setting is not configured here, the value from the .ini file is used.\n\nIf this setting is configured neither here nor in the .ini file, no files are excluded.\n\nExamples:\nDesktop\Desktop.ini excludes the file Desktop\Desktop.ini from the profile container.\n\nAppData\*.tmp excludes all files with the extension .tmp in the directory AppData and its subfolders.\n\nAppData\*.tmp| excludes all files with the extension .tmp in the directory AppData.\n\nDownloads\*\a.txt excludes a.txt in any immediate subfolder of the Downloads folder. Note that wildcards in folder names are not applied recursively."
+
+ProfileContainerInclusionListFile="Files to include in profile container"
+ProfileContainerInclusionListFile_Part="List of files to keep in the profile container"
+ProfileContainerInclusionListFile_Part_gpfx="Files to include in profile container"
+ProfileContainerInclusionListFile_Help="Applies to: both file-based and container-based profile solutions\n\nList of files to include in the profile container when their parent folders are excluded from it.\n\nSpecify files to include in the form of relative paths to the user profile. You can use wildcards. Wildcards in file names are applied recursively while wildcards in folder names are not. You can use the vertical bar (|) to restrict the policy only to the current folder so that the policy does not apply to the subfolders.\n\nDisabling this setting has the same effect as enabling it and configuring an empty list.\n\nIf this setting is not configured here, the value from the .ini file is used.\n\nIf this setting is configured neither here nor in the .ini file, folders not on the exclusion list are included in the profile container.\n\nExamples:\nAppData\Local\Microsoft\Office\Access.qat includes a file under a folder excluded in the default configuration.\n\nAppData\Local\MyApp\*.cfg includes all files with the extension .cfg in the profile folder AppData\Local\MyApp and its subfolders.\n\nAppData\Local\MyApp\*.cfg| includes all files with the extension .cfg in the profile folder AppData\Local\MyApp.\n\nDownloads\*\b.txt includes b.txt in any immediate subfolder of the Downloads folder. Note that wildcards in folder names are not applied recursively."
+
+ProfileContainerLocalCache="Enable local caching for profile containers"
+ProfileContainerLocalCache_Help="Applies to: container-based profile solution only\n\nWith local caching for profile containers enabled, each local profile serves as a local cache of its profile container. If profile streaming is in use, locally cached files are created on demand. Otherwise, they are created during user logons."
+
+EnableVHDDiskCompaction="Enable VHD disk compaction"
+EnableVHDDiskCompaction_Help="Applies to: both file-based and container-based profile solutions\n\nLets you specify whether to compact VHD disk files on user logoff when certain conditions are met. \nDisk compaction can save space for central or cloud storage.\n\nDepending on your needs and the resources available, you can adjust the default compaction settings and behavior using the following policies in Advanced settings:\n\n-	Free space ratio to trigger VHD disk compaction\n-	Number of logoffs to trigger VHD disk compaction\n-	Disable defragmentation for VHD disk compaction\n\nIf this policy is not configured here, the value from the .ini file is used.\n\nIf this policy is not configured here or in the .ini file, VHD disk compaction is not enabled."
+
+EnableVHDAutoExtend="Enable VHD auto-expansion for profile container"
+EnableVHDAutoExtend_Help="Applies to: both file-based and container-based profile solutions\n\nSpecifies whether to enable VHD auto-expansion for the profile container. When enabled, all profile container auto-expansion settings apply to the profile container.\n\nIf this policy is not configured here, the value from the .ini file is used.\n\nIf this policy is not configured either here or in the .ini file, it is disabled."
+
+DisableConcurrentAccessToVHDContainers="Enable exclusive access to VHD containers"
+DisableConcurrentAccessToProfileContainer="Enable exclusive access to VHD containers - Profile container"
+DisableConcurrentAccessToOneDriveContainer="Enable exclusive access to VHD containers - OneDrive container"
+DisableConcurrentAccessToVHDContainers_Help="Applies to: both file-based and container-based profile solutions\n\nBy default, VHD containers allow concurrent access. With this setting enabled, they allow only one access at a time.\n\nNote: Enabling this setting for profile containers in a container-based profile solution automatically disables the "Enable multi-session write-back for profile containers" setting.\n\nIf this policy is not configured here, the value from the .ini file is used.\n\nIf this policy is not configured either here or in the .ini file, the setting is disabled."
+DisableConcurrentAccessToVHDContainers_Intro="Select the containers to apply this setting to:"
+
+PreventLoginWhenMountFailed="Log off users when profile container is not available during logon"
+PreventLoginWhenMountFailed_Part="Error message to display"
+PreventLoginWhenMountFailed_Part_gpfx="Log off users when profile container is not available during logon"
+PreventLoginWhenMountFailed_Help="Applies to: container-based profile solution only\n\nSpecifies whether to log off users when the profile container is not available during logon. By default, users can log on using temporary profiles when the profile container is not available. Alternatively, enabling this setting displays an error message to users and logs them off after they click OK. Enter the error message to display. Leaving it empty will display a default message.\n\nIf this policy is not configured here, the setting from the .ini file is used.\n\nIf this policy is not configured either here or in the .ini file, the setting is disabled."
+
+FileDeduplicationSettings="File deduplication"
+
+SharedStoreFileExclusionList="Files to exclude from the shared store"
+SharedStoreFileExclusionList_Part="List of files to exclude from the shared store"
+SharedStoreFileExclusionList_Part_gpfx="Files to exclude from the shared store"
+SharedStoreFileExclusionList_Help="Applies to: both file-based and container-based profile solutions\n\nLets you specify files to exclude from the shared store. Use this policy along with the "Files to include in the shared store for file deduplication" policy.\n\nStarting with Profile Management version 2311, this policy applies to profile containers.\n\nSpecify the file names with paths relative to the user profile. Consider the following:\n\n- Wildcards are supported.\n\n- Wildcards in file names are applied recursively. To restrict them only to the current folder, use the vertical bar (|).\n\n- Wildcards in folder names are not applied recursively.\n\nExamples:\n\n- Downloads\profilemgt_x64.msi specifies the profilemgt_x64.msi file in the Downloads folder.\n\n- *.tmp specifies files with the .tmp extension in the user profile folder and its subfolders.\n\n- AppData\*.tmp specifies files with the .tmp extension in the AppData folder and its subfolders.\n\n- AppData\*.tmp| specifies files with the .tmp extension only in the AppData folder.\n\n- Downloads\*\a.txt specifies the a.txt file in any immediate subfolder of the Downloads folder.\n\nIf this setting is disabled, no files are excluded.\nIf this setting is not configured here, the value from the .ini file is used.\nIf this setting is configured neither here nor in the .ini file, no files are excluded."
+
+SharedStoreFileInclusionList="Files to include in the shared store for deduplication"
+SharedStoreFileInclusionList_Part="List of files to include in the shared store"
+SharedStoreFileInclusionList_Part_gpfx="Files to include in the shared store for deduplication"
+SharedStoreFileInclusionList_Help="Applies to: both file-based and container-based profile solutions\n\nIdentical files can exist in various user profiles. Separating those files from the user store and storing them in a central location can save storage space. Doing so avoids duplicates. This policy lets you specify files that you want to include in the shared store on the server hosting the user store. With the policy enabled, Profile Management generates the shared store automatically. It then centrally stores the specified files in the shared store rather than in each user profile in the user store.\n\nStarting with Profile Management version 2311, this policy applies to profile containers.\n\nSpecify the file names with paths relative to the user profile. Consider the following:\n\n- Wildcards are supported.\n\n- Wildcards in file names are applied recursively. To restrict them only to the current folder, use the vertical bar (|).\n\n- Wildcards in folder names are not applied recursively.\n\nExamples:\n\n- Downloads\profilemgt_x64.msi specifies the profilemgt_x64.msi file in the Downloads folder.\n\n- *.cfg specifies files with the .cfg extension in the user profile folder and its subfolders.\n\n- Music\* specifies files in the Music folder and its subfolders.\n\n- Downloads\*.iso specifies files with the .iso extension in the Downloads folder and its subfolders.\n\n- Downloads\*.iso| specifies files with the .iso extension only in the Downloads folder.\n\n- AppData\Local\Microsoft\OneDrive\*\*.dll specifies files with the .dll extension in any immediate subfolder of the AppData\Local\Microsoft\OneDrive folder.\n\nIf this setting is disabled, the shared store is disabled.\nIf this setting is not configured here, the value from the .ini file is used.\nIf this setting is configured neither here nor in the .ini file, the shared store is disabled."
+
+SharedStoreProfileContainerFileSizeLimit="Minimum size of files to deduplicate from profile containers"
+SharedStoreProfileContainerFileSizeLimit_Part="Minimum size in megabytes"
+SharedStoreProfileContainerFileSizeLimit_Part_gpfx="Minimum size of files to deduplicate from profile containers"
+SharedStoreProfileContainerFileSizeLimit_Help="Applies to: both file-based and container-based profile solutions\n\nSpecifies the minimum size (MB) of files to deduplicate from profile containers. The value must be 256 or greater.\nIf this setting is not configured here, the value from the .ini file is used.\nIf this setting is not configured either here or in the .ini file, the value is 256."
+GroupsToAccessProfileContainer="Users and groups to access profile container"
+GroupsToAccessProfileContainer_Part="Users and groups to access profile container"
+GroupsToAccessProfileContainer_Part_gpfx="Users and groups to access profile container"
+GroupsToAccessProfileContainer_Help="Applies to: both file-based and container-based profile solutions\n\nSpecifies which domain users and groups have Read & Execute permission on profile containers. Enter a domain user or group using: <Domain name>\<User or group name> or Security Identifier (SID).\n\nIf this policy is not configured here, the value from the .ini file is used. \n\nIf this policy is not configured either here or in the .ini file, the profile container is accessible only to its owner."
+
+LogSettings="Log settings"
+
+DebugMode="Enable logging"
+DebugMode_Help="Applies to: both file-based and container-based profile solutions\n\nActivation of this setting enables debug mode (verbose logging). In debug mode, extensive status information is logged in the log files in "%SystemRoot%\System32\Logfiles\UserProfileManager" or in the location specified by the "Path to log file" policy setting.\n\nIf this setting is disabled only errors are logged.\n\nIf this setting is not configured here, the value from the .ini file is used.\n\nIf this setting is not configured here or in the .ini file, only errors are logged."
+
+LogLevel="Log settings"
+LogLevel_Help="Applies to: both file-based and container-based profile solutions\n\nDetailed log settings.\n\nDefine events or actions that Profile management logs in depth.\n\nIf this setting is not configured here, Profile management uses the settings from the .ini file.\n\nIf this setting is not configured here or in the .ini file, errors and general information are logged."
+LogLevel_Intro="Define events or actions that Profile management logs in depth:"
+LogLevel_UserName="Personalized user information"
+LogLevel_Warnings="Common warnings"
+LogLevel_Information="Common information"
+LogLevel_FileSystemNotification="File system notifications"
+LogLevel_FileSystemActions="File system actions"
+LogLevel_RegistryActions="Registry actions"
+LogLevel_RegistryDifference="Registry differences at logoff"
+LogLevel_PolicyUserLogon="Policy values at logon and logoff"
+LogLevel_ActiveDirectoryActions="Active Directory actions"
+LogLevel_Logon="Logon"
+LogLevel_Logoff="Logoff"
+
+MaxLogSize="Maximum size of the log file"
+MaxLogSize_Part="Maximum size in bytes"
+MaxLogSize_Part_gpfx="Maximum size of the log file"
+MaxLogSize_Help="Applies to: both file-based and container-based profile solutions\n\nSets the maximum size of the log file in bytes. If the log file grows beyond this size an existing backup of the file (.bak) is deleted, the log file is renamed to .bak, and a new log file is created.\n\nThe log file is created in "%SystemRoot%\System32\Logfiles\UserProfileManager" or in the location specified by the "Path to log file" policy setting.\n\nIf this setting is disabled, the default value of 10 MB is used.\n\nIf this setting is not configured here, the value from the .ini file is used.\n\nIf this setting is not configured here or in the .ini file, the default of 10 MB is used."
+
+DebugFilePath="Path to log file"
+DebugFilePath_Part="Path to log file"
+DebugFilePath_Help="Applies to: both file-based and container-based profile solutions\n\nSets an alternative path to which the log files are saved.\n\nThe path can point to a local drive or a remote, network-based one (a UNC path). Remote paths can be useful in large, distributed environments but they can create significant network traffic, which may be inappropriate for log files. For provisioned, virtual machines with a persistent hard drive, set a local path to that drive. This ensures log files are preserved when the machine restarts. For virtual machines without a persistent hard drive, setting a UNC path allows you to retain the log files but the system account for the machines must have write access to the UNC share. Use a local path for any laptops managed by the offline profiles feature.\n\nExamples:\nD:\LogFiles\ProfileManagement.\n\\servername\LogFiles\ProfileManagement\n\nIf this setting is not configured here, the value from the .ini file is used.\n\nIf this setting is not configured here or in the .ini file, the default location "%SystemRoot%\System32\Logfiles\UserProfileManager" is used.\n\nIf a UNC path is used for log files then Citrix recommends that an appropriate access control list is applied to the log file folder to ensure that only authorized user or computer accounts can access the stored files."
+
+
+RegistrySettings="Registry"
+ExclusionList="Exclusion list"
+ExclusionList_Part="Exclusion list"
+ExclusionList_Part_gpfx="Exclusion list"
+ExclusionList_Help="Applies to: file-based profile solution only\n\nList of registry keys in the HKCU hive that are ignored during logoff.\n\nExample:\nSoftware\Policies.\n\nIf this setting is disabled, no registry keys are excluded.\n\nIf this setting is not configured here, the value from the .ini file is used.\n\nIf this setting is not configured here or in the .ini file, no registry keys are excluded."
+
+DefaultExclusionList="Enable default exclusion list"
+ExclusionDefaultReg01="Software\Microsoft\AppV\Client\Integration"
+ExclusionDefaultReg02="Software\Microsoft\AppV\Client\Publishing"
+ExclusionDefaultReg03="Software\Microsoft\Speech_OneCore"
+DefaultExclusionList_Help="Applies to: file-based profile solution only\n\nDefault list of registry keys in the HKCU hive that are not synchronized to the user's profile.\n\nIf you disable this setting, registry keys are not excluded by default.\n\nIf you do not configure this setting here, the value from the .ini file is used.\n\nIf you do not configure this setting here or in the .ini file, registry keys are not excluded by default.\n\nNote: Software\Miscrosoft\Speech_OneCore is deprecated in Profile Management 5.8 and later."
+
+IncludeListRegistry="Inclusion list"
+IncludeListRegistry_Part="Inclusion list"
+IncludeListRegistry_Part_gpfx="Inclusion list"
+IncludeListRegistry_Help="Applies to: file-based profile solution only\n\nList of registry keys in the HKCU hive that are processed during logoff. Example: Software\Adobe.\n\nIf this setting is enabled, only keys on this list are processed.\n\nIf this setting is disabled, the complete HKCU hive is processed.\n\nIf this setting is not configured here, the value from the .ini file is used.\n\nIf this setting is not configured here or in the .ini file, all of HKCU is processed."
+
+
+FileSystemSettings="File system"
+
+ExclusionListSyncFiles="Exclusion list - files"
+ExclusionListSyncFiles_Part="List of files to exclude"
+ExclusionListSyncFiles_Part_gpfx="Exclusion list - files"
+ExclusionListSyncFiles_Help="Applies to: file-based profile solution only\n\nList of files that are ignored during synchronization.\n\nFile names should be specified as paths relative to the user profile. Wildcards are allowed. Wildcards in file names are applied recursively while wildcards in folder names are not.\n\nNote: As of Profile Management 7.15, you can use the vertical bar '|' for applying a policy to only the current folder without propagating it to the subfolders.\n\nExamples:\nDesktop\Desktop.ini ignores the Desktop.ini file in the Desktop folder.\n\nAppData\*.tmp ignores all files with the .tmp extension in the AppData folder and its subfolders.\n\nAppData\*.tmp| ignores all files with the .tmp extension in the AppData folder.\n\nDownloads\*\a.txt ignores a.txt in any immediate subfolder of the Downloads folder. Note that wildcards in folder names are not applied recursively.\n\nIf this setting is disabled, no files are excluded.\n\nIf this setting is not configured here, the value from the .ini file is used.\n\nIf this setting is not configured here or in the .ini file, no files are excluded."
+
+ExclusionListSyncDir="Exclusion list - directories"
+ExclusionListSyncDir_Part="List of directories to exclude"
+ExclusionListSyncDir_Part_gpfx="Exclusion list - directories"
+ExclusionListSyncDir_Help="Applies to: file-based profile solution only\n\nList of directories that are ignored during synchronization.\n\nFolder names should be specified as paths relative to the user profile.\n\nWildcards are supported but they are not applied recursively.\n\nExamples:\nDesktop ignores the Desktop folder in the user profile.\n\nDownloads\* ignores all immediate subfolders of the Downloads folder.\n\nIf this setting is disabled, no folders are excluded.\n\nIf this setting is not configured here, the value from the .ini file is used.\n\nIf this setting is not configured here or in the .ini file, no folders are excluded."
+
+StreamingExclusionList="Profile streaming exclusion list - directories"
+StreamingExclusionList_Part="List of directories to exclude from Profile Streaming"
+StreamingExclusionList_Part_gpfx="Profile streaming exclusion list - directories"
+StreamingExclusionList_Help="Applies to: file-based profile solution only\n\nList of directories that are ignored by Profile Streaming.\nFolder names must be specified as paths relative to the user profile.\n\nExamples:\nEntering "Desktop" (without quotes) ignores the Desktop directory in the user profile.\nIf this setting is disabled, no folders are excluded.\nIf this setting is not configured here, the value from the .ini file is used.\nIf this setting is not configured here or in the .ini file, no folders are excluded.\n\nNote:\nProfile Streaming exclusions do not indicate that the configured folders are excluded from profile handling. They are still processed by Citrix Profile Management."
+
+DefaultExclusionListSyncDir="Enable default exclusion list - directories"
+ExclusionDefaultDir01="!ctx_internetcache!"
+ExclusionDefaultDir02="!ctx_localappdata!\Google\Chrome\User Data\Default\Cache"
+ExclusionDefaultDir03="!ctx_localappdata!\Google\Chrome\User Data\Default\Cached Theme Images"
+ExclusionDefaultDir04="!ctx_localappdata!\Google\Chrome\User Data\Default\JumpListIcons"
+ExclusionDefaultDir05="!ctx_localappdata!\Google\Chrome\User Data\Default\JumpListIconsOld"
+ExclusionDefaultDir06="!ctx_localappdata!\GroupPolicy"
+ExclusionDefaultDir07="!ctx_localappdata!\Microsoft\AppV"
+ExclusionDefaultDir08="!ctx_localappdata!\Microsoft\Messenger"
+ExclusionDefaultDir09="!ctx_localappdata!\Microsoft\Office\15.0\Lync\Tracing"
+ExclusionDefaultDir10="!ctx_localappdata!\Microsoft\OneNote"
+ExclusionDefaultDir11="!ctx_localappdata!\Microsoft\Outlook"
+ExclusionDefaultDir12="!ctx_localappdata!\Microsoft\Terminal Server Client"
+ExclusionDefaultDir13="!ctx_localappdata!\Microsoft\UEV"
+ExclusionDefaultDir14="!ctx_localappdata!\Microsoft\Windows Live"
+ExclusionDefaultDir15="!ctx_localappdata!\Microsoft\Windows Live Contacts"
+ExclusionDefaultDir16="!ctx_localappdata!\Microsoft\Windows\Application Shortcuts"
+ExclusionDefaultDir17="!ctx_localappdata!\Microsoft\Windows\Burn"
+ExclusionDefaultDir18="!ctx_localappdata!\Microsoft\Windows\CD Burning"
+ExclusionDefaultDir19="!ctx_localappdata!\Microsoft\Windows\Notifications"
+ExclusionDefaultDir20="!ctx_localappdata!\Packages"
+ExclusionDefaultDir21="!ctx_localappdata!\Sun"
+ExclusionDefaultDir22="!ctx_localappdata!\Windows Live"
+ExclusionDefaultDir23="!ctx_localsettings!\Temp"
+ExclusionDefaultDir24="!ctx_roamingappdata!\Microsoft\AppV\Client\Catalog"
+ExclusionDefaultDir25="!ctx_roamingappdata!\Sun\Java\Deployment\cache"
+ExclusionDefaultDir26="!ctx_roamingappdata!\Sun\Java\Deployment\log"
+ExclusionDefaultDir27="!ctx_roamingappdata!\Sun\Java\Deployment\tmp"
+ExclusionDefaultDir28="$Recycle.Bin"
+ExclusionDefaultDir29="AppData\LocalLow"
+ExclusionDefaultDir30="Tracing"
+DefaultExclusionListSyncDir_Help="Applies to: file-based profile solution only\n\nDefault list of directories ignored during synchronization.\n\nIf you disable this setting, folders are not excluded by default.\n\nIf you do not configure this setting here, the value from the .ini file is used.\n\nIf you do not configure this setting here or in the .ini file, folders are not excluded by default."
+
+LogonExclusionCheck="Logon Exclusion Check"
+LogonExclusionCheck_Help="Applies to: file-based profile solution only\n\nThis setting configures what Profile Management does if a profile in the user store contains excluded files or folders.\n\nIf this setting is disabled or set to the default value of "Synchronize excluded files or folders on logon," Profile Management will synchronize these excluded files or folders from the user store to local profile when a user logs on.\n\nIf this setting is set to "Ignore excluded files or folders on logon," Profile Management ignores the excluded files or folders in the user store when a user logs on.\n\nIf this setting is set to "Delete excluded files or folder on logon," Profile Management deletes the excluded files or folders in the user store when a user logs on.\n\nIf this setting is not configured here, the value from the .ini file is used.\n\nIf this setting is not configured here or in the .ini file, the excluded files or folders are synchronized from the user store to local profile when a user logs on."
+; Note: LogonExclusionCheck_Part_1 and LogonExclusionCheck_Part form a two line
+; control in the ADM group policy dialog. The two strings effectively form one sentence and should be
+; arranged to look reasonable in the ADM dialog - probably so they are approximately equal in length
+LogonExclusionCheck_Part_1="If profile in the user store contains files or folders"
+LogonExclusionCheck_Part="that have been excluded"
+LogonExclusionCheck_Part_gpfx="Logon Exclusion Check "
+LogonExclusionCheckEnum_Disable="Synchronize excluded files or folders"
+LogonExclusionCheckEnum_Ignore="Ignore excluded files or folders"
+LogonExclusionCheckEnum_Delete="Delete excluded files or folders"
+
+LargeFileHandlingList="Large File Handling - Files to be created as symbolic links"
+LargeFileHandlingList_Part="List of files to be created as symbolic links"
+LargeFileHandlingList_Part_gpfx="Large File Handling List - Files to be created as symbolic links"
+LargeFileHandlingList_Help="Applies to: file-based profile solution only\n\nTo improve logon performance and to process large size files, a symbolic link is created instead of copying files in this list.\n\nYou can use wildcards in policies that refer to files. For example, !ctx_localappdata!\Microsoft\Outlook\*.OST.\n\nTo process the offline folder file (*.ost) of Microsoft Outlook, make sure that the Outlook folder is not excluded for Citrix Profile Management.\n\nNote that those files cannot be accessed in multiple sessions simultaneously."
+
+FSSynchronization="Synchronization"
+
+SyncDirList="Directories to synchronize"
+SyncDirList_Part="List of directories to synchronize"
+SyncDirList_Part_gpfx="Directories to synchronize"
+SyncDirList_Help="Applies to: file-based profile solution only\n\nProfile management synchronizes each user's entire profile between the system it is installed on and the user store.\n\nIt allows you to include subfolders of excluded folders.\n\nPaths on this list should be relative to the user profile.\n\nWildcards are supported but they are not applied recursively.\n\nExamples:\nDesktop\exclude\include specifies the include subfolder of the Desktop\exclude folder.\n\nDesktop\exclude\* specifies all immediate subfolders of the Desktop\exclude folder.\n\nDisabling this setting has the same effect as enabling it and configuring an empty list.\n\nIf this setting is not configured here, the value from the .ini file is used.\n\nIf this setting is not configured here or in the .ini file, only non-excluded folders in the user profile are synchronized."
+
+SyncFileList="Files to synchronize"
+SyncFileList_Part="List of files to synchronize"
+SyncFileList_Part_gpfx="Files to synchronize"
+SyncFileList_Help="Applies to: file-based profile solution only\n\nProfile management synchronizes each user's entire profile between the system it is installed on and the user store.\n\nThis setting allows for the inclusion of files below excluded folders.\n\nPaths on this list should be relative to the user profile. Wildcards are allowed. Wildcards in file names are applied recursively while wildcards in folder names are not.\n\nNote: As of Profile Management 7.15, you can use the vertical bar '|' for applying a policy to only the current folder without propagating it to the subfolders.\n\nExamples:\nAppData\Local\Microsoft\Office\Access.qat specifies a file below a folder excluded in the default configuration.\n\nAppData\Local\MyApp\*.cfg specifies all files with the extension .cfg in the profile folder AppData\Local\MyApp and its subfolders.\n\nAppData\Local\MyApp\*.cfg| specifies all files with the extension .cfg in the profile folder AppData\Local\MyApp.\n\nDownloads\*\b.txt specifies b.txt in any immediate subfolder of the Downloads folder. Note that wildcards in folder names are not applied recursively.\n\nDisabling this setting has the same effect as enabling it and configuring an empty list.\n\nIf this setting is not configured here, the value from the .ini file is used.\n\nIf this setting is not configured here or in the .ini file, only non-excluded files in the user profile are synchronized."
+
+MirrorFoldersList="Folders to mirror"
+MirrorFoldersList_Part="List of folders to mirror"
+MirrorFoldersList_Part_gpfx="Folders to mirror"
+MirrorFoldersList_Help="Applies to: file-based profile solution only\n\nProfile management can mirror a folder relative to the profile's root folder. Use this setting for files whose contents index data and where separate instances of the data are likely to exist. For example, you can mirror the Internet Explorer cookies folder so that index.dat is synchronized with the cookies that it indexes. Be aware that, in these situations the "last write wins" so files in mirrored folders that have been modified in more than one session are overwritten by the last update, resulting in loss of profile changes."
+
+AccelerateFolderMirroring="Accelerate folder mirroring"
+AccelerateFolderMirroring_Help="Applies to: file-based profile solution only\n\nWith both this policy and the Folders to mirror policy enabled, Profile Management stores mirrored folders on a VHDX-based virtual disk. It attaches the virtual disk during logons and detaches it during logoffs. Enabling this policy eliminates the need to copy the folders between the user store and local profiles and accelerates folder mirroring."
+
+;
+; Streamed user profile definitions
+;
+
+PSSettings="Streamed user profiles"
+
+PSEnabled="Profile streaming"
+PSEnabled_Help="Applies to: file-based profile solution only\n\nWith profile streaming, users' profiles are synchronized on the local computer only when they are needed. Registry entries are cached immediately, but files and folders are only cached when accessed by users."
+
+PSForFoldersEnabled="Enable profile streaming for folders"
+PSForFoldersEnabled_Help="Applies to: file-based profile solution only\n\nWith profile streaming for folders enabled, folders are fetched only when they are being accessed. This approach eliminates the need to traverse all folders during user logons."
+
+PSForPendingAreaEnabled="Enable profile streaming for pending area"
+PSForPendingAreaEnabled_Help="Applies to: file-based profile solution only\n\nWith this policy enabled, files in the pending area are fetched to the local profile only when they are requested. Use the policy with the Profile streaming policy to ensure optimum logon experience in concurrent session scenarios.\n\nThe policy applies to folders in the pending area when the Enable profile streaming for folders policy is enabled.\n\nBy default, this policy is disabled. All files and folders in the pending area are fetched to the local profile during logon.\n\nThe pending area is used to ensure profile consistency while profile streaming is enabled. It temporarily stores profile files and folders changed in concurrent sessions."
+
+
+PSAlwaysCache="Always cache"
+PSAlwaysCache_Help="Applies to: file-based profile solution only\n\nOptionally, to enhance the user experience, use this setting with the Profile streaming setting, which imposes a lower limit on the size of files that are streamed. Any files this size or larger are cached as soon as possible after logon. To use the cache entire profile feature, set this limit to zero (which caches all of the profile contents)."
+PSAlwaysCache_Part="Cache files this size or larger (megabytes)"
+PSAlwaysCache_Part_gpfx="Always cache size"
+
+PSMidSessionWriteBack="Active write back"
+PSMidSessionWriteBack_Help="Applies to: file-based profile solution only\n\nWith this setting, files and folders (but not Registry entries) that are modified can be synchronized to the user store in the middle of a session, before logoff.\n\nIf this setting is not configured here, the value from the .ini file is used.\n\nIf this setting is not configured here or in the .ini file, active write back is disabled."
+
+PSMidSessionWriteBackReg="Active write back registry"
+PSMidSessionWriteBackReg_Help="Applies to: file-based profile solution only\n\nLeverage this policy with "Active write back" enabled.\n\nRegistry entries that are modified can be synchronized to the user store in the middle of a session.\n\nIf you do not configure this setting here, the value from the .ini file is used.\n\nIf you do not configure this setting here or in the .ini file, active write back registry is disabled."
+
+PSMidSessionWriteBackSessionLock="Active write back on session lock and disconnection"
+PSMidSessionWriteBackSessionLock_Help="Applies to: file-based profile solution only\n\nUse this policy as an extension to the "Active write back" and "Active write back registry" policies.\n\nWith the "Active write back" policy enabled, by default, files and folders are written back from the local computer to the user store every five minutes. With both this new policy and the "Active write back" policy enabled, files and folders are written back only when a session is locked or disconnected.\n\nWith both the "Active write back" and "Active write back registry" policies enabled, by default, registry entries are written back from the local computer to the user store every five minutes. With this new policy and the "Active write back" and "Active write back registry" policies enabled, registry entries are written back only when a session is locked or disconnected.\n\nIf this setting is not configured here, the value from the .ini file is used.\n\nIf this setting is configured neither here nor in the .ini file, this feature is disabled."
+
+OfflineSupport="Offline profile support"
+OfflineSupport_Help="Applies to: file-based profile solution only\n\nEnables the offline profiles feature. This is intended for computers that are commonly removed from networks, typically laptops or mobile devices not servers or desktops.\n\nIf this setting is not configured here, the value from the .ini file is used.\n\nIf this setting is not configured here or in the .ini file, offline profile support is disabled."
+
+PSPendingLockTimeout="Timeout for pending area lock files (days)"
+PSPendingLockTimeout_Help="Applies to: file-based profile solution only\n\nYou can set a timeout period that frees up users' files so they are written back to the user store from the pending area in the event that the user store remains locked when a server becomes unresponsive (for example, when it goes down). Use this setting to prevent bloat in the pending area and to ensure the user store always contains the most up-to-date files."
+
+PSUserGroups="Streamed user profile groups"
+PSUserGroups_Help="Applies to: file-based profile solution only\n\nEnter one or more Windows user groups.\n\nIf this setting is enabled, only the profiles of those groups' members are streamed. If this setting is disabled, all user groups are processed.\n\nIf this setting is not configured here, the value from the .ini file is used.\n\nIf this setting is not configured here or in the .ini file, all users are processed."
+PSUserGroups_Part="List of user groups with streamed user profiles"
+PSUserGroups_Part_gpfx="Streamed user profile groups"
+
+;
+; Cross Platform definitions
+;
+
+CPSettings="Cross-Platform settings"
+
+CPEnable="Enable cross-platform settings"
+CPEnable_Help="Applies to: both file-based and container-based profile solutions\n\nBy default, to facilitate deployment, cross-platform settings is disabled.\n\nTurn on processing by enabling this setting.\n\nIf this setting is not configured here, the value from the .ini file is used.\n\nIf this setting is not configured here or in the .ini file, no cross-platform settings will be applied."
+
+CPUserGroups="Cross-platform settings user groups"
+CPUserGroups_Help="Applies to: both file-based and container-based profile solutions\n\nEnter one or more Windows user groups.\n\nIf this setting is configured, the cross-platform settings feature of Profile management processes only members of these user groups. If this setting is disabled, all user groups are processed.\n\nIf this setting is not configured here, the value from the .ini file is used.\n\nIf this setting is not configured here or in the .ini file, all user groups are processed."
+CPUserGroups_Part="List of user groups to be processed across platforms"
+CPUserGroups_Part_gpfx="Cross-platform settings user groups"
+
+CPSchemaPath="Path to cross-platform definitions"
+CPSchemaPath_Help="Applies to: both file-based and container-based profile solutions\n\nSpecify a folder where the definition files are located.\n\nIf this setting is not configured here, the value from the .ini file is used.\n\nIf this setting is not configured here or in the .ini file, no cross-platform settings will be applied.\n\nNote:\n* The folder can be local or it can reside on an SMB file share."
+CPSchemaPathData="Path to cross-platform definitions:"
+CPSchemaPathData_gpfx="Path to cross-platform definitions"
+
+CPPath="Path to cross-platform settings store"
+CPPath_Help="Applies to: both file-based and container-based profile solutions\n\nSets the path to the directory in which users' cross-platform settings are saved (cross-platform settings store).\n\nThe path can be an absolute UNC path or a path relative to the home directory.\n\nIn both cases, the following types of variables can be used: system environment variables enclosed in percent signs and attributes of the Active Directory user object enclosed in hashes.\n\nUser environment variables cannot be used, except for %username% and %userdomain%.\n\nIf this setting is disabled, the path Windows\PM_CP is used.\n\nIf this setting is not configured here, the value from the .ini file is used.\n\nIf this setting is not configured here or in the .ini file, the default value Windows\PM_CP is used."
+CPPathData="Path to cross-platform settings store:"
+CPPathData_gpfx="Path to cross-platform settings store"
+
+CPMigrationFromBaseProfileToCPStore="Source for creating cross-platform settings"
+CPMigrationFromBaseProfileToCPStore_Help="Applies to: both file-based and container-based profile solutions\n\nDefault: Disabled\n\nDefinition files contain a set of definitions that configure an application. If the cross-platform settings store contains a definition with no data, or the cached data in the single-platform profile is newer than the definition's data in the store, Profile management only migrates the data from the single-platform profile to the store if you enable this setting."
+
+;
+; XenApp Optimization
+;
+
+XenAppOptimizationSettings="Citrix Virtual Apps Optimization settings"
+XenAppOptimizationEnabled="Enable Citrix Virtual Apps Optimization"
+XenAppOptimizationEnabled_Help="Applies to: file-based profile solution only\n\nWhen you enable this feature, only the settings specific to the published applications a user launches or exits are synchronized.\n\nIf this setting is not configured here, the value from the .ini file is used.\n\nIf this setting is not configured here or in the .ini file, no Citrix Virtual Apps optimization settings will be applied."
+
+XenAppOptimizationDefinitionPath="Path to Citrix Virtual Apps optimization definitions"
+XenAppOptimizationDefinitionPathData="Path to Citrix Virtual Apps optimization definitions:"
+XenAppOptimizationDefinitionPath_Help="Applies to: file-based profile solution only\n\nSpecify a folder where the Citrix Virtual Apps optimization definition files are located.\n\nIf this setting is not configured here, the value from the .ini file is used.\n\nIf this setting is not configured here or in the .ini file, no Citrix Virtual Apps optimization settings will be applied.\n\nNote:\n* The folder can be local or it can reside on an SMB file share."
+
+;
+; Folder Redirection
+;
+
+FolderRedirection="Folder Redirection"
+
+;
+; App Access Control
+;
+AppAccessControlSettings="App Access Control"
+
+; Grant administrator access to the user's redirected folders
+
+FRAdminAccess="Grant administrator access"
+FRAdminAccess_Help="Applies to: file-based profile solution only\n\nBy default, users are granted exclusive access to the contents of their redirected folders.\n\nEnabling this option allows administrator access to the contents of the users redirected folders."
+FRAdminAccess_Part="Grant administrator access"
+FRAdminAccess_Part_gpfx="Grant administrator access"
+
+
+; UNC Path
+; Specifies a UNC path, no need to specify user and folder names as they will be created.
+
+FRAppDataEnum_RedirectUncPath="Redirect to the following UNC path"
+FRDesktopEnum_RedirectUncPath="Redirect to the following UNC path"
+FRStartMenuEnum_RedirectUncPath="Redirect to the following UNC path"
+FRDocumentsEnum_RedirectUncPath="Redirect to the following UNC path"
+FRPicturesEnum_RedirectUncPath="Redirect to the following UNC path"
+FRMusicEnum_RedirectUncPath="Redirect to the following UNC path"
+FRVideosEnum_RedirectUncPath="Redirect to the following UNC path"
+FRFavoritesEnum_RedirectUncPath="Redirect to the following UNC path"
+FRContactsEnum_RedirectUncPath="Redirect to the following UNC path"
+FRDownloadsEnum_RedirectUncPath="Redirect to the following UNC path"
+FRLinksEnum_RedirectUncPath="Redirect to the following UNC path"
+FRSearchesEnum_RedirectUncPath="Redirect to the following UNC path"
+FRSavedGamesEnum_RedirectUncPath="Redirect to the following UNC path"
+
+; Include Domain name in UNC path
+
+FRIncDomainName="Include domain name"
+FRIncDomainName_Help="Applies to: file-based profile solution only\n\nEnabling this option will include the %userdomain% environment variable as part of the UNC path."
+FRIncDomainName_Part="Include domain name in UNC path"
+FRIncDomainName_Part_gpfx="Include domain name"
+
+; Relative Paths
+; No need to specify any part of path, the default language agnostic folder name will be used.
+; If a path is specified it will be ignored.
+
+FRDocumentsEnum_RedirectRelativeHome="Redirect to the user's home directory"
+
+FRPicturesEnum_RedirectRelativeDocuments="Redirect relative to Documents folder"
+FRMusicEnum_RedirectRelativeDocuments="Redirect relative to Documents folder"
+FRVideosEnum_RedirectRelativeDocuments="Redirect relative to Documents folder"
+
+; Redirected Folders
+
+FRAppData="AppData(Roaming)"
+FRAppDataEnable="Redirect the AppData(Roaming) folder"
+FRAppDataEnable_Help="Applies to: file-based profile solution only\n\nLets you specify how to redirect the AppData(Roaming) folder. To do so, select Enabled and then type the redirected path.\nCaution: Potential data loss might occur. See below for details.\nYou might want to modify the path after the policy takes effect. However, consider potential data loss before you do so. The data contained in the redirected folder might be deleted if the modified path points to the same location as the previous path.\nFor example, suppose you specify the Contacts path as path1. Later, you change path1 to path2. If path1 and path2 point to the same location, all data contained in the redirected folder is deleted after the policy takes effect.\nTo avoid potential data loss, complete the following steps:\n  1. Apply Microsoft policy to machines where Profile Management is running through Active Directory Group Policy Objects. To do so, open the Group Policy Management Console, navigate to Computer Configuration > Administrative Templates > Windows Components > File Explorer, and then enable Verify old and new Folder Redirection targets point to the same share before redirecting.\n  2. If applicable, apply hotfixes to machines where Profile Management is running. For details, see https://support.microsoft.com/en-us/help/977229 and https://support.microsoft.com/en-us/help/2799904."
+FRAppData_Part="Redirection settings for AppData(Roaming)"
+FRAppDataPath_Help="Applies to: file-based profile solution only\n\nSpecifies the redirected location of the AppData(Roaming) folder as a UNC path.\n\nSelecting the 'Include Domain Name' option will include the %userdomain% environment variable as part of the UNC path."
+FRAppDataPath_Part="Path"
+FRAppDataPath_Part_gpfx="AppData(Roaming) path"
+
+FRDesktop="Desktop"
+FRDesktopEnable="Redirect the Desktop folder"
+FRDesktopEnable_Help="Applies to: file-based profile solution only\n\nLets you specify how to redirect the Desktop folder. To do so, select Enabled and then type the redirected path.\nCaution: Potential data loss might occur. See below for details.\nYou might want to modify the path after the policy takes effect. However, consider potential data loss before you do so. The data contained in the redirected folder might be deleted if the modified path points to the same location as the previous path.\nFor example, suppose you specify the Contacts path as path1. Later, you change path1 to path2. If path1 and path2 point to the same location, all data contained in the redirected folder is deleted after the policy takes effect.\nTo avoid potential data loss, complete the following steps:\n  1. Apply Microsoft policy to machines where Profile Management is running through Active Directory Group Policy Objects. To do so, open the Group Policy Management Console, navigate to Computer Configuration > Administrative Templates > Windows Components > File Explorer, and then enable Verify old and new Folder Redirection targets point to the same share before redirecting.\n  2. If applicable, apply hotfixes to machines where Profile Management is running. For details, see https://support.microsoft.com/en-us/help/977229 and https://support.microsoft.com/en-us/help/2799904."
+FRDesktop_Part="Redirection settings for Desktop"
+FRDesktopPath_Help="Applies to: file-based profile solution only\n\nSpecifies the redirected location of the Desktop folder as a UNC path.\n\nSelecting the 'Include Domain Name' option will include the %userdomain% environment variable as part of the UNC path."
+FRDesktopPath_Part="Path"
+FRDesktopPath_Part_gpfx="Desktop path"
+
+FRStartMenu="Start Menu"
+FRStartMenuEnable="Redirect the Start Menu folder"
+FRStartMenuEnable_Help="Applies to: file-based profile solution only\n\nLets you specify how to redirect the Start Menu folder. To do so, select Enabled and then type the redirected path.\nCaution: Potential data loss might occur. See below for details.\nYou might want to modify the path after the policy takes effect. However, consider potential data loss before you do so. The data contained in the redirected folder might be deleted if the modified path points to the same location as the previous path.\nFor example, suppose you specify the Contacts path as path1. Later, you change path1 to path2. If path1 and path2 point to the same location, all data contained in the redirected folder is deleted after the policy takes effect.\nTo avoid potential data loss, complete the following steps:\n  1. Apply Microsoft policy to machines where Profile Management is running through Active Directory Group Policy Objects. To do so, open the Group Policy Management Console, navigate to Computer Configuration > Administrative Templates > Windows Components > File Explorer, and then enable Verify old and new Folder Redirection targets point to the same share before redirecting.\n  2. If applicable, apply hotfixes to machines where Profile Management is running. For details, see https://support.microsoft.com/en-us/help/977229 and https://support.microsoft.com/en-us/help/2799904."
+FRStartMenu_Part="Redirection settings for Start Menu"
+FRStartMenuPath_Help="Applies to: file-based profile solution only\n\nSpecifies the redirected location of the Start Menu folder as a UNC path.\n\nSelecting the 'Include Domain Name' option will include the %userdomain% environment variable as part of the UNC path."
+FRStartMenuPath_Part="Path"
+FRStartMenuPath_Part_gpfx="Start Menu path"
+
+FRDocuments="Documents"
+FRDocumentsEnable="Redirect the Documents folder"
+FRDocumentsEnable_Help="Applies to: file-based profile solution only\n\nLets you specify how to redirect the Documents folder. To do so, select Enabled and then type the redirected path.\nCaution: Potential data loss might occur. See below for details.\nYou might want to modify the path after the policy takes effect. However, consider potential data loss before you do so. The data contained in the redirected folder might be deleted if the modified path points to the same location as the previous path.\nFor example, suppose you specify the Contacts path as path1. Later, you change path1 to path2. If path1 and path2 point to the same location, all data contained in the redirected folder is deleted after the policy takes effect.\nTo avoid potential data loss, complete the following steps:\n  1. Apply Microsoft policy to machines where Profile Management is running through Active Directory Group Policy Objects. To do so, open the Group Policy Management Console, navigate to Computer Configuration > Administrative Templates > Windows Components > File Explorer, and then enable Verify old and new Folder Redirection targets point to the same share before redirecting.\n  2. If applicable, apply hotfixes to machines where Profile Management is running. For details, see https://support.microsoft.com/en-us/help/977229 and https://support.microsoft.com/en-us/help/2799904."
+FRDocuments_Part="Redirection settings for Documents"
+FRDocumentsPath_Help="Applies to: file-based profile solution only\n\nSpecifies the redirected location of the Documents folder, either as a UNC path, or a path relative to the home directory.\n\nSelecting the 'Include Domain Name' option will include the %userdomain% environment variable as part of the UNC path."
+FRDocumentsPath_Part="Path"
+FRDocumentsPath_Part_gpfx="Documents path"
+
+FRPictures="Pictures"
+FRPicturesEnable="Redirect the Pictures folder"
+FRPicturesEnable_Help="Applies to: file-based profile solution only\n\nLets you specify how to redirect the Pictures folder. To do so, select Enabled and then type the redirected path.\nCaution: Potential data loss might occur. See below for details.\nYou might want to modify the path after the policy takes effect. However, consider potential data loss before you do so. The data contained in the redirected folder might be deleted if the modified path points to the same location as the previous path.\nFor example, suppose you specify the Contacts path as path1. Later, you change path1 to path2. If path1 and path2 point to the same location, all data contained in the redirected folder is deleted after the policy takes effect.\nTo avoid potential data loss, complete the following steps:\n  1. Apply Microsoft policy to machines where Profile Management is running through Active Directory Group Policy Objects. To do so, open the Group Policy Management Console, navigate to Computer Configuration > Administrative Templates > Windows Components > File Explorer, and then enable Verify old and new Folder Redirection targets point to the same share before redirecting.\n  2. If applicable, apply hotfixes to machines where Profile Management is running. For details, see https://support.microsoft.com/en-us/help/977229 and https://support.microsoft.com/en-us/help/2799904."
+FRPictures_Part="Redirection settings for Pictures"
+FRPicturesPath_Help="Applies to: file-based profile solution only\n\nSpecifies the redirected location of the Pictures folder, either as a UNC path, or a path relative to the Documents folder.\n\nSelecting the 'Include Domain Name' option will include the %userdomain% environment variable as part of the UNC path."
+FRPicturesPath_Part="Path"
+FRPicturesPath_Part_gpfx="Pictures path"
+
+FRMusic="Music"
+FRMusicEnable="Redirect the Music folder"
+FRMusicEnable_Help="Applies to: file-based profile solution only\n\nLets you specify how to redirect the Music folder. To do so, select Enabled and then type the redirected path.\nCaution: Potential data loss might occur. See below for details.\nYou might want to modify the path after the policy takes effect. However, consider potential data loss before you do so. The data contained in the redirected folder might be deleted if the modified path points to the same location as the previous path.\nFor example, suppose you specify the Contacts path as path1. Later, you change path1 to path2. If path1 and path2 point to the same location, all data contained in the redirected folder is deleted after the policy takes effect.\nTo avoid potential data loss, complete the following steps:\n  1. Apply Microsoft policy to machines where Profile Management is running through Active Directory Group Policy Objects. To do so, open the Group Policy Management Console, navigate to Computer Configuration > Administrative Templates > Windows Components > File Explorer, and then enable Verify old and new Folder Redirection targets point to the same share before redirecting.\n  2. If applicable, apply hotfixes to machines where Profile Management is running. For details, see https://support.microsoft.com/en-us/help/977229 and https://support.microsoft.com/en-us/help/2799904."
+FRMusic_Part="Redirection settings for Music"
+FRMusicPath_Help="Applies to: file-based profile solution only\n\nSpecifies the redirected location of the Music folder, either as a UNC path, or a path relative to the Documents folder.\n\nSelecting the 'Include Domain Name' option will include the %userdomain% environment variable as part of the UNC path."
+FRMusicPath_Part="Path"
+FRMusicPath_Part_gpfx="Music path"
+
+FRVideos="Videos"
+FRVideosEnable="Redirect the Videos folder"
+FRVideosEnable_Help="Applies to: file-based profile solution only\n\nLets you specify how to redirect the Videos folder. To do so, select Enabled and then type the redirected path.\nCaution: Potential data loss might occur. See below for details.\nYou might want to modify the path after the policy takes effect. However, consider potential data loss before you do so. The data contained in the redirected folder might be deleted if the modified path points to the same location as the previous path.\nFor example, suppose you specify the Contacts path as path1. Later, you change path1 to path2. If path1 and path2 point to the same location, all data contained in the redirected folder is deleted after the policy takes effect.\nTo avoid potential data loss, complete the following steps:\n  1. Apply Microsoft policy to machines where Profile Management is running through Active Directory Group Policy Objects. To do so, open the Group Policy Management Console, navigate to Computer Configuration > Administrative Templates > Windows Components > File Explorer, and then enable Verify old and new Folder Redirection targets point to the same share before redirecting.\n  2. If applicable, apply hotfixes to machines where Profile Management is running. For details, see https://support.microsoft.com/en-us/help/977229 and https://support.microsoft.com/en-us/help/2799904."
+FRVideos_Part="Redirection settings for Videos"
+FRVideosPath_Help="Applies to: file-based profile solution only\n\nSpecifies the redirected location of the Videos folder, either as a UNC path, or a path relative to the Documents folder.\n\nSelecting the 'Include Domain Name' option will include the %userdomain% environment variable as part of the UNC path."
+FRVideosPath_Part="Path"
+FRVideosPath_Part_gpfx="Videos path"
+
+FRFavorites="Favorites"
+FRFavoritesEnable="Redirect the Favorites folder"
+FRFavoritesEnable_Help="Applies to: file-based profile solution only\n\nLets you specify how to redirect the Favorites folder. To do so, select Enabled and then type the redirected path.\nCaution: Potential data loss might occur. See below for details.\nYou might want to modify the path after the policy takes effect. However, consider potential data loss before you do so. The data contained in the redirected folder might be deleted if the modified path points to the same location as the previous path.\nFor example, suppose you specify the Contacts path as path1. Later, you change path1 to path2. If path1 and path2 point to the same location, all data contained in the redirected folder is deleted after the policy takes effect.\nTo avoid potential data loss, complete the following steps:\n  1. Apply Microsoft policy to machines where Profile Management is running through Active Directory Group Policy Objects. To do so, open the Group Policy Management Console, navigate to Computer Configuration > Administrative Templates > Windows Components > File Explorer, and then enable Verify old and new Folder Redirection targets point to the same share before redirecting.\n  2. If applicable, apply hotfixes to machines where Profile Management is running. For details, see https://support.microsoft.com/en-us/help/977229 and https://support.microsoft.com/en-us/help/2799904."
+FRFavorites_Part="Redirection settings for Favorites"
+FRFavoritesPath_Help="Applies to: file-based profile solution only\n\nSpecifies the redirected location of the Favorites folder as a UNC path.\n\nSelecting the 'Include Domain Name' option will include the %userdomain% environment variable as part of the UNC path."
+FRFavoritesPath_Part="Path"
+FRFavoritesPath_Part_gpfx="Favorites path"
+
+FRContacts="Contacts"
+FRContactsEnable="Redirect the Contacts folder"
+FRContactsEnable_Help="Applies to: file-based profile solution only\n\nLets you specify how to redirect the Contacts folder. To do so, select Enabled and then type the redirected path.\nCaution: Potential data loss might occur. See below for details.\nYou might want to modify the path after the policy takes effect. However, consider potential data loss before you do so. The data contained in the redirected folder might be deleted if the modified path points to the same location as the previous path.\nFor example, suppose you specify the Contacts path as path1. Later, you change path1 to path2. If path1 and path2 point to the same location, all data contained in the redirected folder is deleted after the policy takes effect.\nTo avoid potential data loss, complete the following steps:\n  1. Apply Microsoft policy to machines where Profile Management is running through Active Directory Group Policy Objects. To do so, open the Group Policy Management Console, navigate to Computer Configuration > Administrative Templates > Windows Components > File Explorer, and then enable Verify old and new Folder Redirection targets point to the same share before redirecting.\n  2. If applicable, apply hotfixes to machines where Profile Management is running. For details, see https://support.microsoft.com/en-us/help/977229 and https://support.microsoft.com/en-us/help/2799904."
+FRContacts_Part="Redirection settings for Contacts"
+FRContactsPath_Help="Applies to: file-based profile solution only\n\nSpecifies the redirected location of the Contacts folder as a UNC path.\n\nSelecting the 'Include Domain Name' option will include the %userdomain% environment variable as part of the UNC path."
+FRContactsPath_Part="Path"
+FRContactsPath_Part_gpfx="Contacts path"
+
+FRDownloads="Downloads"
+FRDownloadsEnable="Redirect the Downloads folder"
+FRDownloadsEnable_Help="Applies to: file-based profile solution only\n\nLets you specify how to redirect the Downloads folder. To do so, select Enabled and then type the redirected path.\nCaution: Potential data loss might occur. See below for details.\nYou might want to modify the path after the policy takes effect. However, consider potential data loss before you do so. The data contained in the redirected folder might be deleted if the modified path points to the same location as the previous path.\nFor example, suppose you specify the Contacts path as path1. Later, you change path1 to path2. If path1 and path2 point to the same location, all data contained in the redirected folder is deleted after the policy takes effect.\nTo avoid potential data loss, complete the following steps:\n  1. Apply Microsoft policy to machines where Profile Management is running through Active Directory Group Policy Objects. To do so, open the Group Policy Management Console, navigate to Computer Configuration > Administrative Templates > Windows Components > File Explorer, and then enable Verify old and new Folder Redirection targets point to the same share before redirecting.\n  2. If applicable, apply hotfixes to machines where Profile Management is running. For details, see https://support.microsoft.com/en-us/help/977229 and https://support.microsoft.com/en-us/help/2799904."
+FRDownloads_Part="Redirection settings for Downloads"
+FRDownloadsPath_Help="Applies to: file-based profile solution only\n\nSpecifies the redirected location of the Downloads folder as a UNC path.\n\nSelecting the 'Include Domain Name' option will include the %userdomain% environment variable as part of the UNC path."
+FRDownloadsPath_Part="Path"
+FRDownloadsPath_Part_gpfx="Downloads path"
+
+FRLinks="Links"
+FRLinksEnable="Redirect the Links folder"
+FRLinksEnable_Help="Applies to: file-based profile solution only\n\nLets you specify how to redirect the Links folder. To do so, select Enabled and then type the redirected path.\nCaution: Potential data loss might occur. See below for details.\nYou might want to modify the path after the policy takes effect. However, consider potential data loss before you do so. The data contained in the redirected folder might be deleted if the modified path points to the same location as the previous path.\nFor example, suppose you specify the Contacts path as path1. Later, you change path1 to path2. If path1 and path2 point to the same location, all data contained in the redirected folder is deleted after the policy takes effect.\nTo avoid potential data loss, complete the following steps:\n  1. Apply Microsoft policy to machines where Profile Management is running through Active Directory Group Policy Objects. To do so, open the Group Policy Management Console, navigate to Computer Configuration > Administrative Templates > Windows Components > File Explorer, and then enable Verify old and new Folder Redirection targets point to the same share before redirecting.\n  2. If applicable, apply hotfixes to machines where Profile Management is running. For details, see https://support.microsoft.com/en-us/help/977229 and https://support.microsoft.com/en-us/help/2799904."
+FRLinks_Part="Redirection settings for Links"
+FRLinksPath_Help="Applies to: file-based profile solution only\n\nSpecifies the redirected location of the Links folder as a UNC path.\n\nSelecting the 'Include Domain Name' option will include the %userdomain% environment variable as part of the UNC path."
+FRLinksPath_Part="Path"
+FRLinksPath_Part_gpfx="Links path"
+
+FRSearches="Searches"
+FRSearchesEnable="Redirect the Searches folder"
+FRSearchesEnable_Help="Applies to: file-based profile solution only\n\nLets you specify how to redirect the Searches folder. To do so, select Enabled and then type the redirected path.\nCaution: Potential data loss might occur. See below for details.\nYou might want to modify the path after the policy takes effect. However, consider potential data loss before you do so. The data contained in the redirected folder might be deleted if the modified path points to the same location as the previous path.\nFor example, suppose you specify the Contacts path as path1. Later, you change path1 to path2. If path1 and path2 point to the same location, all data contained in the redirected folder is deleted after the policy takes effect.\nTo avoid potential data loss, complete the following steps:\n  1. Apply Microsoft policy to machines where Profile Management is running through Active Directory Group Policy Objects. To do so, open the Group Policy Management Console, navigate to Computer Configuration > Administrative Templates > Windows Components > File Explorer, and then enable Verify old and new Folder Redirection targets point to the same share before redirecting.\n  2. If applicable, apply hotfixes to machines where Profile Management is running. For details, see https://support.microsoft.com/en-us/help/977229 and https://support.microsoft.com/en-us/help/2799904."
+FRSearches_Part="Redirection settings for Searches"
+FRSearchesPath_Help="Applies to: file-based profile solution only\n\nSpecifies the redirected location of the Searches folder as a UNC path.\n\nSelecting the 'Include Domain Name' option will include the %userdomain% environment variable as part of the UNC path."
+FRSearchesPath_Part="Path"
+FRSearchesPath_Part_gpfx="Searches path"
+
+FRSavedGames="Saved Games"
+FRSavedGamesEnable="Redirect the Saved Games folder"
+FRSavedGamesEnable_Help="Applies to: file-based profile solution only\n\nLets you specify how to redirect the Saved Games folder. To do so, select Enabled and then type the redirected path.\nCaution: Potential data loss might occur. See below for details.\nYou might want to modify the path after the policy takes effect. However, consider potential data loss before you do so. The data contained in the redirected folder might be deleted if the modified path points to the same location as the previous path.\nFor example, suppose you specify the Contacts path as path1. Later, you change path1 to path2. If path1 and path2 point to the same location, all data contained in the redirected folder is deleted after the policy takes effect.\nTo avoid potential data loss, complete the following steps:\n  1. Apply Microsoft policy to machines where Profile Management is running through Active Directory Group Policy Objects. To do so, open the Group Policy Management Console, navigate to Computer Configuration > Administrative Templates > Windows Components > File Explorer, and then enable Verify old and new Folder Redirection targets point to the same share before redirecting.\n  2. If applicable, apply hotfixes to machines where Profile Management is running. For details, see https://support.microsoft.com/en-us/help/977229 and https://support.microsoft.com/en-us/help/2799904."
+FRSavedGames_Part="Redirection settings for Saved Games"
+FRSavedGamesPath_Help="Applies to: file-based profile solution only\n\nSpecifies the redirected location of the Saved Games folder as a UNC path.\n\nSelecting the 'Include Domain Name' option will include the %userdomain% environment variable as part of the UNC path."
+FRSavedGamesPath_Part="Path"
+FRSavedGamesPath_Part_gpfx="Saved Games path"
+
+;
+; Strings used by the GPFS/RESX files
+; Use policyname_AllowedDescription or policyname_ProhibitedDescription
+; to override the setting for individual policies.
+;
+GPFXDefaultUIEnabledString="This setting will be enabled."
+GPFXDefaultUIDisabledString="This setting will be disabled."
+GPFXDefaultDirPrefix="UPM - "
+GPFXDefaultRegPrefix="UPM - "
+GPFXDefaultForListBox="Note: Use Enter to separate multiple entries."
+;
+; Virtual categories added for GPFX files. Must start with "GPFXCategory_"
+;
+GPFXCategory_BasicSettings="Basic settings"
+GPFXCategory_FRCommonSettings="Common settings"
+GPFXCategory_FSExclusions="Exclusions"
+GPFXCategory_DefaultFSExclusions="Default Exclusions"
+GPFXCategory_DefaultREGExclusions="Default Exclusions"
+
+SpinValidationMessage="The value must be between {0} and {1}."
+
+; **********************************
+; Do not translate the strings below
+; **********************************
+
+; Do not include the following policies in the generated GPFX policies
+ProcessedGroups_exclude_gpfx="TRUE"
+ExcludedGroups_exclude_gpfx="TRUE"
+ExclusionList_exclude_gpfx="TRUE"
+IncludeListRegistry_exclude_gpfx="TRUE"
+ExclusionListSyncFiles_exclude_gpfx="TRUE"
+ExclusionListSyncDir_exclude_gpfx="TRUE"
+SyncDirList_exclude_gpfx="TRUE"
+SyncFileList_exclude_gpfx="TRUE"
+MirrorFoldersList_exclude_gpfx="TRUE"
+PSUserGroups_exclude_gpfx="TRUE"
+CPUserGroups_exclude_gpfx="TRUE"
+StreamingExclusionList_exclude_gpfx="TRUE"
+LastKnownGoodRegistry_default_enable_gpfx="TRUE"
+CEIPEnabled_default_enable_gpfx="TRUE"
+EnableVolumeReattach_default_enable_gpfx="TRUE"
+PSAlwaysCache_Part_unit_gpfx="MB"
+LargeFileHandlingList_exclude_gpfx="TRUE"
+MultiSiteReplication_exclude_gpfx="TRUE"
+ProfileContainer_exclude_gpfx="TRUE"
+ProfileContainerExclusionListDir_exclude_gpfx="TRUE"
+ProfileContainerInclusionListDir_exclude_gpfx="TRUE"
+ProfileContainerExclusionListFile_exclude_gpfx="TRUE"
+ProfileContainerInclusionListFile_exclude_gpfx="TRUE"
+MigrateWindowsProfilesToUserStore_exclude_gpfx="TRUE"
+OneDriveContainer_exclude_gpfx="TRUE"
+SharedStoreFileInclusionList_exclude_gpfx="TRUE"
+SharedStoreFileExclusionList_exclude_gpfx="TRUE"
+GroupsToAccessProfileContainer_exclude_gpfx="TRUE"
+;
+; Extra levels of categories for GPFX policy settings - not required for ADM(X)
+ServiceActive_gpfx_category="BasicSettings"
+ProcessedGroups_gpfx_category="BasicSettings"
+ExcludedGroups_gpfx_category="BasicSettings"
+ProcessAdmins_gpfx_category="BasicSettings"
+DATPath_gpfx_category="BasicSettings"
+MigrateUserStore_gpfx_category="BasicSettings"
+PSMidSessionWriteBack_gpfx_category="BasicSettings"
+PSMidSessionWriteBackReg_gpfx_category="BasicSettings"
+PSMidSessionWriteBackSessionLock_gpfx_category="BasicSettings"
+OfflineSupport_gpfx_category="BasicSettings"
+FRAdminAccess_gpfx_category="FRCommonSettings"
+FRIncDomainName_gpfx_category="FRCommonSettings"
+ExclusionListSyncFiles_gpfx_category="FSExclusions"
+ExclusionListSyncDir_gpfx_category="FSExclusions"
+DefaultExclusionList_gpfx_category="DefaultREGExclusions"
+ExclusionDefaultReg01_gpfx_category="DefaultREGExclusions"
+ExclusionDefaultReg02_gpfx_category="DefaultREGExclusions"
+ExclusionDefaultReg03_gpfx_category="DefaultREGExclusions"
+DefaultExclusionListSyncDir_gpfx_category="DefaultFSExclusions"
+ExclusionDefaultDir01_gpfx_category="DefaultFSExclusions"
+ExclusionDefaultDir02_gpfx_category="DefaultFSExclusions"
+ExclusionDefaultDir03_gpfx_category="DefaultFSExclusions"
+ExclusionDefaultDir04_gpfx_category="DefaultFSExclusions"
+ExclusionDefaultDir05_gpfx_category="DefaultFSExclusions"
+ExclusionDefaultDir06_gpfx_category="DefaultFSExclusions"
+ExclusionDefaultDir07_gpfx_category="DefaultFSExclusions"
+ExclusionDefaultDir08_gpfx_category="DefaultFSExclusions"
+ExclusionDefaultDir09_gpfx_category="DefaultFSExclusions"
+ExclusionDefaultDir10_gpfx_category="DefaultFSExclusions"
+ExclusionDefaultDir11_gpfx_category="DefaultFSExclusions"
+ExclusionDefaultDir12_gpfx_category="DefaultFSExclusions"
+ExclusionDefaultDir13_gpfx_category="DefaultFSExclusions"
+ExclusionDefaultDir14_gpfx_category="DefaultFSExclusions"
+ExclusionDefaultDir15_gpfx_category="DefaultFSExclusions"
+ExclusionDefaultDir16_gpfx_category="DefaultFSExclusions"
+ExclusionDefaultDir17_gpfx_category="DefaultFSExclusions"
+ExclusionDefaultDir18_gpfx_category="DefaultFSExclusions"
+ExclusionDefaultDir19_gpfx_category="DefaultFSExclusions"
+ExclusionDefaultDir20_gpfx_category="DefaultFSExclusions"
+ExclusionDefaultDir21_gpfx_category="DefaultFSExclusions"
+ExclusionDefaultDir22_gpfx_category="DefaultFSExclusions"
+ExclusionDefaultDir23_gpfx_category="DefaultFSExclusions"
+ExclusionDefaultDir24_gpfx_category="DefaultFSExclusions"
+ExclusionDefaultDir25_gpfx_category="DefaultFSExclusions"
+ExclusionDefaultDir26_gpfx_category="DefaultFSExclusions"
+ExclusionDefaultDir27_gpfx_category="DefaultFSExclusions"
+ExclusionDefaultDir28_gpfx_category="DefaultFSExclusions"
+ExclusionDefaultDir29_gpfx_category="DefaultFSExclusions"
+ExclusionDefaultDir30_gpfx_category="DefaultFSExclusions"
+ProfileContainer_customized_gpfx_category="UserProfileManager\FileSystemSettings\FSSynchronization"
+

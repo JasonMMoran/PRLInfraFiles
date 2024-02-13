@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<metadata
+  xmlns="http://www.citrix.com/AppReceiver"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.citrix.com/AppReceiver MetaData.xsd" version="1.2">
+
+<plugin product="339EC2C6-76BF-40C5-ADFF-CE65E75D5572"
+  productName="Profile management plug-in">
+
+  <platforms>Vista WS08 Win7</platforms>
+
+  <!-- Released Version of Plugin (Installer) -->
+  <version>23.11.0.23</version>
+
+  <!-- URL to EULA text -->
+  <EULAlocation>http://www.citrix.com/profile_management_EULA</EULAlocation>
+
+  <!-- URL to Readme -->
+  <READMElocation>http://support.citrix.com/proddocs/topic/technologies/upm-wrapper-all-versions.html</READMElocation>
+
+  <!-- Installer Filename -->
+  <installerFilename>profilemgt_x86.msi</installerFilename>
+
+  <!-- Is this plugin a fully fledged, product level 'plugin'   -->
+  <fullPlugin>true</fullPlugin>
+
+  <!-- Install string & Attributes -->
+  <autoInstall reboot="true">
+    <command>msiexec /I $INSTALLERFILENAME $SILENTSWITCH $PARAMETERS</command>
+        <commandParameters> REBOOT=ReallySuppress</commandParameters>
+    <silentSwitch>/qn</silentSwitch>
+    <startAfterInstall>false</startAfterInstall>
+    <lessSilentSwitch>/qb</lessSilentSwitch>
+  </autoInstall>
+
+  <!-- Uninstall string & Attributes -->
+  <autoUninstall reboot="false">
+    <command>msiexec.exe /X {339EC2C6-76BF-40C5-ADFF-CE65E75D5572} $SILENTSWITCH</command>
+    <silentSwitch>/qn</silentSwitch>
+  </autoUninstall>
+
+
+  <!-- Upgrade string & Attributes -->
+  <autoUpgrade reboot="true" canUpgradeWhilePluginRunning="false" >
+    <command>msiexec /I $INSTALLERFILENAME $SILENTSWITCH $PARAMETERS</command>
+        <commandParameters> REBOOT=ReallySuppress</commandParameters>
+    <silentSwitch>/qn</silentSwitch>
+    <startAfterInstall>false</startAfterInstall>
+    <lessSilentSwitch>/qb</lessSilentSwitch>
+  </autoUpgrade>
+
+  <adminOptions>demand</adminOptions>
+
+  <!-- Informed Consent / Plugin Description  -->
+  <pluginDescriptions>
+    <descriptions language="en" >
+      <description>Citrix Profile management manages and enhances the performance of Windows user profiles.
+      </description>
+      <shortdescription>Citrix Profile management</shortdescription>
+    </descriptions>
+  </pluginDescriptions>
+
+  <!-- List of Languages the plugin supports  -->
+  <pluginLanguages> en de fr ja es zh-CN </pluginLanguages>
+
+  <!-- Rules use to detect currently installed version of plugin - see AR Client SDK doc for more details  -->
+  <detectCurrentVersionRulesList>
+   <detectRule>UPGRADECODE:001464AD5142F1745AE23624EAD9C9CD</detectRule> 
+  </detectCurrentVersionRulesList>
+
+  <!-- There are no other plugins on which this plugin depends at run time, if this was streaming then there would
+ be an entry for PNA  -->
+
+</plugin>
+
+</metadata>

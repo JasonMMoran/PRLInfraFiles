@@ -1,0 +1,556 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Copyright 2011 Citrix Systems, Inc. All Rights Reserved. -->
+
+<GroupDefinitions Version="4.0.0.0" GUID="748E63D3-426E-4796-9C32-420B25DB2D9F">
+
+	<!-- Microsoft Office 2010 Settings -->
+
+	<Group Name="Microsoft Office 2010 Common" GUID="0FCCCF29-0A0E-482d-A77E-3F39A8A854A6">
+
+		<Object Name="Software\Microsoft\Office\14.0\Clip Organizer" GUID="637EC13C-2D47-4142-A8EB-3CEA6D53522A">
+			<Platform>
+				<RegKey>
+					<Key>Software\Microsoft\Office\14.0\Clip Organizer</Key>
+					<Recurse/>
+				</RegKey>
+			</Platform>
+		</Object>
+
+		<Object Name="Software\Microsoft\Office\14.0\Clip OrganizerDB" GUID="3C896310-10C4-4e5f-90C7-A79F4E653F81">
+			<Platform>
+				<RegKey>
+					<Key>Software\Microsoft\Office\14.0\Clip OrganizerDB</Key>
+					<Recurse/>
+				</RegKey>
+			</Platform>
+		</Object>
+
+		<Object Name="Software\Microsoft\Office\14.0\Common" GUID="7F8615D0-5E63-4bd0-982D-B7740559C6F9">
+			<Platform>
+				<RegKey>
+					<Key>Software\Microsoft\Office\14.0\Common</Key>
+					<Recurse/>
+				</RegKey>
+			</Platform>
+		</Object>
+
+		<Object Name="Software\Microsoft\Office\14.0\OIS" GUID="1B43DE3F-EC9C-463c-AC19-CD01D00219B6">
+			<Platform>
+				<RegKey>
+					<Key>Software\Microsoft\Office\14.0\OIS</Key>
+					<Recurse/>
+				</RegKey>
+			</Platform>
+		</Object>
+
+		<Object Name="Software\Microsoft\Office\14.0\Picture Manager" GUID="8093A099-0EC0-4129-A897-959501B506C6">
+			<Platform>
+				<RegKey>
+					<Key>Software\Microsoft\Office\14.0\Picture Manager</Key>
+					<Recurse/>
+				</RegKey>
+			</Platform>
+		</Object>
+
+		<Object Name="Software\Microsoft\Office\14.0\Registration" GUID="AD9FC4C7-1245-4fe6-865C-40A9CE1024E1">
+			<Platform>
+				<RegKey>
+					<Key>Software\Microsoft\Office\14.0\Registration</Key>
+					<Recurse/>
+				</RegKey>
+			</Platform>
+		</Object>
+
+		<Object Name="Software\Microsoft\Office\14.0\SyncCenter" GUID="79B30EF4-4DC9-43e2-977E-EBFCB02B5C15">
+			<Platform>
+				<RegKey>
+					<Key>Software\Microsoft\Office\14.0\SyncCenter</Key>
+					<Recurse/>
+				</RegKey>
+			</Platform>
+		</Object>
+
+		<Object Name="Software\Microsoft\Office\14.0\User Settings" GUID="45E55ED7-659B-4106-B7C6-E70456E7D138">
+			<Platform>
+				<RegKey>
+					<Key>Software\Microsoft\Office\14.0\User Settings</Key>
+					<Recurse/>
+				</RegKey>
+			</Platform>
+		</Object>
+
+		<Object Name="Software\Microsoft\Office\14.0\Workspaces" GUID="C0421C8B-1BDE-4643-ABF7-1FC0BA401FF4">
+			<Platform>
+				<RegKey>
+					<Key>Software\Microsoft\Office\14.0\Workspaces</Key>
+					<Recurse/>
+				</RegKey>
+			</Platform>
+		</Object>
+
+		<Object Name="Software\Microsoft\Office\Common" GUID="FAE181B2-9EC9-4fba-A6CD-D127E39D0F86">
+			<Platform>
+				<RegKey>
+					<Key>Software\Microsoft\Office\Common</Key>
+					<Recurse/>
+				</RegKey>
+			</Platform>
+		</Object>
+
+		<Object Name="Software\Microsoft\Shared" GUID="618477D9-9BE5-463f-8DCF-BAAACC45FE03">
+			<Platform>
+				<RegKey>
+					<Key>Software\Microsoft\Shared</Key>
+					<Recurse/>
+				</RegKey>
+			</Platform>
+		</Object>
+
+		<Object Name="Software\Microsoft\Shared Tools\Font Mapping" GUID="FA625F2E-E278-4afe-B903-11AE6E356598">
+			<Platform>
+				<RegKey>
+					<Key>Software\Microsoft\Shared Tools\Font Mapping</Key>
+					<Recurse/>
+				</RegKey>
+			</Platform>
+		</Object>
+
+		<Object Name="Software\Microsoft\Shared Tools\Panose" GUID="EAD46029-44EF-4bbd-8748-4FB3D1163AE5">
+			<Platform>
+				<RegKey>
+					<Key>Software\Microsoft\Shared Tools\Panose</Key>
+					<Recurse/>
+				</RegKey>
+			</Platform>
+		</Object>
+
+		<Object Name="Software\Microsoft\Shared Tools\Proofing Tools" GUID="6B21086A-4F38-4b48-B4AA-4A7C9B7C7BB6">
+			<Platform>
+				<RegKey>
+					<Key>Software\Microsoft\Shared Tools\Proofing Tools</Key>
+					<Recurse/>
+				</RegKey>
+			</Platform>
+		</Object>
+
+		<Object Name="!CTX_ROAMINGAPPDATA!\Microsoft\AddIns" GUID="81B84BFB-6BFC-4052-B9FB-2C1823A014D0">
+			<Platform>
+				<Folder>
+					<Path>!CTX_ROAMINGAPPDATA!\Microsoft\AddIns</Path>
+					<Recurse/>
+				</Folder>
+			</Platform>
+		</Object>
+
+		<Object Name="!CTX_ROAMINGAPPDATA!\Microsoft\Clip Organizer" GUID="82AB1327-EA7B-47e1-9BE4-A5E7289484AF">
+			<Platform>
+				<Folder>
+					<Path>!CTX_ROAMINGAPPDATA!\Microsoft\Clip Organizer</Path>
+					<Recurse/>
+				</Folder>
+			</Platform>
+		</Object>
+
+		<Object Name="!CTX_ROAMINGAPPDATA!\Microsoft\CLView" GUID="F8F34DDD-08DE-4604-ADE5-465577D57416">
+			<Platform>
+				<Folder>
+					<Path>!CTX_ROAMINGAPPDATA!\Microsoft\CLView</Path>
+					<Recurse/>
+				</Folder>
+			</Platform>
+		</Object>
+
+		<Object Name="!CTX_ROAMINGAPPDATA!\Microsoft\Document Building Blocks" GUID="C0F671F7-D6AB-4f96-AD4D-11788DDA5310">
+			<Platform>
+				<Folder>
+					<Path>!CTX_ROAMINGAPPDATA!\Microsoft\Document Building Blocks</Path>
+					<Recurse/>
+				</Folder>
+			</Platform>
+		</Object>
+
+		<Object Name="!CTX_ROAMINGAPPDATA!\Microsoft\Office" GUID="9F05876C-A211-4049-BC3E-5BD50DF519F9">
+			<Platform>
+				<Folder>
+					<Path>!CTX_ROAMINGAPPDATA!\Microsoft\Office</Path>
+					<Recurse/>
+				</Folder>
+			</Platform>
+		</Object>
+
+		<Object Name="!CTX_ROAMINGAPPDATA!\Microsoft\Proof" GUID="DB22DA43-A0C5-4121-B455-BC6658ABDA8F">
+			<Platform>
+				<Folder>
+					<Path>!CTX_ROAMINGAPPDATA!\Microsoft\Proof</Path>
+					<Recurse/>
+				</Folder>
+			</Platform>
+		</Object>
+
+		<Object Name="!CTX_ROAMINGAPPDATA!\Microsoft\Queries" GUID="ABF97889-D05F-42bb-B0B2-70021BD0EABE">
+			<Platform>
+				<Folder>
+					<Path>!CTX_ROAMINGAPPDATA!\Microsoft\Queries</Path>
+					<Recurse/>
+				</Folder>
+			</Platform>
+		</Object>
+
+		<Object Name="!CTX_ROAMINGAPPDATA!\Microsoft\Templates" GUID="F1A87E67-B71B-4039-ACB0-8FF8F29066F3">
+			<Platform>
+				<Folder>
+					<Path>!CTX_ROAMINGAPPDATA!\Microsoft\Templates</Path>
+					<Recurse/>
+				</Folder>
+			</Platform>
+		</Object>
+
+		<Object Name="!CTX_ROAMINGAPPDATA!\Microsoft\UProof" GUID="FB723A7B-8E01-4b94-849E-32ADCBB32665">
+			<Platform>
+				<Folder>
+					<Path>!CTX_ROAMINGAPPDATA!\Microsoft\UProof</Path>
+					<Recurse/>
+				</Folder>
+			</Platform>
+		</Object>
+
+		<Object Name="!CTX_LOCALAPPDATA!\Microsoft\FORMS\FRMCACHE.DAT" GUID="83287484-3042-4caa-957D-66D240DC3C0D">
+			<Platform>
+				<File>
+					<Path>!CTX_LOCALAPPDATA!\Microsoft\FORMS</Path>
+					<FileName>FRMCACHE.DAT</FileName>
+				</File>
+			</Platform>
+		</Object>
+
+	</Group>
+
+	<Group Name="Microsoft Office 2010 Access" GUID="085AF0B6-C882-4812-A734-97CDE65EC0F1">
+
+		<Object Name="Software\Microsoft\Office\14.0\Access" GUID="145FD4C7-CC99-4b4a-95D0-07EAEA32B3B5">
+			<Platform>
+				<RegKey>
+					<Key>Software\Microsoft\Office\14.0\Access</Key>
+					<Recurse/>
+				</RegKey>
+			</Platform>
+		</Object>
+
+		<Object Name="Software\Microsoft\Office\Access" GUID="F0996D59-DDA5-42ae-ABCA-791D254F38B9">
+			<Platform>
+				<RegKey>
+					<Key>Software\Microsoft\Office\Access</Key>
+					<Recurse/>
+				</RegKey>
+			</Platform>
+		</Object>
+
+		<Object Name="!CTX_ROAMINGAPPDATA!\Microsoft\Access" GUID="F290D594-F4FB-45c4-AA90-B4D98E35A330">
+			<Platform>
+				<Folder>
+					<Path>!CTX_ROAMINGAPPDATA!\Microsoft\Access</Path>
+					<Recurse/>
+				</Folder>
+			</Platform>
+		</Object>
+
+		<Object Name="!CTX_LOCALAPPDATA!\Microsoft\Office\Access.officeUI" GUID="AF4F4107-6F47-42d2-AEC7-B185AB6B8A8E">
+			<Platform>
+				<File>
+					<Path>!CTX_LOCALAPPDATA!\Microsoft\Office</Path>
+					<FileName>Access.officeUI</FileName>
+				</File>
+			</Platform>
+		</Object>
+
+	</Group>
+
+	<Group Name="Microsoft Office 2010 Excel" GUID="0131B14C-298A-4b2d-8E1D-D0BE98A91D68">
+
+		<Object Name="Software\Microsoft\Office\14.0\Excel" GUID="81C54B0E-2B7A-4398-A231-81D4B4C2C387">
+			<Platform>
+				<RegKey>
+					<Key>Software\Microsoft\Office\14.0\Excel</Key>
+					<Recurse/>
+					<ExcludeValues>
+						<Exclude>Options\OPEN</Exclude>
+					</ExcludeValues>
+				</RegKey>
+			</Platform>
+		</Object>
+
+		<Object Name="Software\Microsoft\Office\Excel" GUID="13A1B751-3682-451c-9A9A-9AC4057A8822">
+			<Platform>
+				<RegKey>
+					<Key>Software\Microsoft\Office\Excel</Key>
+					<Recurse/>
+				</RegKey>
+			</Platform>
+		</Object>
+
+		<Object Name="!CTX_ROAMINGAPPDATA!\Microsoft\Excel" GUID="A827579D-A712-4c12-9A84-D1DF55FB8EBD">
+			<Platform>
+				<Folder>
+					<Path>!CTX_ROAMINGAPPDATA!\Microsoft\Excel</Path>
+					<Recurse/>
+				</Folder>
+			</Platform>
+		</Object>
+
+		<Object Name="!CTX_LOCALAPPDATA!\Microsoft\Office\Excel.officeUI" GUID="AE17659C-6E75-407e-8A3C-508CC88659C4">
+			<Platform>
+				<File>
+					<Path>!CTX_LOCALAPPDATA!\Microsoft\Office</Path>
+					<FileName>Excel.officeUI</FileName>
+				</File>
+			</Platform>
+		</Object>
+
+	</Group>
+
+	<Group Name="Microsoft Office 2010 Groove" GUID="08A387A5-F6E1-4384-80F8-01DF835E3F32">
+
+		<Object Name="Software\Microsoft\Office\14.0\Groove" GUID="5552BD6F-ACDB-4704-8B76-5AAAF6900940">
+			<Platform>
+				<RegKey>
+					<Key>Software\Microsoft\Office\14.0\Groove</Key>
+					<Recurse/>
+				</RegKey>
+			</Platform>
+		</Object>
+
+		<Object Name="Software\Microsoft\Office\Groove" GUID="DC5F2F51-0E22-43c5-AAEA-88A9380E81AB">
+			<Platform>
+				<RegKey>
+					<Key>Software\Microsoft\Office\Groove</Key>
+					<Recurse/>
+				</RegKey>
+			</Platform>
+		</Object>
+
+	</Group>
+
+	<Group Name="Microsoft Office 2010 InfoPath" GUID="00422AE6-F5C8-4b57-9594-E200D34AC1F5">
+
+		<Object Name="Software\Microsoft\Office\14.0\InfoPath" GUID="EAA0CB73-9EA8-416b-9C33-6C73B8D62FBF">
+			<Platform>
+				<RegKey>
+					<Key>Software\Microsoft\Office\14.0\InfoPath</Key>
+					<Recurse/>
+				</RegKey>
+			</Platform>
+		</Object>
+
+		<Object Name="!CTX_ROAMINGAPPDATA!\Microsoft\InfoPath" GUID="A93B6A3C-573E-4b56-BA42-0870B457DDA9">
+			<Platform>
+				<Folder>
+					<Path>!CTX_ROAMINGAPPDATA!\Microsoft\InfoPath</Path>
+					<Recurse/>
+				</Folder>
+			</Platform>
+		</Object>
+
+	</Group>
+
+	<Group Name="Microsoft Office 2010 OneNote" GUID="0E252DFF-7907-4fe7-81BE-3ABE76F01D48">
+
+		<Object Name="Software\Microsoft\Office\14.0\OneNote" GUID="2D7E0B77-A8FD-451a-B01F-159AC33DB91C">
+			<Platform>
+				<RegKey>
+					<Key>Software\Microsoft\Office\14.0\OneNote</Key>
+					<Recurse/>
+				</RegKey>
+			</Platform>
+		</Object>
+
+		<Object Name="Software\Microsoft\Office\OneNote" GUID="7E951329-31C4-486a-967E-1ACB2A5DF53D">
+			<Platform>
+				<RegKey>
+					<Key>Software\Microsoft\Office\OneNote</Key>
+					<Recurse/>
+				</RegKey>
+			</Platform>
+		</Object>
+
+		<Object Name="!CTX_ROAMINGAPPDATA!\Microsoft\OneNote" GUID="70C6365B-AA68-464c-9E0C-8F786BEB5035">
+			<Platform>
+				<Folder>
+					<Path>!CTX_ROAMINGAPPDATA!\Microsoft\OneNote</Path>
+					<Recurse/>
+				</Folder>
+			</Platform>
+		</Object>
+
+	</Group>
+
+	<Group Name="Microsoft Office 2010 Outlook" GUID="09369693-9491-43bd-B101-41ABD283B0FA">
+
+		<Object Name="Software\Microsoft\Office\14.0\Outlook" GUID="586769FA-DF7E-4e22-9FB9-5BF740A54174">
+			<Platform>
+				<RegKey>
+					<Key>Software\Microsoft\Office\14.0\Outlook</Key>
+					<Recurse/>
+				</RegKey>
+			</Platform>
+		</Object>
+
+		<Object Name="Software\Microsoft\Office\Outlook" GUID="EFE235DD-8AE2-4cb9-8626-513D92033A86">
+			<Platform>
+				<RegKey>
+					<Key>Software\Microsoft\Office\Outlook</Key>
+					<Recurse/>
+				</RegKey>
+			</Platform>
+		</Object>
+
+		<Object Name="Software\Microsoft\Shared Tools\Outlook" GUID="DE493F8A-334A-4418-BE58-531415B07866">
+			<Platform>
+				<RegKey>
+					<Key>Software\Microsoft\Shared Tools\Outlook</Key>
+					<Recurse/>
+				</RegKey>
+			</Platform>
+		</Object>
+
+		<Object Name="Software\Microsoft\Windows NT\CurrentVersion\Windows Messaging Subsystem" GUID="196A24AF-3074-4c23-9028-96255AA5B0EF">
+			<Platform>
+				<RegKey>
+					<Key>Software\Microsoft\Windows NT\CurrentVersion\Windows Messaging Subsystem</Key>
+					<Recurse/>
+				</RegKey>
+			</Platform>
+		</Object>
+
+		<Object Name="!CTX_ROAMINGAPPDATA!\Microsoft\Outlook" GUID="724B8DA2-C378-4121-831B-16C427D8D7B6">
+			<Platform>
+				<Folder>
+					<Path>!CTX_ROAMINGAPPDATA!\Microsoft\Outlook</Path>
+					<Recurse/>
+				</Folder>
+			</Platform>
+		</Object>
+
+		<Object Name="!CTX_ROAMINGAPPDATA!\Microsoft\Signatures" GUID="37A8B9C9-B246-4a62-BFE1-79D91E7DF3BF">
+			<Platform>
+				<Folder>
+					<Path>!CTX_ROAMINGAPPDATA!\Microsoft\Signatures</Path>
+					<Recurse/>
+				</Folder>
+			</Platform>
+		</Object>
+
+		<Object Name="!CTX_ROAMINGAPPDATA!\Microsoft\Stationery" GUID="8EBD520E-E9E0-44aa-BC43-ABB3D7EE25F6">
+			<Platform>
+				<Folder>
+					<Path>!CTX_ROAMINGAPPDATA!\Microsoft\Stationery</Path>
+					<Recurse/>
+				</Folder>
+			</Platform>
+		</Object>
+
+	</Group>
+
+	<Group Name="Microsoft Office 2010 Powerpoint" GUID="01618584-7A87-43e9-BD0D-3C8556D83457">
+
+		<Object Name="Software\Microsoft\Office\14.0\Powerpoint" GUID="1C39A7FE-3AE3-44eb-AE34-227A2FAC4D7A">
+			<Platform>
+				<RegKey>
+					<Key>Software\Microsoft\Office\14.0\Powerpoint</Key>
+					<Recurse/>
+				</RegKey>
+			</Platform>
+		</Object>
+
+		<Object Name="Software\Microsoft\Office\Powerpoint" GUID="5C1C1B2E-C234-484c-A26B-F3F21A0491D9">
+			<Platform>
+				<RegKey>
+					<Key>Software\Microsoft\Office\Powerpoint</Key>
+					<Recurse/>
+				</RegKey>
+			</Platform>
+		</Object>
+
+		<Object Name="!CTX_ROAMINGAPPDATA!\Microsoft\PowerPoint" GUID="B29FCBED-808E-4c94-8541-45D4AE5028AB">
+			<Platform>
+				<Folder>
+					<Path>!CTX_ROAMINGAPPDATA!\Microsoft\PowerPoint</Path>
+					<Recurse/>
+				</Folder>
+			</Platform>
+		</Object>
+
+		<Object Name="!CTX_LOCALAPPDATA!\Microsoft\Office\PowerPoint.officeUI" GUID="BB3CB9D9-C94E-4c91-BEA6-C56606E5B907">
+			<Platform>
+				<File>
+					<Path>!CTX_LOCALAPPDATA!\Microsoft\Office</Path>
+					<FileName>PowerPoint.officeUI</FileName>
+				</File>
+			</Platform>
+		</Object>
+
+	</Group>
+
+	<Group Name="Microsoft Office 2010 Publisher" GUID="07888501-4E60-4663-989C-DF9D3E2DDBB7">
+
+		<Object Name="Software\Microsoft\Office\14.0\Publisher" GUID="035F1585-8ED2-45a2-ACE6-63DE2B541950">
+			<Platform>
+				<RegKey>
+					<Key>Software\Microsoft\Office\14.0\Publisher</Key>
+					<Recurse/>
+				</RegKey>
+			</Platform>
+		</Object>
+
+		<Object Name="!CTX_ROAMINGAPPDATA!\Microsoft\Publisher" GUID="E443811D-5812-4c7d-B0DD-2942C7FD3652">
+			<Platform>
+				<Folder>
+					<Path>!CTX_ROAMINGAPPDATA!\Microsoft\Publisher</Path>
+					<Recurse/>
+				</Folder>
+			</Platform>
+		</Object>
+
+	</Group>
+
+	<Group Name="Microsoft Office 2010 Word" GUID="0CF15D20-9156-4bef-BDA2-2C7B3DF63FAA">
+
+		<Object Name="Software\Microsoft\Office\14.0\Word" GUID="BC231EF1-D888-4ab6-A64B-1592B312B48A">
+			<Platform>
+				<RegKey>
+					<Key>Software\Microsoft\Office\14.0\Word</Key>
+					<Recurse/>
+				</RegKey>
+			</Platform>
+		</Object>
+
+		<Object Name="Software\Microsoft\Office\Word" GUID="98DA8013-5C72-4d26-AEF7-4A224688749C">
+			<Platform>
+				<RegKey>
+					<Key>Software\Microsoft\Office\Word</Key>
+					<Recurse/>
+				</RegKey>
+			</Platform>
+		</Object>
+
+		<Object Name="!CTX_ROAMINGAPPDATA!\Microsoft\Word" GUID="818D63F8-01AD-40d1-8F86-6655806CEDAB">
+			<Platform>
+				<Folder>
+					<Path>!CTX_ROAMINGAPPDATA!\Microsoft\Word</Path>
+					<Recurse/>
+				</Folder>
+			</Platform>
+		</Object>
+
+		<Object Name="!CTX_LOCALAPPDATA!\Microsoft\Office\Word.officeUI" GUID="37B087F5-9FA0-4ea5-8F9D-3965985D0AC7">
+			<Platform>
+				<File>
+					<Path>!CTX_LOCALAPPDATA!\Microsoft\Office</Path>
+					<FileName>Word.officeUI</FileName>
+				</File>
+			</Platform>
+		</Object>
+
+	</Group>
+
+</GroupDefinitions>

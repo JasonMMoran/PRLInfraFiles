@@ -1,0 +1,1952 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<policyDefinitionResources revision="1.0" schemaVersion="1.0">
+  <displayName>
+  </displayName>
+  <description>
+  </description>
+  <resources>
+    <stringTable>
+      <string id="Citrix">Citrix</string>
+      <string id="Supported_upm_1_0_0">Profilverwaltung 1.0.0 oder höher</string>
+      <string id="Supported_upm_2_0_0">Profilverwaltung 2.0.0 oder höher</string>
+      <string id="Supported_upm_2_1_0">Profilverwaltung 2.1.0 oder höher</string>
+      <string id="Supported_upm_3_0_0">Profilverwaltung 3.0.0 oder höher</string>
+      <string id="Supported_upm_3_1_0">Profilverwaltung 3.1.0 oder höher</string>
+      <string id="Supported_upm_3_2_0">Profilverwaltung 3.2.0 oder höher</string>
+      <string id="Supported_upm_4_0_0">Profilverwaltung 4.0.0 oder höher</string>
+      <string id="Supported_upm_4_1_1">Profilverwaltung 4.1.1 oder höher</string>
+      <string id="Supported_upm_5_0_0">Profilverwaltung 5.0.0 oder höher</string>
+      <string id="Supported_upm_5_5_0">Profilverwaltung 5.5.0 oder höher</string>
+      <string id="Supported_upm_5_6_0">Profilverwaltung 5.6.0 oder höher</string>
+      <string id="Supported_upm_5_8_0">Profilverwaltung 5.8.0 oder höher</string>
+      <string id="Supported_upm_7_15">Profilverwaltung 7.15 oder höher</string>
+      <string id="Supported_upm_7_16">Profilverwaltung 7.16 oder höher</string>
+      <string id="Supported_upm_7_18">Profilverwaltung 7.18 oder höher</string>
+      <string id="Supported_upm_19_03">Profilverwaltung 1903 oder höher</string>
+      <string id="Supported_upm_19_09">Profilverwaltung 1909 oder höher</string>
+      <string id="Supported_upm_19_12">Profilverwaltung 1912 oder höher</string>
+      <string id="Supported_upm_20_03">Profilverwaltung 2003 oder höher</string>
+      <string id="Supported_upm_20_09">Profilverwaltung 2009 oder höher</string>
+      <string id="Supported_upm_21_03">Profilverwaltung 2103 oder höher</string>
+      <string id="Supported_upm_21_06">Profilverwaltung 2106 oder höher</string>
+      <string id="Supported_upm_21_12">Profilverwaltung 2112 oder höher</string>
+      <string id="Supported_upm_22_03">Profilverwaltung 2203 oder höher</string>
+      <string id="Supported_upm_22_06">Profilverwaltung 2206 oder höher</string>
+      <string id="Supported_upm_22_09">Profilverwaltung 2209 oder höher</string>
+      <string id="Supported_upm_23_03">Profilverwaltung 2303 oder höher</string>
+      <string id="Supported_upm_23_05">Profilverwaltung 2305 oder höher</string>
+      <string id="Supported_upm_23_08">Profilverwaltung 2308 oder höher</string>
+      <string id="Supported_upm_23_11">Profilverwaltung 2311 oder höher</string>
+      <string id="UserProfileManager">Profilverwaltung</string>
+      <string id="ServiceActive">Profilverwaltung aktivieren</string>
+      <string id="ServiceActive_Help">Gilt für: sowohl dateibasierte als auch containerbasierte Profillösungen
+
+Um die Bereitstellung zu erleichtern, werden An- und Abmeldungen standardmäßig nicht von der Profilverwaltung verarbeitet.
+
+Aktivieren Sie diese Einstellung, um die Verarbeitung zu aktivieren.
+
+Wenn diese Einstellung hier nicht konfiguriert ist, wird der Wert in der INI-Datei verwendet.
+
+Wenn diese Einstellung weder hier noch in der INI-Datei konfiguriert ist, verarbeitet die Profilverwaltung keine Windows-Benutzerprofile.</string>
+      <string id="ProcessedGroups">Verarbeitete Gruppen</string>
+      <string id="ProcessedGroups_Part">Verarbeitete Gruppen</string>
+      <string id="ProcessedGroups_Part_gpfx">Verarbeitete Gruppen</string>
+      <string id="ProcessedGroups_Help">Gilt für: sowohl dateibasierte als auch containerbasierte Profillösungen
+
+Sie können lokale Computergruppen und Domänengruppen (lokal, global und universell) verwenden. Domänengruppen sollten in folgendem Format angegeben werden: &lt;DOMÄNENNAME&gt;\&lt;GRUPPENNAME&gt;.
+
+Wenn diese Einstellung hier konfiguriert ist, verarbeitet die Profilverwaltung nur Mitglieder dieser Benutzergruppen.
+
+Wenn diese Einstellung deaktiviert ist, verarbeitet die Profilverwaltung alle Benutzer.
+
+Wenn diese Einstellung hier nicht konfiguriert ist, wird der Wert in der INI-Datei verwendet.
+
+Wenn diese Einstellung weder hier noch in der INI-Datei konfiguriert ist, werden Mitglieder aller Benutzergruppen verarbeitet.</string>
+      <string id="ExcludedGroups">Ausgeschlossene Gruppen</string>
+      <string id="ExcludedGroups_Help">Gilt für: sowohl dateibasierte als auch containerbasierte Profillösungen
+
+Sie können lokale Computergruppen und Domänengruppen (lokal, global und universell) verwenden, um die Verarbeitung bestimmter Benutzerprofile zu verhindern. Geben Sie Domänengruppen im Format &lt;DOMÄNENNAME&gt;\&lt;GRUPPENNAME&gt; an. 
+
+Wenn diese Einstellung hier konfiguriert ist, schließt die Profilverwaltung Mitglieder dieser Benutzergruppen aus. 
+
+Wenn diese Einstellung deaktiviert ist, schließt die Profilverwaltung keine Benutzer aus. 
+
+Wenn diese Einstellung hier nicht konfiguriert ist , wird der  Wert in der INI-Datei verwendet. 
+
+Wenn diese Einstellung weder hier noch in der INI-Datei konfiguriert ist, werden keine Mitglieder einer Gruppe ausgeschlossen.</string>
+      <string id="ExcludedGroups_Part">Ausgeschlossene Gruppen</string>
+      <string id="ExcludedGroups_Part_gpfx">Ausgeschlossene Gruppen</string>
+      <string id="ProcessAdmins">Anmeldungen lokaler Administratoren verarbeiten</string>
+      <string id="ProcessAdmins_Help">Gilt für: sowohl dateibasierte als auch containerbasierte Profillösungen
+
+Gibt an, ob Anmeldungen von Mitgliedern der lokalen Gruppe 'Administratoren' von der Profilverwaltung verarbeitet werden.
+
+Wenn diese Einstellung deaktiviert ist, werden Anmeldungen lokaler Administratoren nicht von der Profilverwaltung verarbeitet.
+
+Wenn diese Einstellung hier nicht konfiguriert ist, wird der Wert in der INI-Datei verwendet.
+
+Wenn diese Einstellung weder hier noch in der INI-Datei konfiguriert ist, werden Administratoren nicht verarbeitet.</string>
+      <string id="DATPath">Pfad zum Benutzerspeicher</string>
+      <string id="DATPath_Part">Absoluter Pfad oder Pfad relativ zum Home-Verzeichnis</string>
+      <string id="DATPath_Part_gpfx">Pfad zum Benutzerspeicher</string>
+      <string id="DATPath_Help">Gilt für: sowohl dateibasierte als auch containerbasierte Profillösungen
+
+Gibt den Pfad zu dem Verzeichnis an, in dem die Benutzereinstellungen (Registrierungsänderungen und synchronisierte Dateien) gespeichert werden (Benutzerspeicher).
+
+Sie können einen absoluten UNC-Pfad oder einen Pfad, der relativ zum Basisverzeichnis ist, verwenden.
+
+In beiden Fällen können folgende Variablentypen verwendet werden: Systemumgebungsvariablen eingeschlossen in Prozentzeichen und Attribute des Active Directory-Benutzerobjekts eingeschlossen in Rautenzeichen.
+
+Beispiele:
+Der Ordner Windows\%ProfileVer% speichert Benutzereinstellungen im Unterordner Windows\W2k3 des Benutzerspeichers (wenn %ProfileVer% eine Systemumgebungsvariable ist, die zu W2k3 aufgelöst wird).
+
+\\Server\Freigabe\#SAMAccountName# speichert die Benutzereinstellungen unter dem UNC-Path \\Server\Freigabe\UweSchmidt (wenn #SAMAccountName# als UweSchmidt für den aktuellen Benutzer aufgelöst wird).
+
+Benutzerumgebungsvariablen können nicht verwendet werden, mit Ausnahme von %username% und %userdomain%.
+
+Wenn diese Einstellung deaktiviert ist, werden die Benutzereinstellungen im Windows-Unterverzeichnis des Basisverzeichnisses gespeichert.
+
+Wenn diese Einstellung hier nicht konfiguriert ist, wird der Wert in der INI-Datei verwendet.
+
+Wenn diese Einstellung weder hier noch in der INI-Datei konfiguriert ist, wird das Windows-Verzeichnis auf dem Basislaufwerk verwendet.</string>
+      <string id="MigrateUserStore">Benutzerspeicher migrieren</string>
+      <string id="MigrateUserStore_Part">Geben Sie den Benutzerspeicherpfad ein, den Sie zuvor verwendet haben</string>
+      <string id="MigrateUserStore_Part_gpfx">Benutzerspeicher migrieren</string>
+      <string id="MigrateUserStore_Help">Gilt für: nur dateibasierte Profillösung
+
+Gibt den Pfad zu dem Ordner an, in dem die Benutzereinstellungen (Registrierungsänderungen und synchronisierte Dateien) zuvor gespeichert wurden (der Pfad zu dem zuvor verwendeten Benutzerspeicher).
+
+Wenn diese Einstellung konfiguriert ist, werden die im vorherigen Benutzerspeicher gespeicherten Benutzereinstellungen in den aktuellen Benutzerspeicher migriert, der durch die Richtlinieneinstellung 'Pfad zum Benutzerspeicher' angegeben wird.
+
+Der Pfad kann ein absoluter UNC-Pfad oder ein Pfad relativ zum Basisverzeichnis sein.
+
+In beiden Fällen können Sie die folgenden Variablentypen verwenden: Systemumgebungsvariablen, die in Prozentzeichen eingeschlossen sind, und Attribute des Active Directory-Benutzerobjekts, die in Hashzeichen eingeschlossen sind.
+
+Beispiele:
+Der Ordner Windows\%ProfileVer% speichert die Benutzereinstellungen in dem Unterordner Windows\W2k3 des Benutzerspeichers (wenn %ProfileVer% eine Systemumgebungsvariable ist, die in W2k3 auflöst wird).
+
+\\server\share\#SAMAccountName# speichert die Benutzereinstellungen im UNC-Pfad \\server\share\JohnSmith (wenn #SAMAccountName# für den aktuellen Benutzer in JohnSmith aufgelöst wird).
+
+Sie können Umgebungsvariablen verwenden, außer %username% und %userdomain%.
+
+Wenn diese Einstellung deaktiviert ist, werden die Benutzereinstellungen weiterhin im aktuellen Benutzerspeicher gespeichert.
+
+Wenn diese Einstellung hier nicht konfiguriert ist, wird die Einstellung aus der INI-Datei verwendet.
+
+Wenn diese Einstellung weder hier noch in der INI-Datei konfiguriert ist, werden die Benutzereinstellungen weiterhin im aktuellen Benutzerspeicher gespeichert.
+
+Wenn der hier konfigurierte Pfad auf denselben Speicherort wie 'Pfad zum Benutzerspeicher' verweist, wird diese Richtlinieneinstellung nicht wirksam.</string>
+      <string id="ProfileHandling">Profilverarbeitung</string>
+      <string id="DeleteCachedProfilesOnLogoff">Lokal zwischengespeicherte Profile nach Abmeldung löschen</string>
+      <string id="DeleteCachedProfilesOnLogoff_Help">Gilt für: nur dateibasierte Profillösung
+
+Gibt an, ob lokal zwischengespeicherte Profile nach der Abmeldung gelöscht werden.
+
+Wenn diese Einstellung aktiviert ist, wird der lokale Profilcache eines Benutzers nach der Abmeldung gelöscht. Dies wird für Terminalserver empfohlen.
+
+Wenn diese Einstellung deaktiviert ist, werden zwischengespeicherte Profile nicht gelöscht.
+
+Wenn diese Einstellung hier nicht konfiguriert ist, wird der Wert in der INI-Datei verwendet.
+
+Wenn diese Einstellung weder hier noch in der INI-Datei konfiguriert ist, werden zwischengespeicherte Profile nicht gelöscht.</string>
+      <string id="ProfileDeleteDelay">Verzögerung vor dem Löschen von zwischengespeicherten Profilen</string>
+      <string id="ProfileDeleteDelay_Part">Verzögerung (Sekunden)</string>
+      <string id="ProfileDeleteDelay_Part_gpfx">Verzögerung vor dem Löschen von zwischengespeicherten Profilen</string>
+      <string id="ProfileDeleteDelay_Help">Gilt für: nur dateibasierte Profillösung
+
+Funktioniert nur, wenn 'Lokal zwischengespeicherte Profile bei Abmeldung löschen' aktiviert ist. Stellt eine optionale Verlängerung der Verzögerung ein, bevor lokal zwischengespeicherte Profile bei der Abmeldung gelöscht werden. Bei einem Wert von 0 werden die Profile sofort bei der Abmeldung gelöscht. Prüfungen werden jede Minute durchgeführt, daher stellt ein Wert von 60 sicher, dass Profile innerhalb von einer oder zwei Minuten nach der Benutzerabmeldung gelöscht werden (abhängig von der letzten durchgeführten Prüfung). Eine Verlängerung der Verzögerung ist nützlich, wenn Sie wissen, dass ein Prozess Dateien oder die Benutzerregistrierungsstruktur bei der Abmeldung geöffnet lässt. Bei großen Profilen kann die Abmeldung hiermit auch beschleunigt werden.
+
+Wenn diese Richtlinie hier nicht konfiguriert ist, wird der Wert in der INI-Datei verwendet.
+
+Wenn diese Richtlinie weder hier noch in der INI-Datei konfiguriert ist, werden Profile sofort gelöscht.</string>
+      <string id="ApplicationProfilesAutoMigration">Automatische Migration vorhandener Anwendungsprofile</string>
+      <string id="ApplicationProfilesAutoMigration_Help">Gilt für: nur dateibasierte Profillösung
+
+Diese Einstellung aktiviert oder deaktiviert die automatische Migration vorhandener Anwendungsprofile über verschiedene Betriebssysteme hinweg. Die Anwendungsprofile enthalten sowohl die Anwendungsdaten im Ordner 'AppData' als auch die Registrierungseinträge unter HKEY_CURRENT_USER\SOFTWARE. Diese Einstellung kann hilfreich sein, wenn Sie Ihre Anwendungsprofile über verschiedene Betriebssysteme hinweg migrieren möchten. 
+
+Angenommen, Sie aktualisieren Ihr Betriebssystem (OS) von Windows 10 Version 1803 auf Windows 10 Version 1809. Wenn diese Einstellung aktiviert ist, migriert die Profilverwaltung die vorhandenen Anwendungseinstellungen automatisch nach Windows 10 Version 1809, wenn sich die Benutzer zum ersten Mal anmelden. Infolgedessen werden die Anwendungsdaten im Ordner 'AppData' und die Registrierungseinträge unter HKEY_CURRENT_USER\SOFTWARE migriert.
+
+Wenn mehrere Anwendungsprofile vorhanden sind, führt die Profilverwaltung die Migration in der folgenden Reihenfolge durch:
+1. Migriert Profile desselben Betriebssystemtyps (Desktop-OS nach Desktop-OS und Server-OS nach Server-OS).
+2. Migriert Profile derselben Windows-Betriebssystemfamilie. Beispiel: Windows 8 nach Windows 8.1 oder Windows 10, Version 1803 nach Windows 10, Version 1809.
+3. Migriert Profile einer früheren Version des Betriebssystems. Beispiel: Windows 7 nach Windows 10 oder Windows Server 2012 nach Windows Server 2016.
+4. Migriert von den Profilen des nächstgelegenen Betriebssystems.
+
+Hinweis: Sie müssen den Kurznamen des Betriebssystems angeben, indem Sie die Variable '!CTX_OSNAME!' in den Benutzerspeicherpfad einschließen, damit die Profilverwaltung die vorhandenen Anwendungsprofile finden kann.
+
+Wenn diese Einstellung hier nicht konfiguriert ist, wird die Einstellung aus der INI-Datei verwendet.
+Wenn diese Einstellung hier oder in der INI-Datei nicht konfiguriert ist, ist sie standardmäßig deaktiviert.</string>
+      <string id="MigrateWindowsProfilesToUserStore">Migration vorhandener Profile</string>
+      <string id="MigrateWindowsProfilesToUserStore_Help">Gilt für: nur dateibasierte Profillösung
+
+Die Profilverwaltung kann vorhandene Profile während der Anmeldung migrieren, wenn der Benutzer kein Profil im Benutzerspeicher hat.
+
+Während der Anmeldung passiert Folgendes: Wenn ein vorhandenes Windows-Profil gefunden wird und der Benutzer noch kein Citrix Benutzerprofil im Benutzerspeicher hat, wird das Windows-Profil sofort in den Benutzerspeicher migriert (kopiert). Anschließend verwendet die Profilverwaltung das Profil im Benutzerspeicher in der aktuellen und in zukünftigen Sitzungen, die den Pfad zu demselben Benutzerspeicher verwenden.
+
+Wenn diese Einstellung aktiviert ist, können Sie die Profilmigration für Roaming- und lokale Profile (Standard), nur Roamingprofile oder nur lokale Profile aktivieren, oder Sie können die Profilmigration vollständig deaktivieren.
+
+Wenn die Profilmigration deaktiviert ist und kein Citrix Benutzerprofil im Benutzerspeicher vorhanden ist, wird der vorhandene Windows-Mechanismus für die Erstellung neuer Profile verwendet, so als ob die Profilverwaltung nicht eingerichtet ist.
+
+Wenn diese Einstellung hier nicht konfiguriert ist, wird der Wert in der INI-Datei verwendet.
+
+Wenn diese Einstellung weder hier noch in der INI-Datei konfiguriert ist, werden alle vorhandenen Profiltypen migriert.</string>
+      <string id="MigrateWindowsProfilesToUserStore_Part">Zu migrierende Benutzerprofiltypen bei leerem Benutzerspeicher</string>
+      <string id="MigrateWindowsProfilesToUserStore_Part_gpfx">Migration vorhandener Profile</string>
+      <string id="MigrateWindowsProfilesToUserStoreEnum_All">Lokal und Roaming</string>
+      <string id="MigrateWindowsProfilesToUserStoreEnum_Local">Lokal</string>
+      <string id="MigrateWindowsProfilesToUserStoreEnum_Roaming">Roaming</string>
+      <string id="MigrateWindowsProfilesToUserStoreEnum_None">Keine</string>
+      <string id="LocalProfileConflictHandling">Behandlung von Konflikten lokaler Profile</string>
+      <string id="LocalProfileConflictHandling_Help">Gilt für: nur dateibasierte Profillösung
+
+Mit dieser Einstellung wird das Verhalten der Profilverwaltung konfiguriert, wenn ein Profil im Benutzerspeicher und ein lokales Windows-Benutzerprofil (kein Citrix Benutzerprofil) vorhanden ist.
+
+Wenn diese Einstellung deaktiviert oder auf den Standardwert 'Lokales Profil verwenden' festgelegt ist, verwendet die Profilverwaltung lokale Profile und ändert sie nicht.
+
+Wenn diese Einstellung auf 'Lokales Profil löschen' festgelegt ist, löscht die Profilverwaltung das lokale Windows-Benutzerprofil und importiert dann das Citrix Benutzerprofil aus dem Benutzerspeicher.
+
+Wenn diese Einstellung auf 'Lokales Profil umbenennen' festgelegt ist, benennt die Profilverwaltung das lokale Windows-Benutzerprofil um (um es zu sichern) und importiert dann das Profil aus dem Benutzerspeicher.
+
+Wenn diese Einstellung hier nicht konfiguriert ist, wird der Wert in der INI-Datei verwendet.
+
+Wenn diese Einstellung weder hier noch in der INI-Datei konfiguriert ist, werden vorhandene lokale Profile verwendet.</string>
+      <string id="LocalProfileConflictHandling_Part_1">Wenn ein lokales Windows-Benutzerprofil und ein</string>
+      <string id="LocalProfileConflictHandling_Part">Citrix Benutzerprofil im Benutzerspeicher vorhanden sind</string>
+      <string id="LocalProfileConflictHandling_Part_gpfx">Behandlung von Konflikten lokaler Profile</string>
+      <string id="LocalProfileConflictHandlingEnum_Use">Lokales Profil verwenden</string>
+      <string id="LocalProfileConflictHandlingEnum_Delete">Lokales Profil löschen</string>
+      <string id="LocalProfileConflictHandlingEnum_Rename">Lokales Profil umbenennen</string>
+      <string id="TemplateProfile">Vorlagenprofil</string>
+      <string id="TemplateProfile_Help">Gilt für: sowohl dateibasierte als auch containerbasierte Profillösungen
+
+In der Standardeinstellung werden neue Benutzerprofile vom Standardbenutzerprofil auf dem Computer erstellt, an dem sich ein Benutzer zuerst anmeldet. Die Profilverwaltung kann auch eine zentral gespeicherte Vorlage zum Erstellen neuer Benutzerprofile verwenden. Vorlagenprofile sind identisch zu normalen Profilen und werden auf einer Dateifreigabe im Netzwerk gespeichert. Geben Sie Pfade zu Vorlagen mit einer UNC-Notation an. Benutzer müssen Leserechte für ein Vorlagenprofil haben.
+
+Wenn diese Einstellung deaktiviert ist, werden keine Vorlagen verwendet.
+
+Wenn diese Einstellung aktiviert ist, erstellt die Profilverwaltung neue Benutzerprofile mit Vorlagen statt mit einem lokalen Standardprofil.
+
+Wenn ein Benutzer kein Citrix Benutzerprofil hat, jedoch ein lokales Windows-Benutzerprofil vorhanden ist, wird in der Standardeinstellung das lokale Profil verwendet (und zum Benutzerspeicher migriert, wenn dies nicht deaktiviert ist). Dies kann durch Aktivieren des Einstellung 'Vorlagenprofil überschreibt lokales Profil' geändert werden.
+
+Wenn diese Einstellung hier nicht konfiguriert ist, wird der Wert in der INI-Datei verwendet.
+
+Wenn diese Einstellung weder hier noch in der INI-Datei konfiguriert ist, wird keine Vorlage verwendet.</string>
+      <string id="TemplateProfilePath">Pfad zum Vorlagenprofil:</string>
+      <string id="TemplateProfileOverridesLocalProfile">Vorlagenprofil überschreibt lokales Profil</string>
+      <string id="TemplateProfileOverridesRoamingProfile">Vorlagenprofil überschreibt Roamingprofil</string>
+      <string id="TemplateProfileIsMandatory">Als verbindliches Citrix Profil für alle Anmeldungen verwendetes Vorlagenprofil</string>
+      <string id="AdvancedSettings">Erweiterte Einstellungen</string>
+      <string id="LoadRetries">Anzahl Wiederholungen beim Zugriff auf gesperrte Dateien</string>
+      <string id="LoadRetries_Part">Anzahl Wiederholungen</string>
+      <string id="LoadRetries_Help">Gilt für: sowohl dateibasierte als auch containerbasierte Profillösungen
+
+Legt die Anzahl der Wiederholungen beim Zugriff auf gesperrte Dateien fest.
+
+Wenn diese Einstellung deaktiviert ist, werden standardmäßig fünf Wiederholungen unternommen.
+
+Wenn diese Einstellung hier nicht konfiguriert ist, wird der Wert in der INI-Datei verwendet.
+
+Wenn diese Einstellung weder hier noch in der INI-Datei konfiguriert ist, werden standardmäßig fünf Wiederholungen unternommen.</string>
+      <string id="LoadRetries_Part_gpfx">Anzahl Wiederholungen beim Zugriff auf gesperrte Dateien</string>
+      <string id="ProcessCookieFiles">Internet-Cookiedateien bei Abmeldung verarbeiten</string>
+      <string id="ProcessCookieFiles_Help">Gilt für: nur dateibasierte Profillösung
+
+In manchen Bereitstellungen werden zusätzliche Internet-Cookies zurückgelassen, auf die es keine Verweise in der Datei index.dat gibt. Nach längerem Browsen im Internet können diese zusätzlichen Cookies das Profil aufblähen. Aktivieren Sie diese Einstellung, um die Verarbeitung von index.dat zu erzwingen und die zusätzlichen Cookies zu entfernen. Die Einstellung verlängert u. U. die Abmeldezeiten. Aktivieren Sie die Einstellung daher nur, wenn dieses Problem bei Ihnen auftritt.
+
+Wenn diese Einstellung hier nicht konfiguriert ist, wird der Wert in der INI-Datei verwendet.
+
+Wenn diese Einstellung weder hier noch in der INI-Datei konfiguriert ist, wird index.dat nicht verarbeitet.</string>
+      <string id="DisableDynamicConfig">Automatische Konfiguration deaktivieren</string>
+      <string id="DisableDynamicConfig_Help">Gilt für: sowohl dateibasierte als auch containerbasierte Profillösungen
+
+Die Profilverwaltung 5.x prüft die Umgebung und konfiguriert sich selbst. Aktivieren Sie diese Einstellung, um dieses Verhalten für die Problembehebung zu deaktivieren, oder um die in einer vorherigen Version verwendeten Einstellungen beizubehalten.
+
+Wenn diese Einstellung hier nicht konfiguriert ist, wird der Wert in der INI-Datei verwendet.
+
+Wenn diese Einstellung weder hier noch in der INI-Datei konfiguriert ist, wird die automatische Konfiguration aktiviert, und Einstellungen der Profilverwaltung können sich bei einer geänderten Umgebung ändern.</string>
+      <string id="LogoffRatherThanTempProfile">Benutzer bei Problem abmelden</string>
+      <string id="LogoffRatherThanTempProfile_Help">Gilt für: sowohl dateibasierte als auch containerbasierte Profillösungen
+
+Wenn ein Problem bei der Benutzeranmeldung auftritt (wenn z. B. der Benutzerspeicher nicht verfügbar ist), wird ein temporäres Profil bereitgestellt.
+
+Wenn diese Einstellung aktiviert ist, wird eine Fehlermeldung angezeigt und der Benutzer abgemeldet.
+
+Wenn diese Einstellung hier nicht konfiguriert ist, wird der Wert in der INI-Datei verwendet.
+
+Wenn diese Einstellung weder hier noch in der INI-Datei konfiguriert ist, wird ein temporäres Profil bereitgestellt.</string>
+      <string id="LastKnownGoodRegistry">Backup von NTUSER.DAT</string>
+      <string id="LastKnownGoodRegistry_Help">Gilt für: nur dateibasierte Profillösung
+
+Die Backuprichtlinie NTUSER.DAT ist standardmäßig aktiviert, sodass ein Backup der letzten fehlerfreien Version von NTUSER.DAT erstellt und ein Rollback durchgeführt wird, wenn NTUSER.DAT beschädigt ist.
+
+Wenn Sie diese Einstellung hier nicht konfigurieren, verwendet die Profilverwaltung die Einstellungen in der INI-Datei.
+
+Wenn Sie diese Einstellung weder hier noch in der INI-Datei konfigurieren, erstellt die Profilverwaltung kein Backup von NTUSER.DAT.</string>
+      <string id="CEIPEnabled">Programm zur Verbesserung der Benutzerfreundlichkeit</string>
+      <string id="CEIPEnabled_Help">Gilt für: sowohl dateibasierte als auch containerbasierte Profillösungen
+
+Standardmäßig ist das Programm zur Verbesserung der Benutzerfreundlichkeit (CEIP) aktiviert, damit wir mithilfe anonymer Statistiken und Nutzungsinformation die Qualität und Leistung von Citrix Produkten verbessern können.
+
+Wenn diese Einstellung hier nicht konfiguriert ist, wird der Wert aus der INI-Datei verwendet.
+
+</string>
+      <string id="UserGroupLevelConfigEnabled">Richtlinieneinstellungen auf Benutzerebene aktivieren</string>
+      <string id="UserGroupLevelConfigEnabled_Help">Gilt für: sowohl dateibasierte als auch containerbasierte Profillösungen
+
+Standardmäßig werden Profilverwaltungsrichtlinien auf Maschinenebene ausgeführt. Wenn diese Richtlinie aktiviert ist, können Profilverwaltungsrichtlinien auf Benutzerebene verwendet werden. Dabei kann es sich um einen einzelnen Benutzer oder eine Benutzergruppe handeln.
+
+ Wenn eine Sitzung gestartet wird, bestimmt die Profilverwaltung die anzuwendenden Richtlinieneinstellungen, indem sie Benutzereinstellungen gegenüber Benutzergruppeneinstellungen und Benutzergruppeneinstellungen gegenüber Maschineneinstellungen priorisiert.
+
+ Wenn diese Einstellung hier nicht konfiguriert ist, wird der Wert aus der INI-Datei verwendet.
+
+Wenn diese Einstellung weder hier noch in der INI-Datei konfiguriert ist, ist sie deaktiviert.
+
+</string>
+      <string id="OrderedGroups">Prioritätsreihenfolge für Benutzergruppen festlegen</string>
+      <string id="OrderedGroups_Part">Prioritätsreihenfolge für die Benutzergruppen</string>
+      <string id="OrderedGroups_Part_gpfx">Prioritätsreihenfolge für Benutzergruppen festlegen</string>
+      <string id="OrderedGroups_Help">Gilt für: sowohl dateibasierte als auch containerbasierte Profillösungen
+
+Geben Sie die Prioritätsreihenfolge für Benutzergruppen an. Die Reihenfolge bestimmt, welche Gruppe Vorrang hat, wenn ein Benutzer mehreren Gruppen mit unterschiedlichen Richtlinieneinstellungen angehört. Geben Sie im Feld 'Prioritätsreihenfolge für Benutzergruppen' die Sicherheits-IDs (SIDs) oder Domänennamen der Gruppen in absteigender Reihenfolge ihrer Priorität ein, getrennt durch Semikolons (;).
+
+Beispiel:
+ctxxa.local\groupb;S-1-5-21-674278408-26188528-2146851469-1174;ctxxa.local\groupc;
+
+Wenn ein Benutzer zu mehreren Gruppen mit unterschiedlichen Richtlinieneinstellungen gehört, ist Folgendes zu beachten:
+
+ - Wenn der Benutzer zu einer oder mehreren in dieser Richtlinie definierten Gruppen gehört, hat die Gruppe mit der höchsten Priorität Vorrang. 
+
+ - Wenn der Benutzer keiner der in dieser Richtlinie definierten Gruppen angehört, hat die Gruppe mit der in alphabetischer Reihenfolge am frühesten aufgeführten SID Vorrang. 
+
+Wenn diese Einstellung hier nicht konfiguriert ist, wird der Wert aus der INI-Datei verwendet.
+
+Wenn diese Einstellung weder hier noch in der INI-Datei konfiguriert ist, wird keine Prioritätsreihenfolge angegeben.</string>
+      <string id="OutlookSearchRoamingEnabled">Suchindex-Roaming für Outlook aktivieren</string>
+      <string id="OutlookSearchRoamingEnabled_Help">Gilt für: sowohl dateibasierte als auch containerbasierte Profillösungen
+
+Ermöglichen Sie eine benutzerbasierte Outlook-Suche, indem die Outlook-Suchdaten automatisch zusammen mit dem Benutzerprofil durchsucht werden. Dies erfordert zusätzlichen Speicherplatz im Benutzerspeicher, um den Suchindex für Outlook zu speichern.
+
+ Melden Sie sich ab und dann wieder an, damit die Richtlinie wirksam wird.</string>
+      <string id="OutlookEdbBackupEnabled">Outlook-Suchindexdatenbank - Backup und Wiederherstellen</string>
+      <string id="OutlookEdbBackupEnabled_Help">Gilt für: sowohl dateibasierte als auch containerbasierte Profillösungen
+
+Mit dieser Einstellung wird konfiguriert, wie die Profilverwaltung während der Anmeldung vorgeht, wenn Suchindex-Roaming für Outlook aktiviert ist.
+
+Wenn diese Einstellung aktiviert ist, erstellt die Profilverwaltung jedes Mal ein Backup der Suchindexdatenbank, wenn die Datenbank bei der Anmeldung erfolgreich bereitgestellt wird. Die Profilverwaltung behandelt das Backup als eine gute Kopie der Suchindexdatenbank. Wenn der Versuch, die Suchindexdatenbank bereitzustellen, fehlschlägt, weil die Datenbank beschädigt ist, setzt die Profilverwaltung die Suchindexdatenbank automatisch auf die letzte gute Kopie zurück.
+
+Hinweis: Die Profilverwaltung löscht das zuvor gespeicherte Backup, wenn ein neues Backup gespeichert wurde. Das Backup belegt den verfügbaren Speicherplatz der VHDX-Dateien.</string>
+      <string id="OutlookSearchRoamingConcurrentSession">Unterstützung gleichzeitiger Sitzungen für das Roaming des Outlook-Suchindex aktivieren</string>
+      <string id="OutlookSearchRoamingConcurrentSession_Part">Maximale Anzahl von VHDX-Datenträgern zum Speichern von Outlook-OST-Dateien</string>
+      <string id="OutlookSearchRoamingConcurrentSession_Part_gpfx">Maximale Anzahl von VHDX-Datenträgern zum Speichern von Outlook-OST-Dateien</string>
+      <string id="OutlookSearchRoamingConcurrentSession_Help">Gilt für: sowohl dateibasierte als auch containerbasierte Profillösungen
+
+Bietet eine native Outlook-Suche in gleichzeitigen Sitzungen. Verwenden Sie diese Richtlinie mit der Richtlinie 'Suchindex-Roaming für Outlook'.
+
+Wenn diese Richtlinie aktiviert ist, verwendet jede gleichzeitige Sitzung eine separate Outlook-OST-Datei.
+
+Standardmäßig können nur zwei VHDX-Datenträger zum Speichern von Outlook-OST-Dateien verwendet werden (eine Datei pro Datenträger). Wenn weitere Sitzungen starten, werden deren Outlook-OST-Dateien in den lokalen Benutzerprofilen gespeichert. Sie können die maximale Anzahl von VHDX-Datenträgern zum Speichern von Outlook-OST-Dateien angeben.
+
+Beispiel:
+Sie legen die Zahl auf 3 fest. Die Profilverwaltung speichert dann Outlook-OST-Dateien auf den VHDX-Datenträgern für die erste, zweite und dritte gleichzeitige Sitzung. Die OST-Datei für die vierte gleichzeitige Sitzung dann im lokalen Profil gespeichert.</string>
+      <string id="FSLogixProfileContainerSupport">Multisitzungszurückschreiben für Profilcontainer aktivieren</string>
+      <string id="FSLogixProfileContainerSupport_Help">Gilt für: sowohl dateibasierte als auch containerbasierte Profillösungen
+
+Aktiviert das Zurückschreiben für Profilcontainer in Szenarien mit mehreren Sitzungen. Wenn aktiviert, werden Änderungen in allen Sitzungen in Profilcontainer zurückgeschrieben. Andernfalls werden nur Änderungen in der ersten Sitzung gespeichert, da sich in Profilcontainern nur die erste Sitzung im Lese-/Schreibmodus befindet. Citrix Profilverwaltung-Profilcontainer werden ab Citrix Profilverwaltung 2103 unterstützt. FSLogix Profile Container wird ab Citrix Profilverwaltung 2003 unterstützt.
+
+Um diese Richtlinie für FSLogix Profile Container zu verwenden, stellen Sie sicher, dass die folgenden Voraussetzungen erfüllt sind:
+1. Das Feature 'FSLogix Profile Container' ist installiert und aktiviert.
+2. In FSLogix ist der Profiltyp auf 'Try for read-write profile and fallback to read-only' festgelegt.</string>
+      <string id="MultiSiteReplication">Benutzerspeicher replizieren</string>
+      <string id="MultiSiteReplication_Part">Pfade zum Replizieren eines Benutzerspeichers</string>
+      <string id="MultiSiteReplication_Part_gpfx">Benutzerspeicher replizieren – Pfade zum Replizieren eines Benutzerspeichers</string>
+      <string id="MultiSiteReplication_Help">Gilt für: sowohl dateibasierte als auch containerbasierte Profillösungen
+
+Ermöglicht die Replikation eines Benutzerspeichers auf mehrere Pfade zusätzlich zu dem Pfad, den die Richtlinie für den Pfad zum Benutzerspeicher bei jeder Anmeldung und Abmeldung angibt. Um Dateien und Ordner, die während einer Sitzung geändert wurden, mit dem Benutzerspeicher zu synchronisieren, aktivieren Sie das aktive Zurückschreiben.
+
+ Ab Profilverwaltung 2209 unterstützt dieses Feature vollständige Profilcontainer. Sie können den Container zu mehreren Pfaden replizieren. Replizierte Container bieten Redundaz für die Benutzeranmeldung, aber nicht für das Failover in Sitzungen. 
+
+ Hinweis: Das Aktivieren der Richtlinie erhöht u. U. die System-E/A und verlängert möglicherweise das Abmelden.
+
+Für Profilverwaltung Version 2112 oder höher: Sie können VHDX-Dateien vom replizierten Benutzerspeicher trennen und in verschiedenen Pfaden speichern. Fügen Sie dazu den Pfad für VHDX-Dateien nach dem Pfad zum replizierten Benutzerspeicher ein und trennen Sie die beiden Pfade durch einen vertikalen Strich (|). 
+Beispiel: \\Pfad_a|\\Pfad_b gibt an, dass der Benutzerspeicher (ohne VHDX-Dateien) in \\Pfad_a und VHDX-Dateien in \\Pfad_b gespeichert sind.</string>
+      <string id="CredBasedAccessEnabled">Zugriff auf Benutzerspeicher mit Anmeldeinformationen aktivieren</string>
+      <string id="CredBasedAccessEnabled_Help">Gilt für: sowohl dateibasierte als auch containerbasierte Profillösungen
+
+Standardmäßig gibt sich die Profilverwaltung als aktueller Benutzer aus, um auf Benutzerspeicher zuzugreifen. Daher muss der aktuelle Benutzer über die Berechtigung verfügen, direkt auf die Benutzerspeicher zuzugreifen. Aktivieren Sie diese Funktion, wenn Sie nicht möchten, dass sich die Profilverwaltung beim Zugriff auf Benutzerspeicher als der aktuelle Benutzer ausgibt. Sie können Benutzerspeicher in Speicherrepositorys (z. B. Azure Dateien) ablegen, auf die der aktuelle Benutzer keinen Zugriff hat.
+
+Um sicherzustellen, dass die Profilverwaltung auf Benutzerspeicher zugreifen kann, speichern Sie die Anmeldeinformationen des Profilspeicherservers in Workspace Environment Management oder in der Windows-Anmeldeinformationsverwaltung. Es wird empfohlen, Workspace Environment Management zu verwenden, um zu vermeiden, dass für jede Maschine, auf der Profile Management ausgeführt wird, dieselben Anmeldeinformationen konfiguriert werden müssen. Wenn Sie die Windows-Anmeldeinformationsverwaltung verwenden, verwenden Sie das lokale Systemkonto, um die Anmeldeinformationen sicher zu speichern. 
+
+Hinweis: Ab Profilverwaltung Version 2212 steht dieses Feature sowohl für Profilverwaltungslösungen zur Verfügung, die auf Dateien basieren, als auch für solche, die auf VHDX basieren. In Profilverwaltungsversionen vor 2212 ist dieses Feature nur für Profilverwaltungslösungen verfügbar, die auf VHDX basieren.
+
+Wenn diese Einstellung hier nicht konfiguriert ist, wird der Wert aus der INI-Datei verwendet. Wenn diese Einstellung weder hier noch in der INI-Datei konfiguriert ist, ist sie standardmäßig deaktiviert.
+
+</string>
+      <string id="VhdStorePath">Speicherpfad für VHDX-Dateien anpassen</string>
+      <string id="VhdStorePath_Part">Pfad zum Speichern von VHDX-Dateien</string>
+      <string id="VhdStorePath_Part_gpfx">Speicherpfad für VHDX-Dateien anpassen</string>
+      <string id="VhdStorePath_Help">Gilt für: sowohl dateibasierte als auch containerbasierte Profillösungen
+
+Standardmäßig speichert die Profilverwaltung VHDX-Dateien im Benutzerspeicher. Wenn diese Richtlinie aktiviert ist, können Sie einen separaten Pfad zum Speichern von VHDX-Dateien angeben.
+
+Unter anderem verwenden folgende Richtlinien VHDX-Dateien: Profilcontainer, Suchindex-Roaming für Outlook und Beschleunigen der Ordnerspiegelung. VHDX-Dateien verschiedener Richtlinien werden in verschiedenen Ordnern im Speicherpfad gespeichert.</string>
+      <string id="AppAccessControl">App-Zugriffssteuerung</string>
+      <string id="AppAccessControl_Part">App-Zugriffssteuerungsregeln</string>
+      <string id="AppAccessControl_Part_gpfx">App-Zugriffssteuerung</string>
+      <string id="AppAccessControl_Help">Gilt für: sowohl dateibasierte als auch containerbasierte Profillösungen
+
+Steuert den Benutzerzugriff auf Anwendungen basierend auf Ihren Regeln. Geben Sie die erstellten Regeln mit dem PowerShell-Skript CPM_App_Access_Control_Config.ps1 ein.
+
+Das Skript ist im Installationspaket der Profilverwaltung enthalten. Weitere Informationen finden Sie in der Dokumentation zur Profilverwaltung.</string>
+      <string id="EnableVolumeReattach">VHDX-Datenträger in Sitzungen automatisch wieder anfügen</string>
+      <string id="EnableVolumeReattach_Help">Gilt für: sowohl dateibasierte als auch containerbasierte Profillösungen
+
+Diese Richtlinie gilt nur für VHDX-Datenträger, die von der Profilverwaltung verwendet werden.
+
+Wenn die Richtlinie aktiviert ist und ein VHDX-Datenträger in einer Sitzung getrennt wird, kann die Profilverwaltung das Ereignis erkennen und den Datenträger automatisch wieder anfügen.</string>
+      <string id="SyncGpoStateEnabled">Asynchrone Verarbeitung für Benutzergruppenrichtlinien bei Anmeldung aktivieren</string>
+      <string id="SyncGpoStateEnabled_Help">Gilt für: sowohl dateibasierte als auch containerbasierte Profillösungen
+
+Windows bietet zwei Verarbeitungsmodi für Benutzergruppenrichtlinien: synchron und asynchron. Windows verwendet einen Registrierungswert, um den Verarbeitungsmodus für die nächste Benutzeranmeldung zu bestimmen. Wenn der Registrierungswert nicht vorhanden ist, wird der synchrone Modus angewendet. Der Registrierungswert ist eine Einstellung auf Maschinenebene und es erfolgt kein Roaming mit Benutzern. Daher wird der asynchrone Modus in folgenden Fällen nicht wie erwartet angewendet:
+Wenn Benutzer sich an verschiedenen Maschinen anmelden.
+Wenn Benutzer sich an der Maschine anmelden, auf der die Richtlinie 'Lokal zwischengespeicherte Profile nach Abmeldung löschen' aktiviert ist.
+
+Wenn diese Richtlinie aktiviert ist, erlaubt die Citrix Profilverwaltung das Roaming des Registrierungswerts mit Benutzern. Daher wird der Verarbeitungsmodus jedes Mal angewendet, wenn sich Benutzer anmelden.
+
+Damit der asynchrone Modus auf Windows Server-Maschinen wirksam wird, installieren Sie die Rolle 'Remotedesktop-Sitzungshost' und legen Sie die Gruppenrichtlinien wie folgt fest:
+Computerkonfiguration | Administrative Vorlagen | System | Anmeldung | Beim Neustart des Computers und bei der Anmeldung immer auf das Netzwerk warten: Deaktiviert
+Computerkonfiguration | Administrative Vorlagen | System | Gruppenrichtlinie | Asynchrone Verarbeitung der Benutzergruppenrichtlinie bei Anmeldung über Remotedesktopdienste zulassen: Aktiviert</string>
+      <string id="OneDriveContainer">OneDrive-Container aktivieren</string>
+      <string id="OneDriveContainer_Part">Liste der OneDrive-Ordner</string>
+      <string id="OneDriveContainer_Part_gpfx">OneDrive-Container - Liste der OneDrive-Ordner</string>
+      <string id="OneDriveContainer_Help">Gilt für: sowohl dateibasierte als auch containerbasierte Profillösungen
+
+Wenn diese Richtlinie aktiviert ist, speichert die Profilverwaltung OneDrive-Ordner auf einem VHDX-Datenträger. Der Datenträger wird während der Anmeldung angefügt und während der Abmeldung getrennt. Die Richtlinie ermöglicht Benutzern das Roaming von OneDrive-Ordnern.
+
+Geben Sie OneDrive-Ordner als Pfade relativ zum Benutzerprofil an. Wenn ein OneDrive-Ordner beispielsweise unter '%userprofile%\OneDrive - Citrix' ist, fügen Sie 'OneDrive - Citrix' zur Liste hinzu.
+
+Beginnend mit der Profilverwaltungsversion 2311 unterstützt diese Richtlinie die OneDrive-Synchronisierung zwischen gleichzeitigen Sitzungen.</string>
+      <string id="FreeRatio4Compaction">Anteil freier Speicherplatz zum Auslösen der VHD-Datenträgerkomprimierung</string>
+      <string id="FreeRatio4Compaction_Part">Anteil freier Speicherplatz (Prozent)</string>
+      <string id="FreeRatio4Compaction_Help">Gilt für: sowohl dateibasierte als auch containerbasierte Profillösungen
+
+Hier können Sie den Anteil an freiem Speicherplatz zum Auslösen der VHD-Datenträgerkomprimierung angeben. Wenn der Anteil an freiem Speicherplatz beim Abmelden des Benutzers den angegebenen Wert überschreitet, wird die Datenträgerkomprimierung ausgelöst.
+
+Anteil freier Speicherplatz = (aktuelle VHD-Dateigröße minus erforderliche VHD-Mindestdateigröße*) geteilt durch aktuelle VHD-Dateigröße
+
+* Wird mit der GetSupportedSize-Methode der MSFT_Partition-Klasse vom Microsoft Windows-Betriebssystem abgerufen.
+
+Wenn diese Einstellung hier nicht konfiguriert ist, wird der Wert aus der INI-Datei verwendet.
+
+Wenn diese Einstellung weder hier noch in der INI-Datei konfiguriert ist, wird der Standardwert 20 (%) verwendet.</string>
+      <string id="FreeRatio4Compaction_Part_gpfx">Anteil freier Speicherplatz zum Auslösen der VHD-Datenträgerkomprimierung</string>
+      <string id="NLogoffs4Compaction">Anzahl der Abmeldungen zum Auslösen der VHD-Datenträgerkomprimierung</string>
+      <string id="NLogoffs4Compaction_Part">Anzahl der Abmeldungen</string>
+      <string id="NLogoffs4Compaction_Help">Gilt für: sowohl dateibasierte als auch containerbasierte Profillösungen
+
+Hier können Sie die Anzahl der Benutzerabmeldungen angeben, die die VHD-Datenträgerkomprimierung auslösen.
+
+Wenn die Anzahl der Abmeldungen seit der letzten Komprimierung den angegebenen Wert erreicht, wird die Datenträgerkomprimierung erneut ausgelöst.
+
+Wenn diese Einstellung hier nicht konfiguriert ist, wird der Wert aus der INI-Datei verwendet.
+
+Wenn diese Einstellung weder hier noch in der INI-Datei konfiguriert ist, wird der Standardwert 5 verwendet.</string>
+      <string id="NLogoffs4Compaction_Part_gpfx">Anzahl der Abmeldungen zum Auslösen der VHD-Datenträgerkomprimierung</string>
+      <string id="NDefrag4Compaction">Defragmentierung für VHD-Datenträgerkomprimierung deaktivieren</string>
+      <string id="NDefrag4Compaction_Help">Gilt für: sowohl dateibasierte als auch containerbasierte Profillösungen
+
+Hier können Sie angeben, ob die Dateidefragmentierung für die VHD-Datenträgerkomprimierung deaktiviert werden soll. 
+
+Wenn die VHD-Datenträgerkomprimierung aktiviert ist, wird die VHD-Datenträgerdatei zuerst automatisch mit dem in Windows integrierten 'defrag'-Tool defragmentiert und dann komprimiert. Die Defragmentierung von VHD-Datenträgern führt zu besseren Komprimierungsergebnissen, während ihre Deaktivierung Systemressourcen sparen kann.
+
+Wenn diese Richtlinie hier nicht konfiguriert ist, wird der Wert aus der INI-Datei verwendet.
+
+Wenn diese Richtlinie weder hier noch in der INI-Datei konfiguriert ist, ist die Defragmentierung standardmäßig aktiviert.</string>
+      <string id="VhdContainerCapacity">Standardkapazität von VHD-Containern</string>
+      <string id="VhdContainerCapacity_Part">Standardkapazität (in GB)</string>
+      <string id="VhdContainerCapacity_Part_gpfx">Standardkapazität von VHD-Containern</string>
+      <string id="VhdContainerCapacity_Help">Gilt für: sowohl dateibasierte als auch containerbasierte Profillösungen
+
+Gibt die Standardspeicherkapazität (in GB) von VHD-Containern an.
+
+Wenn diese Richtlinie hier nicht konfiguriert wird, wird der Wert aus der INI-Datei verwendet.
+
+Wenn diese Richtlinie weder hier noch in der INI-Datei konfiguriert wird, ist der Standardwert 50 (GB).</string>
+      <string id="VhdAutoExpansionThreshold">Schwellenwert für die automatische Erweiterung von Profilcontainern</string>
+      <string id="VhdAutoExpansionThreshold_Part">Schwellenwert für automatische Erweiterung (Prozent)</string>
+      <string id="VhdAutoExpansionThreshold_Part_gpfx">Schwellenwert für die automatische Erweiterung von Profilcontainern</string>
+      <string id="VhdAutoExpansionThreshold_Help">Gilt für: sowohl dateibasierte als auch containerbasierte Profillösungen
+
+Legt den Auslastungsprozentsatz der Speicherkapazität fest, bei dem Profilcontainer die automatische Erweiterung auslösen.
+
+Wenn diese Richtlinie hier nicht konfiguriert wird, wird der Wert aus der INI-Datei verwendet.
+
+Wenn diese Richtlinie hier oder in der INI-Datei nicht konfiguriert wird, ist der Standardwert 90 (%) der Speicherkapazität.</string>
+      <string id="VhdAutoExpansionIncrement">Inkrement für die automatische Erweiterung von Profilcontainern</string>
+      <string id="VhdAutoExpansionIncrement_Part">Inkrement für die automatische Erweiterung (in GB)</string>
+      <string id="VhdAutoExpansionIncrement_Part_gpfx">Inkrement für die automatische Erweiterung von Profilcontainern</string>
+      <string id="VhdAutoExpansionIncrement_Help">Gilt für: sowohl dateibasierte als auch containerbasierte Profillösungen
+
+Gibt die Speicherkapazität (in GB) an, um die Profilcontainer automatisch erweitert werden, wenn die automatische Erweiterung ausgelöst wird.
+
+Wenn diese Richtlinie hier nicht konfiguriert wird, wird der Wert aus der INI-Datei verwendet.
+
+Wenn diese Richtlinie weder hier noch in der INI-Datei konfiguriert wird, ist der Standardwert 10 (GB).</string>
+      <string id="VhdAutoExpansionLimit">Grenzwert für die automatische Erweiterung von Profilcontainern</string>
+      <string id="VhdAutoExpansionLimit_Part">Limit für die automatische Erweiterung (in GB)</string>
+      <string id="VhdAutoExpansionLimit_Part_gpfx">Grenzwert für die automatische Erweiterung von Profilcontainern</string>
+      <string id="VhdAutoExpansionLimit_Help">Gilt für: sowohl dateibasierte als auch containerbasierte Profillösungen
+
+Gibt die maximale Speicherkapazität (in GB) an, auf die Profilcontainer automatisch erweitert werden können, wenn die automatische Erweiterung ausgelöst wird.
+
+Wenn diese Richtlinie hier nicht konfiguriert wird, wird der Wert aus der INI-Datei verwendet.
+
+Wenn diese Richtlinie weder hier noch in der INI-Datei konfiguriert wird, ist der Standardwert 80 (GB).</string>
+      <string id="UwpAppsRoaming">Roaming von UWP-Apps</string>
+      <string id="UwpAppsRoaming_Help">Gilt für: sowohl dateibasierte als auch containerbasierte Profillösungen
+
+Ermöglicht UWP-Apps (Universal Windows Platform) das Roaming mit Benutzern. Dadurch können Benutzer von verschiedenen Geräten aus auf dieselben UWP-Apps zugreifen.
+
+Wenn diese Richtlinie aktiviert ist, ermöglicht die Profilverwaltung UWP-Apps das Roaming mit Benutzern, indem die Apps auf separaten VHDX-Datenträgern gespeichert werden. Diese Datenträger werden während der Benutzeranmeldung bereitgestellt und während der Benutzerabmeldung getrennt.
+
+Wenn diese Einstellung hier nicht konfiguriert ist, wird der Wert aus der INI-Datei verwendet.
+
+Wenn diese Einstellung weder hier noch in der INI-Datei konfiguriert ist, ist diese Funktion deaktiviert.</string>
+      <string id="UserStoreSelection">Auswahlmethode für den Benutzerspeicher</string>
+      <string id="UserStoreSelection_Help">Gibt die Methode an, mit der die Profilverwaltung einen Benutzerspeicher auswählt, wenn mehrere Benutzerspeicher verfügbar sind. Diese Einstellung gilt, wenn Sie zusätzlich zum Benutzerspeicher replizierte Benutzerspeicher konfiguriert haben.
+Wenn mehrere Benutzerspeicher verfügbar sind, wählt die Profilverwaltung zuerst diejenigen mit dem neuesten Profil aus. Wenn mehrere Optionen übrig bleiben, wird basierend auf der von Ihnen gewählten Methode eine weitere ausgewählt:
+– Konfigurationsreihenfolge. Wählt den frühesten konfigurierten Speicher aus.
+– Zugriffsleistung. Wählt den Speicher mit der besten Zugriffsleistung aus.
+
+Wenn diese Einstellung hier nicht konfiguriert ist, wird der Wert aus der .ini-Datei verwendet.
+
+Wenn diese Einstellung weder hier noch in der .ini-Datei konfiguriert ist, wird 'Konfigurationsreihenfolge' verwendet.</string>
+      <string id="UserStoreSelection_Part">Auswahlmethode:</string>
+      <string id="UserStoreSelection_Part_gpfx">Auswahlmethode für den Benutzerspeicher</string>
+      <string id="UserStoreSelectionEnum_Config">Konfigurationsreihenfolge</string>
+      <string id="UserStoreSelectionEnum_AccPerf">Zugriffsleistung</string>
+      <string id="ProfileContainerSettings">Profilcontainereinstellungen</string>
+      <string id="ProfileContainer">Profilcontainer</string>
+      <string id="ProfileContainer_Part">Liste der Ordner, die auf dem Profildatenträger enthalten sein sollen</string>
+      <string id="ProfileContainer_Part_gpfx">Profilcontainer - Liste der Ordner, die auf dem Profildatenträger enthalten sein sollen</string>
+      <string id="ProfileContainer_Help">Gilt für: sowohl dateibasierte als auch containerbasierte Profillösungen
+
+Ein Profilcontainer ist eine VHDX-basierte Profillösung, mit der Sie die Ordner angeben können, die auf dem Profildatenträger enthalten sein sollen. Der Profilcontainer fügt den Profildatenträger mit diesen Ordnern an, sodass keine Kopie der Ordner im lokalen Profil gespeichert werden muss. Dadurch werden die Anmeldezeiten verringert.
+
+Um einen Profilcontainer zu verwenden, aktivieren Sie diese Richtlinie und fügen Sie die relativen Pfade der Ordner der Liste hinzu. Citrix empfiehlt, dass Sie die Ordner mit großen Cachedateien in die Liste aufnehmen. Fügen Sie beispielsweise den Ordner mit Citrix Files-Inhaltscache der Liste hinzu: AppData\Local\Citrix\Citrix Files\PartCache
+
+Um einen Profilcontainer für das gesamte Benutzerprofil zu aktivieren, fügen Sie der Liste ein Sternchen (*) hinzu. Die folgenden Benutzerprofile (sofern vorhanden) werden bei der ersten Verwendung automatisch in den Container migriert:
+
+- Lokales Windows-Benutzerprofil
+- Benutzerprofile aus der dateibasierten Profillösung von Citrix
+
+Wenn diese Einstellung hier nicht konfiguriert ist, wird der Wert aus der INI-Datei verwendet. Wenn diese Einstellung weder hier noch in der INI-Datei konfiguriert ist, ist sie standardmäßig deaktiviert.</string>
+      <string id="ProfileContainerExclusionListDir">Ordner, die vom Profilcontainer ausgeschlossen werden sollen</string>
+      <string id="ProfileContainerExclusionListDir_Part">Liste der Ordner, die vom Profilcontainer ausgeschlossen werden sollen</string>
+      <string id="ProfileContainerExclusionListDir_Part_gpfx">Ordner, die vom Profilcontainer ausgeschlossen werden sollen</string>
+      <string id="ProfileContainerExclusionListDir_Help">Gilt für: sowohl dateibasierte als auch containerbasierte Profillösungen
+
+Liste der Ordner, die vom Profilcontainer ausgeschlossen werden sollen.
+
+Geben Sie auszuschließende Ordner als Pfade relativ zum Benutzerprofil ein.
+
+Platzhalter werden unterstützt, sie werden aber nicht rekursiv angewendet.
+
+Beispiele:
+'Desktop' gibt den Ordner 'Desktop' an.
+
+'Downloads\*' gibt alle unmittelbaren Unterordner des Ordners 'Downloads' an.
+
+Wenn diese Einstellung deaktiviert ist, wird kein Ordner ausgeschlossen.
+
+Wenn diese Einstellung hier nicht konfiguriert ist, wird der Wert aus der INI-Datei verwendet.
+
+Wenn diese Einstellung weder hier noch in der INI-Datei konfiguriert ist, wird kein Ordner ausgeschlossen.</string>
+      <string id="ProfileContainerInclusionListDir">Ordner, die in den Profilcontainer eingeschlossen werden sollen</string>
+      <string id="ProfileContainerInclusionListDir_Part">Liste der Ordner, die in den Profilcontainer eingeschlossen werden sollen</string>
+      <string id="ProfileContainerInclusionListDir_Part_gpfx">Ordner, die in den Profilcontainer eingeschlossen werden sollen</string>
+      <string id="ProfileContainerInclusionListDir_Help">Gilt für: sowohl dateibasierte als auch containerbasierte Profillösungen
+
+Liste der Ordner, die in den Profilcontainer eingeschlossen werden sollen, wenn die übergeordneten Ordner ausgeschlossen sind.
+
+Ordner in dieser Liste müssen Unterordner der ausgeschlossenen Ordner sein. Andernfalls funktioniert diese Einstellung nicht.
+
+Platzhalter werden unterstützt, sie werden aber nicht rekursiv angewendet.
+
+Das Deaktivieren dieser Einstellung hat die gleiche Wirkung wie eine Aktivierung und das Konfigurieren einer leeren Liste.
+
+Wenn diese Einstellung hier nicht konfiguriert ist, wird der Wert aus der INI-Datei verwendet.
+
+Wenn diese Einstellung weder hier noch in der INI-Datei konfiguriert ist, werden Ordner, die nicht in der Ausschlussliste enthalten sind, in den Profilcontainer aufgenommen.</string>
+      <string id="ProfileContainerExclusionListFile">Dateien, die vom Profilcontainer ausgeschlossen werden sollen</string>
+      <string id="ProfileContainerExclusionListFile_Part">Liste der Dateien, die vom Profilcontainer ausgeschlossen werden sollen</string>
+      <string id="ProfileContainerExclusionListFile_Part_gpfx">Dateien, die vom Profilcontainer ausgeschlossen werden sollen</string>
+      <string id="ProfileContainerExclusionListFile_Help">Gilt für: sowohl dateibasierte als auch containerbasierte Profillösungen
+
+Liste der Dateien, die vom Profilcontainer ausgeschlossen werden sollen.
+
+Geben Sie die auszuschließenden Dateien als Pfade relativ zum Benutzerprofil ein. Sie können Platzhalter verwenden. Platzhalter in Dateinamen werden rekursiv angewendet, Platzhalter in Ordnernamen nicht. Sie können den senkrechten Strich (|) verwenden, um die Richtlinie nur auf den aktuellen Ordner zu beschränken, sodass die Richtlinie nicht auf die Unterordner angewendet wird.
+
+Wenn diese Einstellung deaktiviert ist, werden keine Dateien ausgeschlossen.
+
+Wenn diese Einstellung hier nicht konfiguriert ist, wird der Wert aus der INI-Datei verwendet.
+
+Wenn diese Einstellung weder hier noch in der INI-Datei konfiguriert ist, werden keine Dateien ausgeschlossen.
+
+Beispiele:
+'Desktop\Desktop.ini' schließt die Datei 'Desktop\Desktop.ini' aus dem Profilcontainer aus.
+
+'AppData\*.tmp' schließt alle Dateien mit der Erweiterung .tmp im Verzeichnis 'AppData' und seinen Unterordnern aus.
+
+'AppData\*.tmp|' schließt alle Dateien mit der Erweiterung .tmp im Verzeichnis 'AppData' aus.
+
+'Downloads\*\a.txt' schließt a.txt in allen unmittelbaren Unterordnern des Ordners 'Downloads' aus. Beachten Sie, dass Platzhalter in Ordnernamen nicht rekursiv angewendet werden.</string>
+      <string id="ProfileContainerInclusionListFile">Dateien, die in den Profilcontainer eingeschlossen werden sollen</string>
+      <string id="ProfileContainerInclusionListFile_Part">Liste der Dateien, die in den Profilcontainer eingeschlossen werden sollen</string>
+      <string id="ProfileContainerInclusionListFile_Part_gpfx">Dateien, die in den Profilcontainer eingeschlossen werden sollen</string>
+      <string id="ProfileContainerInclusionListFile_Help">Gilt für: sowohl dateibasierte als auch containerbasierte Profillösungen
+
+Liste der Dateien, die in den Profilcontainer eingeschlossen werden sollen, wenn ihre übergeordneten Ordner davon ausgeschlossen sind.
+
+Geben Sie die einzuschließenden Dateien als Pfade relativ zum Benutzerprofil ein. Sie können Platzhalter verwenden. Platzhalter in Dateinamen werden rekursiv angewendet, Platzhalter in Ordnernamen nicht. Sie können den senkrechten Strich (|) verwenden, um die Richtlinie nur auf den aktuellen Ordner zu beschränken, sodass die Richtlinie nicht auf die Unterordner angewendet wird.
+
+Das Deaktivieren dieser Einstellung hat die gleiche Wirkung wie eine Aktivierung und das Konfigurieren einer leeren Liste.
+
+Wenn diese Einstellung hier nicht konfiguriert ist, wird der Wert aus der INI-Datei verwendet.
+
+Wenn diese Einstellung weder hier noch in der INI-Datei konfiguriert ist, werden Ordner, die nicht auf der Ausschlussliste stehen, in den Profilcontainer aufgenommen.
+
+Beispiele:
+'AppData\Local\Microsoft\Office\Access.qat' enthält eine Datei in einem Ordner, der in der Standardkonfiguration ausgeschlossen ist.
+
+'AppData\Local\MyApp\*.cfg' enthält alle Dateien mit der Erweiterung .cfg im Profilordner 'AppData\Local\MyApp' und seinen Unterordnern.
+
+'AppData\Local\MyApp\*.cfg|' enthält alle Dateien mit der Erweiterung .cfg im Profilordner 'AppData\Local\MyApp'.
+
+'Downloads\*\b.txt' enthält b.txt in jedem unmittelbaren Unterordner des Orders 'Downloads'. Beachten Sie, dass Platzhalter in Ordnernamen nicht rekursiv angewendet werden.</string>
+      <string id="ProfileContainerLocalCache">Lokales Caching für Profilcontainer aktivieren</string>
+      <string id="ProfileContainerLocalCache_Help">Gilt für: nur containerbasierte Profillösung
+
+Wenn das lokale Caching für Profilcontainer aktiviert ist, dient jedes lokale Profil als lokaler Cache seines Profilcontainers. Wenn Profilstreaming verwendet wird, werden bei Bedarf lokal zwischengespeicherte Dateien erstellt. Andernfalls werden sie bei der Anmeldung von Benutzern erstellt.</string>
+      <string id="EnableVHDDiskCompaction">VHD-Datenträgerkomprimierung aktivieren</string>
+      <string id="EnableVHDDiskCompaction_Help">Gilt für: sowohl dateibasierte als auch containerbasierte Profillösungen
+
+Hiermit können Sie angeben, ob VHD-Datenträgerdateien beim Abmelden des Benutzers komprimiert werden sollen, wenn bestimmte Bedingungen erfüllt sind. 
+Die Datenträgerkomprimierung kann bei zentralen Speichern oder Cloudspeicher Platz sparen.
+
+Abhängig von Ihren Anforderungen und den verfügbaren Ressourcen können Sie die standardmäßigen Komprimierungseinstellungen und das Verhalten mit den folgenden Richtlinien in den erweiterten Einstellungen anpassen:
+
+- Anteil freier Speicherplatz zum Auslösen der VHD-Datenträgerkomprimierung
+- Anzahl der Abmeldungen zum Auslösen der VHD-Datenträgerkomprimierung
+- Defragmentierung für VHD-Datenträgerkomprimierung deaktivieren
+
+Wenn diese Richtlinie hier nicht konfiguriert ist, wird der Wert aus der INI-Datei verwendet.
+
+Wenn diese Richtlinie weder hier noch in der INI-Datei konfiguriert ist, ist die VHD-Datenträgerkomprimierung nicht aktiviert.</string>
+      <string id="EnableVHDAutoExtend">Automatische VHD-Erweiterung für Profilcontainer aktivieren</string>
+      <string id="EnableVHDAutoExtend_Help">Gilt für: sowohl dateibasierte als auch containerbasierte Profillösungen
+
+Gibt an, ob die automatische VHD-Erweiterung für den Profilcontainer aktiviert werden soll. Wenn sie aktiviert ist, gelten alle Einstellungen für die automatische Erweiterung von Profilcontainern für den Profilcontainer.
+
+Wenn diese Richtlinie hier nicht konfiguriert ist, wird der Wert aus der INI-Datei verwendet.
+
+Wenn diese Richtlinie weder hier noch in der INI-Datei konfiguriert ist, ist sie deaktiviert.</string>
+      <string id="DisableConcurrentAccessToVHDContainers">Exklusiven Zugriff auf VHD-Container aktivieren</string>
+      <string id="DisableConcurrentAccessToProfileContainer">Exklusiven Zugriff auf VHD-Container aktivieren - Profilcontainer</string>
+      <string id="DisableConcurrentAccessToOneDriveContainer">Exklusiven Zugriff auf VHD-Container aktivieren - OneDrive-Container</string>
+      <string id="DisableConcurrentAccessToVHDContainers_Help">Gilt für: sowohl dateibasierte als auch containerbasierte Profillösungen
+
+Standardmäßig ermöglichen VHD-Container den gleichzeitigen Zugriff. Wenn diese Einstellung aktiviert ist, lassen sie jeweils nur einen Zugriff zu.
+
+Hinweis: Wenn Sie diese Einstellung für Profilcontainer in einer containerbasierten Profillösung aktivieren, wird die Einstellung 'Multisitzungszurückschreiben für Profilcontainer aktivieren' automatisch deaktiviert.
+
+Wenn diese Richtlinie hier nicht konfiguriert ist, wird der Wert aus der INI-Datei verwendet.
+
+Wenn diese Richtlinie weder hier noch in der INI-Datei konfiguriert ist, ist die Einstellung deaktiviert.</string>
+      <string id="DisableConcurrentAccessToVHDContainers_Intro">Wählen Sie die Container aus, auf die diese Einstellung angewendet werden soll:</string>
+      <string id="PreventLoginWhenMountFailed">Benutzer abmelden, wenn der Profilcontainer während der Anmeldung nicht verfügbar ist</string>
+      <string id="PreventLoginWhenMountFailed_Part">Anzuzeigende Fehlermeldung</string>
+      <string id="PreventLoginWhenMountFailed_Part_gpfx">Benutzer abmelden, wenn der Profilcontainer während der Anmeldung nicht verfügbar ist</string>
+      <string id="PreventLoginWhenMountFailed_Help">Gilt nur für containerbasierte Profillösung
+
+Gibt an, ob Benutzer abgemeldet werden sollen, wenn der Profilcontainer bei der Anmeldung nicht verfügbar ist. Standardmäßig können sich Benutzer mit temporären Profilen anmelden, wenn der Profilcontainer nicht verfügbar ist. Wenn Sie diese Einstellung aktivieren, wird den Benutzern eine Fehlermeldung angezeigt und sie werden abgemeldet, nachdem sie auf 'OK' geklickt haben. Geben Sie die Fehlermeldung ein, die angezeigt werden soll. Wenn Sie das Feld leer lassen, wird eine Standardmeldung angezeigt.
+
+Wenn diese Richtlinie hier nicht konfiguriert ist, wird die Einstellung aus der INI-Datei verwendet.
+
+Wenn diese Richtlinie weder hier noch in der INI-Datei konfiguriert ist, ist die Einstellung deaktiviert.</string>
+      <string id="FileDeduplicationSettings">Dateideduplizierung</string>
+      <string id="SharedStoreFileExclusionList">Aus dem freigegebenen Speicher auszuschließende Dateien</string>
+      <string id="SharedStoreFileExclusionList_Part">Aus dem freigegebenen Speicher auszuschließende Dateien</string>
+      <string id="SharedStoreFileExclusionList_Part_gpfx">Aus dem freigegebenen Speicher auszuschließende Dateien</string>
+      <string id="SharedStoreFileExclusionList_Help">Gilt für: sowohl dateibasierte als auch containerbasierte Profillösungen
+
+Hier können Sie Dateien angeben, die aus dem freigegebenen Speicher ausgeschlossen werden sollen. Verwenden Sie diese Richtlinie zusammen mit der Richtlinie 'In den freigegebenen Speicher für die Deduplizierung aufzunehmende Dateien'.
+
+Ab Profilverwaltung Version 2311 gilt diese Richtlinie für Profilcontainer.
+
+Geben Sie die Dateinamen mit Pfaden relativ zum Benutzerprofil an. Beachten Sie Folgendes:
+
+- Platzhalter werden unterstützt.
+
+- Platzhalter in Dateinamen werden rekursiv angewendet. Um sie auf den aktuellen Ordner zu beschränken, verwenden Sie den vertikalen Balken (|).
+
+- Platzhalter in Ordnernamen werden nicht rekursiv angewendet.
+
+Beispiele:
+
+- Downloads\profilemgt_x64.msi gibt die Datei profilemgt_x64.msi im Ordner 'Downloads' an.
+
+- *.tmp gibt Dateien mit der Erweiterung .tmp im Benutzerprofilordner und seinen Unterordnern an.
+
+- AppData\*.tmp gibt Dateien mit die Erweiterung .tmp im Ordner 'AppData' und seinen Unterordnern an.
+
+- AppData\*.tmp| gibt Dateien mit der Erweiterung .tmp nur im Ordner 'AppData' an.
+
+- Downloads\*\a.txt gibt die Datei a.txt in jedem unmittelbaren Unterordner des Ordners 'Downloads' an.
+
+Wenn diese Einstellung deaktiviert ist, werden keine Dateien ausgeschlossen.
+Wenn diese Einstellung hier nicht konfiguriert ist, wird der Wert aus der INI-Datei verwendet.
+Wenn diese Einstellung weder hier noch in der INI-Datei konfiguriert ist, werden keine Dateien ausgeschlossen.</string>
+      <string id="SharedStoreFileInclusionList">In den freigegebenen Speicher für die Deduplizierung aufzunehmende Dateien</string>
+      <string id="SharedStoreFileInclusionList_Part">In den freigegebenen Speicher aufzunehmende Dateien</string>
+      <string id="SharedStoreFileInclusionList_Part_gpfx">In den freigegebenen Speicher für die Deduplizierung aufzunehmende Dateien</string>
+      <string id="SharedStoreFileInclusionList_Help">Gilt für: sowohl dateibasierte als auch containerbasierte Profillösungen
+
+Verschiedene Benutzerprofile können identische Dateien enthalten. Durch das separate Speichern dieser Dateien in einem zentralen Speicherort statt im Benutzerspeicher kann Speicherplatz gespart werden. Zudem werden Duplikate vermieden. Mit dieser Richtlinie können Sie Dateien angeben, die Sie in den freigegebenen Speicher auf dem Server aufnehmen möchten, der den Benutzerspeicher hostet. Wenn die Richtlinie aktiviert ist, generiert die Profilverwaltung den freigegebenen Speicher automatisch. Die angegebenen Dateien werden dann zentral im freigegebenen Speicher und nicht in jedem Benutzerprofil im Benutzerspeicher gespeichert.
+
+Ab Profilverwaltung Version 2311 gilt diese Richtlinie für Profilcontainer.
+
+Geben Sie die Dateinamen mit Pfaden relativ zum Benutzerprofil an. Beachten Sie Folgendes:
+
+- Platzhalter werden unterstützt.
+
+- Platzhalter in Dateinamen werden rekursiv angewendet. Um sie nur auf den aktuellen Ordner zu beschränken, verwenden Sie den vertikalen Balken (|).
+
+- Platzhalter in Ordnernamen werden nicht rekursiv angewendet.
+
+Beispiele:
+
+- Downloads\profilemgt_x64.msi - Die Datei profilemgt_x64.msi im Ordner 'Downloads'.
+
+- *.cfg - Dateien mit der Erweiterung .cfg im Benutzerprofilordner und seinen Unterordnern.
+
+- Musik\* - Dateien im Ordner 'Musik' und seinen Unterordnern.
+
+- Downloads\*.iso - Dateien mit der Erweiterung .iso im Ordner 'Downloads' und seinen Unterordnern.
+
+- Downloads\*.iso| - Dateien mit der Erweiterung .iso nur im Ordner 'Downloads'.
+
+- AppData\Local\Microsoft\OneDrive\*\*.dll - Dateien mit der Erweiterung .dll in einem beliebigen unmittelbaren Unterordner des Ordners 'AppData\Local\Microsoft\OneDrive'.
+
+Wenn diese Einstellung deaktiviert ist, ist der freigegebene Speicher deaktiviert.
+Wenn diese Einstellung hier nicht konfiguriert ist, wird der Wert aus der INI-Datei verwendet.
+Wenn diese Einstellung weder hier noch in der INI-Datei konfiguriert ist, ist der freigegebene Speicher deaktiviert.</string>
+      <string id="SharedStoreProfileContainerFileSizeLimit">Mindestgröße der zu deduplizierenden Dateien aus Profilcontainern</string>
+      <string id="SharedStoreProfileContainerFileSizeLimit_Part">Mindestgröße in Megabytes</string>
+      <string id="SharedStoreProfileContainerFileSizeLimit_Part_gpfx">Mindestgröße der zu deduplizierenden Dateien aus Profilcontainern</string>
+      <string id="SharedStoreProfileContainerFileSizeLimit_Help">Gilt für: sowohl dateibasierte als auch containerbasierte Profillösungen
+
+Gibt die Mindestgröße (in MB) von Dateien an, die aus Profilcontainern dedupliziert werden sollen. Der Wert muss 256 oder größer sein.
+Wenn diese Einstellung hier nicht konfiguriert ist, wird der Wert aus der INI-Datei verwendet.
+Wenn diese Einstellung weder hier noch in der INI-Datei konfiguriert ist, ist der Wert 256.</string>
+      <string id="GroupsToAccessProfileContainer">Benutzer und Gruppen für den Zugriff auf den Profilcontainer</string>
+      <string id="GroupsToAccessProfileContainer_Part">Benutzer und Gruppen für den Zugriff auf den Profilcontainer</string>
+      <string id="GroupsToAccessProfileContainer_Part_gpfx">Benutzer und Gruppen für den Zugriff auf den Profilcontainer</string>
+      <string id="GroupsToAccessProfileContainer_Help">Gilt sowohl für dateibasierte als auch für containerbasierte Profillösungen.
+
+Gibt an, welche Domänenbenutzer und -gruppen über die Berechtigung 'Lesen' und 'Ausführen' für Profilcontainer verfügen. Das Format für die Eingabe von Domänenbenutzer oder Domänengruppe ist: &lt;Domänenname&gt;\&lt;Benutzer- oder Gruppenname&gt; oder Security Identifier (SID).
+
+Wenn diese Richtlinie hier nicht konfiguriert ist, wird der Wert aus der .ini-Datei verwendet. 
+
+Wenn diese Richtlinie weder hier noch in der .ini-Datei konfiguriert ist, ist der Profilcontainer nur für seinen Besitzer zugänglich.</string>
+      <string id="LogSettings">Protokolleinstellungen</string>
+      <string id="DebugMode">Protokollierung aktivieren</string>
+      <string id="DebugMode_Help">Gilt für: sowohl dateibasierte als auch containerbasierte Profillösungen
+
+Mit dieser Einstellung aktivieren Sie den Debugmodus (ausführliche Protokollierung). Im Debugmodus werden umfangreiche Statusinformationen in den Protokolldateien unter '%SystemRoot%\System32\Logfiles\UserProfileManager' oder in dem mit der Richtlinieneinstellung 'Pfad zur Protokolldatei' festgelegten Speicherort aufgezeichnet.
+
+Wenn diese Einstellung deaktiviert ist, werden nur Fehler protokolliert.
+
+Wenn diese Einstellung hier nicht konfiguriert ist, wird der Wert in der INI-Datei verwendet.
+
+Wenn diese Einstellung weder hier noch in der INI-Datei konfiguriert ist, werden nur Fehler protokolliert.</string>
+      <string id="LogLevel">Protokolleinstellungen</string>
+      <string id="LogLevel_Help">Gilt für: sowohl dateibasierte als auch containerbasierte Profillösungen
+
+Detaillierte Protokolleinstellungen.
+
+Hiermit werden Ereignisse oder Aktionen definiert, für die die Profilverwaltung detaillierte Protokolle erstellt.
+
+Wenn diese Einstellung hier nicht konfiguriert ist, verwendet die Profilverwaltung den Wert in der INI-Datei.
+
+Wenn diese Einstellung weder hier noch in der INI-Datei konfiguriert ist, werden Fehler und allgemeine Informationen protokolliert.</string>
+      <string id="LogLevel_Intro">Definieren Sie Ereignisse und Aktionen, die die Profilverwaltung ausführlich protokolliert:</string>
+      <string id="LogLevel_UserName">Persönliche Benutzerinformationen</string>
+      <string id="LogLevel_Warnings">Allgemeine Warnungen</string>
+      <string id="LogLevel_Information">Allgemeine Informationen</string>
+      <string id="LogLevel_FileSystemNotification">Dateisystembenachrichtigungen</string>
+      <string id="LogLevel_FileSystemActions">Dateisystemaktionen</string>
+      <string id="LogLevel_RegistryActions">Registrierungsaktionen</string>
+      <string id="LogLevel_RegistryDifference">Registrierungsunterschiede bei der Abmeldung</string>
+      <string id="LogLevel_PolicyUserLogon">Richtlinienwerte bei Anmeldung und Abmeldung</string>
+      <string id="LogLevel_ActiveDirectoryActions">Active Directory-Aktionen</string>
+      <string id="LogLevel_Logon">Anmeldung</string>
+      <string id="LogLevel_Logoff">Abmeldung</string>
+      <string id="MaxLogSize">Maximale Größe der Protokolldatei</string>
+      <string id="MaxLogSize_Part">Maximale Größe in Bytes</string>
+      <string id="MaxLogSize_Part_gpfx">Maximale Größe der Protokolldatei</string>
+      <string id="MaxLogSize_Help">Gilt für: sowohl dateibasierte als auch containerbasierte Profillösungen
+
+Legt die maximale Größe der Protokolldatei in Bytes fest. Wenn die Protokolldatei diese Größe überschreitet, wird eine vorhandene Sicherungskopie der Datei (.bak) gelöscht, die Protokolldatei erhält die Erweiterung .bak und eine neue Protokolldatei wird erstellt.
+
+Die Protokolldatei wird unter '%SystemRoot%\System32\Logfiles\UserProfileManager' oder in dem mit der Richtlinieneinstellung 'Pfad zur Protokolldatei' festgelegten Speicherort erstellt.
+
+Wenn diese Einstellung deaktiviert ist, wird der Standardwert 10 MB verwendet.
+
+Wenn diese Einstellung hier nicht konfiguriert ist, wird der Wert in der INI-Datei verwendet.
+
+Wenn diese Einstellung weder hier noch in der INI-Datei konfiguriert ist, wird der Standardwert 10 MB verwendet.</string>
+      <string id="DebugFilePath">Pfad zur Protokolldatei</string>
+      <string id="DebugFilePath_Part">Pfad zur Protokolldatei</string>
+      <string id="DebugFilePath_Help">Gilt für: sowohl dateibasierte als auch containerbasierte Profillösungen
+
+Stellt einen alternativen Pfad für das Speichern der Protokolldateien ein.
+
+Der Pfad kann auf ein lokales Laufwerk oder ein Netzwerklaufwerk (ein UNC-Pfad) verweisen. Remotepfade können in großen, verteilten Umgebungen nützlich sein, jedoch zu hohem Netzwerkdatenverkehr führen; dies kann für Protokolldateien nicht angemessen sein. Stellen Sie für bereitgestellte virtuelle Maschinen mit einer permanenten Festplatte einen lokalen Pfad zu diesem Laufwerk ein. Dies stellt sicher, dass Protokolldateien beim Neustart von Maschinen erhalten bleiben. Wenn Sie für virtuelle Maschinen ohne permanente Festplatte einen UNC-Pfad einstellen, bleiben die Protokolldateien erhalten, das Systemkonto für die Maschinen muss jedoch Schreibrechte für die UNC-Freigabe haben. Verwenden Sie einen lokalen Pfad für Laptops, die von Offlineprofilen verwaltet werden.
+
+Beispiele:
+D:\LogFiles\ProfileManagement.
+\\servername\LogFiles\ProfileManagement
+
+Wenn diese Einstellung hier nicht konfiguriert ist, wird der Wert in der INI-Datei verwendet.
+
+Wenn diese Einstellung weder hier noch in der INI-Datei konfiguriert ist, wird der Standardspeicherort '%SystemRoot%\System32\Logfiles\UserProfileManager' verwendet.
+
+Wenn Sie für Protokolldateien einen UNC-Pfad verwenden, empfiehlt Citrix, dass eine entsprechende Zugriffssteuerungsliste auf den Protokolldateiordner angewendet wird, um sicherzustellen, dass nur autorisierte Benutzer oder Computerkonten auf die gespeicherten Dateien zugreifen können.</string>
+      <string id="RegistrySettings">Registrierung</string>
+      <string id="ExclusionList">Ausschlussliste</string>
+      <string id="ExclusionList_Part">Ausschlussliste</string>
+      <string id="ExclusionList_Part_gpfx">Ausschlussliste</string>
+      <string id="ExclusionList_Help">Gilt für: nur dateibasierte Profillösung
+
+Liste der Registrierungsschlüssel in der HKCU-Struktur, die bei der Abmeldung ignoriert werden.
+
+Beispiel:
+Software\Richtlinien.
+
+Wenn diese Einstellung deaktiviert ist, werden keine Registrierungsschlüssel ausgeschlossen.
+
+Wenn diese Einstellung hier nicht konfiguriert ist, wird der Wert in der INI-Datei verwendet.
+
+Wenn diese Einstellung weder hier noch in der INI-Datei konfiguriert ist, werden keine Registrierungsschlüssel ausgeschlossen.</string>
+      <string id="DefaultExclusionList">Standardausschlussliste aktivieren</string>
+      <string id="ExclusionDefaultReg01">Software\Microsoft\AppV\Client\Integration</string>
+      <string id="ExclusionDefaultReg02">Software\Microsoft\AppV\Client\Publishing</string>
+      <string id="ExclusionDefaultReg03">Software\Microsoft\Speech_OneCore</string>
+      <string id="DefaultExclusionList_Help">Gilt für: nur dateibasierte Profillösung
+
+Standardliste der Registrierungsschlüssel in der HKCU-Struktur, die nicht mit dem Benutzerprofil synchronisiert werden.
+
+Wenn Sie diese Einstellung deaktivieren, werden Registrierungsschlüssel nicht standardmäßig ausgeschlossen.
+
+Wenn Sie diese Einstellung hier nicht konfigurieren, wird der Wert in der INI-Datei verwendet.
+
+Wenn Sie diese Einstellung weder hier noch in der INI-Datei konfigurieren, werden Registrierungsschlüssel nicht standardmäßig ausgeschlossen.
+
+Hinweis: Software\Microsoft\Speech_OneCore ist in der Profilverwaltung 5.8 und höher veraltet.</string>
+      <string id="IncludeListRegistry">Aufnahmeliste</string>
+      <string id="IncludeListRegistry_Part">Aufnahmeliste</string>
+      <string id="IncludeListRegistry_Part_gpfx">Aufnahmeliste</string>
+      <string id="IncludeListRegistry_Help">Gilt für: nur dateibasierte Profillösung
+
+Liste der Registrierungsschlüssel in der HKCU-Struktur, die bei der Abmeldung verarbeitet werden. Beispiel: Software\Adobe.
+
+Wenn diese Einstellung aktiviert ist, werden nur Schlüssel von dieser Liste verarbeitet.
+
+Wenn diese Einstellung deaktiviert ist, wird die gesamte HKCU-Struktur verarbeitet.
+
+Wenn diese Einstellung hier nicht konfiguriert ist, wird der Wert in der INI-Datei verwendet.
+
+Wenn diese Einstellung weder hier noch in der INI-Datei konfiguriert ist, wird die gesamte HKCU-Struktur verarbeitet.</string>
+      <string id="FileSystemSettings">Dateisystem</string>
+      <string id="ExclusionListSyncFiles">Ausschlussliste - Dateien</string>
+      <string id="ExclusionListSyncFiles_Part">Liste der ausgeschlossenen Dateien</string>
+      <string id="ExclusionListSyncFiles_Part_gpfx">Ausschlussliste - Dateien</string>
+      <string id="ExclusionListSyncFiles_Help">Gilt für: nur dateibasierte Profillösung
+
+Liste der Dateien, die während der Synchronisierung ignoriert werden.
+
+Dateinamen sollten als Pfade relativ zum Benutzerprofil angegeben werden. Platzhalter sind erlaubt. Platzhalter in Dateinamen werden rekursiv angewendet, Platzhalter in Ordnernamen nicht.
+
+Hinweis: Ab Profilverwaltung 7.15 können Sie mit dem senkrechten Strich '|' eine Richtlinie nur auf den aktuellen Ordner anwenden, ohne dass sie auf die Unterordner übertragen wird.
+
+Beispiele:
+'Desktop\Desktop.ini' ignoriert die Datei 'Desktop.ini' im Ordner 'Desktop'.
+
+'AppData\*.tmp' ignoriert alle Dateien mit der Erweiterung .tmp im Ordner 'AppData' und seinen Unterordnern.
+
+'AppData\*.tmp|' ignoriert alle Dateien mit der Erweiterung .tmp im Ordner 'AppData'.
+
+'Downloads\*\a.txt' ignoriert a.txt in allen unmittelbaren Unterordnern des Ordners 'Downloads'. Beachten Sie, dass Platzhalter in Ordnernamen nicht rekursiv angewendet werden.
+
+Wenn diese Einstellung deaktiviert ist, werden keine Dateien ausgeschlossen.
+
+Wenn diese Einstellung hier nicht konfiguriert ist, wird der Wert aus der INI-Datei verwendet.
+
+Wenn diese Einstellung hier oder in der INI-Datei nicht konfiguriert ist, werden keine Dateien ausgeschlossen.</string>
+      <string id="ExclusionListSyncDir">Ausschlussliste - Verzeichnisse</string>
+      <string id="ExclusionListSyncDir_Part">Liste der ausgeschlossenen Verzeichnisse</string>
+      <string id="ExclusionListSyncDir_Part_gpfx">Ausschlussliste - Verzeichnisse</string>
+      <string id="ExclusionListSyncDir_Help">Gilt für: nur dateibasierte Profillösung
+
+Liste der Verzeichnisse, die während der Synchronisation ignoriert werden.
+
+Ordnernamen sollten als Pfade relativ zum Benutzerprofil angegeben werden.
+
+Platzhalter werden unterstützt, aber nicht rekursiv angewendet.
+
+Beispiele:
+'Desktop' ignoriert den Ordner 'Desktop' im Benutzerprofil.
+
+'Downloads\*' ignoriert alle unmittelbaren Unterordner des Ordners 'Downloads'.
+
+Wenn diese Einstellung deaktiviert ist, werden keine Ordner ausgeschlossen.
+
+Wenn diese Einstellung hier nicht konfiguriert ist, wird der Wert aus der INI-Datei verwendet.
+
+Wenn diese Einstellung hier oder in der INI-Datei nicht konfiguriert ist, werden keine Ordner ausgeschlossen.</string>
+      <string id="StreamingExclusionList">Profilstreaming-Ausschlussliste - Verzeichnisse</string>
+      <string id="StreamingExclusionList_Part">Liste der vom Profilstreaming auszuschließenden Verzeichnisse</string>
+      <string id="StreamingExclusionList_Part_gpfx">Profilstreaming-Ausschlussliste - Verzeichnisse</string>
+      <string id="StreamingExclusionList_Help">Gilt für: nur dateibasierte Profillösung
+
+Liste der Verzeichnisse, die vom Profilstreaming ignoriert werden.
+Ordnernamen sollten als Pfade relativ zum Benutzerprofil angegeben werden.
+
+Beispiele:
+Bei der Eingabe von 'Desktop' (ohne Anführungszeichen) wird das Verzeichnis 'Desktop' im Benutzerprofil ignoriert.
+Wenn diese Einstellung deaktiviert ist, werden keine Ordner ausgeschlossen.
+Wenn diese Einstellung hier nicht konfiguriert ist, wird der Wert in der INI-Datei verwendet.
+Wenn diese Einstellung weder hier noch in der INI-Datei konfiguriert ist, werden keine Ordner ausgeschlossen.
+
+Hinweis:
+Profilstreaming-Ausschlüsse bedeuten nicht, dass die konfigurierten Ordner von der Profilverarbeitung ausgeschlossen werden. Sie werden weiterhin von der Citrix Profilverwaltung verwarbeitet.</string>
+      <string id="DefaultExclusionListSyncDir">Standardausschlussliste aktivieren - Verzeichnisse</string>
+      <string id="ExclusionDefaultDir01">!ctx_internetcache!</string>
+      <string id="ExclusionDefaultDir02">!ctx_localappdata!\Google\Chrome\User Data\Default\Cache</string>
+      <string id="ExclusionDefaultDir03">!ctx_localappdata!\Google\Chrome\User Data\Default\Cached Theme Images</string>
+      <string id="ExclusionDefaultDir04">!ctx_localappdata!\Google\Chrome\User Data\Default\JumpListIcons</string>
+      <string id="ExclusionDefaultDir05">!ctx_localappdata!\Google\Chrome\User Data\Default\JumpListIconsOld</string>
+      <string id="ExclusionDefaultDir06">!ctx_localappdata!\GroupPolicy</string>
+      <string id="ExclusionDefaultDir07">!ctx_localappdata!\Microsoft\AppV</string>
+      <string id="ExclusionDefaultDir08">!ctx_localappdata!\Microsoft\Messenger</string>
+      <string id="ExclusionDefaultDir09">!ctx_localappdata!\Microsoft\Office\15.0\Lync\Tracing</string>
+      <string id="ExclusionDefaultDir10">!ctx_localappdata!\Microsoft\OneNote</string>
+      <string id="ExclusionDefaultDir11">!ctx_localappdata!\Microsoft\Outlook</string>
+      <string id="ExclusionDefaultDir12">!ctx_localappdata!\Microsoft\Terminal Server Client</string>
+      <string id="ExclusionDefaultDir13">!ctx_localappdata!\Microsoft\UEV</string>
+      <string id="ExclusionDefaultDir14">!ctx_localappdata!\Microsoft\Windows Live</string>
+      <string id="ExclusionDefaultDir15">!ctx_localappdata!\Microsoft\Windows Live Contacts</string>
+      <string id="ExclusionDefaultDir16">!ctx_localappdata!\Microsoft\Windows\Application Shortcuts</string>
+      <string id="ExclusionDefaultDir17">!ctx_localappdata!\Microsoft\Windows\Burn</string>
+      <string id="ExclusionDefaultDir18">!ctx_localappdata!\Microsoft\Windows\CD Burning</string>
+      <string id="ExclusionDefaultDir19">!ctx_localappdata!\Microsoft\Windows
+otifications</string>
+      <string id="ExclusionDefaultDir20">!ctx_localappdata!\Packages</string>
+      <string id="ExclusionDefaultDir21">!ctx_localappdata!\Sun</string>
+      <string id="ExclusionDefaultDir22">!ctx_localappdata!\Windows Live</string>
+      <string id="ExclusionDefaultDir23">!ctx_localsettings!\Temp</string>
+      <string id="ExclusionDefaultDir24">!ctx_roamingappdata!\Microsoft\AppV\Client\Catalog</string>
+      <string id="ExclusionDefaultDir25">!ctx_roamingappdata!\Sun\Java\Deployment\cache</string>
+      <string id="ExclusionDefaultDir26">!ctx_roamingappdata!\Sun\Java\Deployment\log</string>
+      <string id="ExclusionDefaultDir27">!ctx_roamingappdata!\Sun\Java\Deployment\tmp</string>
+      <string id="ExclusionDefaultDir28">$Recycle.Bin</string>
+      <string id="ExclusionDefaultDir29">AppData\LocalLow</string>
+      <string id="ExclusionDefaultDir30">Ablaufverfolgung</string>
+      <string id="DefaultExclusionListSyncDir_Help">Gilt für: nur dateibasierte Profillösung
+
+Standardliste der Verzeichnisse, die bei der Synchronisierung ignoriert werden.
+
+Wenn Sie diese Einstellung deaktivieren, werden Ordner nicht standardmäßig ausgeschlossen.
+
+Wenn Sie diese Einstellung hier nicht konfigurieren, wird der Wert in der INI-Datei verwendet.
+
+Wenn Sie diese Einstellung nicht hier oder in der INI-Datei konfigurieren, werden Ordner nicht standardmäßig ausgeschlossen.</string>
+      <string id="LogonExclusionCheck">Anmeldeausschlussprüfung</string>
+      <string id="LogonExclusionCheck_Help">Gilt für: nur dateibasierte Profillösung
+
+Mit dieser Einstellung wird die Vorgehensweise der Profilverwaltung konfiguriert, falls ein Profil im Benutzerspeicher ausgeschlossene Dateien oder Ordner enthält.
+
+Wenn die Einstellung deaktiviert oder auf den Standardwert 'Ausgeschlossene Dateien oder Ordner bei Anmeldung synchronisieren' festgelegt ist, synchronisiert die Profilverwaltung die ausgeschlossenen Dateien oder Ordner vom Benutzerspeicher in das lokale Profil, wenn ein Benutzer sich anmeldet.
+
+Wenn die Einstellung auf 'Ausgeschlossene Dateien oder Ordner bei Anmeldung ignorieren' festgelegt ist, ignoriert die Profilverwaltung die ausgeschlossenen Dateien oder Ordner, wenn ein Benutzer sich anmeldet.
+
+Wenn die Einstellung auf 'Ausgeschlossene Dateien oder Ordner bei Anmeldung löschen' festgelegt ist, werden die ausgeschlossenen Dateien bei der Anmeldung eines Benutzers von der Profilverwaltung gelöscht.
+
+Wenn die Einstellung hier nicht konfiguriert ist, wird der Wert der INI-Datei verwendet.
+
+Wenn die Einstellung weder hier noch in der INI-Datei konfiguriert ist, werden die ausgeschlossenen Dateien oder Ordner bei der Anmeldung eines Benutzers vom Benutzerspeicher in das lokale Profil synchronisiert.</string>
+      <string id="LogonExclusionCheck_Part_1">Wenn ein Profil im Benutzerspeicher Dateien oder Ordner enthält,</string>
+      <string id="LogonExclusionCheck_Part">die ausgeschlossen sind</string>
+      <string id="LogonExclusionCheck_Part_gpfx">Anmeldeausschlussprüfung </string>
+      <string id="LogonExclusionCheckEnum_Disable">Ausgeschlossene Dateien oder Ordner synchronisieren</string>
+      <string id="LogonExclusionCheckEnum_Ignore">Ausgeschlossene Dateien oder Ordner ignorieren</string>
+      <string id="LogonExclusionCheckEnum_Delete">Ausgeschlossene Dateien oder Ordner löschen</string>
+      <string id="LargeFileHandlingList">Verarbeitung von großen Dateien: Dateien werden als symbolische Verknüpfungen erstellt</string>
+      <string id="LargeFileHandlingList_Part">Liste der als symbolische Verknüpfungen zu erstellenden Dateien</string>
+      <string id="LargeFileHandlingList_Part_gpfx">Verarbeitungsliste für große Dateien: Dateien werden als symbolische Verknüpfungen erstellt</string>
+      <string id="LargeFileHandlingList_Help">Gilt für: nur dateibasierte Profillösung
+
+Um die Anmeldeleistung zu verbessern und große Dateien zu verarbeiten, wird eine symbolische Verknüpfung erstellt, anstatt die Dateien in dieser Liste zu kopieren.
+
+Sie können Platzhalter in Richtlinien verwenden, die auf Dateien verweisen. Beispiel: !ctx_localappdata!\Microsoft\Outlook\*.OST.
+
+Um die Offlineordnerdatei (* .ost) von Microsoft Outlook zu verarbeiten, stellen Sie sicher, dass der Outlook-Ordner nicht von der Citrix Profilverwaltung ausgeschlossen ist.
+
+Hinweis: Auf diese Dateien kann nicht gleichzeitig in mehreren Sitzungen zugegriffen werden.</string>
+      <string id="FSSynchronization">Synchronisierung</string>
+      <string id="SyncDirList">Zu synchronisierende Verzeichnisse</string>
+      <string id="SyncDirList_Part">Liste der zu synchronisierenden Verzeichnisse</string>
+      <string id="SyncDirList_Part_gpfx">Zu synchronisierende Verzeichnisse</string>
+      <string id="SyncDirList_Help">Gilt für: nur dateibasierte Profillösung
+
+Die Profilverwaltung synchronisiert das gesamte Profil jedes Benutzers zwischen dem System, auf dem es installiert ist, und dem Benutzerspeicher.
+
+Sie können Unterordner von ausgeschlossenen Ordnern einschließen.
+
+Pfade in dieser Liste sollten relativ zum Benutzerprofil sein.
+
+Platzhalter werden unterstützt, aber nicht rekursiv angewendet.
+
+Beispiele:
+'Desktop\exclude\include' gibt den Unterordner 'include' des Ordners 'Desktop\exclude' an.
+
+'Desktop\exclude\*' gibt alle unmittelbaren Unterordner des Ordners 'Desktop\exclude' an.
+
+Das Deaktivieren dieser Einstellung hat die gleiche Wirkung wie eine Aktivierung und das Konfigurieren einer leeren Liste.
+
+Wenn diese Einstellung hier nicht konfiguriert ist, wird der Wert aus der INI-Datei verwendet.
+
+Wenn diese Einstellung weder hier noch in der INI-Datei konfiguriert ist, werden nur nicht ausgeschlossene Ordner im Benutzerprofil synchronisiert.</string>
+      <string id="SyncFileList">Zu synchronisierende Dateien</string>
+      <string id="SyncFileList_Part">Liste der zu synchronisierenden Dateien</string>
+      <string id="SyncFileList_Part_gpfx">Zu synchronisierende Dateien</string>
+      <string id="SyncFileList_Help">Gilt für: nur dateibasierte Profillösung
+
+Die Profilverwaltung synchronisiert das gesamte Profil jedes Benutzers zwischen dem System, auf dem es installiert ist, und dem Benutzerspeicher.
+
+Diese Einstellung ermöglicht das Einschließen von Dateien unter ausgeschlossenen Ordnern.
+
+Pfade in dieser Liste sollten relativ zum Benutzerprofil sein. Platzhalter sind erlaubt. Platzhalter in Dateinamen werden rekursiv angewendet, Platzhalter in Ordnernamen nicht.
+
+Hinweis: Ab Profilverwaltung 7.15 können Sie mit dem senkrechten Strich '|' eine Richtlinie nur auf den aktuellen Ordner anwenden, ohne dass sie auf die Unterordner übertragen wird.
+
+Beispiele:
+'AppData\Local\Microsoft\Office\Access.qat' gibt eine Datei unterhalb eines Ordners an, der in der Standardkonfiguration ausgeschlossen ist.
+
+'AppData\Local\MyApp\*.cfg' gibt alle Dateien mit der Endung .cfg im Profilordner 'AppData\Local\MyApp' und seinen Unterordnern an.
+
+'AppData\Local\MyApp\*.cfg|' gibt alle Dateien mit der Erweiterung .cfg im Profilordner 'AppData\Local\MyApp' an.
+
+'Downloads\*\b.txt' gibt b.txt in jedem unmittelbaren Unterordner des Ordners 'Downloads' an. Beachten Sie, dass Platzhalter in Ordnernamen nicht rekursiv angewendet werden.
+
+Das Deaktivieren dieser Einstellung hat die gleiche Wirkung wie eine Aktivierung und das Konfigurieren einer leeren Liste.
+
+Wenn diese Einstellung hier nicht konfiguriert ist, wird der Wert aus der INI-Datei verwendet.
+
+Wenn diese Einstellung weder hier noch in der INI-Datei konfiguriert ist, werden nur nicht ausgeschlossene Dateien im Benutzerprofil synchronisiert.</string>
+      <string id="MirrorFoldersList">Zu spiegelnde Ordner</string>
+      <string id="MirrorFoldersList_Part">Liste der zu spiegelnden Ordner</string>
+      <string id="MirrorFoldersList_Part_gpfx">Zu spiegelnde Ordner</string>
+      <string id="MirrorFoldersList_Help">Gilt für: nur dateibasierte Profillösung
+
+Die Profilverwaltung kann Ordner relativ zum Stammordner eines Profils spiegeln. Verwenden Sie diese Einstellung für Dateien, deren Inhalte Daten indizieren und in denen es wahrscheinlich ist, dass separate Instanzen der Daten existieren. Sie können z. B. den Cookies-Ordner von Internet Explorer spiegeln, damit index.dat mit den Cookies synchronisiert wird, auf die die Datei verweist. Beachten Sie, dass in solchen Situationen der 'letzte Schreibvorgang gewinnt', d. h. dass Dateien in gespiegelten Ordnern, die in mehr als einer Sitzung geändert wurden, von der letzten Aktualisierung überschrieben werden. Hierdurch gehen Profiländerungen verloren.</string>
+      <string id="AccelerateFolderMirroring">Beschleunigen der Ordnerspiegelung</string>
+      <string id="AccelerateFolderMirroring_Help">Gilt für: nur dateibasierte Profillösung
+
+Wenn sowohl diese Richtlinie als auch die Richtlinie zum Spiegeln von Ordnern aktiviert sind, speichert die Profilverwaltung gespiegelte Ordner auf einer VHDX-basierten virtuellen Festplatte. Die virtuelle Festplatte wird während der Anmeldung angehängt und während der Abmeldung wieder entfernt. Durch Aktivieren dieser Richtlinie müssen die Ordner nicht mehr zwischen dem Benutzerspeicher und den lokalen Profilen kopiert werden. Dies beschleunigt die Ordnerspiegelung.</string>
+      <string id="PSSettings">Gestreamte Benutzerprofile</string>
+      <string id="PSEnabled">Profilstreaming</string>
+      <string id="PSEnabled_Help">Gilt für: nur dateibasierte Profillösung
+
+Beim Profilstreaming werden Benutzerprofile auf dem lokalen Computer nur bei Bedarf synchronisiert. Registrierungseinträge werden sofort zwischengespeichert, Dateien und Ordner aber erst, wenn Benutzer darauf zugreifen.</string>
+      <string id="PSForFoldersEnabled">Profilstreaming für Ordner aktivieren</string>
+      <string id="PSForFoldersEnabled_Help">Gilt für: nur dateibasierte Profillösung
+
+Wenn das Profilstreaming für Ordner aktiviert ist, werden Ordner nur dann abgerufen, wenn auf sie zugegriffen wird. Durch diesen Ansatz entfällt die Notwendigkeit, alle Ordner während der Anmeldung von Benutzern zu durchlaufen.</string>
+      <string id="PSForPendingAreaEnabled">Profilstreaming für ausstehenden Bereich aktivieren</string>
+      <string id="PSForPendingAreaEnabled_Help">Gilt für: nur dateibasierte Profillösung
+
+Wenn diese Richtlinie aktiviert ist, werden Dateien im ausstehenden Bereich nur dann in das lokale Profil abgerufen, wenn sie angefordert werden. Verwenden Sie die Richtlinie mit der Richtlinie 'Profilstreaming', um eine optimale Anmeldeerfahrung bei mehreren gleichzeitigen Sitzungen zu gewährleisten.
+
+Die Richtlinie gilt für Ordner im ausstehenden Bereich, wenn die Richtlinie 'Profilstreaming für Ordner aktivieren' aktiviert ist.
+
+Diese Richtlinie ist standardmäßig deaktiviert. Alle Dateien und Ordner im ausstehenden Bereich werden während der Anmeldung in das lokale Profil abgerufen.
+
+Der ausstehende Bereich wird verwendet, um die Profilkonsistenz sicherzustellen, während Profilstreaming aktiviert ist. Profildateien und Ordner, die in gleichzeitigen Sitzungen geändert wurden, werden vorübergehend im ausstehenden Bereich gespeichert.</string>
+      <string id="PSAlwaysCache">Immer zwischenspeichern</string>
+      <string id="PSAlwaysCache_Help">Gilt für: nur dateibasierte Profillösung
+
+Um das Benutzererlebnis zu verbessern, können Sie diese Einstellung optional mit der Einstellung für Profilstreaming verwenden. In diesem Fall gilt eine niedrigere Grenze für die Größe der Dateien, die gestreamt werden. Dateien, die diese Größe überschreiten, werden so schnell wie möglich nach der Anmeldung zwischengespeichert. Um das Feature zum Zwischenspeichern des gesamten Profils zu nutzen, setzen Sie diesen Wert auf 0 (dann werden die gesamten Profileinhalte zwischengespeichert).</string>
+      <string id="PSAlwaysCache_Part">Dateien ab dieser Größe (MB) zwischenspeichern</string>
+      <string id="PSAlwaysCache_Part_gpfx">Immer Cachegröße</string>
+      <string id="PSMidSessionWriteBack">Aktiv zurückschreiben</string>
+      <string id="PSMidSessionWriteBack_Help">Gilt für: nur dateibasierte Profillösung
+
+Mit dieser Einstellung können geänderte Dateien und Ordner (aber keine Registrierungseinträge) mit dem Benutzerspeicher in einer Sitzung vor dem Abmelden synchronisiert werden.
+
+Wenn diese Einstellung hier nicht konfiguriert ist, wird der Wert in der INI-Datei verwendet.
+
+Wenn diese Einstellung weder hier noch in der INI-Datei konfiguriert ist, ist das aktive Zurückschreiben deaktiviert.</string>
+      <string id="PSMidSessionWriteBackReg">Aktives Zurückschreiben der Registrierung</string>
+      <string id="PSMidSessionWriteBackReg_Help">Gilt für: nur dateibasierte Profillösung
+
+Verwenden Sie diese Einstellung mit der Einstellung 'Aktiv zurückschreiben'.
+
+Geänderte Registrierungseinträge können mit dem Benutzerspeicher in einer Sitzung synchronisiert werden.
+
+Wenn diese Einstellung hier nicht konfiguriert ist, wird der Wert in der INI-Datei verwendet.
+
+Wenn diese Einstellung weder hier noch in der INI-Datei konfiguriert ist, ist das aktive Zurückschreiben der Registrierung deaktiviert.</string>
+      <string id="PSMidSessionWriteBackSessionLock">Aktives Zurückschreiben bei Sitzungssperre und -trennung</string>
+      <string id="PSMidSessionWriteBackSessionLock_Help">Gilt für: nur dateibasierte Profillösung
+
+Verwenden Sie diese Richtlinie als Erweiterung der Richtlinien 'Aktiv zurückschreiben' und 'Aktives Zurückschreiben der Registrierung'.
+
+Wenn die Richtlinie 'Aktiv zurückschreiben' aktiviert ist, werden Dateien und Ordner standardmäßig alle fünf Minuten vom lokalen Computer in den Benutzerspeicher zurückgeschrieben. Wenn sowohl diese neue Richtlinie als auch die Richtlinie 'Aktiv zurückschreiben' aktiviert sind, werden Dateien und Ordner nur zurückgeschrieben, wenn eine Sitzung gesperrt oder getrennt ist.
+
+Wenn die Richtlinien 'Aktiv zurückschreiben' und 'Aktives Zurückschreiben der Registrierung' aktiviert sind, werden Registrierungseinträge standardmäßig alle fünf Minuten vom lokalen Computer in den Benutzerspeicher zurückgeschrieben. Mit dieser neuen Richtlinie und den aktivierten Richtlinien 'Aktiv zurückschreiben' und 'Aktives Zurückschreiben der Registrierung' werden Registrierungseinträge nur zurückgeschrieben, wenn eine Sitzung gesperrt oder getrennt ist.
+
+Wenn diese Einstellung hier nicht konfiguriert ist, wird der Wert aus der INI-Datei verwendet.
+
+Wenn diese Einstellung weder hier noch in der INI-Datei konfiguriert ist, ist diese Funktion deaktiviert.</string>
+      <string id="OfflineSupport">Unterstützung von Offlineprofilen</string>
+      <string id="OfflineSupport_Help">Gilt für: nur dateibasierte Profillösung
+
+Aktiviert das Feature für Offlineprofile. Dies ist für Computer gedacht, die üblicherweise aus Netzwerken entfernt werden, normalerweise Laptops oder Mobilgeräte, nicht Server oder Desktops.
+
+Wenn diese Einstellung hier nicht konfiguriert ist, wird der Wert in der INI-Datei verwendet.
+
+Wenn diese Einstellung weder hier noch in der INI-Datei konfiguriert ist, ist die Unterstützung von Offlineprofilen deaktiviert.</string>
+      <string id="PSPendingLockTimeout">Timeout für gesperrte Dateien im ausstehenden Bereich (Tage):</string>
+      <string id="PSPendingLockTimeout_Help">Gilt für: nur dateibasierte Profillösung
+
+Sie können einen Zeitraum festlegen, nach dem Benutzerdateien freigegeben und vom ausstehenden Bereich in den Benutzerspeicher zurückgeschrieben werden, falls der Benutzerspeicher nach dem Ausfall eines Servers (z. B. wenn er heruntergefahren wird) gesperrt ist. Verwenden Sie diese Einstellung, um ein Aufblähen des ausstehenden Bereichs zu vermeiden und um sicherzustellen, dass der Benutzerspeicher immer die aktuellen Dateien enthält.</string>
+      <string id="PSUserGroups">Gestreamte Benutzerprofilgruppen</string>
+      <string id="PSUserGroups_Help">Gilt für: nur dateibasierte Profillösung
+
+Geben Sie mindestens eine Windows-Benutzergruppe ein.
+
+Wenn diese Einstellung aktiviert ist, werden nur die Profile der Mitglieder dieser Gruppen gestreamt. Wenn diese Einstellung deaktiviert ist, werden alle Benutzergruppen verarbeitet.
+
+Wenn diese Einstellung hier nicht konfiguriert ist, wird der Wert in der INI-Datei verwendet.
+
+Wenn diese Einstellung weder hier noch in der INI-Datei konfiguriert ist, werden alle Benutzer verarbeitet.</string>
+      <string id="PSUserGroups_Part">Liste der Benutzergruppen mit gestreamten Benutzerprofilen</string>
+      <string id="PSUserGroups_Part_gpfx">Gestreamte Benutzerprofilgruppen</string>
+      <string id="CPSettings">Plattformübergreifende Einstellungen</string>
+      <string id="CPEnable">Plattformübergreifende Einstellungen aktivieren</string>
+      <string id="CPEnable_Help">Gilt für: sowohl dateibasierte als auch containerbasierte Profillösungen
+
+Um die Bereitstellung zu erleichtern, sind plattformübergreifende Einstellungen standardmäßig deaktiviert.
+
+Aktivieren Sie diese Einstellung, um die Verarbeitung zu aktivieren.
+
+Wenn diese Einstellung hier nicht konfiguriert ist, wird der Wert in der INI-Datei verwendet.
+
+Wenn diese Einstellung weder hier noch in der INI-Datei konfiguriert ist, werden keine plattformübergreifenden Einstellungen angewendet.</string>
+      <string id="CPUserGroups">Benutzergruppen mit plattformübergreifenden Einstellungen</string>
+      <string id="CPUserGroups_Help">Gilt für: sowohl dateibasierte als auch containerbasierte Profillösungen
+
+Geben Sie mindestens eine Windows-Benutzergruppe ein.
+
+Wenn diese Einstellung konfiguriert ist, verarbeitet das Feature für plattformübergreifende Einstellungen nur Mitglieder dieser Benutzergruppen. Wenn diese Einstellung deaktiviert ist, werden alle Benutzergruppen verarbeitet.
+
+Wenn diese Einstellung hier nicht konfiguriert ist, wird der Wert in der INI-Datei verwendet.
+
+Wenn diese Einstellung weder hier noch in der INI-Datei konfiguriert ist, werden alle Benutzergruppen verarbeitet.</string>
+      <string id="CPUserGroups_Part">Liste der Benutzergruppen, die plattformübergreifend verarbeitet werden</string>
+      <string id="CPUserGroups_Part_gpfx">Benutzergruppen mit plattformübergreifenden Einstellungen</string>
+      <string id="CPSchemaPath">Pfad zu plattformübergreifenden Definitionen</string>
+      <string id="CPSchemaPath_Help">Gilt für: sowohl dateibasierte als auch containerbasierte Profillösungen
+
+Geben Sie einen Ordner an, in dem Definitionsdateien gespeichert sind.
+
+Wenn diese Einstellung hier nicht konfiguriert ist, wird der Wert in der INI-Datei verwendet.
+
+Wenn diese Einstellung weder hier noch in der INI-Datei konfiguriert ist, werden keine plattformüberschreitenden Einstellungen angewendet.
+
+Hinweis:
+* Der Ordner kann lokal oder auf einer SMB-Dateifreigabe sein.</string>
+      <string id="CPSchemaPathData">Pfad zu plattformübergreifenden Definitionen:</string>
+      <string id="CPSchemaPathData_gpfx">Pfad zu plattformübergreifenden Definitionen</string>
+      <string id="CPPath">Pfad zum Speicher für plattformübergreifende Einstellungen</string>
+      <string id="CPPath_Help">Gilt für: sowohl dateibasierte als auch containerbasierte Profillösungen
+
+Gibt den Pfad zum Verzeichnis an, in dem die plattformübergreifenden Einstellungen von Benutzern gespeichert werden (Speicher für plattformübergreifende Einstellungen).
+
+Der Pfad kann ein absoluter UNC-Pfad oder ein relativer Pfad zum Basisverzeichnis sein.
+
+In beiden Fällen können die folgenden Variablentypen verwendet werden: Systemumgebungsvariablen in Prozentzeichen und Attribute des Active Directory-Benutzerobjekts in Rauten.
+
+Benutzerumgebungsvariablen können nicht verwendet werden mit Ausnahme von %username% und %userdomain%.
+
+Wenn diese Einstellung deaktiviert ist, wird der Pfad Windows\PM_CP verwendet.
+
+Wenn diese Einstellung hier nicht konfiguriert ist, wird der Wert in der INI-Datei verwendet.
+
+Wenn diese Einstellung weder hier noch in der INI-Datei konfiguriert ist, wird der Standardwert Windows\PM_CP verwendet.</string>
+      <string id="CPPathData">Pfad zum Speicher für plattformübergreifende Einstellungen:</string>
+      <string id="CPPathData_gpfx">Pfad zum Speicher für plattformübergreifende Einstellungen</string>
+      <string id="CPMigrationFromBaseProfileToCPStore">Quelle für Erstellung plattformübergreifender Einstellungen</string>
+      <string id="CPMigrationFromBaseProfileToCPStore_Help">Gilt für: sowohl dateibasierte als auch containerbasierte Profillösungen
+
+Standard: Deaktiviert
+
+Definitionsdateien enthalten einen Definitionssatz, mit dem Anwendungen konfiguriert werden. Wenn der Speicher für plattformübergreifende Einstellungen eine Definitionsdatei ohne Daten enthält oder die zwischengespeicherten Daten eines Einzelplattformprofils neuer sind als die Definitionsdaten im Speicher, migriert die Profilverwaltung die Daten des Einzelplattformprofils nur in den Speicher, wenn Sie diese Einstellung aktivieren.</string>
+      <string id="XenAppOptimizationSettings">Citrix Virtual Apps-Optimierungseinstellungen</string>
+      <string id="XenAppOptimizationEnabled">Citrix Virtual Apps-Optimierung aktivieren</string>
+      <string id="XenAppOptimizationEnabled_Help">Gilt für: nur dateibasierte Profillösung
+
+Wenn Sie dieses Feature aktivieren, werden nur die Einstellungen für die veröffentlichten Anwendungen synchronisiert, die von einem Benutzer gestartet oder beendet werden.
+
+Wenn diese Einstellung hier nicht konfiguriert ist, wird der Wert aus der INI-Datei verwendet.
+
+Wenn diese Einstellung weder hier noch in der INI-Datei konfiguriert ist, werden keine Citrix Virtual Apps-Optimierungseinstellungen angewendet.</string>
+      <string id="XenAppOptimizationDefinitionPath">Pfad zu Citrix Virtual Apps-Optimierungsdefinitionen</string>
+      <string id="XenAppOptimizationDefinitionPathData">Pfad zu Citrix Virtual Apps-Optimierungsdefinitionen:</string>
+      <string id="XenAppOptimizationDefinitionPath_Help">Gilt für: nur dateibasierte Profillösung
+
+Geben Sie einen Ordner an, in dem die Dateien für die Citrix Virtual Apps-Optimierung gespeichert sind.
+
+Wenn diese Einstellung hier nicht konfiguriert ist, wird der Wert in der INI-Datei verwendet.
+
+Wenn diese Einstellung weder hier noch in der INI-Datei konfiguriert ist, werden keine Einstellungen für Citrix Virtual Apps-Optimierung angewendet.
+
+Hinweis:
+* Der Ordner kann lokal oder auf einer SMB-Dateifreigabe sein.</string>
+      <string id="FolderRedirection">Ordnerumleitung</string>
+      <string id="AppAccessControlSettings">App-Zugriffssteuerung</string>
+      <string id="FRAdminAccess">Administratorzugriff gewähren</string>
+      <string id="FRAdminAccess_Help">Gilt für: nur dateibasierte Profillösung
+
+In der Standardeinstellung werden Benutzern exklusive Rechte für die Inhalte der umgeleiteten Ordner gegeben.
+
+Bei Aktivierung dieser Option hat der Administrator Zugriff auf die Inhalte der umgeleiteten Ordner der Benutzer.</string>
+      <string id="FRAdminAccess_Part">Administratorzugriff gewähren</string>
+      <string id="FRAdminAccess_Part_gpfx">Administratorzugriff gewähren</string>
+      <string id="FRAppDataEnum_RedirectUncPath">Zum folgenden UNC-Pfad umleiten</string>
+      <string id="FRDesktopEnum_RedirectUncPath">Zum folgenden UNC-Pfad umleiten</string>
+      <string id="FRStartMenuEnum_RedirectUncPath">Zum folgenden UNC-Pfad umleiten</string>
+      <string id="FRDocumentsEnum_RedirectUncPath">Zum folgenden UNC-Pfad umleiten</string>
+      <string id="FRPicturesEnum_RedirectUncPath">Zum folgenden UNC-Pfad umleiten</string>
+      <string id="FRMusicEnum_RedirectUncPath">Zum folgenden UNC-Pfad umleiten</string>
+      <string id="FRVideosEnum_RedirectUncPath">Zum folgenden UNC-Pfad umleiten</string>
+      <string id="FRFavoritesEnum_RedirectUncPath">Zum folgenden UNC-Pfad umleiten</string>
+      <string id="FRContactsEnum_RedirectUncPath">Zum folgenden UNC-Pfad umleiten</string>
+      <string id="FRDownloadsEnum_RedirectUncPath">Zum folgenden UNC-Pfad umleiten</string>
+      <string id="FRLinksEnum_RedirectUncPath">Zum folgenden UNC-Pfad umleiten</string>
+      <string id="FRSearchesEnum_RedirectUncPath">Zum folgenden UNC-Pfad umleiten</string>
+      <string id="FRSavedGamesEnum_RedirectUncPath">Zum folgenden UNC-Pfad umleiten</string>
+      <string id="FRIncDomainName">Domänennamen einschließen</string>
+      <string id="FRIncDomainName_Help">Gilt für: nur dateibasierte Profillösung
+
+Bei Aktivierung dieser Option wird die Umgebungsvariable %userdomain% im UNC-Pfad eingeschlossen.</string>
+      <string id="FRIncDomainName_Part">Domänennamen in UNC-Pfad einschließen</string>
+      <string id="FRIncDomainName_Part_gpfx">Domänennamen einschließen</string>
+      <string id="FRDocumentsEnum_RedirectRelativeHome">Zum Basisverzeichnis des Benutzers umleiten</string>
+      <string id="FRPicturesEnum_RedirectRelativeDocuments">Relativ zum Ordner 'Dokumente' umleiten</string>
+      <string id="FRMusicEnum_RedirectRelativeDocuments">Relativ zum Ordner 'Dokumente' umleiten</string>
+      <string id="FRVideosEnum_RedirectRelativeDocuments">Relativ zum Ordner 'Dokumente' umleiten</string>
+      <string id="FRAppData">AppData(Roaming)</string>
+      <string id="FRAppDataEnable">Den Ordner AppData(Roaming) umleiten</string>
+      <string id="FRAppDataEnable_Help">Gilt für: nur dateibasierte Profillösung
+
+Hier können Sie angeben, wie der Ordner 'AppData(Roaming)' umgeleitet werden soll. Wählen Sie dazu 'Aktiviert' und geben Sie den Pfad für die Umleitung ein.
+Vorsicht: Daten können verloren gehen. Weitere Details siehe unten.
+Möglicherweise möchten Sie den Pfad ändern, nachdem die Richtlinie in Kraft getreten ist. Berücksichtigen Sie jedoch potenziellen Datenverlust, bevor Sie dies tun. Die im umgeleiteten Ordner enthaltenen Daten werden möglicherweise gelöscht, wenn der geänderte Pfad auf denselben Speicherort verweist wie der vorherige Pfad.
+Angenommen, Sie geben den Pfad für Kontakte als Pfad1 an. Später ändern Sie Pfad1 in Pfad2. Wenn Pfad1 und Pfad2 auf denselben Speicherort verweisen, werden alle im umgeleiteten Ordner enthaltenen Daten gelöscht, wenn die Richtlinie in Kraft tritt.
+Führen Sie die folgenden Schritte aus, um einen Datenverlust zu vermeiden:
+  1. Wenden Sie die Microsoft-Richtlinie auf Maschinen an, auf denen die Profilverwaltung über Active Directory-Gruppenrichtlinienobjekte ausgeführt wird. Öffnen Sie dazu die Gruppenrichtlinien-Verwaltungskonsole, navigieren Sie zu 'Computerkonfiguration' &gt; 'Administrative Vorlagen' &gt; 'Windows-Komponenten' &gt; Datei-Explorer, und aktivieren Sie die Option 'Vor der Umleitung überprüfen, ob das alte und das neue Ziel der Ordnerumleitung auf dieselbe Freigabe verweisen'.
+  2. Wenden Sie gegebenenfalls Hotfixes auf Maschinen an, auf denen die Profilverwaltung ausgeführt wird. Weitere Informationen finden Sie unter https://support.microsoft.com/en-us/help/977229 und https://support.microsoft.com/en-us/help/2799904.</string>
+      <string id="FRAppData_Part">Umleitungseinstellungen für AppData(Roaming)</string>
+      <string id="FRAppDataPath_Help">Gilt für: nur dateibasierte Profillösung
+
+Gibt den umgeleiteten Speicherort des Ordners AppData(Roaming) als einen UNC-Pfad an.
+
+Bei Auswahl der Option 'Domänennamen einschließen' wird die Umgebungsvariable %userdomain% im UNC-Pfad eingeschlossen.</string>
+      <string id="FRAppDataPath_Part">Pfad</string>
+      <string id="FRAppDataPath_Part_gpfx">AppData(Roaming)-Pfad</string>
+      <string id="FRDesktop">Desktop</string>
+      <string id="FRDesktopEnable">Den Ordner 'Desktop' umleiten</string>
+      <string id="FRDesktopEnable_Help">Gilt für: nur dateibasierte Profillösung
+
+Hier können Sie angeben, wie der Ordner 'Desktop' umgeleitet werden soll. Wählen Sie dazu 'Aktiviert' und geben Sie den Pfad für die Umleitung ein.
+Vorsicht: Daten können verloren gehen. Weitere Details siehe unten.
+Möglicherweise möchten Sie den Pfad ändern, nachdem die Richtlinie in Kraft getreten ist. Berücksichtigen Sie jedoch potenziellen Datenverlust, bevor Sie dies tun. Die im umgeleiteten Ordner enthaltenen Daten werden möglicherweise gelöscht, wenn der geänderte Pfad auf denselben Speicherort verweist wie der vorherige Pfad.
+Angenommen, Sie geben den Pfad für Kontakte als Pfad1 an. Später ändern Sie Pfad1 in Pfad2. Wenn Pfad1 und Pfad2 auf denselben Speicherort verweisen, werden alle im umgeleiteten Ordner enthaltenen Daten gelöscht, wenn die Richtlinie in Kraft tritt.
+Führen Sie die folgenden Schritte aus, um einen Datenverlust zu vermeiden:
+  1. Wenden Sie die Microsoft-Richtlinie auf Maschinen an, auf denen die Profilverwaltung über Active Directory-Gruppenrichtlinienobjekte ausgeführt wird. Öffnen Sie dazu die Gruppenrichtlinien-Verwaltungskonsole, navigieren Sie zu 'Computerkonfiguration' &gt; 'Administrative Vorlagen' &gt; 'Windows-Komponenten' &gt; Datei-Explorer, und aktivieren Sie die Option 'Vor der Umleitung überprüfen, ob das alte und das neue Ziel der Ordnerumleitung auf dieselbe Freigabe verweisen'.
+  2. Wenden Sie gegebenenfalls Hotfixes auf Maschinen an, auf denen die Profilverwaltung ausgeführt wird. Weitere Informationen finden Sie unter https://support.microsoft.com/en-us/help/977229 und https://support.microsoft.com/en-us/help/2799904.</string>
+      <string id="FRDesktop_Part">Umleitungseinstellungen für 'Desktop'</string>
+      <string id="FRDesktopPath_Help">Gilt für: nur dateibasierte Profillösung
+
+Gibt den umgeleiteten Speicherort des Ordners 'Desktop' als einen UNC-Pfad an.
+
+Bei Auswahl der Option 'Domänennamen einschließen' wird die Umgebungsvariable %userdomain% im UNC-Pfad eingeschlossen.</string>
+      <string id="FRDesktopPath_Part">Pfad</string>
+      <string id="FRDesktopPath_Part_gpfx">'Desktop'-Pfad</string>
+      <string id="FRStartMenu">Startmenü</string>
+      <string id="FRStartMenuEnable">Den Ordner 'Startmenü' umleiten</string>
+      <string id="FRStartMenuEnable_Help">Gilt für: nur dateibasierte Profillösung
+
+Hier können Sie angeben, wie der Ordner 'Startmenü' umgeleitet werden soll. Wählen Sie dazu 'Aktiviert' und geben Sie den Pfad für die Umleitung ein.
+Vorsicht: Daten können verloren gehen. Weitere Details siehe unten.
+Möglicherweise möchten Sie den Pfad ändern, nachdem die Richtlinie in Kraft getreten ist. Berücksichtigen Sie jedoch potenziellen Datenverlust, bevor Sie dies tun. Die im umgeleiteten Ordner enthaltenen Daten werden möglicherweise gelöscht, wenn der geänderte Pfad auf denselben Speicherort verweist wie der vorherige Pfad.
+Angenommen, Sie geben den Pfad für Kontakte als Pfad1 an. Später ändern Sie Pfad1 in Pfad2. Wenn Pfad1 und Pfad2 auf denselben Speicherort verweisen, werden alle im umgeleiteten Ordner enthaltenen Daten gelöscht, wenn die Richtlinie in Kraft tritt.
+Führen Sie die folgenden Schritte aus, um einen Datenverlust zu vermeiden:
+  1. Wenden Sie die Microsoft-Richtlinie auf Maschinen an, auf denen die Profilverwaltung über Active Directory-Gruppenrichtlinienobjekte ausgeführt wird. Öffnen Sie dazu die Gruppenrichtlinien-Verwaltungskonsole, navigieren Sie zu 'Computerkonfiguration' &gt; 'Administrative Vorlagen' &gt; 'Windows-Komponenten' &gt; Datei-Explorer, und aktivieren Sie die Option 'Vor der Umleitung überprüfen, ob das alte und das neue Ziel der Ordnerumleitung auf dieselbe Freigabe verweisen'.
+  2. Wenden Sie gegebenenfalls Hotfixes auf Maschinen an, auf denen die Profilverwaltung ausgeführt wird. Weitere Informationen finden Sie unter https://support.microsoft.com/en-us/help/977229 und https://support.microsoft.com/en-us/help/2799904.</string>
+      <string id="FRStartMenu_Part">Umleitungseinstellungen für 'Startmenü'</string>
+      <string id="FRStartMenuPath_Help">Gilt für: nur dateibasierte Profillösung
+
+Gibt den umgeleiteten Speicherort des Ordners 'Startmenü' als einen UNC-Pfad an.
+
+Bei Auswahl der Option 'Domänennamen einschließen' wird die Umgebungsvariable %userdomain% im UNC-Pfad eingeschlossen.</string>
+      <string id="FRStartMenuPath_Part">Pfad</string>
+      <string id="FRStartMenuPath_Part_gpfx">Startmenü-Pfad</string>
+      <string id="FRDocuments">Dokumente</string>
+      <string id="FRDocumentsEnable">Den Ordner 'Dokumente' umleiten</string>
+      <string id="FRDocumentsEnable_Help">Gilt für: nur dateibasierte Profillösung
+
+Hier können Sie angeben, wie der Ordner 'Dokumente' umgeleitet werden soll. Wählen Sie dazu 'Aktiviert' und geben Sie den Pfad für die Umleitung ein.
+Vorsicht: Daten können verloren gehen. Weitere Details siehe unten.
+Möglicherweise möchten Sie den Pfad ändern, nachdem die Richtlinie in Kraft getreten ist. Berücksichtigen Sie jedoch potenziellen Datenverlust, bevor Sie dies tun. Die im umgeleiteten Ordner enthaltenen Daten werden möglicherweise gelöscht, wenn der geänderte Pfad auf denselben Speicherort verweist wie der vorherige Pfad.
+Angenommen, Sie geben den Pfad für Kontakte als Pfad1 an. Später ändern Sie Pfad1 in Pfad2. Wenn Pfad1 und Pfad2 auf denselben Speicherort verweisen, werden alle im umgeleiteten Ordner enthaltenen Daten gelöscht, wenn die Richtlinie in Kraft tritt.
+Führen Sie die folgenden Schritte aus, um einen Datenverlust zu vermeiden:
+  1. Wenden Sie die Microsoft-Richtlinie auf Maschinen an, auf denen die Profilverwaltung über Active Directory-Gruppenrichtlinienobjekte ausgeführt wird. Öffnen Sie dazu die Gruppenrichtlinien-Verwaltungskonsole, navigieren Sie zu 'Computerkonfiguration' &gt; 'Administrative Vorlagen' &gt; 'Windows-Komponenten' &gt; Datei-Explorer, und aktivieren Sie die Option 'Vor der Umleitung überprüfen, ob das alte und das neue Ziel der Ordnerumleitung auf dieselbe Freigabe verweisen'.
+  2. Wenden Sie gegebenenfalls Hotfixes auf Maschinen an, auf denen die Profilverwaltung ausgeführt wird. Weitere Informationen finden Sie unter https://support.microsoft.com/en-us/help/977229 und https://support.microsoft.com/en-us/help/2799904.</string>
+      <string id="FRDocuments_Part">Umleitungseinstellungen für 'Dokumente'</string>
+      <string id="FRDocumentsPath_Help">Gilt für: nur dateibasierte Profillösung
+
+Gibt den umgeleiteten Speicherort des Ordners 'Dokumente' als einen UNC-Pfad oder einen Pfad relativ zum Basisverzeichnis an.
+
+Bei Auswahl der Option 'Domänennamen einschließen' wird die Umgebungsvariable %userdomain% im UNC-Pfad eingeschlossen.</string>
+      <string id="FRDocumentsPath_Part">Pfad</string>
+      <string id="FRDocumentsPath_Part_gpfx">'Dokumente'-Pfad</string>
+      <string id="FRPictures">Bilder</string>
+      <string id="FRPicturesEnable">Den Ordner 'Bilder' umleiten</string>
+      <string id="FRPicturesEnable_Help">Gilt für: nur dateibasierte Profillösung
+
+Hier können Sie angeben, wie der Ordner 'Bilder' umgeleitet werden soll. Wählen Sie dazu 'Aktiviert' und geben Sie den Pfad für die Umleitung ein.
+Vorsicht: Daten können verloren gehen. Weitere Details siehe unten.
+Möglicherweise möchten Sie den Pfad ändern, nachdem die Richtlinie in Kraft getreten ist. Berücksichtigen Sie jedoch potenziellen Datenverlust, bevor Sie dies tun. Die im umgeleiteten Ordner enthaltenen Daten werden möglicherweise gelöscht, wenn der geänderte Pfad auf denselben Speicherort verweist wie der vorherige Pfad.
+Angenommen, Sie geben den Pfad für Kontakte als Pfad1 an. Später ändern Sie Pfad1 in Pfad2. Wenn Pfad1 und Pfad2 auf denselben Speicherort verweisen, werden alle im umgeleiteten Ordner enthaltenen Daten gelöscht, wenn die Richtlinie in Kraft tritt.
+Führen Sie die folgenden Schritte aus, um einen Datenverlust zu vermeiden:
+  1. Wenden Sie die Microsoft-Richtlinie auf Maschinen an, auf denen die Profilverwaltung über Active Directory-Gruppenrichtlinienobjekte ausgeführt wird. Öffnen Sie dazu die Gruppenrichtlinien-Verwaltungskonsole, navigieren Sie zu 'Computerkonfiguration' &gt; 'Administrative Vorlagen' &gt; 'Windows-Komponenten' &gt; Datei-Explorer, und aktivieren Sie die Option 'Vor der Umleitung überprüfen, ob das alte und das neue Ziel der Ordnerumleitung auf dieselbe Freigabe verweisen'.
+  2. Wenden Sie gegebenenfalls Hotfixes auf Maschinen an, auf denen die Profilverwaltung ausgeführt wird. Weitere Informationen finden Sie unter https://support.microsoft.com/en-us/help/977229 und https://support.microsoft.com/en-us/help/2799904.</string>
+      <string id="FRPictures_Part">Umleitungseinstellungen für 'Bilder'</string>
+      <string id="FRPicturesPath_Help">Gilt für: nur dateibasierte Profillösung
+
+Gibt den umgeleiteten Speicherort des Ordners 'Bilder' als einen UNC-Pfad oder einen Pfad relativ zum Ordner 'Dokumente' an.
+
+Bei Auswahl der Option 'Domänennamen einschließen' wird die Umgebungsvariable %userdomain% im UNC-Pfad eingeschlossen.</string>
+      <string id="FRPicturesPath_Part">Pfad</string>
+      <string id="FRPicturesPath_Part_gpfx">'Bilder'-Pfad</string>
+      <string id="FRMusic">Musik</string>
+      <string id="FRMusicEnable">Den Ordner 'Musik' umleiten</string>
+      <string id="FRMusicEnable_Help">Gilt für: nur dateibasierte Profillösung
+
+Hier können Sie angeben, wie der Ordner 'Musik' umgeleitet werden soll. Wählen Sie dazu 'Aktiviert' und geben Sie den Pfad für die Umleitung ein.
+Vorsicht: Daten können verloren gehen. Weitere Details siehe unten.
+Möglicherweise möchten Sie den Pfad ändern, nachdem die Richtlinie in Kraft getreten ist. Berücksichtigen Sie jedoch potenziellen Datenverlust, bevor Sie dies tun. Die im umgeleiteten Ordner enthaltenen Daten werden möglicherweise gelöscht, wenn der geänderte Pfad auf denselben Speicherort verweist wie der vorherige Pfad.
+Angenommen, Sie geben den Pfad für Kontakte als Pfad1 an. Später ändern Sie Pfad1 in Pfad2. Wenn Pfad1 und Pfad2 auf denselben Speicherort verweisen, werden alle im umgeleiteten Ordner enthaltenen Daten gelöscht, wenn die Richtlinie in Kraft tritt.
+Führen Sie die folgenden Schritte aus, um einen Datenverlust zu vermeiden:
+  1. Wenden Sie die Microsoft-Richtlinie auf Maschinen an, auf denen die Profilverwaltung über Active Directory-Gruppenrichtlinienobjekte ausgeführt wird. Öffnen Sie dazu die Gruppenrichtlinien-Verwaltungskonsole, navigieren Sie zu 'Computerkonfiguration' &gt; 'Administrative Vorlagen' &gt; 'Windows-Komponenten' &gt; Datei-Explorer, und aktivieren Sie die Option 'Vor der Umleitung überprüfen, ob das alte und das neue Ziel der Ordnerumleitung auf dieselbe Freigabe verweisen'.
+  2. Wenden Sie gegebenenfalls Hotfixes auf Maschinen an, auf denen die Profilverwaltung ausgeführt wird. Weitere Informationen finden Sie unter https://support.microsoft.com/en-us/help/977229 und https://support.microsoft.com/en-us/help/2799904.</string>
+      <string id="FRMusic_Part">Umleitungseinstellungen für 'Musik'</string>
+      <string id="FRMusicPath_Help">Gilt für: nur dateibasierte Profillösung
+
+Gibt den umgeleiteten Speicherort des Ordners 'Musik' als einen UNC-Pfad oder einen Pfad relativ zum Ordner 'Dokumente' an.
+
+Bei Auswahl der Option 'Domänennamen einschließen' wird die Umgebungsvariable %userdomain% im UNC-Pfad eingeschlossen.</string>
+      <string id="FRMusicPath_Part">Pfad</string>
+      <string id="FRMusicPath_Part_gpfx">'Musik'-Pfad</string>
+      <string id="FRVideos">Videos</string>
+      <string id="FRVideosEnable">Den Ordner 'Videos' umleiten</string>
+      <string id="FRVideosEnable_Help">Gilt für: nur dateibasierte Profillösung
+
+Hier können Sie angeben, wie der Ordner 'Videos' umgeleitet werden soll. Wählen Sie dazu 'Aktiviert' und geben Sie den Pfad für die Umleitung ein.
+Vorsicht: Daten können verloren gehen. Weitere Details siehe unten.
+Möglicherweise möchten Sie den Pfad ändern, nachdem die Richtlinie in Kraft getreten ist. Berücksichtigen Sie jedoch potenziellen Datenverlust, bevor Sie dies tun. Die im umgeleiteten Ordner enthaltenen Daten werden möglicherweise gelöscht, wenn der geänderte Pfad auf denselben Speicherort verweist wie der vorherige Pfad.
+Angenommen, Sie geben den Pfad für Kontakte als Pfad1 an. Später ändern Sie Pfad1 in Pfad2. Wenn Pfad1 und Pfad2 auf denselben Speicherort verweisen, werden alle im umgeleiteten Ordner enthaltenen Daten gelöscht, wenn die Richtlinie in Kraft tritt.
+Führen Sie die folgenden Schritte aus, um einen Datenverlust zu vermeiden:
+  1. Wenden Sie die Microsoft-Richtlinie auf Maschinen an, auf denen die Profilverwaltung über Active Directory-Gruppenrichtlinienobjekte ausgeführt wird. Öffnen Sie dazu die Gruppenrichtlinien-Verwaltungskonsole, navigieren Sie zu 'Computerkonfiguration' &gt; 'Administrative Vorlagen' &gt; 'Windows-Komponenten' &gt; Datei-Explorer, und aktivieren Sie die Option 'Vor der Umleitung überprüfen, ob das alte und das neue Ziel der Ordnerumleitung auf dieselbe Freigabe verweisen'.
+  2. Wenden Sie gegebenenfalls Hotfixes auf Maschinen an, auf denen die Profilverwaltung ausgeführt wird. Weitere Informationen finden Sie unter https://support.microsoft.com/en-us/help/977229 und https://support.microsoft.com/en-us/help/2799904.</string>
+      <string id="FRVideos_Part">Umleitungseinstellungen für 'Videos'</string>
+      <string id="FRVideosPath_Help">Gilt für: nur dateibasierte Profillösung
+
+Gibt den umgeleiteten Speicherort des Ordners 'Videos' als einen UNC-Pfad oder einen Pfad relativ zum Ordner 'Dokumente' an.
+
+Bei Auswahl der Option 'Domänennamen einschließen' wird die Umgebungsvariable %userdomain% im UNC-Pfad eingeschlossen.</string>
+      <string id="FRVideosPath_Part">Pfad</string>
+      <string id="FRVideosPath_Part_gpfx">'Videos'-Pfad</string>
+      <string id="FRFavorites">Favoriten</string>
+      <string id="FRFavoritesEnable">Den Ordner 'Favoriten' umleiten</string>
+      <string id="FRFavoritesEnable_Help">Gilt für: nur dateibasierte Profillösung
+
+Hier können Sie angeben, wie der Ordner 'Favoriten' umgeleitet werden soll. Wählen Sie dazu 'Aktiviert' und geben Sie den Pfad für die Umleitung ein.
+Vorsicht: Daten können verloren gehen. Weitere Details siehe unten.
+Möglicherweise möchten Sie den Pfad ändern, nachdem die Richtlinie in Kraft getreten ist. Berücksichtigen Sie jedoch potenziellen Datenverlust, bevor Sie dies tun. Die im umgeleiteten Ordner enthaltenen Daten werden möglicherweise gelöscht, wenn der geänderte Pfad auf denselben Speicherort verweist wie der vorherige Pfad.
+Angenommen, Sie geben den Pfad für Kontakte als Pfad1 an. Später ändern Sie Pfad1 in Pfad2. Wenn Pfad1 und Pfad2 auf denselben Speicherort verweisen, werden alle im umgeleiteten Ordner enthaltenen Daten gelöscht, wenn die Richtlinie in Kraft tritt.
+Führen Sie die folgenden Schritte aus, um einen Datenverlust zu vermeiden:
+  1. Wenden Sie die Microsoft-Richtlinie auf Maschinen an, auf denen die Profilverwaltung über Active Directory-Gruppenrichtlinienobjekte ausgeführt wird. Öffnen Sie dazu die Gruppenrichtlinien-Verwaltungskonsole, navigieren Sie zu 'Computerkonfiguration' &gt; 'Administrative Vorlagen' &gt; 'Windows-Komponenten' &gt; Datei-Explorer, und aktivieren Sie die Option 'Vor der Umleitung überprüfen, ob das alte und das neue Ziel der Ordnerumleitung auf dieselbe Freigabe verweisen'.
+  2. Wenden Sie gegebenenfalls Hotfixes auf Maschinen an, auf denen die Profilverwaltung ausgeführt wird. Weitere Informationen finden Sie unter https://support.microsoft.com/en-us/help/977229 und https://support.microsoft.com/en-us/help/2799904.</string>
+      <string id="FRFavorites_Part">Umleitungseinstellungen für 'Favoriten'</string>
+      <string id="FRFavoritesPath_Help">Gilt für: nur dateibasierte Profillösung
+
+Gibt den umgeleiteten Speicherort des Ordners 'Favoriten' als einen UNC-Pfad an.
+
+Bei Auswahl der Option 'Domänennamen einschließen' wird die Umgebungsvariable %userdomain% im UNC-Pfad eingeschlossen.</string>
+      <string id="FRFavoritesPath_Part">Pfad</string>
+      <string id="FRFavoritesPath_Part_gpfx">'Favoriten'-Pfad</string>
+      <string id="FRContacts">Kontakte</string>
+      <string id="FRContactsEnable">Den Ordner 'Kontakte' umleiten</string>
+      <string id="FRContactsEnable_Help">Gilt für: nur dateibasierte Profillösung
+
+Hier können Sie angeben, wie der Ordner 'Kontakte' umgeleitet werden soll. Wählen Sie dazu 'Aktiviert' und geben Sie den Pfad für die Umleitung ein.
+Vorsicht: Daten können verloren gehen. Weitere Details siehe unten.
+Möglicherweise möchten Sie den Pfad ändern, nachdem die Richtlinie in Kraft getreten ist. Berücksichtigen Sie jedoch potenziellen Datenverlust, bevor Sie dies tun. Die im umgeleiteten Ordner enthaltenen Daten werden möglicherweise gelöscht, wenn der geänderte Pfad auf denselben Speicherort verweist wie der vorherige Pfad.
+Angenommen, Sie geben den Pfad für Kontakte als Pfad1 an. Später ändern Sie Pfad1 in Pfad2. Wenn Pfad1 und Pfad2 auf denselben Speicherort verweisen, werden alle im umgeleiteten Ordner enthaltenen Daten gelöscht, wenn die Richtlinie in Kraft tritt.
+Führen Sie die folgenden Schritte aus, um einen Datenverlust zu vermeiden:
+  1. Wenden Sie die Microsoft-Richtlinie auf Maschinen an, auf denen die Profilverwaltung über Active Directory-Gruppenrichtlinienobjekte ausgeführt wird. Öffnen Sie dazu die Gruppenrichtlinien-Verwaltungskonsole, navigieren Sie zu 'Computerkonfiguration' &gt; 'Administrative Vorlagen' &gt; 'Windows-Komponenten' &gt; Datei-Explorer, und aktivieren Sie die Option 'Vor der Umleitung überprüfen, ob das alte und das neue Ziel der Ordnerumleitung auf dieselbe Freigabe verweisen'.
+  2. Wenden Sie gegebenenfalls Hotfixes auf Maschinen an, auf denen die Profilverwaltung ausgeführt wird. Weitere Informationen finden Sie unter https://support.microsoft.com/en-us/help/977229 und https://support.microsoft.com/en-us/help/2799904.</string>
+      <string id="FRContacts_Part">Umleitungseinstellungen für 'Kontakte'</string>
+      <string id="FRContactsPath_Help">Gilt für: nur dateibasierte Profillösung
+
+Gibt den umgeleiteten Speicherort des Ordners 'Kontakte' als einen UNC-Pfad an.
+
+Bei Auswahl der Option 'Domänennamen einschließen' wird die Umgebungsvariable %userdomain% im UNC-Pfad eingeschlossen.</string>
+      <string id="FRContactsPath_Part">Pfad</string>
+      <string id="FRContactsPath_Part_gpfx">'Kontakte'-Pfad</string>
+      <string id="FRDownloads">Downloads</string>
+      <string id="FRDownloadsEnable">Den Ordner 'Downloads' umleiten</string>
+      <string id="FRDownloadsEnable_Help">Gilt für: nur dateibasierte Profillösung
+
+Hier können Sie angeben, wie der Ordner 'Downloads' umgeleitet werden soll. Wählen Sie dazu 'Aktiviert' und geben Sie den Pfad für die Umleitung ein.
+Vorsicht: Daten können verloren gehen. Weitere Details siehe unten.
+Möglicherweise möchten Sie den Pfad ändern, nachdem die Richtlinie in Kraft getreten ist. Berücksichtigen Sie jedoch potenziellen Datenverlust, bevor Sie dies tun. Die im umgeleiteten Ordner enthaltenen Daten werden möglicherweise gelöscht, wenn der geänderte Pfad auf denselben Speicherort verweist wie der vorherige Pfad.
+Angenommen, Sie geben den Pfad für Kontakte als Pfad1 an. Später ändern Sie Pfad1 in Pfad2. Wenn Pfad1 und Pfad2 auf denselben Speicherort verweisen, werden alle im umgeleiteten Ordner enthaltenen Daten gelöscht, wenn die Richtlinie in Kraft tritt.
+Führen Sie die folgenden Schritte aus, um einen Datenverlust zu vermeiden:
+  1. Wenden Sie die Microsoft-Richtlinie auf Maschinen an, auf denen die Profilverwaltung über Active Directory-Gruppenrichtlinienobjekte ausgeführt wird. Öffnen Sie dazu die Gruppenrichtlinien-Verwaltungskonsole, navigieren Sie zu 'Computerkonfiguration' &gt; 'Administrative Vorlagen' &gt; 'Windows-Komponenten' &gt; Datei-Explorer, und aktivieren Sie die Option 'Vor der Umleitung überprüfen, ob das alte und das neue Ziel der Ordnerumleitung auf dieselbe Freigabe verweisen'.
+  2. Wenden Sie gegebenenfalls Hotfixes auf Maschinen an, auf denen die Profilverwaltung ausgeführt wird. Weitere Informationen finden Sie unter https://support.microsoft.com/en-us/help/977229 und https://support.microsoft.com/en-us/help/2799904.</string>
+      <string id="FRDownloads_Part">Umleitungseinstellungen für 'Downloads'</string>
+      <string id="FRDownloadsPath_Help">Gilt für: nur dateibasierte Profillösung
+
+Gibt den umgeleiteten Speicherort des Ordners 'Downloads' als einen UNC-Pfad an.
+
+Bei Auswahl der Option 'Domänennamen einschließen' wird die Umgebungsvariable %userdomain% im UNC-Pfad eingeschlossen.</string>
+      <string id="FRDownloadsPath_Part">Pfad</string>
+      <string id="FRDownloadsPath_Part_gpfx">'Downloads'-Pfad</string>
+      <string id="FRLinks">Links</string>
+      <string id="FRLinksEnable">Den Ordner 'Links' umleiten</string>
+      <string id="FRLinksEnable_Help">Gilt für: nur dateibasierte Profillösung
+
+Hier können Sie angeben, wie der Ordner 'Verknüpfungen' umgeleitet werden soll. Wählen Sie dazu 'Aktiviert' und geben Sie den Pfad für die Umleitung ein.
+Vorsicht: Daten können verloren gehen. Weitere Details siehe unten.
+Möglicherweise möchten Sie den Pfad ändern, nachdem die Richtlinie in Kraft getreten ist. Berücksichtigen Sie jedoch potenziellen Datenverlust, bevor Sie dies tun. Die im umgeleiteten Ordner enthaltenen Daten werden möglicherweise gelöscht, wenn der geänderte Pfad auf denselben Speicherort verweist wie der vorherige Pfad.
+Angenommen, Sie geben den Pfad für Kontakte als Pfad1 an. Später ändern Sie Pfad1 in Pfad2. Wenn Pfad1 und Pfad2 auf denselben Speicherort verweisen, werden alle im umgeleiteten Ordner enthaltenen Daten gelöscht, wenn die Richtlinie in Kraft tritt.
+Führen Sie die folgenden Schritte aus, um einen Datenverlust zu vermeiden:
+  1. Wenden Sie die Microsoft-Richtlinie auf Maschinen an, auf denen die Profilverwaltung über Active Directory-Gruppenrichtlinienobjekte ausgeführt wird. Öffnen Sie dazu die Gruppenrichtlinien-Verwaltungskonsole, navigieren Sie zu 'Computerkonfiguration' &gt; 'Administrative Vorlagen' &gt; 'Windows-Komponenten' &gt; Datei-Explorer, und aktivieren Sie die Option 'Vor der Umleitung überprüfen, ob das alte und das neue Ziel der Ordnerumleitung auf dieselbe Freigabe verweisen'.
+  2. Wenden Sie gegebenenfalls Hotfixes auf Maschinen an, auf denen die Profilverwaltung ausgeführt wird. Weitere Informationen finden Sie unter https://support.microsoft.com/en-us/help/977229 und https://support.microsoft.com/en-us/help/2799904.</string>
+      <string id="FRLinks_Part">Umleitungseinstellungen für 'Links'</string>
+      <string id="FRLinksPath_Help">Gilt für: nur dateibasierte Profillösung
+
+Gibt den umgeleiteten Speicherort des Ordners 'Links' als einen UNC-Pfad an.
+
+Bei Auswahl der Option 'Domänennamen einschließen' wird die Umgebungsvariable %userdomain% im UNC-Pfad eingeschlossen.</string>
+      <string id="FRLinksPath_Part">Pfad</string>
+      <string id="FRLinksPath_Part_gpfx">'Links'-Pfad</string>
+      <string id="FRSearches">Suchen</string>
+      <string id="FRSearchesEnable">Den Ordner 'Suchen' umleiten</string>
+      <string id="FRSearchesEnable_Help">Gilt für: nur dateibasierte Profillösung
+
+Hier können Sie angeben, wie der Ordner 'Suchvorgänge' umgeleitet werden soll. Wählen Sie dazu 'Aktiviert' und geben Sie den Pfad für die Umleitung ein.
+Vorsicht: Daten können verloren gehen. Weitere Details siehe unten.
+Möglicherweise möchten Sie den Pfad ändern, nachdem die Richtlinie in Kraft getreten ist. Berücksichtigen Sie jedoch potenziellen Datenverlust, bevor Sie dies tun. Die im umgeleiteten Ordner enthaltenen Daten werden möglicherweise gelöscht, wenn der geänderte Pfad auf denselben Speicherort verweist wie der vorherige Pfad.
+Angenommen, Sie geben den Pfad für Kontakte als Pfad1 an. Später ändern Sie Pfad1 in Pfad2. Wenn Pfad1 und Pfad2 auf denselben Speicherort verweisen, werden alle im umgeleiteten Ordner enthaltenen Daten gelöscht, wenn die Richtlinie in Kraft tritt.
+Führen Sie die folgenden Schritte aus, um einen Datenverlust zu vermeiden:
+  1. Wenden Sie die Microsoft-Richtlinie auf Maschinen an, auf denen die Profilverwaltung über Active Directory-Gruppenrichtlinienobjekte ausgeführt wird. Öffnen Sie dazu die Gruppenrichtlinien-Verwaltungskonsole, navigieren Sie zu 'Computerkonfiguration' &gt; 'Administrative Vorlagen' &gt; 'Windows-Komponenten' &gt; Datei-Explorer, und aktivieren Sie die Option 'Vor der Umleitung überprüfen, ob das alte und das neue Ziel der Ordnerumleitung auf dieselbe Freigabe verweisen'.
+  2. Wenden Sie gegebenenfalls Hotfixes auf Maschinen an, auf denen die Profilverwaltung ausgeführt wird. Weitere Informationen finden Sie unter https://support.microsoft.com/en-us/help/977229 und https://support.microsoft.com/en-us/help/2799904.</string>
+      <string id="FRSearches_Part">Umleitungseinstellungen für 'Suchen'</string>
+      <string id="FRSearchesPath_Help">Gilt für: nur dateibasierte Profillösung
+
+Gibt den umgeleiteten Speicherort des Ordners 'Suchen' als einen UNC-Pfad an.
+
+Bei Auswahl der Option 'Domänennamen einschließen' wird die Umgebungsvariable %userdomain% im UNC-Pfad eingeschlossen.</string>
+      <string id="FRSearchesPath_Part">Pfad</string>
+      <string id="FRSearchesPath_Part_gpfx">'Suchen'-Pfad</string>
+      <string id="FRSavedGames">Gespeicherte Spiele</string>
+      <string id="FRSavedGamesEnable">Den Ordner 'Gespeicherte Spiele' umleiten</string>
+      <string id="FRSavedGamesEnable_Help">Gilt für: nur dateibasierte Profillösung
+
+Hier können Sie angeben, wie der Ordner 'Gespeicherte Spiele' umgeleitet werden soll. Wählen Sie dazu 'Aktiviert' und geben Sie den Pfad für die Umleitung ein.
+Vorsicht: Daten können verloren gehen. Weitere Details siehe unten.
+Möglicherweise möchten Sie den Pfad ändern, nachdem die Richtlinie in Kraft getreten ist. Berücksichtigen Sie jedoch potenziellen Datenverlust, bevor Sie dies tun. Die im umgeleiteten Ordner enthaltenen Daten werden möglicherweise gelöscht, wenn der geänderte Pfad auf denselben Speicherort verweist wie der vorherige Pfad.
+Angenommen, Sie geben den Pfad für Kontakte als Pfad1 an. Später ändern Sie Pfad1 in Pfad2. Wenn Pfad1 und Pfad2 auf denselben Speicherort verweisen, werden alle im umgeleiteten Ordner enthaltenen Daten gelöscht, wenn die Richtlinie in Kraft tritt.
+Führen Sie die folgenden Schritte aus, um einen Datenverlust zu vermeiden:
+  1. Wenden Sie die Microsoft-Richtlinie auf Maschinen an, auf denen die Profilverwaltung über Active Directory-Gruppenrichtlinienobjekte ausgeführt wird. Öffnen Sie dazu die Gruppenrichtlinien-Verwaltungskonsole, navigieren Sie zu 'Computerkonfiguration' &gt; 'Administrative Vorlagen' &gt; 'Windows-Komponenten' &gt; Datei-Explorer, und aktivieren Sie die Option 'Vor der Umleitung überprüfen, ob das alte und das neue Ziel der Ordnerumleitung auf dieselbe Freigabe verweisen'.
+  2. Wenden Sie gegebenenfalls Hotfixes auf Maschinen an, auf denen die Profilverwaltung ausgeführt wird. Weitere Informationen finden Sie unter https://support.microsoft.com/en-us/help/977229 und https://support.microsoft.com/en-us/help/2799904.</string>
+      <string id="FRSavedGames_Part">Umleitungseinstellungen für 'Gespeicherte Spiele'</string>
+      <string id="FRSavedGamesPath_Help">Gilt für: nur dateibasierte Profillösung
+
+Gibt den umgeleiteten Speicherort des Ordners 'Gespeicherte Spiele' als einen UNC-Pfad an.
+
+Bei Auswahl der Option 'Domänennamen einschließen' wird die Umgebungsvariable %userdomain% im UNC-Pfad eingeschlossen.</string>
+      <string id="FRSavedGamesPath_Part">Pfad</string>
+      <string id="FRSavedGamesPath_Part_gpfx">'Gespeicherte Spiele'-Pfad</string>
+      <string id="GPFXDefaultUIEnabledString">Diese Einstellung wird aktiviert.</string>
+      <string id="GPFXDefaultUIDisabledString">Diese Einstellung wird deaktiviert.</string>
+      <string id="GPFXDefaultDirPrefix">UPM - </string>
+      <string id="GPFXDefaultRegPrefix">UPM - </string>
+      <string id="GPFXDefaultForListBox">Hinweis: Trennen Sie mehrere Einträge durch Zeilenumbruch mit der Eingabetaste.</string>
+      <string id="GPFXCategory_BasicSettings">Grundeinstellungen</string>
+      <string id="GPFXCategory_FRCommonSettings">Allgemeine Einstellungen</string>
+      <string id="GPFXCategory_FSExclusions">Ausschlüsse</string>
+      <string id="GPFXCategory_DefaultFSExclusions">Standardausschlüsse</string>
+      <string id="GPFXCategory_DefaultREGExclusions">Standardausschlüsse</string>
+      <string id="SpinValidationMessage">Der Wert muss zwischen {0} und {1} liegen.</string>
+      <string id="ProcessedGroups_exclude_gpfx">TRUE</string>
+      <string id="ExcludedGroups_exclude_gpfx">TRUE</string>
+      <string id="ExclusionList_exclude_gpfx">TRUE</string>
+      <string id="IncludeListRegistry_exclude_gpfx">TRUE</string>
+      <string id="ExclusionListSyncFiles_exclude_gpfx">TRUE</string>
+      <string id="ExclusionListSyncDir_exclude_gpfx">TRUE</string>
+      <string id="SyncDirList_exclude_gpfx">TRUE</string>
+      <string id="SyncFileList_exclude_gpfx">TRUE</string>
+      <string id="MirrorFoldersList_exclude_gpfx">TRUE</string>
+      <string id="PSUserGroups_exclude_gpfx">TRUE</string>
+      <string id="CPUserGroups_exclude_gpfx">TRUE</string>
+      <string id="StreamingExclusionList_exclude_gpfx">TRUE</string>
+      <string id="LastKnownGoodRegistry_default_enable_gpfx">TRUE</string>
+      <string id="CEIPEnabled_default_enable_gpfx">TRUE</string>
+      <string id="EnableVolumeReattach_default_enable_gpfx">TRUE</string>
+      <string id="PSAlwaysCache_Part_unit_gpfx">MB</string>
+      <string id="LargeFileHandlingList_exclude_gpfx">TRUE</string>
+      <string id="MultiSiteReplication_exclude_gpfx">TRUE</string>
+      <string id="ProfileContainer_exclude_gpfx">TRUE</string>
+      <string id="ProfileContainerExclusionListDir_exclude_gpfx">TRUE</string>
+      <string id="ProfileContainerInclusionListDir_exclude_gpfx">TRUE</string>
+      <string id="ProfileContainerExclusionListFile_exclude_gpfx">TRUE</string>
+      <string id="ProfileContainerInclusionListFile_exclude_gpfx">TRUE</string>
+      <string id="MigrateWindowsProfilesToUserStore_exclude_gpfx">TRUE</string>
+      <string id="OneDriveContainer_exclude_gpfx">TRUE</string>
+      <string id="SharedStoreFileInclusionList_exclude_gpfx">TRUE</string>
+      <string id="SharedStoreFileExclusionList_exclude_gpfx">TRUE</string>
+      <string id="GroupsToAccessProfileContainer_exclude_gpfx">TRUE</string>
+      <string id="ServiceActive_gpfx_category">BasicSettings</string>
+      <string id="ProcessedGroups_gpfx_category">BasicSettings</string>
+      <string id="ExcludedGroups_gpfx_category">BasicSettings</string>
+      <string id="ProcessAdmins_gpfx_category">BasicSettings</string>
+      <string id="DATPath_gpfx_category">BasicSettings</string>
+      <string id="MigrateUserStore_gpfx_category">BasicSettings</string>
+      <string id="PSMidSessionWriteBack_gpfx_category">BasicSettings</string>
+      <string id="PSMidSessionWriteBackReg_gpfx_category">BasicSettings</string>
+      <string id="PSMidSessionWriteBackSessionLock_gpfx_category">BasicSettings</string>
+      <string id="OfflineSupport_gpfx_category">BasicSettings</string>
+      <string id="FRAdminAccess_gpfx_category">FRCommonSettings</string>
+      <string id="FRIncDomainName_gpfx_category">FRCommonSettings</string>
+      <string id="ExclusionListSyncFiles_gpfx_category">FSExclusions</string>
+      <string id="ExclusionListSyncDir_gpfx_category">FSExclusions</string>
+      <string id="DefaultExclusionList_gpfx_category">DefaultREGExclusions</string>
+      <string id="ExclusionDefaultReg01_gpfx_category">DefaultREGExclusions</string>
+      <string id="ExclusionDefaultReg02_gpfx_category">DefaultREGExclusions</string>
+      <string id="ExclusionDefaultReg03_gpfx_category">DefaultREGExclusions</string>
+      <string id="DefaultExclusionListSyncDir_gpfx_category">DefaultFSExclusions</string>
+      <string id="ExclusionDefaultDir01_gpfx_category">DefaultFSExclusions</string>
+      <string id="ExclusionDefaultDir02_gpfx_category">DefaultFSExclusions</string>
+      <string id="ExclusionDefaultDir03_gpfx_category">DefaultFSExclusions</string>
+      <string id="ExclusionDefaultDir04_gpfx_category">DefaultFSExclusions</string>
+      <string id="ExclusionDefaultDir05_gpfx_category">DefaultFSExclusions</string>
+      <string id="ExclusionDefaultDir06_gpfx_category">DefaultFSExclusions</string>
+      <string id="ExclusionDefaultDir07_gpfx_category">DefaultFSExclusions</string>
+      <string id="ExclusionDefaultDir08_gpfx_category">DefaultFSExclusions</string>
+      <string id="ExclusionDefaultDir09_gpfx_category">DefaultFSExclusions</string>
+      <string id="ExclusionDefaultDir10_gpfx_category">DefaultFSExclusions</string>
+      <string id="ExclusionDefaultDir11_gpfx_category">DefaultFSExclusions</string>
+      <string id="ExclusionDefaultDir12_gpfx_category">DefaultFSExclusions</string>
+      <string id="ExclusionDefaultDir13_gpfx_category">DefaultFSExclusions</string>
+      <string id="ExclusionDefaultDir14_gpfx_category">DefaultFSExclusions</string>
+      <string id="ExclusionDefaultDir15_gpfx_category">DefaultFSExclusions</string>
+      <string id="ExclusionDefaultDir16_gpfx_category">DefaultFSExclusions</string>
+      <string id="ExclusionDefaultDir17_gpfx_category">DefaultFSExclusions</string>
+      <string id="ExclusionDefaultDir18_gpfx_category">DefaultFSExclusions</string>
+      <string id="ExclusionDefaultDir19_gpfx_category">DefaultFSExclusions</string>
+      <string id="ExclusionDefaultDir20_gpfx_category">DefaultFSExclusions</string>
+      <string id="ExclusionDefaultDir21_gpfx_category">DefaultFSExclusions</string>
+      <string id="ExclusionDefaultDir22_gpfx_category">DefaultFSExclusions</string>
+      <string id="ExclusionDefaultDir23_gpfx_category">DefaultFSExclusions</string>
+      <string id="ExclusionDefaultDir24_gpfx_category">DefaultFSExclusions</string>
+      <string id="ExclusionDefaultDir25_gpfx_category">DefaultFSExclusions</string>
+      <string id="ExclusionDefaultDir26_gpfx_category">DefaultFSExclusions</string>
+      <string id="ExclusionDefaultDir27_gpfx_category">DefaultFSExclusions</string>
+      <string id="ExclusionDefaultDir28_gpfx_category">DefaultFSExclusions</string>
+      <string id="ExclusionDefaultDir29_gpfx_category">DefaultFSExclusions</string>
+      <string id="ExclusionDefaultDir30_gpfx_category">DefaultFSExclusions</string>
+      <string id="ProfileContainer_customized_gpfx_category">UserProfileManager\FileSystemSettings\FSSynchronization</string>
+    </stringTable>
+    <presentationTable>
+      <presentation id="ServiceActive" />
+      <presentation id="ProcessedGroups">
+        <listBox refId="ProcessedGroups_Part">Verarbeitete Gruppen</listBox>
+      </presentation>
+      <presentation id="ExcludedGroups">
+        <listBox refId="ExcludedGroups_Part">Ausgeschlossene Gruppen</listBox>
+      </presentation>
+      <presentation id="ProcessAdmins" />
+      <presentation id="DATPath">
+        <textBox refId="DATPath_Part">
+          <label>Absoluter Pfad oder Pfad relativ zum Home-Verzeichnis</label>
+        </textBox>
+      </presentation>
+      <presentation id="MigrateUserStore">
+        <textBox refId="MigrateUserStore_Part">
+          <label>Geben Sie den Benutzerspeicherpfad ein, den Sie zuvor verwendet haben</label>
+        </textBox>
+      </presentation>
+      <presentation id="PSMidSessionWriteBack" />
+      <presentation id="PSMidSessionWriteBackReg" />
+      <presentation id="PSMidSessionWriteBackSessionLock" />
+      <presentation id="OfflineSupport" />
+      <presentation id="DeleteCachedProfilesOnLogoff" />
+      <presentation id="ProfileDeleteDelay">
+        <decimalTextBox refId="ProfileDeleteDelay_Part" defaultValue="0" spinStep="10">Verzögerung (Sekunden)</decimalTextBox>
+      </presentation>
+      <presentation id="MigrateWindowsProfilesToUserStore">
+        <dropdownList refId="MigrateWindowsProfilesToUserStore_Part">Zu migrierende Benutzerprofiltypen bei leerem Benutzerspeicher</dropdownList>
+      </presentation>
+      <presentation id="ApplicationProfilesAutoMigration" />
+      <presentation id="LocalProfileConflictHandling">
+        <text>Wenn ein lokales Windows-Benutzerprofil und ein</text>
+        <dropdownList refId="LocalProfileConflictHandling_Part">Citrix Benutzerprofil im Benutzerspeicher vorhanden sind</dropdownList>
+      </presentation>
+      <presentation id="TemplateProfile">
+        <textBox refId="TemplateProfilePath">
+          <label>Pfad zum Vorlagenprofil:</label>
+        </textBox>
+        <checkBox refId="TemplateProfileOverridesLocalProfile">Vorlagenprofil überschreibt lokales Profil</checkBox>
+        <checkBox refId="TemplateProfileOverridesRoamingProfile">Vorlagenprofil überschreibt Roamingprofil</checkBox>
+        <checkBox refId="TemplateProfileIsMandatory">Als verbindliches Citrix Profil für alle Anmeldungen verwendetes Vorlagenprofil</checkBox>
+      </presentation>
+      <presentation id="LoadRetries">
+        <decimalTextBox refId="LoadRetries_Part" defaultValue="5" spinStep="1">Anzahl Wiederholungen</decimalTextBox>
+      </presentation>
+      <presentation id="ProcessCookieFiles" />
+      <presentation id="DisableDynamicConfig" />
+      <presentation id="LogoffRatherThanTempProfile" />
+      <presentation id="CEIPEnabled" />
+      <presentation id="OutlookSearchRoamingEnabled" />
+      <presentation id="OutlookEdbBackupEnabled" />
+      <presentation id="OutlookSearchRoamingConcurrentSession">
+        <decimalTextBox refId="OutlookSearchRoamingConcurrentSession_Part" defaultValue="2" spinStep="1024">Maximale Anzahl von VHDX-Datenträgern zum Speichern von Outlook-OST-Dateien</decimalTextBox>
+      </presentation>
+      <presentation id="FSLogixProfileContainerSupport" />
+      <presentation id="MultiSiteReplication">
+        <listBox refId="MultiSiteReplication_Part">Pfade zum Replizieren eines Benutzerspeichers</listBox>
+      </presentation>
+      <presentation id="CredBasedAccessEnabled" />
+      <presentation id="VhdStorePath">
+        <textBox refId="VhdStorePath_Part">
+          <label>Pfad zum Speichern von VHDX-Dateien</label>
+        </textBox>
+      </presentation>
+      <presentation id="EnableVolumeReattach" />
+      <presentation id="SyncGpoStateEnabled" />
+      <presentation id="OneDriveContainer">
+        <listBox refId="OneDriveContainer_Part">Liste der OneDrive-Ordner</listBox>
+      </presentation>
+      <presentation id="FreeRatio4Compaction">
+        <decimalTextBox refId="FreeRatio4Compaction_Part" defaultValue="20" spinStep="1">Anteil freier Speicherplatz (Prozent)</decimalTextBox>
+      </presentation>
+      <presentation id="NLogoffs4Compaction">
+        <decimalTextBox refId="NLogoffs4Compaction_Part" defaultValue="5" spinStep="1">Anzahl der Abmeldungen</decimalTextBox>
+      </presentation>
+      <presentation id="NDefrag4Compaction" />
+      <presentation id="UserGroupLevelConfigEnabled" />
+      <presentation id="OrderedGroups">
+        <textBox refId="OrderedGroups_Part">
+          <label>Prioritätsreihenfolge für die Benutzergruppen</label>
+        </textBox>
+      </presentation>
+      <presentation id="VhdContainerCapacity">
+        <decimalTextBox refId="VhdContainerCapacity_Part" defaultValue="50" spinStep="10">Standardkapazität (in GB)</decimalTextBox>
+      </presentation>
+      <presentation id="VhdAutoExpansionThreshold">
+        <decimalTextBox refId="VhdAutoExpansionThreshold_Part" defaultValue="90" spinStep="10">Schwellenwert für automatische Erweiterung (Prozent)</decimalTextBox>
+      </presentation>
+      <presentation id="VhdAutoExpansionIncrement">
+        <decimalTextBox refId="VhdAutoExpansionIncrement_Part" defaultValue="10" spinStep="10">Inkrement für die automatische Erweiterung (in GB)</decimalTextBox>
+      </presentation>
+      <presentation id="VhdAutoExpansionLimit">
+        <decimalTextBox refId="VhdAutoExpansionLimit_Part" defaultValue="80" spinStep="10">Limit für die automatische Erweiterung (in GB)</decimalTextBox>
+      </presentation>
+      <presentation id="UwpAppsRoaming" />
+      <presentation id="UserStoreSelection">
+        <dropdownList refId="UserStoreSelection_Part">Auswahlmethode:</dropdownList>
+      </presentation>
+      <presentation id="ProfileContainer">
+        <listBox refId="ProfileContainer_Part">Liste der Ordner, die auf dem Profildatenträger enthalten sein sollen</listBox>
+      </presentation>
+      <presentation id="ProfileContainerLocalCache" />
+      <presentation id="ProfileContainerExclusionListDir">
+        <listBox refId="ProfileContainerExclusionListDir_Part">Liste der Ordner, die vom Profilcontainer ausgeschlossen werden sollen</listBox>
+      </presentation>
+      <presentation id="ProfileContainerInclusionListDir">
+        <listBox refId="ProfileContainerInclusionListDir_Part">Liste der Ordner, die in den Profilcontainer eingeschlossen werden sollen</listBox>
+      </presentation>
+      <presentation id="ProfileContainerExclusionListFile">
+        <listBox refId="ProfileContainerExclusionListFile_Part">Liste der Dateien, die vom Profilcontainer ausgeschlossen werden sollen</listBox>
+      </presentation>
+      <presentation id="ProfileContainerInclusionListFile">
+        <listBox refId="ProfileContainerInclusionListFile_Part">Liste der Dateien, die in den Profilcontainer eingeschlossen werden sollen</listBox>
+      </presentation>
+      <presentation id="EnableVHDDiskCompaction" />
+      <presentation id="EnableVHDAutoExtend" />
+      <presentation id="DisableConcurrentAccessToVHDContainers">
+        <text>Wählen Sie die Container aus, auf die diese Einstellung angewendet werden soll:</text>
+        <checkBox refId="DisableConcurrentAccessToProfileContainer" defaultChecked="true">Exklusiven Zugriff auf VHD-Container aktivieren - Profilcontainer</checkBox>
+        <checkBox refId="DisableConcurrentAccessToOneDriveContainer" defaultChecked="true">Exklusiven Zugriff auf VHD-Container aktivieren - OneDrive-Container</checkBox>
+      </presentation>
+      <presentation id="PreventLoginWhenMountFailed">
+        <textBox refId="PreventLoginWhenMountFailed_Part">
+          <label>Anzuzeigende Fehlermeldung</label>
+        </textBox>
+      </presentation>
+      <presentation id="GroupsToAccessProfileContainer">
+        <listBox refId="GroupsToAccessProfileContainer_Part">Benutzer und Gruppen für den Zugriff auf den Profilcontainer</listBox>
+      </presentation>
+      <presentation id="DebugMode" />
+      <presentation id="LogLevel">
+        <text>Definieren Sie Ereignisse und Aktionen, die die Profilverwaltung ausführlich protokolliert:</text>
+        <checkBox refId="LogLevel_Warnings" defaultChecked="true">Allgemeine Warnungen</checkBox>
+        <checkBox refId="LogLevel_Information" defaultChecked="true">Allgemeine Informationen</checkBox>
+        <checkBox refId="LogLevel_FileSystemNotification">Dateisystembenachrichtigungen</checkBox>
+        <checkBox refId="LogLevel_FileSystemActions">Dateisystemaktionen</checkBox>
+        <checkBox refId="LogLevel_RegistryActions">Registrierungsaktionen</checkBox>
+        <checkBox refId="LogLevel_RegistryDifference">Registrierungsunterschiede bei der Abmeldung</checkBox>
+        <checkBox refId="LogLevel_ActiveDirectoryActions">Active Directory-Aktionen</checkBox>
+        <checkBox refId="LogLevel_PolicyUserLogon">Richtlinienwerte bei Anmeldung und Abmeldung</checkBox>
+        <checkBox refId="LogLevel_Logon">Anmeldung</checkBox>
+        <checkBox refId="LogLevel_Logoff">Abmeldung</checkBox>
+        <checkBox refId="LogLevel_UserName" defaultChecked="true">Persönliche Benutzerinformationen</checkBox>
+      </presentation>
+      <presentation id="MaxLogSize">
+        <decimalTextBox refId="MaxLogSize_Part" defaultValue="10485760" spinStep="1024">Maximale Größe in Bytes</decimalTextBox>
+      </presentation>
+      <presentation id="DebugFilePath">
+        <textBox refId="DebugFilePath_Part">
+          <label>Pfad zur Protokolldatei</label>
+        </textBox>
+      </presentation>
+      <presentation id="ExclusionList">
+        <listBox refId="ExclusionList_Part">Ausschlussliste</listBox>
+      </presentation>
+      <presentation id="DefaultExclusionList">
+        <checkBox refId="ExclusionDefaultReg01" defaultChecked="true">Software\Microsoft\AppV\Client\Integration</checkBox>
+        <checkBox refId="ExclusionDefaultReg02" defaultChecked="true">Software\Microsoft\AppV\Client\Publishing</checkBox>
+        <checkBox refId="ExclusionDefaultReg03" defaultChecked="true">Software\Microsoft\Speech_OneCore</checkBox>
+      </presentation>
+      <presentation id="IncludeListRegistry">
+        <listBox refId="IncludeListRegistry_Part">Aufnahmeliste</listBox>
+      </presentation>
+      <presentation id="LastKnownGoodRegistry" />
+      <presentation id="ExclusionListSyncFiles">
+        <listBox refId="ExclusionListSyncFiles_Part">Liste der ausgeschlossenen Dateien</listBox>
+      </presentation>
+      <presentation id="DefaultExclusionListSyncDir">
+        <checkBox refId="ExclusionDefaultDir01" defaultChecked="true">!ctx_internetcache!</checkBox>
+        <checkBox refId="ExclusionDefaultDir02" defaultChecked="true">!ctx_localappdata!\Google\Chrome\User Data\Default\Cache</checkBox>
+        <checkBox refId="ExclusionDefaultDir03" defaultChecked="true">!ctx_localappdata!\Google\Chrome\User Data\Default\Cached Theme Images</checkBox>
+        <checkBox refId="ExclusionDefaultDir04" defaultChecked="true">!ctx_localappdata!\Google\Chrome\User Data\Default\JumpListIcons</checkBox>
+        <checkBox refId="ExclusionDefaultDir05" defaultChecked="true">!ctx_localappdata!\Google\Chrome\User Data\Default\JumpListIconsOld</checkBox>
+        <checkBox refId="ExclusionDefaultDir06" defaultChecked="true">!ctx_localappdata!\GroupPolicy</checkBox>
+        <checkBox refId="ExclusionDefaultDir07" defaultChecked="true">!ctx_localappdata!\Microsoft\AppV</checkBox>
+        <checkBox refId="ExclusionDefaultDir08" defaultChecked="true">!ctx_localappdata!\Microsoft\Messenger</checkBox>
+        <checkBox refId="ExclusionDefaultDir09" defaultChecked="true">!ctx_localappdata!\Microsoft\Office\15.0\Lync\Tracing</checkBox>
+        <checkBox refId="ExclusionDefaultDir10" defaultChecked="true">!ctx_localappdata!\Microsoft\OneNote</checkBox>
+        <checkBox refId="ExclusionDefaultDir11" defaultChecked="true">!ctx_localappdata!\Microsoft\Outlook</checkBox>
+        <checkBox refId="ExclusionDefaultDir12" defaultChecked="true">!ctx_localappdata!\Microsoft\Terminal Server Client</checkBox>
+        <checkBox refId="ExclusionDefaultDir13" defaultChecked="true">!ctx_localappdata!\Microsoft\UEV</checkBox>
+        <checkBox refId="ExclusionDefaultDir14" defaultChecked="true">!ctx_localappdata!\Microsoft\Windows Live</checkBox>
+        <checkBox refId="ExclusionDefaultDir15" defaultChecked="true">!ctx_localappdata!\Microsoft\Windows Live Contacts</checkBox>
+        <checkBox refId="ExclusionDefaultDir16" defaultChecked="true">!ctx_localappdata!\Microsoft\Windows\Application Shortcuts</checkBox>
+        <checkBox refId="ExclusionDefaultDir17" defaultChecked="true">!ctx_localappdata!\Microsoft\Windows\Burn</checkBox>
+        <checkBox refId="ExclusionDefaultDir18" defaultChecked="true">!ctx_localappdata!\Microsoft\Windows\CD Burning</checkBox>
+        <checkBox refId="ExclusionDefaultDir19" defaultChecked="true">!ctx_localappdata!\Microsoft\Windows\Notifications</checkBox>
+        <checkBox refId="ExclusionDefaultDir20" defaultChecked="true">!ctx_localappdata!\Packages</checkBox>
+        <checkBox refId="ExclusionDefaultDir21" defaultChecked="true">!ctx_localappdata!\Sun</checkBox>
+        <checkBox refId="ExclusionDefaultDir22" defaultChecked="true">!ctx_localappdata!\Windows Live</checkBox>
+        <checkBox refId="ExclusionDefaultDir23" defaultChecked="true">!ctx_localsettings!\Temp</checkBox>
+        <checkBox refId="ExclusionDefaultDir24" defaultChecked="true">!ctx_roamingappdata!\Microsoft\AppV\Client\Catalog</checkBox>
+        <checkBox refId="ExclusionDefaultDir25" defaultChecked="true">!ctx_roamingappdata!\Sun\Java\Deployment\cache</checkBox>
+        <checkBox refId="ExclusionDefaultDir26" defaultChecked="true">!ctx_roamingappdata!\Sun\Java\Deployment\log</checkBox>
+        <checkBox refId="ExclusionDefaultDir27" defaultChecked="true">!ctx_roamingappdata!\Sun\Java\Deployment\tmp</checkBox>
+        <checkBox refId="ExclusionDefaultDir28" defaultChecked="true">$Recycle.Bin</checkBox>
+        <checkBox refId="ExclusionDefaultDir29" defaultChecked="true">AppData\LocalLow</checkBox>
+        <checkBox refId="ExclusionDefaultDir30" defaultChecked="true">Ablaufverfolgung</checkBox>
+      </presentation>
+      <presentation id="ExclusionListSyncDir">
+        <listBox refId="ExclusionListSyncDir_Part">Liste der ausgeschlossenen Verzeichnisse</listBox>
+      </presentation>
+      <presentation id="LogonExclusionCheck">
+        <text>Wenn ein Profil im Benutzerspeicher Dateien oder Ordner enthält,</text>
+        <dropdownList refId="LogonExclusionCheck_Part">die ausgeschlossen sind</dropdownList>
+      </presentation>
+      <presentation id="LargeFileHandlingList">
+        <listBox refId="LargeFileHandlingList_Part">Liste der als symbolische Verknüpfungen zu erstellenden Dateien</listBox>
+      </presentation>
+      <presentation id="SyncDirList">
+        <listBox refId="SyncDirList_Part">Liste der zu synchronisierenden Verzeichnisse</listBox>
+      </presentation>
+      <presentation id="SyncFileList">
+        <listBox refId="SyncFileList_Part">Liste der zu synchronisierenden Dateien</listBox>
+      </presentation>
+      <presentation id="MirrorFoldersList">
+        <listBox refId="MirrorFoldersList_Part">Liste der zu spiegelnden Ordner</listBox>
+      </presentation>
+      <presentation id="AccelerateFolderMirroring" />
+      <presentation id="PSEnabled" />
+      <presentation id="PSForFoldersEnabled" />
+      <presentation id="PSForPendingAreaEnabled" />
+      <presentation id="PSAlwaysCache">
+        <decimalTextBox refId="PSAlwaysCache_Part" defaultValue="0" spinStep="1">Dateien ab dieser Größe (MB) zwischenspeichern</decimalTextBox>
+      </presentation>
+      <presentation id="PSPendingLockTimeout">
+        <decimalTextBox refId="PSPendingLockTimeout" defaultValue="1" spinStep="1">Timeout für gesperrte Dateien im ausstehenden Bereich (Tage):</decimalTextBox>
+      </presentation>
+      <presentation id="PSUserGroups">
+        <listBox refId="PSUserGroups_Part">Liste der Benutzergruppen mit gestreamten Benutzerprofilen</listBox>
+      </presentation>
+      <presentation id="StreamingExclusionList">
+        <listBox refId="StreamingExclusionList_Part">Liste der vom Profilstreaming auszuschließenden Verzeichnisse</listBox>
+      </presentation>
+      <presentation id="CPEnable" />
+      <presentation id="CPUserGroups">
+        <listBox refId="CPUserGroups_Part">Liste der Benutzergruppen, die plattformübergreifend verarbeitet werden</listBox>
+      </presentation>
+      <presentation id="CPSchemaPath">
+        <textBox refId="CPSchemaPathData">
+          <label>Pfad zu plattformübergreifenden Definitionen:</label>
+        </textBox>
+      </presentation>
+      <presentation id="CPPath">
+        <textBox refId="CPPathData">
+          <label>Pfad zum Speicher für plattformübergreifende Einstellungen:</label>
+        </textBox>
+      </presentation>
+      <presentation id="CPMigrationFromBaseProfileToCPStore" />
+      <presentation id="XenAppOptimizationEnabled" />
+      <presentation id="XenAppOptimizationDefinitionPath">
+        <textBox refId="XenAppOptimizationDefinitionPathData">
+          <label>Pfad zu Citrix Virtual Apps-Optimierungsdefinitionen:</label>
+        </textBox>
+      </presentation>
+      <presentation id="SharedStoreFileInclusionList">
+        <listBox refId="SharedStoreFileInclusionList_Part">In den freigegebenen Speicher aufzunehmende Dateien</listBox>
+      </presentation>
+      <presentation id="SharedStoreFileExclusionList">
+        <listBox refId="SharedStoreFileExclusionList_Part">Aus dem freigegebenen Speicher auszuschließende Dateien</listBox>
+      </presentation>
+      <presentation id="SharedStoreProfileContainerFileSizeLimit">
+        <decimalTextBox refId="SharedStoreProfileContainerFileSizeLimit_Part" defaultValue="256" spinStep="1">Mindestgröße in Megabytes</decimalTextBox>
+      </presentation>
+      <presentation id="AppAccessControl">
+        <textBox refId="AppAccessControl_Part">
+          <label>App-Zugriffssteuerungsregeln</label>
+        </textBox>
+      </presentation>
+      <presentation id="FRAdminAccess">
+        <checkBox refId="FRAdminAccess_Part">Administratorzugriff gewähren</checkBox>
+      </presentation>
+      <presentation id="FRIncDomainName">
+        <checkBox refId="FRIncDomainName_Part">Domänennamen in UNC-Pfad einschließen</checkBox>
+      </presentation>
+      <presentation id="FRAppDataEnable">
+        <dropdownList refId="FRAppData_Part">Umleitungseinstellungen für AppData(Roaming)</dropdownList>
+        <textBox refId="FRAppDataPath_Part">
+          <label>Pfad</label>
+        </textBox>
+      </presentation>
+      <presentation id="FRDesktopEnable">
+        <dropdownList refId="FRDesktop_Part">Umleitungseinstellungen für 'Desktop'</dropdownList>
+        <textBox refId="FRDesktopPath_Part">
+          <label>Pfad</label>
+        </textBox>
+      </presentation>
+      <presentation id="FRStartMenuEnable">
+        <dropdownList refId="FRStartMenu_Part">Umleitungseinstellungen für 'Startmenü'</dropdownList>
+        <textBox refId="FRStartMenuPath_Part">
+          <label>Pfad</label>
+        </textBox>
+      </presentation>
+      <presentation id="FRDocumentsEnable">
+        <dropdownList refId="FRDocuments_Part">Umleitungseinstellungen für 'Dokumente'</dropdownList>
+        <textBox refId="FRDocumentsPath_Part">
+          <label>Pfad</label>
+        </textBox>
+      </presentation>
+      <presentation id="FRPicturesEnable">
+        <dropdownList refId="FRPictures_Part">Umleitungseinstellungen für 'Bilder'</dropdownList>
+        <textBox refId="FRPicturesPath_Part">
+          <label>Pfad</label>
+        </textBox>
+      </presentation>
+      <presentation id="FRMusicEnable">
+        <dropdownList refId="FRMusic_Part">Umleitungseinstellungen für 'Musik'</dropdownList>
+        <textBox refId="FRMusicPath_Part">
+          <label>Pfad</label>
+        </textBox>
+      </presentation>
+      <presentation id="FRVideosEnable">
+        <dropdownList refId="FRVideos_Part">Umleitungseinstellungen für 'Videos'</dropdownList>
+        <textBox refId="FRVideosPath_Part">
+          <label>Pfad</label>
+        </textBox>
+      </presentation>
+      <presentation id="FRFavoritesEnable">
+        <dropdownList refId="FRFavorites_Part">Umleitungseinstellungen für 'Favoriten'</dropdownList>
+        <textBox refId="FRFavoritesPath_Part">
+          <label>Pfad</label>
+        </textBox>
+      </presentation>
+      <presentation id="FRContactsEnable">
+        <dropdownList refId="FRContacts_Part">Umleitungseinstellungen für 'Kontakte'</dropdownList>
+        <textBox refId="FRContactsPath_Part">
+          <label>Pfad</label>
+        </textBox>
+      </presentation>
+      <presentation id="FRDownloadsEnable">
+        <dropdownList refId="FRDownloads_Part">Umleitungseinstellungen für 'Downloads'</dropdownList>
+        <textBox refId="FRDownloadsPath_Part">
+          <label>Pfad</label>
+        </textBox>
+      </presentation>
+      <presentation id="FRLinksEnable">
+        <dropdownList refId="FRLinks_Part">Umleitungseinstellungen für 'Links'</dropdownList>
+        <textBox refId="FRLinksPath_Part">
+          <label>Pfad</label>
+        </textBox>
+      </presentation>
+      <presentation id="FRSearchesEnable">
+        <dropdownList refId="FRSearches_Part">Umleitungseinstellungen für 'Suchen'</dropdownList>
+        <textBox refId="FRSearchesPath_Part">
+          <label>Pfad</label>
+        </textBox>
+      </presentation>
+      <presentation id="FRSavedGamesEnable">
+        <dropdownList refId="FRSavedGames_Part">Umleitungseinstellungen für 'Gespeicherte Spiele'</dropdownList>
+        <textBox refId="FRSavedGamesPath_Part">
+          <label>Pfad</label>
+        </textBox>
+      </presentation>
+    </presentationTable>
+  </resources>
+</policyDefinitionResources>
