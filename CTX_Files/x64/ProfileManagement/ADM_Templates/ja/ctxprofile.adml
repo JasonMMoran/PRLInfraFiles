@@ -1,0 +1,1954 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<policyDefinitionResources revision="1.0" schemaVersion="1.0">
+  <displayName>
+  </displayName>
+  <description>
+  </description>
+  <resources>
+    <stringTable>
+      <string id="Citrix">Citrix</string>
+      <string id="Supported_upm_1_0_0">Profile Management 1.0.0 以降</string>
+      <string id="Supported_upm_2_0_0">Profile Management 2.0.0 以降</string>
+      <string id="Supported_upm_2_1_0">Profile Management 2.1.0 以降</string>
+      <string id="Supported_upm_3_0_0">Profile Management 3.0.0 以降</string>
+      <string id="Supported_upm_3_1_0">Profile Management 3.1.0 以降</string>
+      <string id="Supported_upm_3_2_0">Profile Management 3.2.0 以降</string>
+      <string id="Supported_upm_4_0_0">Profile Management 4.0.0 以降</string>
+      <string id="Supported_upm_4_1_1">Profile Management 4.1.1 以降</string>
+      <string id="Supported_upm_5_0_0">Profile Management 5.0.0 以降</string>
+      <string id="Supported_upm_5_5_0">Profile Management 5.5.0 以降</string>
+      <string id="Supported_upm_5_6_0">Profile Management 5.6.0 以降</string>
+      <string id="Supported_upm_5_8_0">Profile Management 5.8.0 以降</string>
+      <string id="Supported_upm_7_15">Profile Management 7.15 以降</string>
+      <string id="Supported_upm_7_16">Profile Management 7.16 以降</string>
+      <string id="Supported_upm_7_18">Profile Management 7.18 以降</string>
+      <string id="Supported_upm_19_03">Profile Management 1903 以降</string>
+      <string id="Supported_upm_19_09">Profile Management 1909 以降</string>
+      <string id="Supported_upm_19_12">Profile Management 1912 以降</string>
+      <string id="Supported_upm_20_03">Profile Management 2003 以降</string>
+      <string id="Supported_upm_20_09">Profile Management 2009 以降</string>
+      <string id="Supported_upm_21_03">Profile Management 2103 以降</string>
+      <string id="Supported_upm_21_06">Profile Management 2106 以降</string>
+      <string id="Supported_upm_21_12">Profile Management 2112 以降</string>
+      <string id="Supported_upm_22_03">Profile Management 2203 以降</string>
+      <string id="Supported_upm_22_06">Profile Management 2206 以降</string>
+      <string id="Supported_upm_22_09">Profile Management 2209 以降</string>
+      <string id="Supported_upm_23_03">Profile Management 2303 以降</string>
+      <string id="Supported_upm_23_05">Profile Management 2305 以降</string>
+      <string id="Supported_upm_23_08">Profile Management 2308 以降</string>
+      <string id="Supported_upm_23_11">Profile Management 2311 以降</string>
+      <string id="UserProfileManager">Profile Management</string>
+      <string id="ServiceActive">Profile Management の有効化</string>
+      <string id="ServiceActive_Help">適用される商品: ファイルベースとコンテナベースの両方のプロファイル ソリューション
+
+デフォルトでは、展開を容易にするために、Profile Management はログオンまたはログオフを処理しません。
+
+この設定を有効にすると、ログオンまたはログオフが処理されます。
+
+この設定をここで構成しない場合、.ini ファイルからの値が使用されます。
+
+この設定をここで構成しない、または ini ファイルからの値がない場合は、Profile Management はいかなる方法によっても Windows ユーザー プロファイルを処理しません。</string>
+      <string id="ProcessedGroups">処理済みグループ</string>
+      <string id="ProcessedGroups_Part">処理済みグループ</string>
+      <string id="ProcessedGroups_Part_gpfx">処理済みグループ</string>
+      <string id="ProcessedGroups_Help">適用される商品: ファイルベースとコンテナベースの両方のプロファイル ソリューション
+
+コンピューターのローカル グループとドメイン グループ（ローカル、グローバル、およびユニバーサル）の両方を使用できます。ドメイン グループは、次の形式で指定する必要があります: &lt;ドメイン名&gt;\&lt;グループ名&gt;。
+
+この設定をここで構成すると、Profile Management はこれらのユーザー グループのメンバーのみを処理します。
+
+この設定を無効にすると、Profile Management はすべてのユーザーを処理します。
+
+この設定をここで構成しない場合、ini ファイルからの値が使用されます。
+
+この設定をここで構成しない、または ini ファイルからの値がない場合は、すべてのユーザー グループのメンバーが処理されます。</string>
+      <string id="ExcludedGroups">除外グループ</string>
+      <string id="ExcludedGroups_Help">適用される商品: ファイルベースとコンテナベースの両方のプロファイル ソリューション
+
+コンピューターのローカル グループおよびドメイン グループ (ローカル、グローバル、およびユニバーサル) を使って特定のユーザー プロファイルが処理されないようにすることができます。ドメイン グループは、&lt;ドメイン名&gt;\&lt;グループ名&gt; 形式で指定します。
+
+この設定ここで構成すると、Profile Management はこのユーザー グループのメンバーを除外します。
+
+この設定を無効にすると、Profile Management はいずれのユーザーも除外しません。
+
+この設定をここで構成しない場合、ini ファイルからの値が使用されます。
+
+この設定をここで構成しない、または ini ファイルからの値がない場合は、グループのメンバーは誰も除外されません。</string>
+      <string id="ExcludedGroups_Part">除外グループ</string>
+      <string id="ExcludedGroups_Part_gpfx">除外グループ</string>
+      <string id="ProcessAdmins">ローカル管理者のログオン処理</string>
+      <string id="ProcessAdmins_Help">適用される商品: ファイルベースとコンテナベースの両方のプロファイル ソリューション
+
+ローカル グループ "Administrators" のメンバーのログオンが Profile Management によって処理されるかどうかを指定します。
+
+この設定を無効にすると、ローカル管理者によるログオンは Profile Management により処理されません。
+
+この設定をここで構成しない場合、.ini ファイルからの値が使用されます。
+
+この設定をここで構成しない、または .ini ファイルからの値がない場合は、管理者は処理されません。</string>
+      <string id="DATPath">ユーザー ストアへのパス</string>
+      <string id="DATPath_Part">絶対パスまたはホーム ディレクトリへの相対パス</string>
+      <string id="DATPath_Part_gpfx">ユーザー ストアへのパス</string>
+      <string id="DATPath_Help">適用される商品: ファイルベースとコンテナベースの両方のプロファイル ソリューション
+
+ユーザー設定 (レジストリ変更および同期ファイル) が保存される (ユーザー ストア) ディレクトリへのパスを設定します。
+
+パスは、絶対 UNC パスまたはホーム ディレクトリへの相対パスにすることができます。
+
+どちらの場合も、次の種類の変数を使用できます: パーセント記号で囲まれたシステム環境変数およびハッシュで囲まれた Active Directory ユーザー オブジェクトの属性。
+
+例:
+フォルダー Windows\%ProfileVer% は、ユーザー ストアの Windows\W2k3 というサブフォルーダ内のユーザー設定を保存します (%ProfileVer% が W2k3 となるシステム環境変数の場合)。
+
+\\server\share\#SAMAccountName# は、ユーザー設定を UNC パス \\server\share\JohnSmith (#SAMAccountName# が 現在のユーザーに対して JohnSmith となる場合) に保存します。
+
+%username% および %userdomain% のほかは、ユーザー環境変数を使用できません。
+
+この設定を無効にすると、ユーザー設定はホーム ディレクトリの Windows サブディレクトリに保存されます。
+
+この設定をここで構成しない場合、.ini ファイルからの設定が使用されます。
+
+この設定をここまたは .ini ファイルで構成しない場合は、ホーム ディレクトリの Windows ディレクトリが使用されます。</string>
+      <string id="MigrateUserStore">ユーザー ストアを移行する</string>
+      <string id="MigrateUserStore_Part">以前に使用したユーザー ストアのパスを入力します</string>
+      <string id="MigrateUserStore_Part_gpfx">ユーザー ストアを移行する</string>
+      <string id="MigrateUserStore_Help">適用される商品: ファイルベースのプロファイル ソリューションのみ
+
+ユーザー設定 (レジストリ変更および同期ファイル) が以前に保存されていたフォルダーへのパス (以前に使用したユーザー ストアのパス) を指定します。
+
+この設定を構成すると、前回使用したユーザー ストアに保存されているユーザー設定は、[ユーザー ストアへのパス] ポリシー設定で指定される現在のユーザー ストアに移行されます。
+
+パスは、絶対 UNC パスまたはホーム ディレクトリへの相対パスにすることができます。
+
+どちらの場合も、次の種類の変数を使用できます: パーセント記号で囲まれたシステム環境変数およびハッシュ記号で囲まれた Active Directory ユーザー オブジェクトの属性。
+
+例: 
+フォルダー Windows\%ProfileVer% は、ユーザー ストアの Windows\W2k3 というサブフォルダー内のユーザー設定を保存します (%ProfileVer% が W2k3 となるシステム環境変数の場合)。
+
+\\server\share\#SAMAccountName# は、ユーザー設定を UNC パス \\server\share\JohnSmith に保存します (#SAMAccountName# が現在のユーザーに対して JohnSmith となる場合)。
+
+%username% および %userdomain% 以外のユーザー環境変数を使用できます。
+
+この設定を無効にしても、ユーザー設定は現在のユーザー ストアに保存されます。
+
+この設定をここで構成しない場合、.ini ファイルからの設定が使用されます。
+
+この設定をここまたは .ini ファイルで構成しない場合も、ユーザー設定は現在のユーザー ストアに保存されます。
+
+ここで構成したパスが [ユーザー ストアへのパス] ポリシー設定と同じ場所を指す場合、このポリシー設定は有効になりません。	</string>
+      <string id="ProfileHandling">プロファイル制御</string>
+      <string id="DeleteCachedProfilesOnLogoff">ログオフ時にローカルでキャッシュしたプロファイルの削除</string>
+      <string id="DeleteCachedProfilesOnLogoff_Help">適用される商品: ファイルベースのプロファイル ソリューションのみ
+
+ログオフ後にローカルにキャッシュしたプロファイルを削除するかどうかを指定します。
+
+この設定を有効にすると、ユーザーのログオフ後にローカル プロファイル キャッシュが削除されます。これは、ターミナル サーバーに対して推奨されます。
+
+この設定を無効にすると、キャッシュされたプロファイルは削除されません。
+
+この設定をここで構成しない場合、.ini ファイルからの値が使用されます。
+
+この設定をここで構成しない、または .ini ファイルからの値がない場合は、キャッシュされたプロファイルは削除されません。</string>
+      <string id="ProfileDeleteDelay">キャッシュしたプロファイルを削除する前の待ち時間</string>
+      <string id="ProfileDeleteDelay_Part">待ち時間 (秒)</string>
+      <string id="ProfileDeleteDelay_Part_gpfx">キャッシュしたプロファイルを削除する前の待ち時間</string>
+      <string id="ProfileDeleteDelay_Help">適用される商品: ファイルベースのプロファイル ソリューションのみ
+
+「ログオフ時にローカルでキャッシュしたプロファイルの削除」が有効な場合にのみ機能します。オプションとして、ローカルにキャッシュされたプロファイルがログオフ時に削除される前の待ち時間を設定できます。値を 0 に設定すると、ログオフ処理時にプロファイルが即座に削除されます。チェックは 1 分ごとに実行されるため、値を 60 に設定する場合はユーザーがログオフしてから 1 ～ 2 分後にプロファイルが削除されます (最後のチェックがいつ実行されたかによる)。ログオフ時にプロセスがファイルを保持するまたはユーザー レジストリ ハイブが開く場合には、この待ち時間を長くすることに利点があります。サイズの大きなプロファイルでは、これによりログオフの速度を上げることもできます。
+
+このポリシーをここで構成しない場合、.ini ファイルからの値が使用されます。
+
+このポリシーをここで構成しない、または .ini ファイルからの値がない場合は、プロファイルは即座に削除されます。</string>
+      <string id="ApplicationProfilesAutoMigration">既存のアプリケーション プロファイルの自動移行</string>
+      <string id="ApplicationProfilesAutoMigration_Help">適用される商品: ファイルベースのプロファイル ソリューションのみ
+
+この設定は、異なるオペレーティング システム間での既存のアプリケーション プロファイルの自動移行を有効または無効にします。アプリケーション プロファイルには、AppData フォルダー内のアプリケーション データと HKEY_CURRENT_USER\SOFTWARE のレジストリ エントリの両方が含まれます。この設定は、アプリケーション プロファイルを異なるオペレーティング システム間で移行する場合に役立ちます。
+
+たとえば、オペレーティング システム (OS) を Windows 10 バージョン 1803 から Windows 10 バージョン 1809 にアップグレードするとします。この設定を有効にすると、Profile Management は、各ユーザーの初回ログオン時に、既存のアプリケーション設定を Windows 10 バージョン 1809 に自動的に移行します。その結果、AppDataフォルダー内のアプリケーション データと HKEY_CURRENT_USER\SOFTWARE のレジストリ エントリが移行されます。
+
+既存のアプリケーション プロファイルが複数ある場合、Profile Management は、次の優先度に従って移行を実行します: 
+1. 同じ種類の OS (デスクトップ OS 間やサーバー OS 間) でプロファイルを移行します。
+2. 同じ Windows OS ファミリーの OS でプロファイルを移行します。例: Windows 8 から Windows 8.1 へ、または Windows 10 バージョン 1803 から Windows 10 バージョン 1809 へなど。
+3. 以前の OS のプロファイルから移行します。例: Windows 7 から Windows 10 へ、または Windows Server 2012 から Windows Server 2016 へなど。
+4. 最も近い OS のプロファイルから移行します。
+
+注: Profile Management が既存のアプリケーション プロファイルを見つけられるように、ユーザー ストア パスに変数 "!CTX_OSNAME!" を含めてオペレーティング システムの短い名前を指定する必要があります。
+
+この設定をここで構成しない場合、.ini ファイルからの設定が使用されます。
+この設定をここで構成しない、または .ini ファイルからの設定がない場合、デフォルトで無効になります。</string>
+      <string id="MigrateWindowsProfilesToUserStore">既存のプロファイルの移行</string>
+      <string id="MigrateWindowsProfilesToUserStore_Help">適用される商品: ファイルベースのプロファイル ソリューションのみ
+
+Profile management は、ユーザー ストアにユーザーのプロファイルがない場合、ログオン時に既存のプロファイルを「進行中」に移行できます。
+
+次のイベントがログオン時に実行されます: 既存の Windows プロファイルが見つかり、ユーザーがユーザー ストアに Citrix ユーザー プロファイルを持たない場合、Windows プロファイルは進行中にユーザー ストアに移行（コピー）されます。このプロセスが終了したら、ユーザー ストア プロファイルは、現在の Profile management および同じユーザー ストアへのパスで設定されたほかの任意のセッションにより使用されます。
+
+この設定を有効にすると、移動プロファイルおよびローカル プロファイル（デフォルト）、移動プロファイルのみ、ローカル プロファイルのみ、に対してプロファイル移行をアクティブにすることでき、またはプロファイル移行を完全に無効にすることができます。
+
+プロファイル移行が無効でユーザー ストアに Citrix ユーザー プロファイルがない場合は、Profile management のないセットアップとして新しいプロファイル作成に既存の Windows メカニズムが使用されます。
+
+この設定をここで構成しない場合、.ini ファイルからの値が使用されます。
+
+この設定をここで構成しない、または .ini ファイルからの値がない場合は、既存のプロファイルのすべての種類が移行されます。</string>
+      <string id="MigrateWindowsProfilesToUserStore_Part">ユーザー ストアが空の場合に移行されるユーザー プロファイルの種類</string>
+      <string id="MigrateWindowsProfilesToUserStore_Part_gpfx">既存のプロファイルの移行</string>
+      <string id="MigrateWindowsProfilesToUserStoreEnum_All">ローカルおよび移動</string>
+      <string id="MigrateWindowsProfilesToUserStoreEnum_Local">ローカル</string>
+      <string id="MigrateWindowsProfilesToUserStoreEnum_Roaming">移動</string>
+      <string id="MigrateWindowsProfilesToUserStoreEnum_None">なし</string>
+      <string id="LocalProfileConflictHandling">ローカル プロファイル競合の制御</string>
+      <string id="LocalProfileConflictHandling_Help">適用される商品: ファイルベースのプロファイル ソリューションのみ
+
+この設定は、ユーザー ストアのプロファイルと（Citrix ユーザー プロファイルではない）ローカル Windows のユーザー プロファイルの両方がある場合に Profile Management がこれをどのように処理するかを構成します。
+
+この設定を無効またはデフォルト値の [ローカル プロファイルを使用] にすると、Profile Management はローカル プロファイルを使用しますが、このプロファイルは変更されません。
+
+この設定を [ローカル プロファイルを削除] にすると、Profile Management はローカル Windows ユーザー プロファイルを削除して、ユーザー ストアから Citrix ユーザー プロファイルをインポートします。
+
+この設定を [ローカル プロファイル名を変更] にすると、Profile Management は（バックアップのため）ローカル Windows ユーザー プロファイル名を変更し、ユーザー ストアからプロファイルをインポートします。
+
+この設定をここで構成しない場合、.ini ファイルからの値が使用されます。
+
+この設定をここで構成しない、または .ini ファイルからの値がない場合は、既存のローカル プロファイルが使用されます。</string>
+      <string id="LocalProfileConflictHandling_Part_1">ユーザー ストアにローカル Windows ユーザー プロファイルおよび</string>
+      <string id="LocalProfileConflictHandling_Part">Citrix ユーザー プロファイルの両方がある場合</string>
+      <string id="LocalProfileConflictHandling_Part_gpfx">ローカル プロファイル競合の制御</string>
+      <string id="LocalProfileConflictHandlingEnum_Use">ローカル プロファイルを使用</string>
+      <string id="LocalProfileConflictHandlingEnum_Delete">ローカル プロファイルを削除</string>
+      <string id="LocalProfileConflictHandlingEnum_Rename">ローカル プロファイル名を変更</string>
+      <string id="TemplateProfile">テンプレート プロファイル</string>
+      <string id="TemplateProfile_Help">適用される商品: ファイルベースとコンテナベースの両方のプロファイル ソリューション
+
+デフォルトでは、ユーザーが最初にログオンするコンピューター上のデフォルトのユーザー プロファイルから新しいユーザープロファイルが作成されます。これに代わり Profile Management では、新しいユーザー プロファイルを作成する場合に中央集中管理的に保存されたテンプレートを使用できます。テンプレート プロファイルは、ネットワーク上の任意のファイル共有にある通常のプロファイルと同じです。UNC 表記を使って、テンプレートへのパスを指定します。ユーザーは、テンプレート プロファイルに対する読み取りアクセスが必要です。
+
+この設定を無効にすると、テンプレートは使用されません。
+
+この設定を有効にすると、新しくユーザー プロファイルを作成する場合に Profile Management はローカルのデフォルトのプロファイルではなくテンプレートを使用します。
+
+ユーザーに Citrix ユーザー プロファイルがなく、ローカルの Windows ユーザー プロファイルがある場合は、デフォルトでローカル プロファイルが使用されます (および無効でない場合にはユーザー ストアに移行される)。この設定は、[テンプレート プロファイルがローカル プロファイルを上書きする] を有効にすることで変更できます。
+
+この設定をここで構成しない場合、.ini ファイルからの値が使用されます。
+
+この設定をここで構成しない、または .ini ファイルからの値がない場合は、テンプレートは使用されません。</string>
+      <string id="TemplateProfilePath">テンプレート プロファイルへのパス:</string>
+      <string id="TemplateProfileOverridesLocalProfile">テンプレート プロファイルがローカル プロファイルを上書きする</string>
+      <string id="TemplateProfileOverridesRoamingProfile">テンプレート プロファイルが移動プロファイルを上書きする</string>
+      <string id="TemplateProfileIsMandatory">すべてのログオンで Citrix 固定プロファイルとして使用されるテンプレート プロファイル</string>
+      <string id="AdvancedSettings">上級設定</string>
+      <string id="LoadRetries">ロックされたファイルにアクセスする場合の試行数</string>
+      <string id="LoadRetries_Part">再試行回数</string>
+      <string id="LoadRetries_Help">適用される商品: ファイルベースとコンテナベースの両方のプロファイル ソリューション
+
+ロックされたファイルにアクセスする場合の試行数を設定します。
+
+この設定を無効にすると、デフォルト値の 5 回が使用されます。
+
+この設定をここで構成しない場合、.ini ファイルからの値が使用されます。
+
+この設定をここで構成しない、または .ini ファイルからの値がない場合は、デフォルト値の 5 回が使用されます。</string>
+      <string id="LoadRetries_Part_gpfx">ロックされたファイルにアクセスする場合の試行数</string>
+      <string id="ProcessCookieFiles">ログオフ時にインターネット Cookie ファイルを処理</string>
+      <string id="ProcessCookieFiles_Help">適用される商品: ファイルベースのプロファイル ソリューションのみ
+
+一部の展開環境では、index.dat ファイルにより参照されない余分なインターネット Cookie が残ったままになります。index.dat ファイルによる参照の実行後にファイル システムに残った余分な Cookie により、プロファイルが膨張する可能性があります。index.dat の処理を強制的に実行し、余分な Cookie を削除するには、この設定を有効にします。これによりログオフにかかる時間が長くなることがあるため、この設定は問題が発生する場合にのみ有効にします。
+
+この設定をここで構成しない場合、.ini ファイルからの値が使用されます。
+
+この設定をここで構成しない、または .ini ファイルからの値がない場合は、index.dat の処理は実行されません。</string>
+      <string id="DisableDynamicConfig">自動構成を無効にする</string>
+      <string id="DisableDynamicConfig_Help">適用される商品: ファイルベースとコンテナベースの両方のプロファイル ソリューション
+
+Profile Management 5.x では、その環境を精査されてそれに合わせた構成が実行されます。トラブルシューティングのためこの設定を無効にする、または前のバージョンで使用していた設定をそのまま維持するには、この設定を有効にします。
+
+この設定をここで構成しない場合、.ini ファイルからの値が使用されます。
+
+この設定をここで構成しない、または .ini ファイルからの値がない場合は、自動構成が有効となり、環境が変わる場合には Profile Management 設定が変更となります。</string>
+      <string id="LogoffRatherThanTempProfile">問題が発生する場合にユーザーをログオフ</string>
+      <string id="LogoffRatherThanTempProfile_Help">適用される商品: ファイルベースとコンテナベースの両方のプロファイル ソリューション
+
+ユーザーのログオン時に問題が発生する場合 (たとえば、ユーザー ストアを使用できないなど)、一時プロファイルが提供されます。
+
+または、この設定を有効にした場合には、エラー メッセージが表示されてユーザーをログオフします。
+
+この設定をここで構成しない場合、.ini ファイルからの値が使用されます。
+
+この設定をここで構成しない、または .ini ファイルからの値がない場合は、一時プロファイルが提供されます。</string>
+      <string id="LastKnownGoodRegistry">NTUSER.DAT のバックアップ</string>
+      <string id="LastKnownGoodRegistry_Help">適用される商品: ファイルベースのプロファイル ソリューションのみ
+
+デフォルトでは NTUSER.DAT バックアップ ポリシーが有効になっており、最新の正常な NTUSER.DAT をバックアップします。NTUSER.DAT が破損した場合、この NTUSER.DAT にロールバックします。
+
+この設定をここで構成しない場合、Profile Management は .ini ファイルの設定を使用します。
+
+この設定をここで、または .ini ファイルで構成しない場合、Profile Management は NTUSER.DAT をバックアップしません。</string>
+      <string id="CEIPEnabled">カスタマー エクスペリエンス向上プログラム</string>
+      <string id="CEIPEnabled_Help">適用される商品: ファイルベースとコンテナベースの両方のプロファイル ソリューション
+
+デフォルトでは、カスタマーエクスペリエンス向上プログラムが有効になっており、Citrix 製品の品質およびパフォーマンス向上に役立てるために使用状況や統計情報を匿名で送信します。
+
+ここでこの設定が構成されていない場合、.ini ファイルの値が使用されます。
+
+</string>
+      <string id="UserGroupLevelConfigEnabled">ユーザーレベルのポリシー設定を有効にする</string>
+      <string id="UserGroupLevelConfigEnabled_Help">適用される商品: ファイルベースとコンテナベースの両方のプロファイル ソリューション
+
+デフォルトでは、Profile Management ポリシーはマシン レベルで機能します。このポリシーを有効にすると、Profile Management ポリシーはユーザー レベル (個々のユーザーまたはユーザー グループ) で機能します。
+
+セッションが開始されると、Profile Management は、ユーザー設定、ユーザー グループ設定、マシン設定の順に優先して、適用するポリシー設定を決定します。
+
+この設定をここで構成しない場合、.ini ファイルからの値が使用されます。
+
+ここで構成せず、.ini ファイルからの値もない場合、ポリシーは無効になります。
+
+</string>
+      <string id="OrderedGroups">ユーザー グループの優先順位を設定する</string>
+      <string id="OrderedGroups_Part">ユーザー グループの優先順位</string>
+      <string id="OrderedGroups_Part_gpfx">ユーザー グループの優先順位を設定する</string>
+      <string id="OrderedGroups_Help">適用される商品: ファイルベースとコンテナベースの両方のプロファイル ソリューション
+
+ユーザー グループの優先順位を指定します。ユーザーが異なるポリシー設定を持つ複数のグループに属している場合、この順序によって優先されるグループが決まります。[ユーザー グループの優先順位] フィールドに、グループのセキュリティ ID (SID) またはドメイン名を、優先順位の高い順にセミコロン (;) で区切って入力します。
+
+例:
+ctxxa.local\groupb;S-1-5-21-674278408-26188528-2146851469-1174;ctxxa.local\groupc;
+
+ユーザーが異なるポリシー設定を持つ複数のグループに属している場合は、次の点を考慮してください:
+
+ - ユーザーがこのポリシーで定義された 1 つまたは複数のグループに属している場合、最も優先度の高いグループのポリシー設定が優先されます。
+
+ - ユーザーがこのポリシーで定義されたどのグループにも属していない場合、アルファベット順 (昇順) で一覧の一番上にくる SID のグループが優先されます。
+
+この設定をここで構成しない場合、.ini ファイルからの値が使用されます。
+
+この設定をここで構成しない、または .ini ファイルからの値がない場合、優先順位は指定されません。</string>
+      <string id="OutlookSearchRoamingEnabled">Outlook で検索インデックスの移動を有効にする</string>
+      <string id="OutlookSearchRoamingEnabled_Help">適用される商品: ファイルベースとコンテナベースの両方のプロファイル ソリューション
+
+Outlook 検索データをユーザー プロファイルとともに自動的に移動するため、ユーザーベースの Outlook 検索エクスペリエンスを実現します。ユーザー ストアに Outlook の検索インデックスを格納するための追加の領域が必要です。
+
+このポリシーを有効にするには、ログオフしてから再度ログオンする必要があります。</string>
+      <string id="OutlookEdbBackupEnabled">Outlook 検索インデックス データベース - バックアップと復元</string>
+      <string id="OutlookEdbBackupEnabled_Help">適用される商品: ファイルベースとコンテナベースの両方のプロファイル ソリューション
+
+この設定では、Outlook の検索インデックスの移動が有効になっている場合、ログオン時に Profile Management が実行する処理を構成します。
+
+この設定を有効にすると、Profile Management は、データベースがログオン時に正常にマウントされるたびに、検索インデックス  データベースのバックアップを保存します。Profile Management は、バックアップを検索インデックス  データベースの完全な状態に近い正常なコピーとして扱います。データベースが破損したために検索インデックス データベースのマウントが失敗すると、Profile Management は、検索インデックス データベースを前回認識された正常なコピーに自動的に戻します。
+
+注: Profile Management は、新しいバックアップが正常に保存された後に、以前に保存されたバックアップを削除します。バックアップは、VHDX ファイルの使用可能なストレージ領域を消費します。</string>
+      <string id="OutlookSearchRoamingConcurrentSession">Outlook 検索データの移動の同時セッション サポートを有効にする</string>
+      <string id="OutlookSearchRoamingConcurrentSession_Part">Outlook OST ファイルを格納するための VHDX ディスクの最大数</string>
+      <string id="OutlookSearchRoamingConcurrentSession_Part_gpfx">Outlook OST ファイルを格納するための VHDX ディスクの最大数</string>
+      <string id="OutlookSearchRoamingConcurrentSession_Help">適用される商品: ファイルベースとコンテナベースの両方のプロファイル ソリューション
+
+同時セッションでネイティブの Outlook 検索エクスペリエンスを提供します。このポリシーは、Outlook の検索インデックスの移動ポリシーと共に使用します。
+
+このポリシーを有効にすると、各同時セッションで個別の Outlook OST ファイルが使用されます。
+
+デフォルトでは、Outlook OST ファイルを格納するために 2 つの VHDX ディスクのみが使用されます (ディスクごとに 1 つのファイル)。開始するセッション数が増えた場合、Outlook OST ファイルはローカル ユーザー プロファイルに格納されます。Outlook OST ファイルを格納するための VHDX ディスクの最大数を指定することができます。
+
+例:
+値を 3 に設定すると、Profile Management は、1 番目、2 番目、3 番目の同時セッションの Outlook OST ファイルを VHDX ディスクに格納します。4 番目の同時セッションの OST ファイルは、ローカル プロファイルに格納されます。</string>
+      <string id="FSLogixProfileContainerSupport">プロファイル コンテナへのマルチセッション ライトバックを有効にする</string>
+      <string id="FSLogixProfileContainerSupport_Help">適用される商品: ファイルベースとコンテナベースの両方のプロファイル ソリューション
+
+マルチセッション シナリオでのプロファイル コンテナへのライトバックを有効にします。このポリシーを有効にすると、すべてのセッションでの変更がプロファイル コンテナにライトバックされます。それ以外の場合は、プロファイル コンテナでは最初のセッションのみが読み取り/書き込みモードになるため、最初のセッションでの変更のみが保存されます。 Citrix Profile Management プロファイル コンテナは、Citrix Profile Management 2103 以降でサポートされます。FSLogix プロファイル コンテナは、Citrix Profile Management 2003 以降でサポートされています。
+
+このポリシーを FSLogix プロファイル コンテナで使用するには、以下の前提条件が満たされている必要があります:
+1. FSLogix プロファイル コンテナ機能がインストールされ、有効になっている。
+2. FSLogix で、プロファイルの種類が [Try for read-write profile and fallback to read-only] に設定されている。</string>
+      <string id="MultiSiteReplication">ユーザーストアの複製</string>
+      <string id="MultiSiteReplication_Part">ユーザー ストアを複製するパス</string>
+      <string id="MultiSiteReplication_Part_gpfx">ユーザー ストアの複製 - ユーザー ストアを複製するパス</string>
+      <string id="MultiSiteReplication_Help">適用される商品: ファイルベースとコンテナベースの両方のプロファイル ソリューション
+
+ログオンとログオフのたびに、[ユーザー ストアへのパス] ポリシーで指定するパスに加えて、ユーザー ストアを複数のパスに複製できます。セッション中に変更されたユーザー ストアのファイルとフォルダーと同期するには、アクティブ ライト バックを有効にします。
+
+Profile Management バージョン 2209 以降、この機能はフル プロファイルのコンテナで利用可能です。複製されたコンテナによるプロファイルの冗長性がユーザー ログインで得られますが、セッション中のフェールオーバーでは提供されません。
+
+注: このポリシーを有効にすると、システム I/O が増大し、ログオフにかかる時間が長くなる可能性があります。
+
+Profile Management バージョン 2112 以降では、複製されたユーザー ストアから VHDX ファイルを分離し、別のパスに格納できます。これを行うには、複製されたユーザー ストアへのパスの後に VHDX ファイルのパスを追加し、2 つのパスを縦棒「|」で区切ります。 
+例: \\path_a|\\path_b は、ユーザー ストア (VHDX ファイルを除く) が \\path_a に格納され、VHDX ファイルが \\path_b に格納されていることを示します。</string>
+      <string id="注: 複数のエントリを区切るには Enter キーを使用します。&quot;">
+      </string>
+      <string id="CredBasedAccessEnabled">ユーザー ストアへの資格情報ベースのアクセスを有効にする</string>
+      <string id="CredBasedAccessEnabled_Help">適用される商品: ファイルベースとコンテナベースの両方のプロファイル ソリューション
+
+デフォルトでは、Profile Management は現在のユーザーを偽装してユーザー ストアにアクセスします。したがって、現在のユーザーは、ユーザー ストアに直接アクセスする権限を持っている必要があります。ユーザー ストアへのアクセス時に Profile Management で現在のユーザーを偽装しない場合は、この機能を有効にします。現在のユーザーがアクセスする権限を持たないストレージ リポジトリ (Azure Files など) にユーザー ストアを配置できます。
+
+Profile Management が確実にユーザー ストアにアクセスできるようにするためには、Workspace Environment Management または Windows 資格情報マネージャーでプロファイル ストレージ サーバーの資格情報を保存します。Profile Management を実行する各マシンに同じ資格情報を構成する必要がなくなるため、Workspace Environment Management の使用をお勧めします。Windows 資格情報マネージャーを使用する場合は、ローカル システム アカウントを使用してセキュアに資格情報を保存してください。
+
+注: Profile Management バージョン 2212 以降, この機能は、ファイルおよび VHDX ベースの Profile Management ソリューションの両方で使用可能です。Profile Management 2212 より前のバージョンでは、この機能は、VHDX ベースの Profile Management ソリューションでのみ使用可能です。
+
+この設定をここで構成しない場合、.ini ファイルからの値が使用されます。この設定をここで構成しない、または .ini ファイルからの値がない場合は、デフォルトで無効になります。
+
+</string>
+      <string id="VhdStorePath">VHDX ファイルのストレージ パスのカスタマイズ</string>
+      <string id="VhdStorePath_Part">VHDX ファイルを格納するパス</string>
+      <string id="VhdStorePath_Part_gpfx">VHDX ファイルのストレージ パスのカスタマイズ</string>
+      <string id="VhdStorePath_Help">適用される商品: ファイルベースとコンテナベースの両方のプロファイル ソリューション
+
+デフォルトでは、Profile Management は VHDX ファイルをユーザー ストアに格納します。このポリシーを有効にすると、VHDX ファイルを格納する別のパスを指定できます。
+
+VHDX ファイルを使用するポリシーには、プロファイル コンテナ、Outlook の検索インデックスの移動、およびフォルダーのミラーリングの高速化が含まれます。異なるポリシーの VHDX ファイルは、ストレージ パスの下の異なるフォルダーに格納されます。</string>
+      <string id="AppAccessControl">アプリのアクセス制御</string>
+      <string id="AppAccessControl_Part">アプリのアクセス制御規則</string>
+      <string id="AppAccessControl_Part_gpfx">アプリのアクセス制御</string>
+      <string id="AppAccessControl_Help">適用される商品: ファイルベースとコンテナベースの両方のプロファイル ソリューション
+
+規則に基づいてアプリケーションへのユーザー アクセスを制御します。PowerShell スクリプト CPM_App_Access_Control_Config.ps1 を使用して作成した規則を入力します。
+
+このスクリプトは、Profile Management インストール パッケージにあります。詳しくは、Profile Management のドキュメントを参照してください。</string>
+      <string id="EnableVolumeReattach">セッションで VHDX ディスクを自動的に再接続する</string>
+      <string id="EnableVolumeReattach_Help">適用される商品: ファイルベースとコンテナベースの両方のプロファイル ソリューション
+
+このポリシーは、Profile Management で使用される VHDX ディスクにのみ適用されます。
+
+ポリシーを有効にすると、セッションで VHDX ディスクが接続解除されたときに、Profile Management はイベントを検出してディスクを自動的に再接続できます。</string>
+      <string id="SyncGpoStateEnabled">ログオン時にユーザーのグループ ポリシーの非同期処理を有効にする</string>
+      <string id="SyncGpoStateEnabled_Help">適用される商品: ファイルベースとコンテナベースの両方のプロファイル ソリューション
+
+Windows では、ユーザーのグループ ポリシーに、同期と非同期の 2 つの処理モードが用意されています。Windows は、レジストリ値を使用して、次回のユーザー ログオン時の処理モードを決定します。レジストリ値が存在しない場合は、同期モードが適用されます。レジストリ値はマシン レベルの設定であり、ユーザーと一緒に移動しません。したがって、次の場合は、非同期モードが期待どおりに適用されません:
+ユーザーが別のマシンにログオンする。
+ユーザーが [ログオフ時にローカルでキャッシュしたプロファイルの削除] ポリシーが有効になっているマシンにログオンする。
+
+このポリシーを有効にすると、Citrix Profile Management によりレジストリ値がユーザーと一緒に移動されます。その結果、ユーザーがログオンするたびに処理モードが適用されます。
+
+Windows Server マシンで非同期モードを有効にするには、リモート デスクトップ セッション ホストの役割をインストールし、グループ ポリシーを次のように設定してください:
+コンピュータの構成 | 管理用テンプレート | システム | ログオン |コンピューターの起動およびログオンで常にネットワークを待つ: 無効
+コンピュータの構成 | 管理用テンプレート | システム | グループ ポリシー |リモート デスクトップ サービス経由でのログオン時に、ユーザーのグループ ポリシーを非同期に処理できるようにする: 有効</string>
+      <string id="OneDriveContainer">OneDrive コンテナーを有効にする</string>
+      <string id="OneDriveContainer_Part">OneDrive フォルダーの一覧</string>
+      <string id="OneDriveContainer_Part_gpfx">OneDrive コンテナ - OneDrive フォルダーの一覧</string>
+      <string id="OneDriveContainer_Help">適用される商品: ファイルベースとコンテナベースの両方のプロファイル ソリューション
+
+このポリシーを有効にすると、Profile Management は OneDrive フォルダーを VHDX ディスクに保存します。ディスクはログオン時に接続され、ログオフ時に接続解除されます。このポリシーでは、OneDrive フォルダーをユーザーと一緒に移動できます。
+
+OneDrive フォルダーをユーザー プロファイルに対する相対パスとして指定します。たとえば、OneDrive フォルダーが "%userprofile%\OneDrive - Citrix" にある場合は、一覧に "OneDrive - Citrix" を追加します。
+
+Profile Management バージョン 2311 以降、このポリシーによって同時セッション間の OneDrive の同期がサポートされます。</string>
+      <string id="FreeRatio4Compaction">VHD ディスクの圧縮をトリガーする空き領域率</string>
+      <string id="FreeRatio4Compaction_Part">空き領域率 (パーセント)</string>
+      <string id="FreeRatio4Compaction_Help">適用される商品: ファイルベースとコンテナベースの両方のプロファイル ソリューション
+
+VHD ディスクの圧縮をトリガーする空き領域率を指定できます。ユーザーのログオフ時に空き領域率が指定された値を超えると、ディスクの圧縮がトリガーされます。
+
+空き領域率 = (現在の VHD ファイル サイズ – 必要な最小 VHD ファイル サイズ*) ÷ 現在の VHD ファイル サイズ
+
+* Microsoft Windows オペレーティング システムから MSFT_Partition クラスの GetSupportedSize メソッドを使用して取得されます。
+
+この設定をここで構成しない場合、.ini ファイルからの値が使用されます。
+
+この設定をここで構成しない、または .ini ファイルからの値がない場合は、デフォルト値の 20 (%) が使用されます。</string>
+      <string id="FreeRatio4Compaction_Part_gpfx">VHD ディスクの圧縮をトリガーする空き領域率</string>
+      <string id="NLogoffs4Compaction">VHD ディスクの圧縮をトリガーするログオフの数</string>
+      <string id="NLogoffs4Compaction_Part">ログオフ数</string>
+      <string id="NLogoffs4Compaction_Help">適用される商品: ファイルベースとコンテナベースの両方のプロファイル ソリューション
+
+VHD ディスクの圧縮をトリガーするユーザー ログオフの数を指定できます。
+
+前回の圧縮以降のログオフ数が指定した値に達すると、ディスクの圧縮が再度トリガーされます。
+
+この設定をここで構成しない場合、.ini ファイルからの値が使用されます。
+
+この設定をここで構成しない、または .ini ファイルからの値がない場合は、デフォルト値の 5 が使用されます。</string>
+      <string id="NLogoffs4Compaction_Part_gpfx">VHD ディスクの圧縮をトリガーするログオフの数</string>
+      <string id="NDefrag4Compaction">VHD ディスクの圧縮の最適化を無効にする</string>
+      <string id="NDefrag4Compaction_Help">適用される商品: ファイルベースとコンテナベースの両方のプロファイル ソリューション
+
+VHD ディスク圧縮のためのファイル最適化を無効にするかどうかを指定できます。
+
+VHD ディスクの圧縮が有効になっている場合、VHD ディスク ファイルは、最初に Windows 組み込みの「デフラグ」ツールを使用して自動的に最適化され、次に圧縮されます。VHD ディスクの最適化によって、より良い圧縮結果が得られる一方、これを無効にすると、システム リソースの節約につながります。
+
+このポリシーをここで構成しない場合、.ini ファイルからの値が使用されます。
+
+このポリシーをここで構成しない、または .ini ファイルからの値がない場合は、最適化はデフォルトで有効になっています。</string>
+      <string id="VhdContainerCapacity">VHD コンテナのデフォルト容量</string>
+      <string id="VhdContainerCapacity_Part">デフォルトの容量 (GB 単位)</string>
+      <string id="VhdContainerCapacity_Part_gpfx">VHD コンテナのデフォルト容量</string>
+      <string id="VhdContainerCapacity_Help">適用される商品: ファイルベースとコンテナベースの両方のプロファイル ソリューション
+
+VHD コンテナのデフォルトのストレージ容量 (GB 単位) を指定します。
+
+このポリシーがここで設定されていない場合は、.ini ファイルの値が使用されます。
+
+このポリシーがここまたは .ini ファイルで設定されていない場合、デフォルトは 50 (GB) です。</string>
+      <string id="VhdAutoExpansionThreshold">プロファイル コンテナの自動拡張しきい値</string>
+      <string id="VhdAutoExpansionThreshold_Part">自動拡張しきい値 (パーセント)</string>
+      <string id="VhdAutoExpansionThreshold_Part_gpfx">プロファイル コンテナの自動拡張しきい値</string>
+      <string id="VhdAutoExpansionThreshold_Help">適用される商品: ファイルベースとコンテナベースの両方のプロファイル ソリューション
+
+プロファイルコンテナが自動拡張をトリガーするストレージ容量の使用率を指定します。
+
+このポリシーがここで設定されていない場合は、.ini ファイルの値が使用されます。
+
+このポリシーがここまたは .ini ファイルで設定されていない場合、デフォルトはストレージ容量の 90 (%) です。</string>
+      <string id="VhdAutoExpansionIncrement">プロファイル コンテナの自動拡張の増分</string>
+      <string id="VhdAutoExpansionIncrement_Part">自動拡張の増分 (GB 単位)</string>
+      <string id="VhdAutoExpansionIncrement_Part_gpfx">プロファイル コンテナの自動拡張の増分</string>
+      <string id="VhdAutoExpansionIncrement_Help">適用される商品: ファイルベースとコンテナベースの両方のプロファイル ソリューション
+
+自動拡張がトリガーされたときに、デフォルトで自動的に拡張されるプロファイル コンテナのストレージ容量 (GB 単位) の値を指定します。
+
+このポリシーがここで設定されていない場合は、.ini ファイルの値が使用されます。
+
+このポリシーがここまたは .ini ファイルで設定されていない場合、デフォルトは 10 (GB) です。</string>
+      <string id="VhdAutoExpansionLimit">プロファイル コンテナの自動拡張の制限</string>
+      <string id="VhdAutoExpansionLimit_Part">自動拡張の制限 (GB 単位)</string>
+      <string id="VhdAutoExpansionLimit_Part_gpfx">プロファイル コンテナの自動拡張の制限</string>
+      <string id="VhdAutoExpansionLimit_Help">適用される商品: ファイルベースとコンテナベースの両方のプロファイル ソリューション
+
+自動拡張がトリガーされたときに、自動的に拡張できるプロファイル コンテナの最大ストレージ容量 (GB 単位) の値を指定します。
+
+このポリシーがここで設定されていない場合は、.ini ファイルの値が使用されます。
+
+このポリシーがここまたは .ini ファイルで設定されていない場合、デフォルトは 80 (GB) です。</string>
+      <string id="UwpAppsRoaming">UWP アプリの移動</string>
+      <string id="UwpAppsRoaming_Help">適用される商品: ファイルベースとコンテナベースの両方のプロファイル ソリューション
+
+UWP (ユニバーサル Windows プラットフォーム) アプリがユーザーと共に移動されるようにします。その結果、ユーザーは異なるデバイスから同じ UWP アプリにアクセスできます。
+
+このポリシーを有効にすると、Profile Management は、アプリを別の VHDX ディスクに保存することで、UWP アプリがユーザーと共に移動されるようにします。これらのディスクは、ユーザーのログオン時に接続され、ユーザーのログオフ時に接続解除されます。
+
+この設定をここで構成しない場合、.ini ファイルからの値が使用されます。
+
+この設定をここで構成しない、または .ini ファイルからの値がない場合は、この機能は無効になります。</string>
+      <string id="UserStoreSelection">ユーザー ストアの選択方法</string>
+      <string id="UserStoreSelection_Help">複数のユーザー ストアが利用可能な場合に、Profile Management が選択するユーザー ストアを指定します。この設定は、ユーザー ストアに加え、複製されたユーザー ストアが構成されている場合に適用されます。
+複数のユーザー ストアが利用可能な場合、Profile Management は最初に最新のプロファイルがあるユーザー ストアを選択します。複数の選択肢が残された場合は、選択した方法に基づいてさらに 1 つが選択されます:
+- [構成の順序]。最も早く構成されたストアを選択します。
+- [アクセス パフォーマンス]。アクセス パフォーマンスが最も優れたストアを選択します。
+
+このポリシーがここで設定されていない場合は、.ini ファイルの値が使用されます。
+
+この設定をここで構成しない、または .ini ファイルからの値がない場合は [構成の順序] が使用されます。</string>
+      <string id="UserStoreSelection_Part">選択方法:</string>
+      <string id="UserStoreSelection_Part_gpfx">ユーザー ストアの選択方法</string>
+      <string id="UserStoreSelectionEnum_Config">構成の順序</string>
+      <string id="UserStoreSelectionEnum_AccPerf">アクセス パフォーマンス</string>
+      <string id="ProfileContainerSettings">プロファイル コンテナ設定</string>
+      <string id="ProfileContainer">プロファイル コンテナ</string>
+      <string id="ProfileContainer_Part">プロファイル ディスクに含めるフォルダー一覧</string>
+      <string id="ProfileContainer_Part_gpfx">プロファイル コンテナ - プロファイル ディスクに含まれるフォルダー一覧</string>
+      <string id="ProfileContainer_Help">適用される商品: ファイルベースとコンテナベースの両方のプロファイル ソリューション
+
+プロファイル コンテナは、VHDX ベースのプロファイル ソリューションであり、プロファイル ディスクに含めるフォルダーを指定できます。プロファイル コンテナはこれらのフォルダーを含むプロファイル ディスクを接続するため、ローカル プロファイルにフォルダーのコピーを保存する必要がなくなります。これによって、ログオン時間を短縮できます。
+
+プロファイル コンテナを使用するには、このポリシーを有効にしてフォルダーの関連するパスを一覧に追加します。大きなサイズのキャッシュ ファイルを一覧に追加することをお勧めします。たとえば、Citrix Files のコンテンツ キャッシュ フォルダーを一覧に追加します (AppData\Local\Citrix\Citrix Files\PartCache)
+
+プロファイル コンテナにユーザー プロファイル全体を含めるには、一覧にアスタリスク (*) を追加します。以下のユーザー プロファイル (存在する場合) は、最初の使用時に自動的に移行されます:
+
+-    ローカル Windows ユーザー プロファイル
+-    Citrix のファイルベースのソリューションによるユーザー プロファイル
+
+この設定をここで構成しない場合、.ini ファイルからの値が使用されます。この設定をここで構成しない、または .ini ファイルからの値がない場合は、デフォルトで無効になります。</string>
+      <string id="ProfileContainerExclusionListDir">プロファイル コンテナから除外するフォルダー</string>
+      <string id="ProfileContainerExclusionListDir_Part">プロファイル コンテナから除外するフォルダー一覧</string>
+      <string id="ProfileContainerExclusionListDir_Part_gpfx">プロファイル コンテナから除外するフォルダー</string>
+      <string id="ProfileContainerExclusionListDir_Help">適用される商品: ファイルベースとコンテナベースの両方のプロファイル ソリューション
+
+プロファイル コンテナから除外するフォルダーの一覧。
+
+除外するフォルダーはユーザー プロファイルへの相対パスとして入力します。
+
+ワイルドカードはサポートされていますが、再帰的に適用されません。
+
+例:
+「Desktop」は、Desktop フォルダーを指定します。
+
+「Downloads\*」は、Downloads フォルダー配下のすべてのサブフォルダーを指定します。
+
+この設定を無効にすると、いずれのフォルダーも除外されません。
+
+この設定をここで構成しない場合、.ini ファイルからの値が使用されます。
+
+この設定をここで構成しない、または .ini ファイルからの値がない場合は、いずれのフォルダーも除外されません。</string>
+      <string id="ProfileContainerInclusionListDir">プロファイル コンテナに含めるフォルダー</string>
+      <string id="ProfileContainerInclusionListDir_Part">プロファイル コンテナに保持するフォルダー一覧</string>
+      <string id="ProfileContainerInclusionListDir_Part_gpfx">プロファイル コンテナに含めるフォルダー</string>
+      <string id="ProfileContainerInclusionListDir_Help">適用される商品: ファイルベースとコンテナベースの両方のプロファイル ソリューション
+
+親フォルダーが除外されるときにプロファイル コンテナに保持するフォルダーの一覧。
+
+この一覧のフォルダーは、除外するフォルダーのサブフォルダーである必要があります。それ以外の場合、この設定は機能しません。
+
+ワイルドカードはサポートされていますが、再帰的に適用されません。
+
+この設定を無効にすると、この設定を有効にして一覧を空にするのと同じ結果となります。
+
+この設定をここで構成しない場合、.ini ファイルからの値が使用されます。
+
+この設定をここで構成しない、または .ini ファイルからの値がない場合は、除外リストにないフォルダーはプロファイル コンテナに含まれます。</string>
+      <string id="ProfileContainerExclusionListFile">プロファイル コンテナから除外するファイル</string>
+      <string id="ProfileContainerExclusionListFile_Part">プロファイル コンテナから除外するファイル一覧</string>
+      <string id="ProfileContainerExclusionListFile_Part_gpfx">プロファイル コンテナから除外するファイル</string>
+      <string id="ProfileContainerExclusionListFile_Help">適用される商品: ファイルベースとコンテナベースの両方のプロファイル ソリューション
+
+プロファイル コンテナから除外するファイルーの一覧。
+
+除外するファイルは、ユーザー プロファイルへの相対パスの形式で指定します。ワイルドカードを使用できます。ワイルドカードがファイル名に使用されている場合、再帰的に適用されますが、 フォルダー名に使用されている場合は、再帰的に適用されません。縦棒「|」を使用することで、ポリシーを現在のフォルダーのみに制限できます。これによって、ポリシーはサブフォルダーに適用されません。
+
+この設定を無効にすると、いずれのフォルダーも除外されません。
+
+この設定をここで構成しない場合、.ini ファイルからの値が使用されます。
+
+この設定をここで構成しない、または .ini ファイルからの値がない場合は、いずれのフォルダーも除外されません。
+
+例:
+「Desktop\Desktop.ini」は、Desktop\Desktop.ini ファイルをプロファイル コンテナから除外します。
+
+「AppData\*.tmp」は、AppData フォルダーおよびそのサブフォルダーにある拡張子 .tmp を持つすべてのファイルを除外します。
+
+「AppData\*.tmp|」は、AppData フォルダーにある拡張子 .tmp を持つすべてのファイルを除外します。
+
+「Downloads\*\a.txt」は、Downloads フォルダー配下のすべてのサブフォルダーにある a.txt を除外します。フォルダー名に使用されているワイルドカードは再帰的に適用されないことに注意してください。</string>
+      <string id="ProfileContainerInclusionListFile">プロファイル コンテナに含めるファイル</string>
+      <string id="ProfileContainerInclusionListFile_Part">プロファイル コンテナに保持するファイル一覧</string>
+      <string id="ProfileContainerInclusionListFile_Part_gpfx">プロファイル コンテナに含めるファイル</string>
+      <string id="ProfileContainerInclusionListFile_Help">適用される商品: ファイルベースとコンテナベースの両方のプロファイル ソリューション
+
+親フォルダーが除外されるときにプロファイル コンテナに含めるファイルーの一覧。
+
+含めるファイルは、ユーザー プロファイルへの相対パスの形式で指定します。ワイルドカードを使用できます。ワイルドカードがファイル名に使用されている場合、再帰的に適用されますが、 フォルダー名に使用されている場合は、再帰的に適用されません。縦棒「|」を使用することで、ポリシーを現在のフォルダーのみに制限できます。これによって、ポリシーはサブフォルダーに適用されません。
+
+この設定を無効にすると、この設定を有効にして一覧を空にするのと同じ結果となります。 
+
+この設定をここで構成しない場合、.ini ファイルからの値が使用されます。
+
+この設定をここで構成しない、または .ini ファイルからの値がない場合は、除外リストにないフォルダーはプロファイル コンテナに含まれます。
+
+例:
+「AppData\Local\Microsoft\Office\Access.qat」は、デフォルトの構成で除外されたフォルダーの下のファイルを含めます。
+
+「AppData\Local\MyApp\*.cfg 」は、プロファイル フォルダー AppData\Local\MyApp およびそのサブフォルダーにある拡張子が .cfg のすべてのファイルを含めます。
+
+「AppData\Local\MyApp\*.cfg|」は、プロファイル フォルダー AppData\Local\MyApp にある拡張子が .cfg のすべてのファイルを含めます。
+
+「Downloads\*\b.txt」は、Downloads フォルダー配下のすべてのサブフォルダーにある b.txt を含めます。フォルダー名に使用されているワイルドカードは再帰的に適用されないことに注意してください。</string>
+      <string id="ProfileContainerLocalCache">プロファイル コンテナのローカル キャッシュを有効にする</string>
+      <string id="ProfileContainerLocalCache_Help">適用される商品: コンテナーベースのプロファイル ソリューションのみ
+
+プロファイル コンテナのローカル キャッシュを有効にすると、各ローカル プロファイルは、そのプロファイル コンテナのローカル キャッシュとして機能します。プロファイル ストリーミングが使用中の場合、ローカルのキャッシュ ファイルはオンデマンドで作成されます。それ以外の場合は、ユーザー のログオン時に作成されます。</string>
+      <string id="EnableVHDDiskCompaction">VHD ディスクの圧縮を有効にする</string>
+      <string id="EnableVHDDiskCompaction_Help">適用される商品: ファイルベースとコンテナベースの両方のプロファイル ソリューション
+
+特定の条件が満たされたときに、ユーザーのログオフ時に VHD ディスク ファイルを圧縮するかどうかを指定できます。
+ディスク圧縮により、中央集中ストレージまたはクラウド ストレージの領域を節約できます。
+
+ニーズと使用可能なリソースに応じて、[詳細設定] の次のポリシーを使用して、デフォルトの圧縮設定と動作を調整できます。
+
+- VHD ディスクの圧縮をトリガーする空き領域率
+- VHD ディスクの圧縮をトリガーするログオフの数
+- VHD ディスクの圧縮の最適化を無効にする
+
+このポリシーをここで構成しない場合、.ini ファイルからの値が使用されます。
+
+このポリシーをここで構成しない、または .ini ファイルからの値がない場合は、VHD ディスクの圧縮は有効になっていません。</string>
+      <string id="EnableVHDAutoExtend">プロファイル コンテナで VHD の自動拡張を有効にする</string>
+      <string id="EnableVHDAutoExtend_Help">適用される商品: ファイルベースとコンテナベースの両方のプロファイル ソリューション
+
+プロファイル コンテナで VHD の自動拡張を有効にするかを指定します。有効にすると、すべてのプロファイル コンテナの自動拡張設定がプロファイル コンテナに適用されます。
+
+このポリシーがここで設定されていない場合は、.ini ファイルの値が使用されます。
+
+このポリシーがここまたは .ini ファイルで設定されていない場合、無効になっています。</string>
+      <string id="DisableConcurrentAccessToVHDContainers">VHD コンテナへの排他的アクセスを無効にする</string>
+      <string id="DisableConcurrentAccessToProfileContainer">VHD コンテナへの排他的アクセスを無効にする - プロファイル コンテナ</string>
+      <string id="DisableConcurrentAccessToOneDriveContainer">VHD コンテナへの排他的アクセスを無効にする - OneDrive コンテナ</string>
+      <string id="DisableConcurrentAccessToVHDContainers_Help">適用される商品: ファイルベースとコンテナベースの両方のプロファイル ソリューション
+
+デフォルトでは、VHD コンテナは同時アクセスを許可します。この設定を有効にすると、一度に 1 つのアクセスのみが許可されます。
+
+注: コンテナベースのプロファイル ソリューションでプロファイル コンテナのこの設定を有効にすると、自動的に [プロファイル コンテナへのマルチセッション ライトバックを有効にする] 設定が無効になります。
+
+このポリシーをここで構成しない場合、.ini ファイルからの値が使用されます。
+
+このポリシーをここで構成しない、または .ini ファイルからの値がない場合は、設定は無効になります。</string>
+      <string id="DisableConcurrentAccessToVHDContainers_Intro">この設定を適用するコンテナを選択します:</string>
+      <string id="PreventLoginWhenMountFailed">ログイン中にプロファイル コンテナが利用できない場合、ユーザーをログオフします</string>
+      <string id="PreventLoginWhenMountFailed_Part">表示するエラー メッセージ</string>
+      <string id="PreventLoginWhenMountFailed_Part_gpfx">ログイン中にプロファイル コンテナが利用できない場合、ユーザーをログオフします</string>
+      <string id="PreventLoginWhenMountFailed_Help">適用される製品: コンテナーベースのプロファイル ソリューションのみ
+
+ログイン中にプロファイル コンテナが利用できないときに、ユーザーをログオフするかを指定します。デフォルトでは、ユーザーはプロファイル コンテナが利用できないときに一時プロファイルを使用してログインできます。また、この設定を有効にすると、エラー メッセージが表示され、ユーザーが [OK] をクリックするとログオフします。表示するエラー メッセージを入力してください。入力しない場合は、デフォルトのメッセージが表示されます。
+
+このポリシーがここで構成されていない場合は、.ini ファイルの設定が使用されます。
+
+このポリシーがここまたは .ini ファイルで構成されていない場合、設定は無効になります。</string>
+      <string id="FileDeduplicationSettings">ファイルの重複排除</string>
+      <string id="SharedStoreFileExclusionList">共有ストアから除外するファイル</string>
+      <string id="SharedStoreFileExclusionList_Part">共有ストアから除外するファイルの一覧</string>
+      <string id="SharedStoreFileExclusionList_Part_gpfx">共有ストアから除外するファイル</string>
+      <string id="SharedStoreFileExclusionList_Help">適用される商品: ファイルベースとコンテナベースの両方のプロファイル ソリューション
+
+共有ストアから除外するファイルを指定できます。このポリシーは、「重複排除のために共有ストアに含めるファイル」ポリシーと一緒に使用します。
+
+Profile Management version 2311 移行、このポリシーはプロファイル コンテナに適用されます。
+
+ユーザー プロファイルへの相対パスでファイル名を指定します。次の点を考慮してください:
+
+- ワイルドカードがサポートされています。
+
+- ファイル名のワイルドカードは再帰的に適用されます。現在のフォルダーのみに制限するには、縦棒 (|) を使用します。
+
+- フォルダー名のワイルドカードは再帰的に適用されません。
+
+例:
+
+-「Downloads\profilemgt_x64.msi」は、Downloadsフォルダーに存在する profilemgt_x64.msi ファイルを指定します。
+
+-「*.tmp」は、ユーザー プロファイル フォルダーとそのサブフォルダーに存在する拡張子が .tmp のファイルを指定します。
+
+-「AppData\*.tmp」は、AppData フォルダーとそのサブフォルダーに存在する拡張子が .tmp のファイルを指定します。
+
+-「AppData\*.tmp|」は、AppData フォルダーにのみ存在する拡張子が .tmp のファイルを指定します。
+
+-「Downloads\*\a.txt」は、Downloads フォルダー直下のサブフォルダーに存在する a.txt ファイルを指定します。
+
+この設定を無効にすると、ファイルは除外されません。
+この設定をここで構成しない場合、.ini ファイルからの値が使用されます。
+この設定をここで構成せず、.ini ファイルでも構成されていない場合は、ファイルは除外されません。</string>
+      <string id="SharedStoreFileInclusionList">重複排除のために共有ストアに含めるファイル</string>
+      <string id="SharedStoreFileInclusionList_Part">共有ストアに含めるファイルの一覧</string>
+      <string id="SharedStoreFileInclusionList_Part_gpfx">重複排除のために共有ストアに含めるファイル</string>
+      <string id="SharedStoreFileInclusionList_Help">適用される商品: ファイルベースとコンテナベースの両方のプロファイル ソリューション
+
+同一のファイルがさまざまなユーザー プロファイル間で存在する可能性があります。これらのファイルをユーザー ストアから分離して 1 つの場所に保存すると、ストレージ領域を節約できます。そうすることで、重複を回避できます。このポリシーでは、ユーザー ストアをホストしているサーバーの共有ストアに含めるファイルを指定できます。ポリシーを有効にすると、Profile Management によって共有ストアが自動的に生成されます。次に、指定したファイルがユーザー ストアの各ユーザー プロファイルではなく、共有ストアに一元的に保存されます。
+
+Profile Management version 2311 移行、このポリシーはプロファイル コンテナに適用されます。
+
+ユーザー プロファイルへの相対パスでファイル名を指定します。次の点を考慮してください:
+
+- ワイルドカードがサポートされています。
+
+- ファイル名のワイルドカードは再帰的に適用されます。現在のフォルダーのみに制限するには、縦棒 (|) を使用します。
+
+- フォルダー名のワイルドカードは再帰的に適用されません。
+
+例:
+
+- Downloads\profilemgt_x64.msi は、Downloads フォルダーに存在する profilemgt_x64.msi ファイルを指定します。
+
+- *.cfg は、ユーザー プロファイル フォルダーとそのサブフォルダーに存在する、拡張子が .cfg のファイルを指定します。
+
+- Music\* は、Music フォルダーとそのサブフォルダーに存在するファイルを指定します。
+
+- Downloads\*.iso は、Downloads フォルダーとそのサブフォルダーに存在する、拡張子が .iso のファイルを指定します。
+
+- Downloads\*.iso| は、Downloads フォルダーにのみ存在する、拡張子が .iso のファイルを指定します。
+
+- AppData\Local\Microsoft\OneDrive\*\*.dll は、AppData\Local\Microsoft\OneDrive フォルダー直下のサブフォルダーに存在する、拡張子が .dll のファイルを指定します。
+
+この設定を無効にすると、共有ストアは無効になります。
+この設定をここで構成しない場合、.ini ファイルからの値が使用されます。
+この設定をここで構成せず、.ini ファイルでも構成されていない場合は、共有ストアは無効になります。</string>
+      <string id="SharedStoreProfileContainerFileSizeLimit">プロファイル コンテナから重複排除するファイルの最小サイズ</string>
+      <string id="SharedStoreProfileContainerFileSizeLimit_Part">最小サイズ (MB)</string>
+      <string id="SharedStoreProfileContainerFileSizeLimit_Part_gpfx">プロファイル コンテナから重複排除するファイルの最小サイズ</string>
+      <string id="SharedStoreProfileContainerFileSizeLimit_Help">適用される商品: ファイルベースとコンテナベースの両方のプロファイル ソリューション
+
+プロファイル コンテナから重複妻女するファイルの最小サイズ (MB) を指定します。値は 256 以上にする必要があります。
+この設定がここで設定されていない場合は、.ini ファイルの値が使用されます。
+この設定がここまたは .ini ファイルで設定されていない場合、値は 256 です。</string>
+      <string id="GroupsToAccessProfileContainer">プロファイル コンテナにアクセスできるユーザーとグループ</string>
+      <string id="GroupsToAccessProfileContainer_Part">プロファイル コンテナにアクセスできるユーザーとグループ</string>
+      <string id="GroupsToAccessProfileContainer_Part_gpfx">プロファイル コンテナにアクセスできるユーザーとグループ</string>
+      <string id="GroupsToAccessProfileContainer_Help">適用される商品: ファイルベースとコンテナベースの両方のプロファイル ソリューション
+
+どのドメイン ユーザーとグループがプロファイル コンテナで [読み取りと実行] 権限を持つか指定します。&lt;ドメイン名&gt;\&lt;ユーザー名またはグループ名&gt; の形式で、または セキュリティ識別子 (SID) の属性名を使用して、ドメインのユーザーまたはグループを入力します。
+
+このポリシーがここで設定されていない場合は、.ini ファイルの値が使用されます。
+
+このポリシーがここまたは .ini ファイルで設定されていない場合、プロファイル コンテナにはその所有者のみがアクセスできます。</string>
+      <string id="LogSettings">ログ設定</string>
+      <string id="DebugMode">ログの有効化</string>
+      <string id="DebugMode_Help">適用される商品: ファイルベースとコンテナベースの両方のプロファイル ソリューション
+
+この設定を有効にすると、デバッグ モード (詳細ログ) が有効になります。デバッグ モードでは、詳細な状況情報が「%SystemRoot%\System32\Logfiles\UserProfileManager」のログ ファイル、または [ログ ファイルへのパス] ポリシー設定で指定された場所に記録されます。
+
+この設定を無効にすると、エラーのみがログに記録されます。
+
+この設定をここで構成しない場合、.ini ファイルからの値が使用されます。
+
+この設定をここで構成しない、または .ini ファイルからの値がない場合は、エラーのみがログに記録されます。</string>
+      <string id="LogLevel">ログ設定</string>
+      <string id="LogLevel_Help">適用される商品: ファイルベースとコンテナベースの両方のプロファイル ソリューション
+
+詳細なログ設定。
+
+Profile management が詳細にログを記録するイベントまたはアクションを定義します。
+
+この設定をここで構成しない場合、.ini ファイルからの値が使用されます。
+
+この設定をここで構成しない、または .ini ファイルからの値がない場合は、エラーおよび一般的な情報のログが記録されます。</string>
+      <string id="LogLevel_Intro">Profile Management が詳細にログを記録するイベントまたはアクションの定義:</string>
+      <string id="LogLevel_UserName">個人用ユーザー情報</string>
+      <string id="LogLevel_Warnings">一般的な警告</string>
+      <string id="LogLevel_Information">一般的な情報</string>
+      <string id="LogLevel_FileSystemNotification">ファイル システム通知</string>
+      <string id="LogLevel_FileSystemActions">ファイル システム操作</string>
+      <string id="LogLevel_RegistryActions">レジストリ操作</string>
+      <string id="LogLevel_RegistryDifference">ログオフ時のレジストリ差分</string>
+      <string id="LogLevel_PolicyUserLogon">ログオンおよびログオフ時のポリシー値</string>
+      <string id="LogLevel_ActiveDirectoryActions">Active Directory 操作</string>
+      <string id="LogLevel_Logon">ログオン</string>
+      <string id="LogLevel_Logoff">ログオフ</string>
+      <string id="MaxLogSize">ログ ファイルの最大サイズ</string>
+      <string id="MaxLogSize_Part">最大サイズ (バイト)</string>
+      <string id="MaxLogSize_Part_gpfx">ログ ファイルの最大サイズ</string>
+      <string id="MaxLogSize_Help">適用される商品: ファイルベースとコンテナベースの両方のプロファイル ソリューション
+
+ログ ファイルの最大サイズをバイトで設定します。ログ ファイルがここで設定するサイズよりも大きくなった場合は、ファイルの既存のバックアップ (.bak) が削除され、ログ ファイルは .bak のついた名前に変更されて新しいログ ファイルが作成されます。
+
+ログ ファイルは、「%SystemRoot%\System32\Logfiles\UserProfileManager」または [ログ ファイルへのパス] ポリシー設定で指定された場所に作成されます。
+
+この設定を無効にすると、デフォルト値の 10MB が使用されます。
+
+この設定をここで構成しない場合、.ini ファイルからの値が使用されます。
+
+この設定をここで構成しない、または .ini ファイルからの値がない場合は、デフォルト値の 10MB が使用されます。</string>
+      <string id="DebugFilePath">ログ ファイルへのパス</string>
+      <string id="DebugFilePath_Part">ログ ファイルへのパス</string>
+      <string id="DebugFilePath_Help">適用される商品: ファイルベースとコンテナベースの両方のプロファイル ソリューション
+
+ログ ファイルが保存される代替パスを設定します。
+
+パスにはローカル ドライブ、リモート パス、またはネットワーク ベースのパス (UNC パス) を指定できます。リモート パスは大規模な分散環境に対して有益ですが、ネットワーク トラフィックがかなり増大し、ログ ファイルとして適当ではないことがあります。プロビジョニングの場合、固定ハード ドライブがある仮想マシンはローカル パスをそのドライブに設定します。これにより、マシンの再起動時にログ ファイルが保持されます。固定ハード ドライブがない仮想マシンの場合、UNC パスを設定するとログ ファイルを保持できますが、マシンのシステム アカウントには UNC 共有に対する書き込みアクセス権限が必要です。オフライン プロファイル機能によって管理される任意のラップトップ コンピューターに対してはローカル パスを使用します。
+
+例:
+D:\LogFiles\ProfileManagement.
+\\servername\LogFiles\ProfileManagement
+
+この設定をここで構成しない場合、.ini ファイルからの値が使用されます。
+
+この設定をここで構成しない、または .ini ファイルからの値がない場合は、デフォルトの場所である "%SystemRoot%\System32\Logfiles\UserProfileManager" が使用されます。
+
+ログ ファイルに UNC パスが使用される場合、適切なアクセス制御リストをログ ファイル フォルダーに適用して、認証されたユーザーまたはコンピューター アカウントだけが保存されたファイルにアクセスできるようにします。</string>
+      <string id="RegistrySettings">レジストリ</string>
+      <string id="ExclusionList">除外の一覧</string>
+      <string id="ExclusionList_Part">除外の一覧</string>
+      <string id="ExclusionList_Part_gpfx">除外の一覧</string>
+      <string id="ExclusionList_Help">適用される商品: ファイルベースのプロファイル ソリューションのみ
+
+ログオフ時に無視される HKCU ハイブのレジストリ キーの一覧です。
+
+例:
+Software\Policies
+
+この設定を無効にすると、レジストリ キーは除外されません。
+
+この設定をここで構成しない場合、.ini ファイルからの値が使用されます。
+
+この設定をここで構成しない、または .ini ファイルからの値がない場合は、レジストリ キーは除外されません。</string>
+      <string id="DefaultExclusionList">デフォルトの除外の一覧を有効にする</string>
+      <string id="ExclusionDefaultReg01">Software\Microsoft\AppV\Client\Integration</string>
+      <string id="ExclusionDefaultReg02">Software\Microsoft\AppV\Client\Publishing</string>
+      <string id="ExclusionDefaultReg03">Software\Microsoft\Speech_OneCore</string>
+      <string id="DefaultExclusionList_Help">適用される商品: ファイルベースのプロファイル ソリューションのみ
+
+ユーザーのプロファイルに同期しない HKCU ハイブのレジストリ キーのデフォルトの一覧です。
+
+この設定を無効にすると、レジストリ キーはデフォルトで除外されません。
+
+この設定をここで構成しない場合、.ini ファイルからの値が使用されます。
+
+この設定をここで、または.ini ファイルで構成しない場合は、レジストリ キーはデフォルトで除外されません。
+
+注: Software\Miscrosoft\Speech_OneCore は、Profile Management 5.8 以降で廃止されています。</string>
+      <string id="IncludeListRegistry">包含の一覧</string>
+      <string id="IncludeListRegistry_Part">包含の一覧</string>
+      <string id="IncludeListRegistry_Part_gpfx">包含の一覧</string>
+      <string id="IncludeListRegistry_Help">適用される商品: ファイルベースのプロファイル ソリューションのみ
+
+ログオフ時に処理される HKCU ハイブのレジストリ キーの一覧です。例: Software\Adobe
+
+この設定を有効にすると、この一覧内のキーのみが処理されます。
+
+この設定を無効にすると、完全な HKCU ハイブが処理されます。
+
+この設定をここで構成しない場合、.ini ファイルからの値が使用されます。
+
+この設定をここで構成しない、または .ini ファイルからの値がない場合は、HKCU のすべてが処理されます。</string>
+      <string id="FileSystemSettings">ファイル システム</string>
+      <string id="ExclusionListSyncFiles">除外の一覧 - ファイル</string>
+      <string id="ExclusionListSyncFiles_Part">除外するファイルの一覧</string>
+      <string id="ExclusionListSyncFiles_Part_gpfx">除外の一覧 - ファイル</string>
+      <string id="ExclusionListSyncFiles_Help">適用される商品: ファイルベースのプロファイル ソリューションのみ
+
+同期中に無視されるファイルの一覧です。
+
+ファイル名は、ユーザー プロファイルへの相対パスとして指定する必要があります。ワイルドカードを使用できます。ワイルドカードがファイル名に使用されている場合、再帰的に適用されますが、フォルダー名に使用されている場合は、再帰的に適用されません。
+
+\注: Profile Management 7.15 では、縦棒「|」を使用することでサブフォルダーを除外して現在のフォルダーのみにポリシーを適用できます。
+
+例:
+「Desktop\Desktop.ini」は Desktop フォルダーにある Desktop.ini ファイルを無視します。
+
+「AppData\*.tmp」は AppData フォルダーおよびそのサブフォルダーにある拡張子 .tmp を持つすべてのファイルを無視します。
+
+「AppData\*.tmp|」は AppData フォルダーにある拡張子 .tmp を持つすべてのファイルを無視します。
+
+「Downloads\*\a.txt」は Downloads フォルダー配下のすべてのサブフォルダーにある a.txt を無視します。フォルダー名に使用されているワイルドカードは再帰的に適用されないことに注意してください。
+
+この設定を無効にすると、いずれのファイルも除外されません。
+
+この設定をここで構成しない場合、.ini ファイルからの値が使用されます。
+
+この設定をここで構成しない、または .ini ファイルからの値がない場合は、いずれのファイルも除外されません。</string>
+      <string id="ExclusionListSyncDir">除外の一覧 - ディレクトリ</string>
+      <string id="ExclusionListSyncDir_Part">除外するディレクトリの一覧</string>
+      <string id="ExclusionListSyncDir_Part_gpfx">除外の一覧 - ディレクトリ</string>
+      <string id="ExclusionListSyncDir_Help">適用される商品: ファイルベースのプロファイル ソリューションのみ
+
+同期中に無視されるディレクトリの一覧です。
+
+フォルダー名は、ユーザー プロファイルへの相対パスとして指定する必要があります。
+
+ワイルドカードはサポートされていますが、再帰的に適用されません。
+
+例:
+「Desktop」は、ユーザー プロファイルにある Desktop フォルダーを無視します。
+
+「Downloads\*」は、Downloads フォルダー配下のすべてのサブフォルダーを無視します。
+
+この設定を無効にすると、いずれのフォルダーも除外されません。
+
+この設定をここで構成しない場合、.ini ファイルからの値が使用されます。
+
+この設定をここで構成しない、または .ini ファイルからの値がない場合は、いずれのフォルダーも除外されません。</string>
+      <string id="StreamingExclusionList">プロファイル ストリーミングの除外の一覧 - ディレクトリ</string>
+      <string id="StreamingExclusionList_Part">プロファイル ストリーミングから除外するディレクトリ一覧</string>
+      <string id="StreamingExclusionList_Part_gpfx">プロファイル ストリーミングの除外の一覧 - ディレクトリ</string>
+      <string id="StreamingExclusionList_Help">適用される商品: ファイルベースのプロファイル ソリューションのみ
+
+プロファイル ストリーミングで無視されるディレクトリの一覧です。
+フォルダー名は、ユーザー プロファイルへの相対パスとして指定する必要があります。
+
+例:
+「デスクトップ」 と入力 (カギ括弧なし) すると、ユーザー プロファイルでデスクトップ ディレクトリが無視されます。
+この設定を無効にすると、いずれのフォルダーも除外されません。
+この設定をここで構成しない場合、.ini ファイルからの値が使用されます。
+この設定をここで構成しない、または .ini ファイルからの値がない場合は、いずれのフォルダーも除外されません。
+
+注： 
+プロファイル ストリーミングの除外によって、構成されたフォルダーがプロファイル制御から除外されるわけではありません。これらは Citrix Profile Management で処理されます。</string>
+      <string id="DefaultExclusionListSyncDir">デフォルトの除外の一覧を有効にする - ディレクトリ</string>
+      <string id="ExclusionDefaultDir01">!ctx_internetcache!</string>
+      <string id="ExclusionDefaultDir02">!ctx_localappdata!\Google\Chrome\User Data\Default\Cache</string>
+      <string id="ExclusionDefaultDir03">!ctx_localappdata!\Google\Chrome\User Data\Default\Cached Theme Images</string>
+      <string id="ExclusionDefaultDir04">!ctx_localappdata!\Google\Chrome\User Data\Default\JumpListIcons</string>
+      <string id="ExclusionDefaultDir05">!ctx_localappdata!\Google\Chrome\User Data\Default\JumpListIconsOld</string>
+      <string id="ExclusionDefaultDir06">!ctx_localappdata!\GroupPolicy</string>
+      <string id="ExclusionDefaultDir07">!ctx_localappdata!\Microsoft\AppV</string>
+      <string id="ExclusionDefaultDir08">!ctx_localappdata!\Microsoft\Messenger</string>
+      <string id="ExclusionDefaultDir09">!ctx_localappdata!\Microsoft\Office\15.0\Lync\Tracing</string>
+      <string id="ExclusionDefaultDir10">!ctx_localappdata!\Microsoft\OneNote</string>
+      <string id="ExclusionDefaultDir11">!ctx_localappdata!\Microsoft\Outlook</string>
+      <string id="ExclusionDefaultDir12">!ctx_localappdata!\Microsoft\Terminal Server Client</string>
+      <string id="ExclusionDefaultDir13">!ctx_localappdata!\Microsoft\UEV</string>
+      <string id="ExclusionDefaultDir14">!ctx_localappdata!\Microsoft\Windows Live</string>
+      <string id="ExclusionDefaultDir15">!ctx_localappdata!\Microsoft\Windows Live Contacts</string>
+      <string id="ExclusionDefaultDir16">!ctx_localappdata!\Microsoft\Windows\Application Shortcuts</string>
+      <string id="ExclusionDefaultDir17">!ctx_localappdata!\Microsoft\Windows\Burn</string>
+      <string id="ExclusionDefaultDir18">!ctx_localappdata!\Microsoft\Windows\CD Burning</string>
+      <string id="ExclusionDefaultDir19">!ctx_localappdata!\Microsoft\Windows
+otifications</string>
+      <string id="ExclusionDefaultDir20">!ctx_localappdata!\Packages</string>
+      <string id="ExclusionDefaultDir21">!ctx_localappdata!\Sun</string>
+      <string id="ExclusionDefaultDir22">!ctx_localappdata!\Windows Live</string>
+      <string id="ExclusionDefaultDir23">!ctx_localsettings!\Temp</string>
+      <string id="ExclusionDefaultDir24">!ctx_roamingappdata!\Microsoft\AppV\Client\Catalog</string>
+      <string id="ExclusionDefaultDir25">!ctx_roamingappdata!\Sun\Java\Deployment\cache</string>
+      <string id="ExclusionDefaultDir26">!ctx_roamingappdata!\Sun\Java\Deployment\log</string>
+      <string id="ExclusionDefaultDir27">!ctx_roamingappdata!\Sun\Java\Deployment\tmp</string>
+      <string id="ExclusionDefaultDir28">$Recycle.Bin</string>
+      <string id="ExclusionDefaultDir29">AppData\LocalLow</string>
+      <string id="ExclusionDefaultDir30">トレース</string>
+      <string id="DefaultExclusionListSyncDir_Help">適用される商品: ファイルベースのプロファイル ソリューションのみ
+
+同期中無視されるディレクトリのデフォルトの一覧です。
+
+この設定を無効にすると、フォルダーはデフォルトで除外されません。
+
+この設定をここで構成しない場合、.ini ファイルからの値が使用されます。
+
+この設定をここで、または.ini ファイルで構成しない場合は、フォルダーはデフォルトで除外されません。</string>
+      <string id="LogonExclusionCheck">ログオン時の除外チェック</string>
+      <string id="LogonExclusionCheck_Help">適用される商品: ファイルベースのプロファイル ソリューションのみ
+
+この設定は、ユーザー ストアのプロファイルに除外されたファイルまたはフォルダーが含まれる場合に Profile Managementがこれをどのように処理するかを構成します。
+
+この設定を無効またはデフォルト値の [ログオン時に除外されたファイルまたはフォルダーを同期] にすると、Profile Management はログオン時にユーザー ストアの除外されたファイルまたはフォルダーをローカル プロファイルに同期します。
+
+この設定を [ログオン時に除外されたファイルまたはフォルダーを無視] にすると、Profile Management はログオン時にユーザー ストアの除外されたファイルまたはフォルダーを無視します。
+
+この設定を [ログオン時に除外されたファイルまたはフォルダーを削除] にすると、Profile Management はログオン時にユーザー ストアの除外されたファイルまたはフォルダーを削除します。
+
+この設定をここで構成しない場合、.ini ファイルからの値が使用されます。
+
+この設定をここで構成しない、または .ini ファイルからの値がない場合、除外されたファイルまたはフォルダーはログオン時にユーザー ストアからローカル プロファイルに同期されます。</string>
+      <string id="LogonExclusionCheck_Part_1">ユーザー ストアのプロファイルに</string>
+      <string id="LogonExclusionCheck_Part">除外されたファイルまたはフォルダーが含まれる場合</string>
+      <string id="LogonExclusionCheck_Part_gpfx">ログオン時の除外チェック </string>
+      <string id="LogonExclusionCheckEnum_Disable">除外されたファイルまたはフォルダーを同期</string>
+      <string id="LogonExclusionCheckEnum_Ignore">除外されたファイルまたはフォルダーを無視</string>
+      <string id="LogonExclusionCheckEnum_Delete">除外されたファイルまたはフォルダーを削除</string>
+      <string id="LargeFileHandlingList">大きなファイルの処理 - シンボリック リンクとして作成されるファイル</string>
+      <string id="LargeFileHandlingList_Part">シンボリック リンクとして作成されるファイル一覧</string>
+      <string id="LargeFileHandlingList_Part_gpfx">大きなファイルの処理一覧 - シンボリック リンクとして作成されるファイル</string>
+      <string id="LargeFileHandlingList_Help">適用される商品: ファイルベースのプロファイル ソリューションのみ
+
+ログオン パフォーマンスを向上させ大きなサイズのファイルを処理するために、ファイルをコピーする代わりにこの一覧でシンボリック リンクを作成します。
+
+ポリシーでファイルを参照する場合、ワイルドカードを使用できます。例: !ctx_localappdata!\Microsoft\Outlook\*.OST。
+
+Microsoft Outlook のオフライン フォルダー ファイル (*.ost) を処理するには、Outlook フォルダーが Citrix Profile Management で除外されないようにします。
+
+これらのファイルは複数セッションで同時にアクセスすることはできません。</string>
+      <string id="FSSynchronization">同期</string>
+      <string id="SyncDirList">同期するディレクトリ</string>
+      <string id="SyncDirList_Part">同期するディレクトリの一覧</string>
+      <string id="SyncDirList_Part_gpfx">同期するディレクトリ</string>
+      <string id="SyncDirList_Help">適用される商品: ファイルベースのプロファイル ソリューションのみ
+
+Profile Management は、それがインストールされたシステムとユーザーストア間で各ユーザーのプロファイル全体を同期します。
+
+この設定では、除外フォルダーのサブフォルダーを含めることができます。
+
+この一覧のパスは、ユーザー プロファイルへの相対パスとして指定する必要があります。
+
+ワイルドカードはサポートされていますが、再帰的に適用されません。
+
+例:
+「Desktop\exclude\include」は、Desktop\exclude フォルダーの include サブフォルダーを指定します。
+
+「Desktop\exclude\*」は、Desktop\exclude フォルダー配下のすべてのサブフォルダーを指定します。
+
+この設定を無効にすると、この設定を有効にして一覧を空にするのと同じ結果となります。
+
+この設定をここで構成しない場合、.ini ファイルからの値が使用されます。
+
+この設定をここで構成しない、または .ini ファイルからの値がない場合は、ユーザー プロファイルの非除外フォルダーのみが同期されます。</string>
+      <string id="SyncFileList">同期するファイル</string>
+      <string id="SyncFileList_Part">同期するファイルの一覧</string>
+      <string id="SyncFileList_Part_gpfx">同期するファイル</string>
+      <string id="SyncFileList_Help">適用される商品: ファイルベースのプロファイル ソリューションのみ
+
+Profile Management は、それがインストールされているシステムとユーザー ストア間で各ユーザーのプロファイル全体を同期します。
+
+この設定では、除外フォルダーのファイルを含めることができます。
+
+この一覧のパスは、ユーザー プロファイルへの相対パスとして指定する必要があります。ワイルドカードを使用できます。ワイルドカードがファイル名に使用されている場合、再帰的に適用されますが、 フォルダー名に使用されている場合は、再帰的に適用されません。
+
+\注: Profile Management 7.15 では、縦棒「|」を使用することでサブフォルダーを除外して現在のフォルダーのみにポリシーを適用できます。
+
+例:
+「AppData\Local\Microsoft\Office\Access.qat」は、デフォルト構成で除外されたフォルダーのファイルを指定します。
+
+「AppData\Local\MyApp\*.cfg」は、プロファイル フォルダー AppData\Local\MyApp およびそのサブフォルダーの .cfg 拡張子を持つすべてのファイルを指定します。
+
+「AppData\Local\MyApp\*.cfg|」は、プロファイル フォルダー AppData\Local\MyApp の .cfg 拡張子を持つすべてのファイルを指定します。
+
+「Downloads\*\b.txt」は Downloads フォルダー配下のすべてのサブフォルダーの b.txt を指定します。フォルダー名に使用されているワイルドカードは再帰的に適用されないことに注意してください。
+
+この設定を無効にすると、設定を有効にして空の一覧を構成するのと同じ結果になります。
+
+この設定をここで構成しない場合、.ini ファイルからの値が使用されます。
+
+この設定をここで構成しない、または ini ファイルからの値がない場合は、ユーザー プロファイルの非除外のファイルだけが同期されます。</string>
+      <string id="MirrorFoldersList">ミラーリングするフォルダー</string>
+      <string id="MirrorFoldersList_Part">ミラーリングするフォルダーの一覧</string>
+      <string id="MirrorFoldersList_Part_gpfx">ミラーリングするフォルダー</string>
+      <string id="MirrorFoldersList_Help">適用される商品: ファイルベースのプロファイル ソリューションのみ
+
+Profile management は、プロファイルのルート フォルダーに相対するフォルダーをミラーリングできます。ファイル コンテンツがデータをインデックス化し、データの別のインスタンスがありそうなファイルに対してこの設定を使用します。たとえば、Internet Explorer Cookie フォルダーをミラーリングでき、これにより index.dat がインデックス化する Cookie と同期されます。このような「最終書き込み優先」状況においては、1つ以上のセッションで変更されてきたミラーリングされたフォルダー内のファイルは最後の更新により上書きされ、その結果プロファイルに対する変更が無効になることに注意してください。</string>
+      <string id="AccelerateFolderMirroring">フォルダーのミラーリングを高速化</string>
+      <string id="AccelerateFolderMirroring_Help">適用される商品: ファイルベースのプロファイル ソリューションのみ
+
+このポリシーと [ミラーリングするフォルダー] ポリシーの両方を有効にすると、Profile Management はミラーリングされたフォルダーを VHDX ベースの仮想ディスクに保存します。これにより、ログオン時に仮想ディスクが接続され、ログオフ時に仮想ディスクが切断されます。このポリシーを有効にすると、ユーザー ストアとローカル プロファイル間でフォルダーをコピーする必要がなくなり、フォルダーのミラーリングが高速化されます。</string>
+      <string id="PSSettings">ストリーム配信ユーザー プロファイル</string>
+      <string id="PSEnabled">プロファイル ストリーム配信</string>
+      <string id="PSEnabled_Help">適用される商品: ファイルベースのプロファイル ソリューションのみ
+
+プロファイル ストリーム配信により、ユーザーのプロファイルは必要時にのみローカル コンピューター上で同期されます。レジストリ エントリは即座にキャッシュされますが、ファイルおよびフォルダ―はユーザーがアクセスした場合にのみキャッシュされます。</string>
+      <string id="PSForFoldersEnabled">フォルダーのプロファイル ストリーミングを有効にする</string>
+      <string id="PSForFoldersEnabled_Help">適用される商品: ファイルベースのプロファイル ソリューションのみ
+
+フォルダーのプロファイルストリーミングを有効にすると、フォルダーはアクセス中にのみフェッチされます。この方法により、ユーザーのログオン時にすべてのフォルダーをスキャンする必要がなくなります。</string>
+      <string id="PSForPendingAreaEnabled">待機領域のプロファイル ストリーミングを有効にする</string>
+      <string id="PSForPendingAreaEnabled_Help">適用される商品: ファイルベースのプロファイル ソリューションのみ
+
+このポリシーを有効にすると、待機領域内のファイルは、要求されたときにのみローカル プロファイルにフェッチされます。同時セッション シナリオで最適なログオン エクスペリエンスを確保するには、このポリシーとともにプロファイル ストリーミング ポリシーを使用します。
+
+このポリシーは、[フォルダーのプロファイル ストリーミングを有効にする] ポリシーが有効になっている場合に、待機領域内のフォルダーに適用されます。
+
+デフォルトでは、このポリシーは無効で、ログオン時に待機領域内のすべてのファイルとフォルダーがローカル プロファイルにフェッチされます。
+
+待機領域は、プロファイル ストリーミングが有効になっている間、プロファイルの一貫性を確保するために使用されます。同時セッションで変更されたプロファイル ファイルとフォルダーが一時的に待機領域に保存されます。</string>
+      <string id="PSAlwaysCache">常時キャッシュ</string>
+      <string id="PSAlwaysCache_Help">適用される商品: ファイルベースのプロファイル ソリューションのみ
+
+ユーザーの操作性を向上させるために、プロファイル ストリーム配信設定に加えてこの設定を有効にします (オプション)。これにより、ストリーム配信されるファイルの制限サイズが小さくなります。制限サイズを超えたすべてのファイルはログオン後できるだけすぐにキャッシュされます。プロファイル機能全体のキャッシュを使用するには、この制限サイズを 0 に設定します (プロファイル コンテンツのすべてがキャッシュされます)。</string>
+      <string id="PSAlwaysCache_Part">次のサイズ以上のファイルをキャッシュする (MB)</string>
+      <string id="PSAlwaysCache_Part_gpfx">常時キャッシュ サイズ</string>
+      <string id="PSMidSessionWriteBack">アクティブ ライト バック</string>
+      <string id="PSMidSessionWriteBack_Help">適用される商品: ファイルベースのプロファイル ソリューションのみ
+
+この設定により、変更される（レジストリ エントリ以外の）ファイルおよびフォルダーをログオフする前にセッションの途中でユーザー ストアに同期できます。
+
+この設定をここで構成しない場合、.ini ファイルからの値が使用されます。
+
+この設定をここで構成しない、または .ini ファイルからの値がない場合は、アクティブ ライト バックが無効になります。</string>
+      <string id="PSMidSessionWriteBackReg">アクティブ ライト バック レジストリ</string>
+      <string id="PSMidSessionWriteBackReg_Help">適用される商品: ファイルベースのプロファイル ソリューションのみ
+
+[アクティブ ライト バック] を有効にしてこのポリシーを使用します。
+
+変更されたレジストリ エントリは、セッション途中でユーザー ストアに同期できます。
+
+この設定をここで構成しない場合、.ini ファイルからの値が使用されます。
+
+この設定をここで構成しない、または .ini ファイルからの値がない場合は、アクティブ ライト バック レジストリが無効になります。</string>
+      <string id="PSMidSessionWriteBackSessionLock">セッションのロックと切断時にアクティブ ライト バック</string>
+      <string id="PSMidSessionWriteBackSessionLock_Help">適用される商品: ファイルベースのプロファイル ソリューションのみ
+
+このポリシーは、「アクティブ ライト バック」および「アクティブ ライト バック レジストリ」ポリシーの拡張機能として使用します。
+
+[アクティブ ライト バック] ポリシーが有効になっていると、デフォルトでは、ファイルとフォルダーがローカル コンピューターからユーザー ストアに 5 分ごとに書き戻されます。この新しいポリシーと [アクティブ ライト バック] ポリシーの両方が有効になっている場合は、セッションがロックまたは切断された場合にのみファイルとフォルダーが書き戻されます。
+
+[アクティブ ライト バック] ポリシーと [アクティブ ライト バック レジストリ] ポリシーの両方が有効になっていると、デフォルトでは、レジストリ エントリがローカル コンピューターからユーザー ストアに 5 分ごとに書き戻されます。この新しいポリシーと [アクティブ ライト バック] および [アクティブ ライト バック レジストリ] ポリシーが有効になっている場合は、セッションがロックまたは切断された場合にのみレジストリ エントリが書き戻されます。
+
+このポリシーをここで構成しない場合、.ini ファイルからの値が使用されます。
+
+このポリシーをここで構成しない、または .ini ファイルからの値がない場合は、この機能は無効になります。</string>
+      <string id="OfflineSupport">オフライン プロファイル サポート</string>
+      <string id="OfflineSupport_Help">適用される商品: ファイルベースのプロファイル ソリューションのみ
+
+オフライン プロファイル機能を有効にします。これは、一般的にネットワークから削除されるコンピューター（通常はサーバーまたはデスクトップではないラップトップやモバイル デバイス）を対象としています。
+
+この設定をここで構成しない場合、.ini ファイルからの値が使用されます。
+
+この設定をここで構成しない、または .ini ファイルからの値がない場合は、オフライン プロファイル サポートが無効になります。</string>
+      <string id="PSPendingLockTimeout">待機領域のロック ファイルのタイムアウト（日数）</string>
+      <string id="PSPendingLockTimeout_Help">適用される商品: ファイルベースのプロファイル ソリューションのみ
+
+ユーザーのファイルを解放するタイムアウト期間を設定できます。これにより、サーバーが非応答状態（非稼働時など）になるとユーザー ストアがロックされるイベントで、ファイルが待機領域からユーザー ストアにライト バックされます。この設定により、待機領域の膨張を防いでユーザー ストアには常に最新のファイルを維持できます。</string>
+      <string id="PSUserGroups">ストリーム配信ユーザー プロファイル グループ</string>
+      <string id="PSUserGroups_Help">適用される商品: ファイルベースのプロファイル ソリューションのみ
+
+1 つ以上の Windows ユーザー グループを入力します。
+
+この設定を有効にすると、入力したユーザー グループのメンバーのプロファイルのみがストリーム配信されます。この設定を無効にすると、すべてのユーザー グループが処理されます。
+
+この設定をここで構成しない場合、.ini ファイルからの値が使用されます。
+
+この設定をここで構成しない、または .ini ファイルからの値がない場合は、すべてのユーザーが処理されます。</string>
+      <string id="PSUserGroups_Part">ストリーム配信ユーザー プロファイルがあるユーザー グループの一覧</string>
+      <string id="PSUserGroups_Part_gpfx">ストリーム配信ユーザー プロファイル グループ</string>
+      <string id="CPSettings">クロスプラットフォーム設定</string>
+      <string id="CPEnable">クロスプラットフォーム設定の有効化</string>
+      <string id="CPEnable_Help">適用される商品: ファイルベースとコンテナベースの両方のプロファイル ソリューション
+
+デフォルトでは、展開を容易にするためにクロスプラットフォーム設定は無効になっています。
+
+この設定を有効にして処理を実行します。
+
+この設定をここで構成しない場合、.ini ファイルからの値が使用されます。
+
+この設定をここで構成しない、または .ini ファイルからの値がない場合は、クロスプラットフォーム設定は適用されません。</string>
+      <string id="CPUserGroups">クロスプラットフォーム設定ユーザー グループ</string>
+      <string id="CPUserGroups_Help">適用される商品: ファイルベースとコンテナベースの両方のプロファイル ソリューション
+
+Windows ユーザー グループを 1 つ以上入力します。
+
+この設定が構成されている場合、Profile Management のクロスプラットフォーム設定機能によりユーザー グループのメンバーのみが処理されます。この設定が無効な場合は、すべてのユーザー グループが処理されます。
+
+この設定をここで構成しない場合、.ini ファイルからの値が使用されます。
+
+この設定をここで構成しない、または .ini ファイルからの値がない場合は、すべてのユーザー グループが処理されます。</string>
+      <string id="CPUserGroups_Part">プラットフォーム間で処理されるユーザー グループの一覧</string>
+      <string id="CPUserGroups_Part_gpfx">クロスプラットフォーム設定ユーザー グループ</string>
+      <string id="CPSchemaPath">クロスプラットフォーム定義へのパス</string>
+      <string id="CPSchemaPath_Help">適用される商品: ファイルベースとコンテナベースの両方のプロファイル ソリューション
+
+定義ファイルがあるフォルダーを指定します。
+
+この設定をここで構成しない場合、INI ファイルからの値が使用されます。
+
+この設定をここで構成しない、または INI ファイルからの値がない場合は、クロスプラットフォーム設定は適用されません。
+
+注:
+* フォルダーは、ローカルまたは SMB ファイル共有にあるものを指定できます。</string>
+      <string id="CPSchemaPathData">クロスプラットフォーム定義へのパス:</string>
+      <string id="CPSchemaPathData_gpfx">クロスプラットフォーム定義へのパス</string>
+      <string id="CPPath">クロスプラットフォーム設定ストアへのパス</string>
+      <string id="CPPath_Help">適用される商品: ファイルベースとコンテナベースの両方のプロファイル ソリューション
+
+ユーザーのクロスプラットフォーム設定が保存されるディレクトリ (クロスプラットフォーム設定ストア) へのパスを設定します。
+
+パスは、絶対 UNC パスまたはホーム ディレクトリへの相対パスにできます。
+
+どちらの場合でも、次の種類の変数を使用できます: パーセント記号で囲まれたシステム環境変数とハッシュで囲まれた Active Directory ユーザー オブジェクトの属性。
+
+%username% および %userdomain% 以外のユーザー環境変数は使用できません。
+
+この設定が無効な場合は、パス Windows\PM_CP が使用されます。
+
+この設定をここで構成しない場合、.ini ファイルからの値が使用されます。
+
+この設定をここで構成しない、または .ini ファイルからの値がない場合は、デフォルト値の Windows\PM_CP が使用されます。</string>
+      <string id="CPPathData">クロスプラットフォーム設定ストアへのパス:</string>
+      <string id="CPPathData_gpfx">クロスプラットフォーム設定ストアへのパス</string>
+      <string id="CPMigrationFromBaseProfileToCPStore">クロスプラットフォーム設定を作成するためのソース</string>
+      <string id="CPMigrationFromBaseProfileToCPStore_Help">適用される商品: ファイルベースとコンテナベースの両方のプロファイル ソリューション
+
+デフォルト: 無効
+
+定義ファイルには、アプリケーションを構成する一連の定義が含まれています。クロスプラットフォーム設定ストアにデータがない定義が含まれる場合、また単一のプラットフォーム プロファイル内のキャッシュされたデータがストア内の定義のデータよりも新しい場合、この設定を有効にすると Profile Management が単一のプラットフォーム プロファイルからのデータのみをストアに移行します。</string>
+      <string id="XenAppOptimizationSettings">Citrix Virtual Apps 最適化設定</string>
+      <string id="XenAppOptimizationEnabled">Citrix Virtual Apps 最適化を有効にする</string>
+      <string id="XenAppOptimizationEnabled_Help">適用される商品: ファイルベースのプロファイル ソリューションのみ
+
+この機能を有効にすると、ユーザーが起動または終了する公開アプリケーション固有の設定のみが同期されます。
+
+この設定をここで構成しない場合、.ini ファイルからの値が使用されます。
+
+この設定をここで構成しない、または .ini ファイルからの値がない場合、Citrix Virtual Apps 最適化設定は適用されません。</string>
+      <string id="XenAppOptimizationDefinitionPath">Citrix Virtual Apps 最適化定義へのパス</string>
+      <string id="XenAppOptimizationDefinitionPathData">Citrix Virtual Apps 最適化定義へのパス:</string>
+      <string id="XenAppOptimizationDefinitionPath_Help">適用される商品: ファイルベースのプロファイル ソリューションのみ
+
+Citrix Virtual Apps 最適化の定義ファイルがあるフォルダーを指定します。
+
+この設定をここで構成しない場合、INI ファイルからの値が使用されます。
+
+この設定をここで構成しない、または INI ファイルからの値がない場合は、Citrix Virtual Apps 最適化設定は適用されません。
+
+注:
+* フォルダーは、ローカルまたは SMB ファイル共有にあるものを指定できます。</string>
+      <string id="FolderRedirection">フォルダーのリダイレクト</string>
+      <string id="AppAccessControlSettings">アプリのアクセス制御</string>
+      <string id="FRAdminAccess">管理者アクセスを許可</string>
+      <string id="FRAdminAccess_Help">適用される商品: ファイルベースのプロファイル ソリューションのみ
+
+デフォルトでは、リダイレクトされたフォルダーのコンテンツに対してユーザーの排他アクセスが許可されています。
+
+この設定を有効にすると、管理者はユーザーのリダイレクトされたフォルダーのコンテンツにアクセスできます。</string>
+      <string id="FRAdminAccess_Part">管理者アクセスを許可</string>
+      <string id="FRAdminAccess_Part_gpfx">管理者アクセスを許可</string>
+      <string id="FRAppDataEnum_RedirectUncPath">次の UNC パスにリダイレクト</string>
+      <string id="FRDesktopEnum_RedirectUncPath">次の UNC パスにリダイレクト</string>
+      <string id="FRStartMenuEnum_RedirectUncPath">次の UNC パスにリダイレクト</string>
+      <string id="FRDocumentsEnum_RedirectUncPath">次の UNC パスにリダイレクト</string>
+      <string id="FRPicturesEnum_RedirectUncPath">次の UNC パスにリダイレクト</string>
+      <string id="FRMusicEnum_RedirectUncPath">次の UNC パスにリダイレクト</string>
+      <string id="FRVideosEnum_RedirectUncPath">次の UNC パスにリダイレクト</string>
+      <string id="FRFavoritesEnum_RedirectUncPath">次の UNC パスにリダイレクト</string>
+      <string id="FRContactsEnum_RedirectUncPath">次の UNC パスにリダイレクト</string>
+      <string id="FRDownloadsEnum_RedirectUncPath">次の UNC パスにリダイレクト</string>
+      <string id="FRLinksEnum_RedirectUncPath">次の UNC パスにリダイレクト</string>
+      <string id="FRSearchesEnum_RedirectUncPath">次の UNC パスにリダイレクト</string>
+      <string id="FRSavedGamesEnum_RedirectUncPath">次の UNC パスにリダイレクト</string>
+      <string id="FRIncDomainName">ドメイン名を包含</string>
+      <string id="FRIncDomainName_Help">適用される商品: ファイルベースのプロファイル ソリューションのみ
+
+この設定を有効にすると、%userdomain% 環境変数が UNC パスの一部として含められます。</string>
+      <string id="FRIncDomainName_Part">UNC パスにドメイン名を包含</string>
+      <string id="FRIncDomainName_Part_gpfx">ドメイン名を包含</string>
+      <string id="FRDocumentsEnum_RedirectRelativeHome">ユーザーのホーム ディレクトリにリダイレクト</string>
+      <string id="FRPicturesEnum_RedirectRelativeDocuments">ドキュメント フォルダーに相対的リダイレクト</string>
+      <string id="FRMusicEnum_RedirectRelativeDocuments">ドキュメント フォルダーに相対的リダイレクト</string>
+      <string id="FRVideosEnum_RedirectRelativeDocuments">ドキュメント フォルダーに相対的リダイレクト</string>
+      <string id="FRAppData">AppData(Roaming)</string>
+      <string id="FRAppDataEnable">AppData(Roaming) フォルダーをリダイレクト</string>
+      <string id="FRAppDataEnable_Help">適用される商品: ファイルベースのプロファイル ソリューションのみ
+
+AppData (Roaming) フォルダーのリダイレクト方法を指定できます。このためには、[Enabled] を選択してリダイレクト先のパスを入力します。
+注意: データが失われる可能性があります。詳しくは、以下を参照してください。
+ポリシーが有効になった後にパスを変更すると、データが失われる可能性があります。変更したパスが以前のパスと同じ場所を指している場合、リダイレクト先のフォルダーに含まれるデータは削除される可能性があります。
+たとえば、[アドレス帳] のパスをパス 1 と指定し、後からパス 1 をパス 2 に変更したときにパス 1 とパス 2 が同じ場所を指している場合、リダイレクト先のフォルダーに含まれるすべてのデータは、ポリシーが有効になった後に削除されます。
+データが失われる可能性を回避するには、次の手順を実行してください:
+  1. Active Directory グループポリシーオブジェクトで Profile Management が動作しているマシンに Microsoft ポリシーを適用します。このためには、[グループポリシー管理コンソール] を開き、[コンピューターの構成] &gt; [管理用テンプレート] &gt; [Windows コンポーネント] &gt; [エクスプローラー] に移動し、[フォルダーリダイレクトの前に古いターゲットと新しいターゲットが同じ共有を指すことを確認する] を有効にします。
+  2. 該当する場合、Profile Management が動作しているマシンに修正プログラムを適用します。詳しくは、https://support.microsoft.com/en-us/help/977229 and https://support.microsoft.com/en-us/help/2799904 を参照してください。</string>
+      <string id="FRAppData_Part">AppData(Roaming) のリダイレクト設定</string>
+      <string id="FRAppDataPath_Help">適用される商品: ファイルベースのプロファイル ソリューションのみ
+
+AppData(Roaming) フォルダーのリダイレクト先の場所を UNC パスで指定します。
+
+[ドメイン名を包含] オプションを選択すると、%userdomain% 環境変数が UNC パスの一部として含められます。</string>
+      <string id="FRAppDataPath_Part">パス</string>
+      <string id="FRAppDataPath_Part_gpfx">AppData(Roaming) パス</string>
+      <string id="FRDesktop">デスクトップ</string>
+      <string id="FRDesktopEnable">デスクトップ フォルダーをリダイレクト</string>
+      <string id="FRDesktopEnable_Help">適用される商品: ファイルベースのプロファイル ソリューションのみ
+
+デスクトップ フォルダーのリダイレクト方法を指定できます。このためには、[Enabled] を選択してリダイレクト先のパスを入力します。
+注意: データが失われる可能性があります。詳しくは、以下を参照してください。
+ポリシーが有効になった後にパスを変更すると、データが失われる可能性があります。変更したパスが以前のパスと同じ場所を指している場合、リダイレクト先のフォルダーに含まれるデータは削除される可能性があります。
+たとえば、[アドレス帳] のパスをパス 1 と指定し、後からパス 1 をパス 2 に変更したときにパス 1 とパス 2 が同じ場所を指している場合、リダイレクト先のフォルダーに含まれるすべてのデータは、ポリシーが有効になった後に削除されます。
+データが失われる可能性を回避するには、次の手順を実行してください:
+  1. Active Directory グループポリシーオブジェクトで Profile Management が動作しているマシンに Microsoft ポリシーを適用します。このためには、[グループポリシー管理コンソール] を開き、[コンピューターの構成] &gt; [管理用テンプレート] &gt; [Windows コンポーネント] &gt; [エクスプローラー] に移動し、[フォルダーリダイレクトの前に古いターゲットと新しいターゲットが同じ共有を指すことを確認する] を有効にします。
+  2. 該当する場合、Profile Management が動作しているマシンに修正プログラムを適用します。詳しくは、https://support.microsoft.com/en-us/help/977229 and https://support.microsoft.com/en-us/help/2799904 を参照してください。</string>
+      <string id="FRDesktop_Part">デスクトップ のリダイレクト設定</string>
+      <string id="FRDesktopPath_Help">適用される商品: ファイルベースのプロファイル ソリューションのみ
+
+デスクトップ フォルダーのリダイレクト先の場所を UNC パスで指定します。
+
+[ドメイン名を包含] オプションを選択すると、%userdomain% 環境変数が UNC パスの一部として含められます。</string>
+      <string id="FRDesktopPath_Part">パス</string>
+      <string id="FRDesktopPath_Part_gpfx">デスクトップ パス</string>
+      <string id="FRStartMenu">スタート メニュー</string>
+      <string id="FRStartMenuEnable">スタート メニュー フォルダーをリダイレクト</string>
+      <string id="FRStartMenuEnable_Help">適用される商品: ファイルベースのプロファイル ソリューションのみ
+
+スタート メニュー フォルダーのリダイレクト方法を指定できます。このためには、[Enabled] を選択してリダイレクト先のパスを入力します。
+注意: データが失われる可能性があります。詳しくは、以下を参照してください。
+ポリシーが有効になった後にパスを変更すると、データが失われる可能性があります。変更したパスが以前のパスと同じ場所を指している場合、リダイレクト先のフォルダーに含まれるデータは削除される可能性があります。
+たとえば、[アドレス帳] のパスをパス 1 と指定し、後からパス 1 をパス 2 に変更したときにパス 1 とパス 2 が同じ場所を指している場合、リダイレクト先のフォルダーに含まれるすべてのデータは、ポリシーが有効になった後に削除されます。
+データが失われる可能性を回避するには、次の手順を実行してください:
+  1. Active Directory グループポリシーオブジェクトで Profile Management が動作しているマシンに Microsoft ポリシーを適用します。このためには、[グループポリシー管理コンソール] を開き、[コンピューターの構成] &gt; [管理用テンプレート] &gt; [Windows コンポーネント] &gt; [エクスプローラー] に移動し、[フォルダーリダイレクトの前に古いターゲットと新しいターゲットが同じ共有を指すことを確認する] を有効にします。
+  2. 該当する場合、Profile Management が動作しているマシンに修正プログラムを適用します。詳しくは、https://support.microsoft.com/en-us/help/977229 and https://support.microsoft.com/en-us/help/2799904 を参照してください。</string>
+      <string id="FRStartMenu_Part">スタート メニュー のリダイレクト設定</string>
+      <string id="FRStartMenuPath_Help">適用される商品: ファイルベースのプロファイル ソリューションのみ
+
+スタート メニュー フォルダーのリダイレクト先の場所を UNC パスで指定します。
+
+[ドメイン名を包含] オプションを選択すると、%userdomain% 環境変数が UNC パスの一部として含められます。</string>
+      <string id="FRStartMenuPath_Part">パス</string>
+      <string id="FRStartMenuPath_Part_gpfx">スタート メニュー パス</string>
+      <string id="FRDocuments">ドキュメント</string>
+      <string id="FRDocumentsEnable">ドキュメント フォルダーをリダイレクト</string>
+      <string id="FRDocumentsEnable_Help">適用される商品: ファイルベースのプロファイル ソリューションのみ
+
+ドキュメント フォルダーのリダイレクト方法を指定できます。このためには、[Enabled] を選択してリダイレクト先のパスを入力します。
+注意: データが失われる可能性があります。詳しくは、以下を参照してください。
+ポリシーが有効になった後にパスを変更すると、データが失われる可能性があります。変更したパスが以前のパスと同じ場所を指している場合、リダイレクト先のフォルダーに含まれるデータは削除される可能性があります。
+たとえば、[アドレス帳] のパスをパス 1 と指定し、後からパス 1 をパス 2 に変更したときにパス 1 とパス 2 が同じ場所を指している場合、リダイレクト先のフォルダーに含まれるすべてのデータは、ポリシーが有効になった後に削除されます。
+データが失われる可能性を回避するには、次の手順を実行してください:
+  1. Active Directory グループポリシーオブジェクトで Profile Management が動作しているマシンに Microsoft ポリシーを適用します。このためには、[グループポリシー管理コンソール] を開き、[コンピューターの構成] &gt; [管理用テンプレート] &gt; [Windows コンポーネント] &gt; [エクスプローラー] に移動し、[フォルダーリダイレクトの前に古いターゲットと新しいターゲットが同じ共有を指すことを確認する] を有効にします。
+  2. 該当する場合、Profile Management が動作しているマシンに修正プログラムを適用します。詳しくは、https://support.microsoft.com/en-us/help/977229 and https://support.microsoft.com/en-us/help/2799904 を参照してください。</string>
+      <string id="FRDocuments_Part">ドキュメント のリダイレクト設定</string>
+      <string id="FRDocumentsPath_Help">適用される商品: ファイルベースのプロファイル ソリューションのみ
+
+ドキュメント フォルダーのリダイレクト先の場所を UNC パスまたはホーム ディレクトリへの相対パスで指定します。
+
+[ドメイン名を包含] オプションを選択すると、%userdomain% 環境変数が UNC パスの一部として含められます。</string>
+      <string id="FRDocumentsPath_Part">パス</string>
+      <string id="FRDocumentsPath_Part_gpfx">ドキュメント パス</string>
+      <string id="FRPictures">ピクチャ</string>
+      <string id="FRPicturesEnable">ピクチャ フォルダーをリダイレクト</string>
+      <string id="FRPicturesEnable_Help">適用される商品: ファイルベースのプロファイル ソリューションのみ
+
+ピクチャ フォルダーのリダイレクト方法を指定できます。このためには、[Enabled] を選択してリダイレクト先のパスを入力します。
+注意: データが失われる可能性があります。詳しくは、以下を参照してください。
+ポリシーが有効になった後にパスを変更すると、データが失われる可能性があります。変更したパスが以前のパスと同じ場所を指している場合、リダイレクト先のフォルダーに含まれるデータは削除される可能性があります。
+たとえば、[アドレス帳] のパスをパス 1 と指定し、後からパス 1 をパス 2 に変更したときにパス 1 とパス 2 が同じ場所を指している場合、リダイレクト先のフォルダーに含まれるすべてのデータは、ポリシーが有効になった後に削除されます。
+データが失われる可能性を回避するには、次の手順を実行してください:
+  1. Active Directory グループポリシーオブジェクトで Profile Management が動作しているマシンに Microsoft ポリシーを適用します。このためには、[グループポリシー管理コンソール] を開き、[コンピューターの構成] &gt; [管理用テンプレート] &gt; [Windows コンポーネント] &gt; [エクスプローラー] に移動し、[フォルダーリダイレクトの前に古いターゲットと新しいターゲットが同じ共有を指すことを確認する] を有効にします。
+  2. 該当する場合、Profile Management が動作しているマシンに修正プログラムを適用します。詳しくは、https://support.microsoft.com/en-us/help/977229 and https://support.microsoft.com/en-us/help/2799904 を参照してください。</string>
+      <string id="FRPictures_Part">ピクチャ のリダイレクト設定</string>
+      <string id="FRPicturesPath_Help">適用される商品: ファイルベースのプロファイル ソリューションのみ
+
+ピクチャ フォルダーのリダイレクト先の場所を UNC パスまたはドキュメント フォルダーへの相対パスで指定します。
+
+[ドメイン名を包含] オプションを選択すると、%userdomain% 環境変数が UNC パスの一部として含められます。</string>
+      <string id="FRPicturesPath_Part">パス</string>
+      <string id="FRPicturesPath_Part_gpfx">ピクチャ パス</string>
+      <string id="FRMusic">ミュージック</string>
+      <string id="FRMusicEnable">ミュージック フォルダーをリダイレクト</string>
+      <string id="FRMusicEnable_Help">適用される商品: ファイルベースのプロファイル ソリューションのみ
+
+ミュージック フォルダーのリダイレクト方法を指定できます。このためには、[Enabled] を選択してリダイレクト先のパスを入力します。
+注意: データが失われる可能性があります。詳しくは、以下を参照してください。
+ポリシーが有効になった後にパスを変更すると、データが失われる可能性があります。変更したパスが以前のパスと同じ場所を指している場合、リダイレクト先のフォルダーに含まれるデータは削除される可能性があります。
+たとえば、[アドレス帳] のパスをパス 1 と指定し、後からパス 1 をパス 2 に変更したときにパス 1 とパス 2 が同じ場所を指している場合、リダイレクト先のフォルダーに含まれるすべてのデータは、ポリシーが有効になった後に削除されます。
+データが失われる可能性を回避するには、次の手順を実行してください:
+  1. Active Directory グループポリシーオブジェクトで Profile Management が動作しているマシンに Microsoft ポリシーを適用します。このためには、[グループポリシー管理コンソール] を開き、[コンピューターの構成] &gt; [管理用テンプレート] &gt; [Windows コンポーネント] &gt; [エクスプローラー] に移動し、[フォルダーリダイレクトの前に古いターゲットと新しいターゲットが同じ共有を指すことを確認する] を有効にします。
+  2. 該当する場合、Profile Management が動作しているマシンに修正プログラムを適用します。詳しくは、https://support.microsoft.com/en-us/help/977229 and https://support.microsoft.com/en-us/help/2799904 を参照してください。</string>
+      <string id="FRMusic_Part">ミュージック のリダイレクト設定</string>
+      <string id="FRMusicPath_Help">適用される商品: ファイルベースのプロファイル ソリューションのみ
+
+ミュージック フォルダーのリダイレクト先の場所を UNC パスまたはドキュメント フォルダーへの相対パスで指定します。
+
+[ドメイン名を包含] オプションを選択すると、%userdomain% 環境変数が UNC パスの一部として含められます。</string>
+      <string id="FRMusicPath_Part">パス</string>
+      <string id="FRMusicPath_Part_gpfx">ミュージック パス</string>
+      <string id="FRVideos">ビデオ</string>
+      <string id="FRVideosEnable">ビデオ フォルダーをリダイレクト</string>
+      <string id="FRVideosEnable_Help">適用される商品: ファイルベースのプロファイル ソリューションのみ
+
+ビデオ フォルダーのリダイレクト方法を指定できます。このためには、[Enabled] を選択してリダイレクト先のパスを入力します。
+注意: データが失われる可能性があります。詳しくは、以下を参照してください。
+ポリシーが有効になった後にパスを変更すると、データが失われる可能性があります。変更したパスが以前のパスと同じ場所を指している場合、リダイレクト先のフォルダーに含まれるデータは削除される可能性があります。
+たとえば、[アドレス帳] のパスをパス 1 と指定し、後からパス 1 をパス 2 に変更したときにパス 1 とパス 2 が同じ場所を指している場合、リダイレクト先のフォルダーに含まれるすべてのデータは、ポリシーが有効になった後に削除されます。
+データが失われる可能性を回避するには、次の手順を実行してください:
+  1. Active Directory グループポリシーオブジェクトで Profile Management が動作しているマシンに Microsoft ポリシーを適用します。このためには、[グループポリシー管理コンソール] を開き、[コンピューターの構成] &gt; [管理用テンプレート] &gt; [Windows コンポーネント] &gt; [エクスプローラー] に移動し、[フォルダーリダイレクトの前に古いターゲットと新しいターゲットが同じ共有を指すことを確認する] を有効にします。
+  2. 該当する場合、Profile Management が動作しているマシンに修正プログラムを適用します。詳しくは、https://support.microsoft.com/en-us/help/977229 and https://support.microsoft.com/en-us/help/2799904 を参照してください。</string>
+      <string id="FRVideos_Part">ビデオ のリダイレクト設定</string>
+      <string id="FRVideosPath_Help">適用される商品: ファイルベースのプロファイル ソリューションのみ
+
+ビデオ フォルダーのリダイレクト先の場所を UNC パスまたはドキュメント フォルダーへの相対パスで指定します。
+
+[ドメイン名を包含] オプションを選択すると、%userdomain% 環境変数が UNC パスの一部として含められます。</string>
+      <string id="FRVideosPath_Part">パス</string>
+      <string id="FRVideosPath_Part_gpfx">ビデオ パス</string>
+      <string id="FRFavorites">お気に入り</string>
+      <string id="FRFavoritesEnable">お気に入りフォルダーをリダイレクト</string>
+      <string id="FRFavoritesEnable_Help">適用される商品: ファイルベースのプロファイル ソリューションのみ
+
+お気に入りフォルダーのリダイレクト方法を指定できます。このためには、[Enabled] を選択してリダイレクト先のパスを入力します。
+注意: データが失われる可能性があります。詳しくは、以下を参照してください。
+ポリシーが有効になった後にパスを変更すると、データが失われる可能性があります。変更したパスが以前のパスと同じ場所を指している場合、リダイレクト先のフォルダーに含まれるデータは削除される可能性があります。
+たとえば、[アドレス帳] のパスをパス 1 と指定し、後からパス 1 をパス 2 に変更したときにパス 1 とパス 2 が同じ場所を指している場合、リダイレクト先のフォルダーに含まれるすべてのデータは、ポリシーが有効になった後に削除されます。
+データが失われる可能性を回避するには、次の手順を実行してください:
+  1. Active Directory グループポリシーオブジェクトで Profile Management が動作しているマシンに Microsoft ポリシーを適用します。このためには、[グループポリシー管理コンソール] を開き、[コンピューターの構成] &gt; [管理用テンプレート] &gt; [Windows コンポーネント] &gt; [エクスプローラー] に移動し、[フォルダーリダイレクトの前に古いターゲットと新しいターゲットが同じ共有を指すことを確認する] を有効にします。
+  2. 該当する場合、Profile Management が動作しているマシンに修正プログラムを適用します。詳しくは、https://support.microsoft.com/en-us/help/977229 and https://support.microsoft.com/en-us/help/2799904 を参照してください。</string>
+      <string id="FRFavorites_Part">お気に入りのリダイレクト設定</string>
+      <string id="FRFavoritesPath_Help">適用される商品: ファイルベースのプロファイル ソリューションのみ
+
+お気に入りフォルダーのリダイレクト先の場所を UNC パスで指定します。
+
+[ドメイン名を包含] オプションを選択すると、%userdomain% 環境変数が UNC パスの一部として含められます。</string>
+      <string id="FRFavoritesPath_Part">パス</string>
+      <string id="FRFavoritesPath_Part_gpfx">お気に入りパス</string>
+      <string id="FRContacts">アドレス帳</string>
+      <string id="FRContactsEnable">アドレス帳フォルダーをリダイレクト</string>
+      <string id="FRContactsEnable_Help">適用される商品: ファイルベースのプロファイル ソリューションのみ
+
+アドレス帳フォルダーのリダイレクト方法を指定できます。このためには、[Enabled] を選択してリダイレクト先のパスを入力します。
+注意: データが失われる可能性があります。詳しくは、以下を参照してください。
+ポリシーが有効になった後にパスを変更すると、データが失われる可能性があります。変更したパスが以前のパスと同じ場所を指している場合、リダイレクト先のフォルダーに含まれるデータは削除される可能性があります。
+たとえば、[アドレス帳] のパスをパス 1 と指定し、後からパス 1 をパス 2 に変更したときにパス 1 とパス 2 が同じ場所を指している場合、リダイレクト先のフォルダーに含まれるすべてのデータは、ポリシーが有効になった後に削除されます。
+データが失われる可能性を回避するには、次の手順を実行してください:
+  1. Active Directory グループポリシーオブジェクトで Profile Management が動作しているマシンに Microsoft ポリシーを適用します。このためには、[グループポリシー管理コンソール] を開き、[コンピューターの構成] &gt; [管理用テンプレート] &gt; [Windows コンポーネント] &gt; [エクスプローラー] に移動し、[フォルダーリダイレクトの前に古いターゲットと新しいターゲットが同じ共有を指すことを確認する] を有効にします。
+  2. 該当する場合、Profile Management が動作しているマシンに修正プログラムを適用します。詳しくは、https://support.microsoft.com/en-us/help/977229 and https://support.microsoft.com/en-us/help/2799904 を参照してください。</string>
+      <string id="FRContacts_Part">アドレス帳のリダイレクト設定</string>
+      <string id="FRContactsPath_Help">適用される商品: ファイルベースのプロファイル ソリューションのみ
+
+アドレス帳フォルダーのリダイレクト先の場所を UNC パスで指定します。
+
+[ドメイン名を包含] オプションを選択すると、%userdomain% 環境変数が UNC パスの一部として含められます。</string>
+      <string id="FRContactsPath_Part">パス</string>
+      <string id="FRContactsPath_Part_gpfx">アドレス帳パス</string>
+      <string id="FRDownloads">ダウンロード</string>
+      <string id="FRDownloadsEnable">ダウンロード フォルダーをリダイレクト</string>
+      <string id="FRDownloadsEnable_Help">適用される商品: ファイルベースのプロファイル ソリューションのみ
+
+ダウンロード フォルダーのリダイレクト方法を指定できます。このためには、[Enabled] を選択してリダイレクト先のパスを入力します。
+注意: データが失われる可能性があります。詳しくは、以下を参照してください。
+ポリシーが有効になった後にパスを変更すると、データが失われる可能性があります。変更したパスが以前のパスと同じ場所を指している場合、リダイレクト先のフォルダーに含まれるデータは削除される可能性があります。
+たとえば、[アドレス帳] のパスをパス 1 と指定し、後からパス 1 をパス 2 に変更したときにパス 1 とパス 2 が同じ場所を指している場合、リダイレクト先のフォルダーに含まれるすべてのデータは、ポリシーが有効になった後に削除されます。
+データが失われる可能性を回避するには、次の手順を実行してください:
+  1. Active Directory グループポリシーオブジェクトで Profile Management が動作しているマシンに Microsoft ポリシーを適用します。このためには、[グループポリシー管理コンソール] を開き、[コンピューターの構成] &gt; [管理用テンプレート] &gt; [Windows コンポーネント] &gt; [エクスプローラー] に移動し、[フォルダーリダイレクトの前に古いターゲットと新しいターゲットが同じ共有を指すことを確認する] を有効にします。
+  2. 該当する場合、Profile Management が動作しているマシンに修正プログラムを適用します。詳しくは、https://support.microsoft.com/en-us/help/977229 and https://support.microsoft.com/en-us/help/2799904 を参照してください。</string>
+      <string id="FRDownloads_Part">ダウンロード のリダイレクト設定</string>
+      <string id="FRDownloadsPath_Help">適用される商品: ファイルベースのプロファイル ソリューションのみ
+
+ダウンロード フォルダーのリダイレクト先の場所を UNC パスで指定します。
+
+[ドメイン名を包含] オプションを選択すると、%userdomain% 環境変数が UNC パスの一部として含められます。</string>
+      <string id="FRDownloadsPath_Part">パス</string>
+      <string id="FRDownloadsPath_Part_gpfx">ダウンロード パス</string>
+      <string id="FRLinks">リンク</string>
+      <string id="FRLinksEnable">リンク フォルダーをリダイレクト</string>
+      <string id="FRLinksEnable_Help">適用される商品: ファイルベースのプロファイル ソリューションのみ
+
+リンク フォルダーのリダイレクト方法を指定できます。このためには、[Enabled] を選択してリダイレクト先のパスを入力します。
+注意: データが失われる可能性があります。詳しくは、以下を参照してください。
+ポリシーが有効になった後にパスを変更すると、データが失われる可能性があります。変更したパスが以前のパスと同じ場所を指している場合、リダイレクト先のフォルダーに含まれるデータは削除される可能性があります。
+たとえば、[アドレス帳] のパスをパス 1 と指定し、後からパス 1 をパス 2 に変更したときにパス 1 とパス 2 が同じ場所を指している場合、リダイレクト先のフォルダーに含まれるすべてのデータは、ポリシーが有効になった後に削除されます。
+データが失われる可能性を回避するには、次の手順を実行してください:
+  1. Active Directory グループポリシーオブジェクトで Profile Management が動作しているマシンに Microsoft ポリシーを適用します。このためには、[グループポリシー管理コンソール] を開き、[コンピューターの構成] &gt; [管理用テンプレート] &gt; [Windows コンポーネント] &gt; [エクスプローラー] に移動し、[フォルダーリダイレクトの前に古いターゲットと新しいターゲットが同じ共有を指すことを確認する] を有効にします。
+  2. 該当する場合、Profile Management が動作しているマシンに修正プログラムを適用します。詳しくは、https://support.microsoft.com/en-us/help/977229 and https://support.microsoft.com/en-us/help/2799904 を参照してください。</string>
+      <string id="FRLinks_Part">リンク のリダイレクト設定</string>
+      <string id="FRLinksPath_Help">適用される商品: ファイルベースのプロファイル ソリューションのみ
+
+リンク フォルダーのリダイレクト先の場所を UNC パスで指定します。
+
+[ドメイン名を包含] オプションを選択すると、%userdomain% 環境変数が UNC パスの一部として含められます。</string>
+      <string id="FRLinksPath_Part">パス</string>
+      <string id="FRLinksPath_Part_gpfx">リンク パス</string>
+      <string id="FRSearches">検索</string>
+      <string id="FRSearchesEnable">検索フォルダーをリダイレクト</string>
+      <string id="FRSearchesEnable_Help">適用される商品: ファイルベースのプロファイル ソリューションのみ
+
+検索フォルダーのリダイレクト方法を指定できます。このためには、[Enabled] を選択してリダイレクト先のパスを入力します。
+注意: データが失われる可能性があります。詳しくは、以下を参照してください。
+ポリシーが有効になった後にパスを変更すると、データが失われる可能性があります。変更したパスが以前のパスと同じ場所を指している場合、リダイレクト先のフォルダーに含まれるデータは削除される可能性があります。
+たとえば、[アドレス帳] のパスをパス 1 と指定し、後からパス 1 をパス 2 に変更したときにパス 1 とパス 2 が同じ場所を指している場合、リダイレクト先のフォルダーに含まれるすべてのデータは、ポリシーが有効になった後に削除されます。
+データが失われる可能性を回避するには、次の手順を実行してください:
+  1. Active Directory グループポリシーオブジェクトで Profile Management が動作しているマシンに Microsoft ポリシーを適用します。このためには、[グループポリシー管理コンソール] を開き、[コンピューターの構成] &gt; [管理用テンプレート] &gt; [Windows コンポーネント] &gt; [エクスプローラー] に移動し、[フォルダーリダイレクトの前に古いターゲットと新しいターゲットが同じ共有を指すことを確認する] を有効にします。
+  2. 該当する場合、Profile Management が動作しているマシンに修正プログラムを適用します。詳しくは、https://support.microsoft.com/en-us/help/977229 and https://support.microsoft.com/en-us/help/2799904 を参照してください。</string>
+      <string id="FRSearches_Part">検索のリダイレクト設定</string>
+      <string id="FRSearchesPath_Help">適用される商品: ファイルベースのプロファイル ソリューションのみ
+
+検索フォルダーのリダイレクト先の場所を UNC パスで指定します。
+
+[ドメイン名を包含] オプションを選択すると、%userdomain% 環境変数が UNC パスの一部として含められます。</string>
+      <string id="FRSearchesPath_Part">パス</string>
+      <string id="FRSearchesPath_Part_gpfx">検索パス</string>
+      <string id="FRSavedGames">保存したゲーム</string>
+      <string id="FRSavedGamesEnable">保存したゲーム フォルダーをリダイレクト</string>
+      <string id="FRSavedGamesEnable_Help">適用される商品: ファイルベースのプロファイル ソリューションのみ
+
+保存したゲーム フォルダーのリダイレクト方法を指定できます。このためには、[Enabled] を選択してリダイレクト先のパスを入力します。
+注意: データが失われる可能性があります。詳しくは、以下を参照してください。
+ポリシーが有効になった後にパスを変更すると、データが失われる可能性があります。変更したパスが以前のパスと同じ場所を指している場合、リダイレクト先のフォルダーに含まれるデータは削除される可能性があります。
+たとえば、[アドレス帳] のパスをパス 1 と指定し、後からパス 1 をパス 2 に変更したときにパス 1 とパス 2 が同じ場所を指している場合、リダイレクト先のフォルダーに含まれるすべてのデータは、ポリシーが有効になった後に削除されます。
+データが失われる可能性を回避するには、次の手順を実行してください:
+  1. Active Directory グループポリシーオブジェクトで Profile Management が動作しているマシンに Microsoft ポリシーを適用します。このためには、[グループポリシー管理コンソール] を開き、[コンピューターの構成] &gt; [管理用テンプレート] &gt; [Windows コンポーネント] &gt; [エクスプローラー] に移動し、[フォルダーリダイレクトの前に古いターゲットと新しいターゲットが同じ共有を指すことを確認する] を有効にします。
+  2. 該当する場合、Profile Management が動作しているマシンに修正プログラムを適用します。詳しくは、https://support.microsoft.com/en-us/help/977229 and https://support.microsoft.com/en-us/help/2799904 を参照してください。</string>
+      <string id="FRSavedGames_Part">保存したゲーム のリダイレクト設定</string>
+      <string id="FRSavedGamesPath_Help">適用される商品: ファイルベースのプロファイル ソリューションのみ
+
+保存したゲーム フォルダーのリダイレクト先の場所を UNC パスで指定します。
+
+[ドメイン名を包含] オプションを選択すると、%userdomain% 環境変数が UNC パスの一部として含められます。</string>
+      <string id="FRSavedGamesPath_Part">パス</string>
+      <string id="FRSavedGamesPath_Part_gpfx">保存したゲーム パス</string>
+      <string id="GPFXDefaultUIEnabledString">この設定は有効になります。</string>
+      <string id="GPFXDefaultUIDisabledString">この設定は無効になります。</string>
+      <string id="GPFXDefaultDirPrefix">UPM - </string>
+      <string id="GPFXDefaultRegPrefix">UPM - </string>
+      <string id="GPFXDefaultForListBox">注: 複数のエントリを区切るには Enter キーを使用します。</string>
+      <string id="GPFXCategory_BasicSettings">基本設定</string>
+      <string id="GPFXCategory_FRCommonSettings">共通設定</string>
+      <string id="GPFXCategory_FSExclusions">除外</string>
+      <string id="GPFXCategory_DefaultFSExclusions">デフォルトの除外</string>
+      <string id="GPFXCategory_DefaultREGExclusions">デフォルトの除外</string>
+      <string id="SpinValidationMessage">値は {0} ～ {1} で指定する必要があります。</string>
+      <string id="ProcessedGroups_exclude_gpfx">TRUE</string>
+      <string id="ExcludedGroups_exclude_gpfx">TRUE</string>
+      <string id="ExclusionList_exclude_gpfx">TRUE</string>
+      <string id="IncludeListRegistry_exclude_gpfx">TRUE</string>
+      <string id="ExclusionListSyncFiles_exclude_gpfx">TRUE</string>
+      <string id="ExclusionListSyncDir_exclude_gpfx">TRUE</string>
+      <string id="SyncDirList_exclude_gpfx">TRUE</string>
+      <string id="SyncFileList_exclude_gpfx">TRUE</string>
+      <string id="MirrorFoldersList_exclude_gpfx">TRUE</string>
+      <string id="PSUserGroups_exclude_gpfx">TRUE</string>
+      <string id="CPUserGroups_exclude_gpfx">TRUE</string>
+      <string id="StreamingExclusionList_exclude_gpfx">TRUE</string>
+      <string id="LastKnownGoodRegistry_default_enable_gpfx">TRUE</string>
+      <string id="CEIPEnabled_default_enable_gpfx">TRUE</string>
+      <string id="EnableVolumeReattach_default_enable_gpfx">TRUE</string>
+      <string id="PSAlwaysCache_Part_unit_gpfx">MB</string>
+      <string id="LargeFileHandlingList_exclude_gpfx">TRUE</string>
+      <string id="MultiSiteReplication_exclude_gpfx">TRUE</string>
+      <string id="ProfileContainer_exclude_gpfx">TRUE</string>
+      <string id="ProfileContainerExclusionListDir_exclude_gpfx">TRUE</string>
+      <string id="ProfileContainerInclusionListDir_exclude_gpfx">TRUE</string>
+      <string id="ProfileContainerExclusionListFile_exclude_gpfx">TRUE</string>
+      <string id="ProfileContainerInclusionListFile_exclude_gpfx">TRUE</string>
+      <string id="MigrateWindowsProfilesToUserStore_exclude_gpfx">TRUE</string>
+      <string id="OneDriveContainer_exclude_gpfx">TRUE</string>
+      <string id="SharedStoreFileInclusionList_exclude_gpfx">TRUE</string>
+      <string id="SharedStoreFileExclusionList_exclude_gpfx">TRUE</string>
+      <string id="GroupsToAccessProfileContainer_exclude_gpfx">TRUE</string>
+      <string id="ServiceActive_gpfx_category">BasicSettings</string>
+      <string id="ProcessedGroups_gpfx_category">BasicSettings</string>
+      <string id="ExcludedGroups_gpfx_category">BasicSettings</string>
+      <string id="ProcessAdmins_gpfx_category">BasicSettings</string>
+      <string id="DATPath_gpfx_category">BasicSettings</string>
+      <string id="MigrateUserStore_gpfx_category">BasicSettings</string>
+      <string id="PSMidSessionWriteBack_gpfx_category">BasicSettings</string>
+      <string id="PSMidSessionWriteBackReg_gpfx_category">BasicSettings</string>
+      <string id="PSMidSessionWriteBackSessionLock_gpfx_category">BasicSettings</string>
+      <string id="OfflineSupport_gpfx_category">BasicSettings</string>
+      <string id="FRAdminAccess_gpfx_category">FRCommonSettings</string>
+      <string id="FRIncDomainName_gpfx_category">FRCommonSettings</string>
+      <string id="ExclusionListSyncFiles_gpfx_category">FSExclusions</string>
+      <string id="ExclusionListSyncDir_gpfx_category">FSExclusions</string>
+      <string id="DefaultExclusionList_gpfx_category">DefaultREGExclusions</string>
+      <string id="ExclusionDefaultReg01_gpfx_category">DefaultREGExclusions</string>
+      <string id="ExclusionDefaultReg02_gpfx_category">DefaultREGExclusions</string>
+      <string id="ExclusionDefaultReg03_gpfx_category">DefaultREGExclusions</string>
+      <string id="DefaultExclusionListSyncDir_gpfx_category">DefaultFSExclusions</string>
+      <string id="ExclusionDefaultDir01_gpfx_category">DefaultFSExclusions</string>
+      <string id="ExclusionDefaultDir02_gpfx_category">DefaultFSExclusions</string>
+      <string id="ExclusionDefaultDir03_gpfx_category">DefaultFSExclusions</string>
+      <string id="ExclusionDefaultDir04_gpfx_category">DefaultFSExclusions</string>
+      <string id="ExclusionDefaultDir05_gpfx_category">DefaultFSExclusions</string>
+      <string id="ExclusionDefaultDir06_gpfx_category">DefaultFSExclusions</string>
+      <string id="ExclusionDefaultDir07_gpfx_category">DefaultFSExclusions</string>
+      <string id="ExclusionDefaultDir08_gpfx_category">DefaultFSExclusions</string>
+      <string id="ExclusionDefaultDir09_gpfx_category">DefaultFSExclusions</string>
+      <string id="ExclusionDefaultDir10_gpfx_category">DefaultFSExclusions</string>
+      <string id="ExclusionDefaultDir11_gpfx_category">DefaultFSExclusions</string>
+      <string id="ExclusionDefaultDir12_gpfx_category">DefaultFSExclusions</string>
+      <string id="ExclusionDefaultDir13_gpfx_category">DefaultFSExclusions</string>
+      <string id="ExclusionDefaultDir14_gpfx_category">DefaultFSExclusions</string>
+      <string id="ExclusionDefaultDir15_gpfx_category">DefaultFSExclusions</string>
+      <string id="ExclusionDefaultDir16_gpfx_category">DefaultFSExclusions</string>
+      <string id="ExclusionDefaultDir17_gpfx_category">DefaultFSExclusions</string>
+      <string id="ExclusionDefaultDir18_gpfx_category">DefaultFSExclusions</string>
+      <string id="ExclusionDefaultDir19_gpfx_category">DefaultFSExclusions</string>
+      <string id="ExclusionDefaultDir20_gpfx_category">DefaultFSExclusions</string>
+      <string id="ExclusionDefaultDir21_gpfx_category">DefaultFSExclusions</string>
+      <string id="ExclusionDefaultDir22_gpfx_category">DefaultFSExclusions</string>
+      <string id="ExclusionDefaultDir23_gpfx_category">DefaultFSExclusions</string>
+      <string id="ExclusionDefaultDir24_gpfx_category">DefaultFSExclusions</string>
+      <string id="ExclusionDefaultDir25_gpfx_category">DefaultFSExclusions</string>
+      <string id="ExclusionDefaultDir26_gpfx_category">DefaultFSExclusions</string>
+      <string id="ExclusionDefaultDir27_gpfx_category">DefaultFSExclusions</string>
+      <string id="ExclusionDefaultDir28_gpfx_category">DefaultFSExclusions</string>
+      <string id="ExclusionDefaultDir29_gpfx_category">DefaultFSExclusions</string>
+      <string id="ExclusionDefaultDir30_gpfx_category">DefaultFSExclusions</string>
+      <string id="ProfileContainer_customized_gpfx_category">UserProfileManager\FileSystemSettings\FSSynchronization</string>
+    </stringTable>
+    <presentationTable>
+      <presentation id="ServiceActive" />
+      <presentation id="ProcessedGroups">
+        <listBox refId="ProcessedGroups_Part">処理済みグループ</listBox>
+      </presentation>
+      <presentation id="ExcludedGroups">
+        <listBox refId="ExcludedGroups_Part">除外グループ</listBox>
+      </presentation>
+      <presentation id="ProcessAdmins" />
+      <presentation id="DATPath">
+        <textBox refId="DATPath_Part">
+          <label>絶対パスまたはホーム ディレクトリへの相対パス</label>
+        </textBox>
+      </presentation>
+      <presentation id="MigrateUserStore">
+        <textBox refId="MigrateUserStore_Part">
+          <label>以前に使用したユーザー ストアのパスを入力します</label>
+        </textBox>
+      </presentation>
+      <presentation id="PSMidSessionWriteBack" />
+      <presentation id="PSMidSessionWriteBackReg" />
+      <presentation id="PSMidSessionWriteBackSessionLock" />
+      <presentation id="OfflineSupport" />
+      <presentation id="DeleteCachedProfilesOnLogoff" />
+      <presentation id="ProfileDeleteDelay">
+        <decimalTextBox refId="ProfileDeleteDelay_Part" defaultValue="0" spinStep="10">待ち時間 (秒)</decimalTextBox>
+      </presentation>
+      <presentation id="MigrateWindowsProfilesToUserStore">
+        <dropdownList refId="MigrateWindowsProfilesToUserStore_Part">ユーザー ストアが空の場合に移行されるユーザー プロファイルの種類</dropdownList>
+      </presentation>
+      <presentation id="ApplicationProfilesAutoMigration" />
+      <presentation id="LocalProfileConflictHandling">
+        <text>ユーザー ストアにローカル Windows ユーザー プロファイルおよび</text>
+        <dropdownList refId="LocalProfileConflictHandling_Part">Citrix ユーザー プロファイルの両方がある場合</dropdownList>
+      </presentation>
+      <presentation id="TemplateProfile">
+        <textBox refId="TemplateProfilePath">
+          <label>テンプレート プロファイルへのパス:</label>
+        </textBox>
+        <checkBox refId="TemplateProfileOverridesLocalProfile">テンプレート プロファイルがローカル プロファイルを上書きする</checkBox>
+        <checkBox refId="TemplateProfileOverridesRoamingProfile">テンプレート プロファイルが移動プロファイルを上書きする</checkBox>
+        <checkBox refId="TemplateProfileIsMandatory">すべてのログオンで Citrix 固定プロファイルとして使用されるテンプレート プロファイル</checkBox>
+      </presentation>
+      <presentation id="LoadRetries">
+        <decimalTextBox refId="LoadRetries_Part" defaultValue="5" spinStep="1">再試行回数</decimalTextBox>
+      </presentation>
+      <presentation id="ProcessCookieFiles" />
+      <presentation id="DisableDynamicConfig" />
+      <presentation id="LogoffRatherThanTempProfile" />
+      <presentation id="CEIPEnabled" />
+      <presentation id="OutlookSearchRoamingEnabled" />
+      <presentation id="OutlookEdbBackupEnabled" />
+      <presentation id="OutlookSearchRoamingConcurrentSession">
+        <decimalTextBox refId="OutlookSearchRoamingConcurrentSession_Part" defaultValue="2" spinStep="1024">Outlook OST ファイルを格納するための VHDX ディスクの最大数</decimalTextBox>
+      </presentation>
+      <presentation id="FSLogixProfileContainerSupport" />
+      <presentation id="MultiSiteReplication">
+        <listBox refId="MultiSiteReplication_Part">ユーザー ストアを複製するパス</listBox>
+      </presentation>
+      <presentation id="CredBasedAccessEnabled" />
+      <presentation id="VhdStorePath">
+        <textBox refId="VhdStorePath_Part">
+          <label>VHDX ファイルを格納するパス</label>
+        </textBox>
+      </presentation>
+      <presentation id="EnableVolumeReattach" />
+      <presentation id="SyncGpoStateEnabled" />
+      <presentation id="OneDriveContainer">
+        <listBox refId="OneDriveContainer_Part">OneDrive フォルダーの一覧</listBox>
+      </presentation>
+      <presentation id="FreeRatio4Compaction">
+        <decimalTextBox refId="FreeRatio4Compaction_Part" defaultValue="20" spinStep="1">空き領域率 (パーセント)</decimalTextBox>
+      </presentation>
+      <presentation id="NLogoffs4Compaction">
+        <decimalTextBox refId="NLogoffs4Compaction_Part" defaultValue="5" spinStep="1">ログオフ数</decimalTextBox>
+      </presentation>
+      <presentation id="NDefrag4Compaction" />
+      <presentation id="UserGroupLevelConfigEnabled" />
+      <presentation id="OrderedGroups">
+        <textBox refId="OrderedGroups_Part">
+          <label>ユーザー グループの優先順位</label>
+        </textBox>
+      </presentation>
+      <presentation id="VhdContainerCapacity">
+        <decimalTextBox refId="VhdContainerCapacity_Part" defaultValue="50" spinStep="10">デフォルトの容量 (GB 単位)</decimalTextBox>
+      </presentation>
+      <presentation id="VhdAutoExpansionThreshold">
+        <decimalTextBox refId="VhdAutoExpansionThreshold_Part" defaultValue="90" spinStep="10">自動拡張しきい値 (パーセント)</decimalTextBox>
+      </presentation>
+      <presentation id="VhdAutoExpansionIncrement">
+        <decimalTextBox refId="VhdAutoExpansionIncrement_Part" defaultValue="10" spinStep="10">自動拡張の増分 (GB 単位)</decimalTextBox>
+      </presentation>
+      <presentation id="VhdAutoExpansionLimit">
+        <decimalTextBox refId="VhdAutoExpansionLimit_Part" defaultValue="80" spinStep="10">自動拡張の制限 (GB 単位)</decimalTextBox>
+      </presentation>
+      <presentation id="UwpAppsRoaming" />
+      <presentation id="UserStoreSelection">
+        <dropdownList refId="UserStoreSelection_Part">選択方法:</dropdownList>
+      </presentation>
+      <presentation id="ProfileContainer">
+        <listBox refId="ProfileContainer_Part">プロファイル ディスクに含めるフォルダー一覧</listBox>
+      </presentation>
+      <presentation id="ProfileContainerLocalCache" />
+      <presentation id="ProfileContainerExclusionListDir">
+        <listBox refId="ProfileContainerExclusionListDir_Part">プロファイル コンテナから除外するフォルダー一覧</listBox>
+      </presentation>
+      <presentation id="ProfileContainerInclusionListDir">
+        <listBox refId="ProfileContainerInclusionListDir_Part">プロファイル コンテナに保持するフォルダー一覧</listBox>
+      </presentation>
+      <presentation id="ProfileContainerExclusionListFile">
+        <listBox refId="ProfileContainerExclusionListFile_Part">プロファイル コンテナから除外するファイル一覧</listBox>
+      </presentation>
+      <presentation id="ProfileContainerInclusionListFile">
+        <listBox refId="ProfileContainerInclusionListFile_Part">プロファイル コンテナに保持するファイル一覧</listBox>
+      </presentation>
+      <presentation id="EnableVHDDiskCompaction" />
+      <presentation id="EnableVHDAutoExtend" />
+      <presentation id="DisableConcurrentAccessToVHDContainers">
+        <text>この設定を適用するコンテナを選択します:</text>
+        <checkBox refId="DisableConcurrentAccessToProfileContainer" defaultChecked="true">VHD コンテナへの排他的アクセスを無効にする - プロファイル コンテナ</checkBox>
+        <checkBox refId="DisableConcurrentAccessToOneDriveContainer" defaultChecked="true">VHD コンテナへの排他的アクセスを無効にする - OneDrive コンテナ</checkBox>
+      </presentation>
+      <presentation id="PreventLoginWhenMountFailed">
+        <textBox refId="PreventLoginWhenMountFailed_Part">
+          <label>表示するエラー メッセージ</label>
+        </textBox>
+      </presentation>
+      <presentation id="GroupsToAccessProfileContainer">
+        <listBox refId="GroupsToAccessProfileContainer_Part">プロファイル コンテナにアクセスできるユーザーとグループ</listBox>
+      </presentation>
+      <presentation id="DebugMode" />
+      <presentation id="LogLevel">
+        <text>Profile Management が詳細にログを記録するイベントまたはアクションの定義:</text>
+        <checkBox refId="LogLevel_Warnings" defaultChecked="true">一般的な警告</checkBox>
+        <checkBox refId="LogLevel_Information" defaultChecked="true">一般的な情報</checkBox>
+        <checkBox refId="LogLevel_FileSystemNotification">ファイル システム通知</checkBox>
+        <checkBox refId="LogLevel_FileSystemActions">ファイル システム操作</checkBox>
+        <checkBox refId="LogLevel_RegistryActions">レジストリ操作</checkBox>
+        <checkBox refId="LogLevel_RegistryDifference">ログオフ時のレジストリ差分</checkBox>
+        <checkBox refId="LogLevel_ActiveDirectoryActions">Active Directory 操作</checkBox>
+        <checkBox refId="LogLevel_PolicyUserLogon">ログオンおよびログオフ時のポリシー値</checkBox>
+        <checkBox refId="LogLevel_Logon">ログオン</checkBox>
+        <checkBox refId="LogLevel_Logoff">ログオフ</checkBox>
+        <checkBox refId="LogLevel_UserName" defaultChecked="true">個人用ユーザー情報</checkBox>
+      </presentation>
+      <presentation id="MaxLogSize">
+        <decimalTextBox refId="MaxLogSize_Part" defaultValue="10485760" spinStep="1024">最大サイズ (バイト)</decimalTextBox>
+      </presentation>
+      <presentation id="DebugFilePath">
+        <textBox refId="DebugFilePath_Part">
+          <label>ログ ファイルへのパス</label>
+        </textBox>
+      </presentation>
+      <presentation id="ExclusionList">
+        <listBox refId="ExclusionList_Part">除外の一覧</listBox>
+      </presentation>
+      <presentation id="DefaultExclusionList">
+        <checkBox refId="ExclusionDefaultReg01" defaultChecked="true">Software\Microsoft\AppV\Client\Integration</checkBox>
+        <checkBox refId="ExclusionDefaultReg02" defaultChecked="true">Software\Microsoft\AppV\Client\Publishing</checkBox>
+        <checkBox refId="ExclusionDefaultReg03" defaultChecked="true">Software\Microsoft\Speech_OneCore</checkBox>
+      </presentation>
+      <presentation id="IncludeListRegistry">
+        <listBox refId="IncludeListRegistry_Part">包含の一覧</listBox>
+      </presentation>
+      <presentation id="LastKnownGoodRegistry" />
+      <presentation id="ExclusionListSyncFiles">
+        <listBox refId="ExclusionListSyncFiles_Part">除外するファイルの一覧</listBox>
+      </presentation>
+      <presentation id="DefaultExclusionListSyncDir">
+        <checkBox refId="ExclusionDefaultDir01" defaultChecked="true">!ctx_internetcache!</checkBox>
+        <checkBox refId="ExclusionDefaultDir02" defaultChecked="true">!ctx_localappdata!\Google\Chrome\User Data\Default\Cache</checkBox>
+        <checkBox refId="ExclusionDefaultDir03" defaultChecked="true">!ctx_localappdata!\Google\Chrome\User Data\Default\Cached Theme Images</checkBox>
+        <checkBox refId="ExclusionDefaultDir04" defaultChecked="true">!ctx_localappdata!\Google\Chrome\User Data\Default\JumpListIcons</checkBox>
+        <checkBox refId="ExclusionDefaultDir05" defaultChecked="true">!ctx_localappdata!\Google\Chrome\User Data\Default\JumpListIconsOld</checkBox>
+        <checkBox refId="ExclusionDefaultDir06" defaultChecked="true">!ctx_localappdata!\GroupPolicy</checkBox>
+        <checkBox refId="ExclusionDefaultDir07" defaultChecked="true">!ctx_localappdata!\Microsoft\AppV</checkBox>
+        <checkBox refId="ExclusionDefaultDir08" defaultChecked="true">!ctx_localappdata!\Microsoft\Messenger</checkBox>
+        <checkBox refId="ExclusionDefaultDir09" defaultChecked="true">!ctx_localappdata!\Microsoft\Office\15.0\Lync\Tracing</checkBox>
+        <checkBox refId="ExclusionDefaultDir10" defaultChecked="true">!ctx_localappdata!\Microsoft\OneNote</checkBox>
+        <checkBox refId="ExclusionDefaultDir11" defaultChecked="true">!ctx_localappdata!\Microsoft\Outlook</checkBox>
+        <checkBox refId="ExclusionDefaultDir12" defaultChecked="true">!ctx_localappdata!\Microsoft\Terminal Server Client</checkBox>
+        <checkBox refId="ExclusionDefaultDir13" defaultChecked="true">!ctx_localappdata!\Microsoft\UEV</checkBox>
+        <checkBox refId="ExclusionDefaultDir14" defaultChecked="true">!ctx_localappdata!\Microsoft\Windows Live</checkBox>
+        <checkBox refId="ExclusionDefaultDir15" defaultChecked="true">!ctx_localappdata!\Microsoft\Windows Live Contacts</checkBox>
+        <checkBox refId="ExclusionDefaultDir16" defaultChecked="true">!ctx_localappdata!\Microsoft\Windows\Application Shortcuts</checkBox>
+        <checkBox refId="ExclusionDefaultDir17" defaultChecked="true">!ctx_localappdata!\Microsoft\Windows\Burn</checkBox>
+        <checkBox refId="ExclusionDefaultDir18" defaultChecked="true">!ctx_localappdata!\Microsoft\Windows\CD Burning</checkBox>
+        <checkBox refId="ExclusionDefaultDir19" defaultChecked="true">!ctx_localappdata!\Microsoft\Windows\Notifications</checkBox>
+        <checkBox refId="ExclusionDefaultDir20" defaultChecked="true">!ctx_localappdata!\Packages</checkBox>
+        <checkBox refId="ExclusionDefaultDir21" defaultChecked="true">!ctx_localappdata!\Sun</checkBox>
+        <checkBox refId="ExclusionDefaultDir22" defaultChecked="true">!ctx_localappdata!\Windows Live</checkBox>
+        <checkBox refId="ExclusionDefaultDir23" defaultChecked="true">!ctx_localsettings!\Temp</checkBox>
+        <checkBox refId="ExclusionDefaultDir24" defaultChecked="true">!ctx_roamingappdata!\Microsoft\AppV\Client\Catalog</checkBox>
+        <checkBox refId="ExclusionDefaultDir25" defaultChecked="true">!ctx_roamingappdata!\Sun\Java\Deployment\cache</checkBox>
+        <checkBox refId="ExclusionDefaultDir26" defaultChecked="true">!ctx_roamingappdata!\Sun\Java\Deployment\log</checkBox>
+        <checkBox refId="ExclusionDefaultDir27" defaultChecked="true">!ctx_roamingappdata!\Sun\Java\Deployment\tmp</checkBox>
+        <checkBox refId="ExclusionDefaultDir28" defaultChecked="true">$Recycle.Bin</checkBox>
+        <checkBox refId="ExclusionDefaultDir29" defaultChecked="true">AppData\LocalLow</checkBox>
+        <checkBox refId="ExclusionDefaultDir30" defaultChecked="true">トレース</checkBox>
+      </presentation>
+      <presentation id="ExclusionListSyncDir">
+        <listBox refId="ExclusionListSyncDir_Part">除外するディレクトリの一覧</listBox>
+      </presentation>
+      <presentation id="LogonExclusionCheck">
+        <text>ユーザー ストアのプロファイルに</text>
+        <dropdownList refId="LogonExclusionCheck_Part">除外されたファイルまたはフォルダーが含まれる場合</dropdownList>
+      </presentation>
+      <presentation id="LargeFileHandlingList">
+        <listBox refId="LargeFileHandlingList_Part">シンボリック リンクとして作成されるファイル一覧</listBox>
+      </presentation>
+      <presentation id="SyncDirList">
+        <listBox refId="SyncDirList_Part">同期するディレクトリの一覧</listBox>
+      </presentation>
+      <presentation id="SyncFileList">
+        <listBox refId="SyncFileList_Part">同期するファイルの一覧</listBox>
+      </presentation>
+      <presentation id="MirrorFoldersList">
+        <listBox refId="MirrorFoldersList_Part">ミラーリングするフォルダーの一覧</listBox>
+      </presentation>
+      <presentation id="AccelerateFolderMirroring" />
+      <presentation id="PSEnabled" />
+      <presentation id="PSForFoldersEnabled" />
+      <presentation id="PSForPendingAreaEnabled" />
+      <presentation id="PSAlwaysCache">
+        <decimalTextBox refId="PSAlwaysCache_Part" defaultValue="0" spinStep="1">次のサイズ以上のファイルをキャッシュする (MB)</decimalTextBox>
+      </presentation>
+      <presentation id="PSPendingLockTimeout">
+        <decimalTextBox refId="PSPendingLockTimeout" defaultValue="1" spinStep="1">待機領域のロック ファイルのタイムアウト（日数）</decimalTextBox>
+      </presentation>
+      <presentation id="PSUserGroups">
+        <listBox refId="PSUserGroups_Part">ストリーム配信ユーザー プロファイルがあるユーザー グループの一覧</listBox>
+      </presentation>
+      <presentation id="StreamingExclusionList">
+        <listBox refId="StreamingExclusionList_Part">プロファイル ストリーミングから除外するディレクトリ一覧</listBox>
+      </presentation>
+      <presentation id="CPEnable" />
+      <presentation id="CPUserGroups">
+        <listBox refId="CPUserGroups_Part">プラットフォーム間で処理されるユーザー グループの一覧</listBox>
+      </presentation>
+      <presentation id="CPSchemaPath">
+        <textBox refId="CPSchemaPathData">
+          <label>クロスプラットフォーム定義へのパス:</label>
+        </textBox>
+      </presentation>
+      <presentation id="CPPath">
+        <textBox refId="CPPathData">
+          <label>クロスプラットフォーム設定ストアへのパス:</label>
+        </textBox>
+      </presentation>
+      <presentation id="CPMigrationFromBaseProfileToCPStore" />
+      <presentation id="XenAppOptimizationEnabled" />
+      <presentation id="XenAppOptimizationDefinitionPath">
+        <textBox refId="XenAppOptimizationDefinitionPathData">
+          <label>Citrix Virtual Apps 最適化定義へのパス:</label>
+        </textBox>
+      </presentation>
+      <presentation id="SharedStoreFileInclusionList">
+        <listBox refId="SharedStoreFileInclusionList_Part">共有ストアに含めるファイルの一覧</listBox>
+      </presentation>
+      <presentation id="SharedStoreFileExclusionList">
+        <listBox refId="SharedStoreFileExclusionList_Part">共有ストアから除外するファイルの一覧</listBox>
+      </presentation>
+      <presentation id="SharedStoreProfileContainerFileSizeLimit">
+        <decimalTextBox refId="SharedStoreProfileContainerFileSizeLimit_Part" defaultValue="256" spinStep="1">最小サイズ (MB)</decimalTextBox>
+      </presentation>
+      <presentation id="AppAccessControl">
+        <textBox refId="AppAccessControl_Part">
+          <label>アプリのアクセス制御規則</label>
+        </textBox>
+      </presentation>
+      <presentation id="FRAdminAccess">
+        <checkBox refId="FRAdminAccess_Part">管理者アクセスを許可</checkBox>
+      </presentation>
+      <presentation id="FRIncDomainName">
+        <checkBox refId="FRIncDomainName_Part">UNC パスにドメイン名を包含</checkBox>
+      </presentation>
+      <presentation id="FRAppDataEnable">
+        <dropdownList refId="FRAppData_Part">AppData(Roaming) のリダイレクト設定</dropdownList>
+        <textBox refId="FRAppDataPath_Part">
+          <label>パス</label>
+        </textBox>
+      </presentation>
+      <presentation id="FRDesktopEnable">
+        <dropdownList refId="FRDesktop_Part">デスクトップ のリダイレクト設定</dropdownList>
+        <textBox refId="FRDesktopPath_Part">
+          <label>パス</label>
+        </textBox>
+      </presentation>
+      <presentation id="FRStartMenuEnable">
+        <dropdownList refId="FRStartMenu_Part">スタート メニュー のリダイレクト設定</dropdownList>
+        <textBox refId="FRStartMenuPath_Part">
+          <label>パス</label>
+        </textBox>
+      </presentation>
+      <presentation id="FRDocumentsEnable">
+        <dropdownList refId="FRDocuments_Part">ドキュメント のリダイレクト設定</dropdownList>
+        <textBox refId="FRDocumentsPath_Part">
+          <label>パス</label>
+        </textBox>
+      </presentation>
+      <presentation id="FRPicturesEnable">
+        <dropdownList refId="FRPictures_Part">ピクチャ のリダイレクト設定</dropdownList>
+        <textBox refId="FRPicturesPath_Part">
+          <label>パス</label>
+        </textBox>
+      </presentation>
+      <presentation id="FRMusicEnable">
+        <dropdownList refId="FRMusic_Part">ミュージック のリダイレクト設定</dropdownList>
+        <textBox refId="FRMusicPath_Part">
+          <label>パス</label>
+        </textBox>
+      </presentation>
+      <presentation id="FRVideosEnable">
+        <dropdownList refId="FRVideos_Part">ビデオ のリダイレクト設定</dropdownList>
+        <textBox refId="FRVideosPath_Part">
+          <label>パス</label>
+        </textBox>
+      </presentation>
+      <presentation id="FRFavoritesEnable">
+        <dropdownList refId="FRFavorites_Part">お気に入りのリダイレクト設定</dropdownList>
+        <textBox refId="FRFavoritesPath_Part">
+          <label>パス</label>
+        </textBox>
+      </presentation>
+      <presentation id="FRContactsEnable">
+        <dropdownList refId="FRContacts_Part">アドレス帳のリダイレクト設定</dropdownList>
+        <textBox refId="FRContactsPath_Part">
+          <label>パス</label>
+        </textBox>
+      </presentation>
+      <presentation id="FRDownloadsEnable">
+        <dropdownList refId="FRDownloads_Part">ダウンロード のリダイレクト設定</dropdownList>
+        <textBox refId="FRDownloadsPath_Part">
+          <label>パス</label>
+        </textBox>
+      </presentation>
+      <presentation id="FRLinksEnable">
+        <dropdownList refId="FRLinks_Part">リンク のリダイレクト設定</dropdownList>
+        <textBox refId="FRLinksPath_Part">
+          <label>パス</label>
+        </textBox>
+      </presentation>
+      <presentation id="FRSearchesEnable">
+        <dropdownList refId="FRSearches_Part">検索のリダイレクト設定</dropdownList>
+        <textBox refId="FRSearchesPath_Part">
+          <label>パス</label>
+        </textBox>
+      </presentation>
+      <presentation id="FRSavedGamesEnable">
+        <dropdownList refId="FRSavedGames_Part">保存したゲーム のリダイレクト設定</dropdownList>
+        <textBox refId="FRSavedGamesPath_Part">
+          <label>パス</label>
+        </textBox>
+      </presentation>
+    </presentationTable>
+  </resources>
+</policyDefinitionResources>

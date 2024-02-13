@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Group>
+	<ProductReleases>
+		<ProductRelease>
+			<ProductVersion>180</ProductVersion>
+			<ProductDisplay>2006</ProductDisplay>
+			<UnsupportedFeatures>
+				<UnsupportedFeatureName>Autoservicio de restablecimiento de contraseñas</UnsupportedFeatureName>
+				<UnsupportedFeatureName>Citrix License Administration Console</UnsupportedFeatureName>
+			</UnsupportedFeatures>
+		</ProductRelease>
+		<ProductRelease>
+			<ProductVersion>170</ProductVersion>
+			<ProductDisplay>2003</ProductDisplay>
+			<UnsupportedFeatures>
+				<UnsupportedFeatureName>Discos Personal vDisk</UnsupportedFeatureName>
+				<UnsupportedFeatureName>AppDisks</UnsupportedFeatureName>
+				<UnsupportedFeatureName>Componente de migración de aplicaciones de AppDNA de la edición Premium de Citrix Virtual Apps and Desktops</UnsupportedFeatureName>
+				<UnsupportedFeatureName>Compatibilidad con el adaptador de gráficos Citrix Indirect Display Driver (IDD) en la versión 1709 de Windows 10 y en versiones anteriores</UnsupportedFeatureName>
+				<UnsupportedFeatureName>Codificación por hardware con las GPU de NVIDIA (NVENC) mediante GRID 9 o controladores de pantalla anteriores</UnsupportedFeatureName>
+				<UnsupportedFeatureName>Versiones de Microsoft .NET Framework anteriores a la versión 4.8 para Delivery Controllers, Studio, Director, StoreFront y VDA</UnsupportedFeatureName>
+				<UnsupportedFeatureName>Windows Server 2012 R2 para Delivery Controllers, Studio, Director y VDA</UnsupportedFeatureName>
+				<UnsupportedFeatureName>Plataformas x86 con Windows 10 para VDA</UnsupportedFeatureName>
+				<UnsupportedFeatureName>Máquinas de 32 bits (x86) para Studio</UnsupportedFeatureName>
+				<UnsupportedFeatureName>Versiones de Microsoft SQL Server anteriores a 2016 para las bases de datos de sitios, registro de configuraciones y supervisión</UnsupportedFeatureName>
+			</UnsupportedFeatures>
+		</ProductRelease>
+		<ProductRelease>
+			<ProductVersion>160</ProductVersion>
+			<ProductDisplay>1912 y 1912 LTSR</ProductDisplay>
+			<UnsupportedFeatures>
+				<UnsupportedFeatureName>Compatibilidad con StoreFront para usuarios que acceden a escritorios en sitios de Desktop Appliance</UnsupportedFeatureName>
+				<UnsupportedFeatureName>Integración de StoreFront en Citrix Online (producto GoTo) para StoreFront 3.12</UnsupportedFeatureName>
+				<UnsupportedFeatureName>Redirección de Flash</UnsupportedFeatureName>
+			</UnsupportedFeatures>
+		</ProductRelease>
+		<ProductRelease>
+			<ProductVersion>150</ProductVersion>
+			<ProductDisplay>1909</ProductDisplay>
+			<UnsupportedFeatures>
+				<UnsupportedFeatureName>Enlace con Excel en aplicaciones integradas (para crear iconos independientes de la barra de tareas para cada libro de Microsoft Excel 2010)</UnsupportedFeatureName>
+				<UnsupportedFeatureName>Plataformas x86 con Windows 10 para VDA (todavía es válido en 1912 LTSR).</UnsupportedFeatureName>
+			</UnsupportedFeatures>
+		</ProductRelease>
+		<ProductRelease>
+			<ProductVersion>140</ProductVersion>
+			<ProductDisplay>1906</ProductDisplay>
+			<UnsupportedFeatures>
+				<UnsupportedFeatureName>Eliminación de Citrix Smart Tools Agent de los medios de instalación</UnsupportedFeatureName>
+				<UnsupportedFeatureName>Citrix Smart Scale en todas las versiones de Citrix Virtual Apps and Desktops (y XenApp y XenDesktop)</UnsupportedFeatureName>
+			</UnsupportedFeatures>
+		</ProductRelease>
+		<ProductRelease>
+			<ProductVersion>130</ProductVersion>
+			<ProductDisplay>1903</ProductDisplay>
+			<UnsupportedFeatures>
+				<UnsupportedFeatureName>Experiencia clásica de Citrix Receiver para Web (interfaz de usuario con "burbujas verdes")</UnsupportedFeatureName>
+				<UnsupportedFeatureName>Tecnología de pantalla remota Framehawk</UnsupportedFeatureName>
+				<UnsupportedFeatureName>Red Hat Enterprise Linux/CentOS 7.5 para Linux VDA</UnsupportedFeatureName>
+				<UnsupportedFeatureName>Opciones de Delivery Controller en StoreFront para productos que han alcanzado el final de su vida útil: VDI-in-a-Box y XenMobile (9.0 y versiones anteriores)</UnsupportedFeatureName>
+			</UnsupportedFeatures>
+		</ProductRelease>
+		<ProductRelease>
+			<ProductVersion>120</ProductVersion>
+			<ProductDisplay>1808</ProductDisplay>
+			<UnsupportedFeatures>
+				<UnsupportedFeatureName>Versiones de Microsoft .NET Framework anteriores a la versión 4.8 para Delivery Controllers, Studio, Director, StoreFront y VDA</UnsupportedFeatureName>
+				<UnsupportedFeatureName>Red Hat Enterprise Linux 7.3 para Linux VDA</UnsupportedFeatureName>
+			</UnsupportedFeatures>
+		</ProductRelease>
+	</ProductReleases>
+</Group>

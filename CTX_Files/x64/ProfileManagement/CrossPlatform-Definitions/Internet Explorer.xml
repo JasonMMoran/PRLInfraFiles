@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Copyright 2011 Citrix Systems, Inc. All Rights Reserved. -->
+
+<GroupDefinitions Version="4.0.0.0" GUID="B9E23676-5E4E-C0A0-067B-79F5E8D27628">
+    <Group Name="Common Settings" GUID="44C8AFF1-684C-F606-ABF8-D4C94FD33DD4">
+		<Object Name="Favorites" GUID="40E14349-2FD4-CD1B-D737-8E0B1BA7D86B">
+            <Platform>
+                <Folder>
+                    <Path>Favorites</Path>
+                    <Recurse/>
+                </Folder>
+            </Platform>
+        </Object>
+		<Object Name="Software\Microsoft\Internet Explorer" GUID="5DFBE680-E66D-843F-1365-375DF78C6202">
+            <Platform>
+                <RegKey>
+                    <Key>Software\Microsoft\Internet Explorer</Key>
+                    <Recurse/>
+					<Merge/>
+                </RegKey>
+            </Platform>
+        </Object>
+        <Object Name="Software\Microsoft\Windows\CurrentVersion\Internet Settings" GUID="691479D7-AEF5-5C44-5094-E09FD2510D9A">
+            <Platform>
+                <RegKey>
+                    <Key>Software\Microsoft\Windows\CurrentVersion\Internet Settings</Key>
+                    <Recurse/>
+					<Merge/>
+                </RegKey>
+            </Platform>
+        </Object>
+    </Group>
+</GroupDefinitions>

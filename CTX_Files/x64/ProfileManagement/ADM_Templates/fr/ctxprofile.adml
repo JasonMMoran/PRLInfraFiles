@@ -1,0 +1,1955 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<policyDefinitionResources revision="1.0" schemaVersion="1.0">
+  <displayName>
+  </displayName>
+  <description>
+  </description>
+  <resources>
+    <stringTable>
+      <string id="Citrix">Citrix</string>
+      <string id="Supported_upm_1_0_0">Profile Management 1.0.0 ou versions ultérieures</string>
+      <string id="Supported_upm_2_0_0">Profile Management 2.0.0 ou versions ultérieures</string>
+      <string id="Supported_upm_2_1_0">Profile Management 2.1.0 ou versions ultérieures</string>
+      <string id="Supported_upm_3_0_0">Profile Management 3.0.0 ou versions ultérieures</string>
+      <string id="Supported_upm_3_1_0">Profile Management 3.1.0 ou versions ultérieures</string>
+      <string id="Supported_upm_3_2_0">Profile Management 3.2.0 ou versions ultérieures</string>
+      <string id="Supported_upm_4_0_0">Profile Management 4.0.0 ou versions ultérieures</string>
+      <string id="Supported_upm_4_1_1">Profile Management 4.1.1 ou versions ultérieures</string>
+      <string id="Supported_upm_5_0_0">Profile Management 5.0.0 ou versions ultérieures</string>
+      <string id="Supported_upm_5_5_0">Profile Management 5.5.0 ou versions ultérieures</string>
+      <string id="Supported_upm_5_6_0">Profile Management 5.6.0 ou versions ultérieures</string>
+      <string id="Supported_upm_5_8_0">Profile Management 5.8.0 ou versions ultérieures</string>
+      <string id="Supported_upm_7_15">Profile Management 7.15 ou versions ultérieures</string>
+      <string id="Supported_upm_7_16">Profile Management 7.16 ou versions ultérieures</string>
+      <string id="Supported_upm_7_18">Profile Management 7.18 ou versions ultérieures</string>
+      <string id="Supported_upm_19_03">Profile Management 1903 ou versions ultérieures</string>
+      <string id="Supported_upm_19_09">Profile Management 1909 ou versions ultérieures</string>
+      <string id="Supported_upm_19_12">Profile Management 1912 ou versions ultérieures</string>
+      <string id="Supported_upm_20_03">Profile Management 2003 ou versions ultérieures</string>
+      <string id="Supported_upm_20_09">Profile Management 2009 ou versions ultérieures</string>
+      <string id="Supported_upm_21_03">Profile Management 2103 ou versions ultérieures</string>
+      <string id="Supported_upm_21_06">Profile Management 2106 ou versions ultérieures</string>
+      <string id="Supported_upm_21_12">Profile Management 2112 ou versions ultérieures</string>
+      <string id="Supported_upm_22_03">Profile Management 2203 ou versions ultérieures</string>
+      <string id="Supported_upm_22_06">Profile Management 2206 ou versions ultérieures</string>
+      <string id="Supported_upm_22_09">Profile Management 2209 ou versions ultérieures</string>
+      <string id="Supported_upm_23_03">Profile Management 2303 ou version ultérieure</string>
+      <string id="Supported_upm_23_05">Profile Management 2305 ou versions ultérieures</string>
+      <string id="Supported_upm_23_08">Profile Management 2308 ou versions ultérieures</string>
+      <string id="Supported_upm_23_11">Profile Management 2311 ou versions ultérieures</string>
+      <string id="UserProfileManager">Profile Management</string>
+      <string id="ServiceActive">Activer Profile Management</string>
+      <string id="ServiceActive_Help">S'applique à : solutions de profil basées sur des fichiers et des conteneurs
+
+Par défaut, Profile Management ne traite pas les ouvertures/fermetures de session pour faciliter le déploiement.
+
+L'activation de ce paramètre permet d'activer le traitement.
+
+Si ce paramètre n'est pas configuré ici, la valeur du fichier .ini est utilisée.
+
+Si ce paramètre n'est pas configuré ici où dans le fichier .ini, Profile Management ne traite pas les profils utilisateur Windows.</string>
+      <string id="ProcessedGroups">Groupes traités</string>
+      <string id="ProcessedGroups_Part">Groupes traités</string>
+      <string id="ProcessedGroups_Part_gpfx">Groupes traités</string>
+      <string id="ProcessedGroups_Help">S'applique à : solutions de profil basées sur des fichiers et des conteneurs
+
+Les groupes d'ordinateurs locaux et les groupes de domaines (locaux, globaux et universels) peuvent être utilisés. Les groupes de domaines doivent être spécifiés au format : &lt;NOM DE DOMAINE&gt;\&lt;NOM DE GROUPE&gt;.
+
+Si ce paramètre est configuré ici, Profile Management traite uniquement les membres appartenant à ces groupes d'utilisateurs.
+
+Si ce paramètre est désactivé, Profile Management traite tous les utilisateurs.
+
+Si ce paramètre n'est pas configuré ici, la valeur du fichier .ini est utilisée.
+
+Si ce paramètre n'est pas configuré ici où dans le fichier .ini, les membres de tous les groupes d'utilisateurs sont traités.</string>
+      <string id="ExcludedGroups">Groupes exclus</string>
+      <string id="ExcludedGroups_Help">S'applique à : solutions de profil basées sur des fichiers et des conteneurs
+
+Vous pouvez utiliser des groupes d'ordinateurs locaux et des groupes de domaines (locaux, globaux et universels) pour empêcher le traitement de certains profils utilisateur. Les groupes de domaines doivent être spécifiés au format : &lt;NOM DE DOMAINE&gt;\&lt;NOM DE GROUPE&gt;.
+
+Si ce paramètre est configuré ici, Profile Management exclut les membres appartenant à ces groupes d'utilisateurs.
+
+Si ce paramètre est désactivé, Profile Management n'exclut aucun utilisateur.
+
+Si ce paramètre n'est pas configuré ici, la valeur du fichier .ini est utilisée.
+
+Si ce paramètre n'est pas configuré ici où dans le fichier .ini, aucun membre des groupes n'est exclu.</string>
+      <string id="ExcludedGroups_Part">Groupes exclus</string>
+      <string id="ExcludedGroups_Part_gpfx">Groupes exclus</string>
+      <string id="ProcessAdmins">Traiter les connexions des administrateurs locaux</string>
+      <string id="ProcessAdmins_Help">S'applique à : solutions de profil basées sur des fichiers et des conteneurs
+
+Spécifie si les ouvertures de session des membres du groupe local « Administrateurs » sont traitées par Profile Management.
+
+Si ce paramètre est désactivé, les ouvertures de session des administrateurs locaux ne sont pas traitées par Profile Management.
+
+Si ce paramètre n'est pas configuré ici, la valeur du fichier .ini est utilisée.
+
+Si ce paramètre n'est pas configuré ici où dans le fichier .ini, les administrateurs ne sont pas traités.</string>
+      <string id="DATPath">Chemin d'accès au magasin de l'utilisateur</string>
+      <string id="DATPath_Part">Chemin d'accès absolu ou relatif au répertoire de base</string>
+      <string id="DATPath_Part_gpfx">Chemin d'accès au magasin de l'utilisateur</string>
+      <string id="DATPath_Help">S'applique à : solutions de profil basées sur des fichiers et des conteneurs
+
+Définit le chemin d'accès au répertoire dans lequel les paramètres utilisateur (modifications apportées au registre et fichiers synchronisés) sont enregistrés (magasin de l'utilisateur).
+
+Le chemin peut être un chemin UNC absolu ou un chemin relatif au répertoire de base.
+
+Dans les deux cas, les types de variables suivants peuvent être utilisés : variables d'environnement système entourées de signes de pourcentage et attributs de l'objet utilisateur Active Directory entourés de hachages.
+
+Exemples :
+le dossier Windows\%ProfileVer% enregistre les paramètres utilisateur dans le sous-dossier appelé Windows\W2k3 du magasin de l'utilisateur (si %ProfileVer% est une variable d'environnement système résolue en W2k3).
+
+\\server\share\#SAMAccountName# enregistre les paramètres utilisateur sur le chemin d'accès UNC \\server\share\JohnSmith (si #SAMAccountName# est résolu en JohnSmith pour l'utilisateur actuel).
+
+Les variables d'environnement utilisateur ne peuvent pas être utilisées, à l'exception de %username% et %userdomain%.
+
+Si ce paramètre est désactivé, les paramètres utilisateur sont enregistrés dans le sous-répertoire Windows du répertoire de base.
+
+Si ce paramètre n'est pas configuré ici, le paramètre du fichier .ini est utilisé.
+
+Si ce paramètre n'est pas configuré ici où dans le fichier .ini, le répertoire Windows du lecteur de base est utilisé.</string>
+      <string id="MigrateUserStore">Migrer le magasin utilisateur</string>
+      <string id="MigrateUserStore_Part">Entrez le chemin d'accès au magasin utilisateur que vous avez précédemment utilisé</string>
+      <string id="MigrateUserStore_Part_gpfx">Migrer le magasin utilisateur</string>
+      <string id="MigrateUserStore_Help">S'applique à : solution de profil basée sur des fichiers uniquement
+
+Indique le chemin d'accès au dossier où les paramètres utilisateur (changements du registre et fichiers synchronisés) ont été enregistrés précédemment (le chemin d'accès au magasin utilisateur que vous avez précédemment utilisé).
+
+Si ce paramètre est configuré, les paramètres utilisateur enregistrés dans le magasin utilisateur précédent sont migrés vers le magasin utilisateur actuel spécifié dans le paramètre de stratégie « Chemin d'accès au magasin de l'utilisateur ».
+
+Le chemin peut être un chemin UNC absolu ou un chemin relatif au répertoire de base.
+
+Dans les deux cas, vous pouvez utiliser les types de variables suivants : variables d'environnement système entourées de symboles pourcentage et attributs de l'objet utilisateur Active Directory entourés de hachages.
+
+Exemples :
+le dossier Windows\%ProfileVer% enregistre les paramètres utilisateur dans le sous-dossier appelé Windows\W2k3 du magasin utilisateur (si %ProfileVer% est une variable d'environnement système résolue vers W2k3).
+
+\\serveur\partage\#SAMAccountName# enregistre les paramètres utilisateur dans le chemin UNC \\serveur\partage\JohnSmith (si #SAMAccountName# est résolu vers JohnSmith pour l'utilisateur actuel).
+
+Vous pouvez utiliser des variables d'environnement utilisateur sauf %username% et %userdomain%.
+
+Si ce paramètre est désactivé, les paramètres utilisateur sont encore enregistrés dans le magasin utilisateur actuel.
+
+Si ce paramètre n'est pas configuré ici, le paramètre du fichier .ini est utilisé.
+
+Si ce paramètre n'est pas configuré ici ou dans le fichier .ini, les paramètres utilisateur sont encore enregistrés dans le magasin utilisateur actuel.
+
+Si le paramètre que vous avez configuré ici pointe vers le même emplacement que le paramètre de stratégie « Chemin d'accès au magasin de l'utilisateur », ce paramètre de stratégie n'est pas appliqué.</string>
+      <string id="ProfileHandling">Traitement des profils</string>
+      <string id="DeleteCachedProfilesOnLogoff">Supprimer les profils mis en cache localement à la fermeture de session</string>
+      <string id="DeleteCachedProfilesOnLogoff_Help">S'applique à : solution de profil basée sur des fichiers uniquement
+
+Spécifie si les profils mis en cache localement sont supprimés après la fermeture de session.
+
+Si ce paramètre est activé, le cache de profil local d'un utilisateur est supprimé après fermeture de la session. Ce paramètre est recommandé pour les serveurs Terminal Server.
+
+S'il est désactivé, les profils mis en cache ne sont pas supprimés.
+
+Si ce paramètre n'est pas configuré ici, la valeur du fichier .ini est utilisée.
+
+Si ce paramètre n'est pas configuré ici où dans le fichier .ini, les profils mis en cache ne sont pas supprimés.</string>
+      <string id="ProfileDeleteDelay">Délai avant la suppression des profils du cache</string>
+      <string id="ProfileDeleteDelay_Part">Délai (secondes)</string>
+      <string id="ProfileDeleteDelay_Part_gpfx">Délai avant la suppression des profils du cache</string>
+      <string id="ProfileDeleteDelay_Help">S'applique à : solution de profil basée sur des fichiers uniquement
+
+Fonctionne uniquement si l'option « Supprimer les profils mis en cache localement à la fermeture de session » est activée. Prolonge le délai avant la suppression des profils mis en cache localement lors de la fermeture de session. La valeur 0 supprime les profils immédiatement durant le processus de fermeture de session. Des vérifications étant effectuées toutes les minutes, une valeur de 60 garantit que les profils sont supprimés une à deux minutes après la fermeture de session (en fonction du moment auquel la dernière vérification s'est produite). L'extension du délai peut s'avérer utile si vous savez qu'un processus garde des fichiers ouverts ou la ruche du registre utilisateur ouverte lors de la fermeture de session. Dans le cas de profils volumineux, cela peut également contribuer à accélérer la fermeture de session.
+
+Si cette stratégie n'est pas configurée ici, la valeur du fichier .ini est utilisée.
+
+Si cette stratégie n'est pas configurée ici où dans le fichier .ini, les profils sont supprimés immédiatement.</string>
+      <string id="ApplicationProfilesAutoMigration">Migration automatique des profils d'application existants</string>
+      <string id="ApplicationProfilesAutoMigration_Help">S'applique à : solution de profil basée sur des fichiers uniquement
+
+Ce paramètre active ou désactive la migration automatique des profils d'application existants sur différents systèmes d'exploitation. Les profils d'application incluent les données d'application dans le dossier AppData et les entrées de registre sous HKEY_CURRENT_USER\SOFTWARE. Ce paramètre peut être utile dans les cas où vous souhaitez migrer vos profils d'application sur différents systèmes d'exploitation. 
+
+Supposons par exemple que vous mettiez à niveau votre système d'exploitation de Windows 10 version 1803 vers Windows 10 version 1809. Si ce paramètre est activé, Profile Management migre automatiquement les paramètres d'application existants vers Windows 10 version 1809 lorsque les utilisateurs se connectent pour la première fois. Par conséquent, les données d'application du dossier AppData et les entrées de registre sous HKEY_CURRENT_USER\SOFTWARE sont migrées.
+
+S'il existe plusieurs profils d'application existants, Profile Management effectue la migration en fonction d'une priorité spécifique :
+1. Migre les profils du même type de système d'exploitation (OS de bureau et OS de serveur).
+2. Migre les profils du système d'exploitation appartenant à la même famille de systèmes d'exploitation Windows ; par exemple, Windows 8 vers Windows 8.1, ou Windows 10 version 1803 vers Windows 10 version 1809.
+3. Migre les profils du système d'exploitation antérieur ; par exemple, Windows 7 vers Windows 10, ou Windows Server 2012 vers Windows Server 2016.
+4. Migre les profils du système d'exploitation le plus proche.
+
+Remarque : vous devez spécifier le nom abrégé du système d'exploitation en incluant la variable "!CTX_OSNAME!" dans le chemin du magasin utilisateur afin que Profile Management puisse localiser les profils d’application existants.
+
+Si ce paramètre n'est pas configuré ici, le paramètre du fichier .ini est utilisé.
+Si ce paramètre n'est pas configuré ici où dans le fichier .ini, il est désactivé par défaut.</string>
+      <string id="MigrateWindowsProfilesToUserStore">Migration des profils existants</string>
+      <string id="MigrateWindowsProfilesToUserStore_Help">S'applique à : solution de profil basée sur des fichiers uniquement
+
+Profile Management peut effectuer la migration des profils existants « à la volée » durant l'ouverture de session si l'utilisateur ne dispose d'aucun profil dans le magasin de l'utilisateur.
+
+L'événement suivant se produit durant l'ouverture de session : si un profil Windows existant est détecté et que l'utilisateur ne dispose pas encore d'un profil utilisateur Citrix dans le magasin de l'utilisateur, le profil Windows est directement migré (copié) vers le magasin de l'utilisateur. Une fois ce processus terminé, le profil du magasin de l'utilisateur est utilisé par Profile Management dans la session en cours et par toute autre session configurée avec le chemin d'accès au même magasin de l'utilisateur.
+
+Si ce paramètre est activé, la migration de profil peut être activée pour les profils itinérants et locaux (valeur par défaut), les profils itinérants uniquement, les profils locaux uniquement, ou la migration de profil peut être entièrement désactivée.
+
+Si la migration de profil est désactivée et qu'aucun profil utilisateur Citrix n'existe dans le magasin de l'utilisateur, le mécanisme Windows de création de nouveaux profils est utilisé comme dans une installation sans Profile Management.
+
+Si ce paramètre n'est pas configuré ici, la valeur du fichier .ini est utilisée.
+
+Si ce paramètre n'est pas configuré ici où dans le fichier .ini, tous les types de profils existants sont migrés.</string>
+      <string id="MigrateWindowsProfilesToUserStore_Part">Types de profils utilisateur à migrer si le magasin de l'utilisateur est vide</string>
+      <string id="MigrateWindowsProfilesToUserStore_Part_gpfx">Migration des profils existants</string>
+      <string id="MigrateWindowsProfilesToUserStoreEnum_All">Locaux et itinérants</string>
+      <string id="MigrateWindowsProfilesToUserStoreEnum_Local">Locaux</string>
+      <string id="MigrateWindowsProfilesToUserStoreEnum_Roaming">Itinérants</string>
+      <string id="MigrateWindowsProfilesToUserStoreEnum_None">Aucun</string>
+      <string id="LocalProfileConflictHandling">Gestion des conflits de profils locaux</string>
+      <string id="LocalProfileConflictHandling_Help">S'applique à : solution de profil basée sur des fichiers uniquement
+
+Ce paramètre configure les opérations effectuées par Profile Management si un profil dans le magasin de l'utilisateur et un profil utilisateur Windows local (pas un profil utilisateur Citrix) existent.
+
+Si ce paramètre est désactivé ou défini sur la valeur par défaut « Utiliser profil local », Profile Management utilise le profil local, mais ne le modifie pas.
+
+Si ce paramètre est défini sur « Supprimer profil local », Profile Management supprime le profil utilisateur Windows local, puis importe le profil utilisateur Citrix à partir du magasin de l'utilisateur.
+
+Si ce paramètre est défini sur « Renommer profil local », Profile Management renomme le profil utilisateur Windows local (de façon à le sauvegarder), puis importe le profil à partir du magasin de l'utilisateur.
+
+Si ce paramètre n'est pas configuré ici, la valeur du fichier .ini est utilisée.
+
+Si ce paramètre n'est pas configuré ici où dans le fichier .ini, les profils locaux existants sont utilisés.</string>
+      <string id="LocalProfileConflictHandling_Part_1">Si un profil utilisateur Windows local et un profil utilisateur</string>
+      <string id="LocalProfileConflictHandling_Part">Citrix existent tous deux dans le magasin de l'utilisateur</string>
+      <string id="LocalProfileConflictHandling_Part_gpfx">Gestion des conflits de profils locaux</string>
+      <string id="LocalProfileConflictHandlingEnum_Use">Utiliser profil local</string>
+      <string id="LocalProfileConflictHandlingEnum_Delete">Supprimer profil local</string>
+      <string id="LocalProfileConflictHandlingEnum_Rename">Renommer profil local</string>
+      <string id="TemplateProfile">Profil modèle</string>
+      <string id="TemplateProfile_Help">S'applique à : solutions de profil basées sur des fichiers et des conteneurs
+
+Par défaut, les nouveaux profils utilisateur sont créés à partir du profil utilisateur par défaut sur l'ordinateur sur lequel un utilisateur ouvre une session. Profile Management peut également utiliser un modèle stocké centralement lors de la création de nouveaux profils utilisateur. Les profils de modèle sont identiques aux profils normaux dans la mesure où ils résident dans un quelconque partage de fichiers sur le réseau. Utilisez la notation UNC pour spécifier des chemins d'accès aux modèles. Les utilisateurs doivent pouvoir accéder en lecture au profil de modèle.
+
+Si ce paramètre est désactivé, les modèles ne sont pas utilisés.
+
+Si ce paramètre est activé, Profile Management utilise le modèle au lieu du profil local par défaut lors de la création de nouveaux profils utilisateur.
+
+Si un utilisateur ne dispose pas d'un profil utilisateur Citrix, mais qu'un profil utilisateur Windows existe, le profil local par défaut est utilisé (et migré vers le magasin de l'utilisateur, si cette option n'est pas désactivée). Pour changer cela, activez le paramètre « Le profil modèle remplace le profil local ».
+
+Si ce paramètre n'est pas configuré ici, la valeur du fichier .ini est utilisée.
+
+Si ce paramètre n'est pas configuré ici où dans le fichier .ini, aucun modèle n'est utilisé.</string>
+      <string id="TemplateProfilePath">Chemin d'accès au profil modèle :</string>
+      <string id="TemplateProfileOverridesLocalProfile">Le profil modèle remplace le profil local</string>
+      <string id="TemplateProfileOverridesRoamingProfile">Le profil modèle remplace le profil itinérant</string>
+      <string id="TemplateProfileIsMandatory">Profil modèle utilisé en tant que profil Citrix obligatoire pour toutes les ouvertures de session</string>
+      <string id="AdvancedSettings">Paramètres avancés</string>
+      <string id="LoadRetries">Nombre de tentatives d'accès à des fichiers verrouillés</string>
+      <string id="LoadRetries_Part">Nombre de tentatives</string>
+      <string id="LoadRetries_Help">S'applique à : solutions de profil basées sur des fichiers et des conteneurs
+
+Définit le nombre de tentatives d'accès à des fichiers verrouillés.
+
+Si ce paramètre est désactivé, la valeur par défaut (5 tentatives) est utilisée.
+
+Si ce paramètre n'est pas configuré ici, la valeur du fichier .ini est utilisée.
+
+Si ce paramètre n'est pas configuré ici où dans le fichier .ini, la valeur par défaut (5 tentatives) est utilisée.</string>
+      <string id="LoadRetries_Part_gpfx">Nombre de tentatives d'accès à des fichiers verrouillés</string>
+      <string id="ProcessCookieFiles">Traiter les cookies Internet à la fermeture de session</string>
+      <string id="ProcessCookieFiles_Help">S'applique à : solution de profil basée sur des fichiers uniquement
+
+Certains déploiements laissent des cookies Internet supplémentaires qui ne sont pas référencés par le fichier index.dat. Les cookies laissés sur le système de fichiers après une utilisation prolongée d'Internet peuvent entraîner la congestion du profil. Activez ce paramètre pour forcer le traitement du fichier index.dat et supprimer les cookies supplémentaires. Ce paramètre peut augmenter légèrement les temps de fermeture de session. Ne l'activez que si vous rencontrez ce problème.
+
+Si ce paramètre n'est pas configuré ici, la valeur du fichier .ini est utilisée.
+
+Si ce paramètre n'est pas configuré ici où dans le fichier .ini, le fichier index.dat n'est pas traité.</string>
+      <string id="DisableDynamicConfig">Désactiver la configuration automatique</string>
+      <string id="DisableDynamicConfig_Help">S'applique à : solutions de profil basées sur des fichiers et des conteneurs
+
+Profile Management 5.x examine son environnement et se configure automatiquement en fonction de ce dernier. Pour désactiver cette fonctionnalité à des fins de dépannage ou pour conserver les paramètres que vous avez utilisés dans une version précédente, activez ce paramètre.
+
+Si ce paramètre n'est pas configuré ici, la valeur du fichier .ini est utilisée.
+
+Si ce paramètre n'est pas configuré ici où dans le fichier .ini, la configuration automatique est activée de manière à ce que les paramètres de Profile Management puissent s'adapter aux changements de l'environnement.</string>
+      <string id="LogoffRatherThanTempProfile">Fermer la session de l'utilisateur si un problème se produit</string>
+      <string id="LogoffRatherThanTempProfile_Help">S'applique à : solutions de profil basées sur des fichiers et des conteneurs
+
+En cas de problème lors de l'ouverture de session (par exemple, si le magasin de l'utilisateur n'est pas disponible) un profil temporaire est fourni.
+
+L'activation de ce paramètre affiche également un message d'erreur et ferme la session de l'utilisateur.
+
+Si ce paramètre n'est pas configuré ici, la valeur du fichier .ini est utilisée.
+
+Si ce paramètre n'est pas configuré ici où dans le fichier .ini, un profil temporaire est fourni.</string>
+      <string id="LastKnownGoodRegistry">Copie de sauvegarde de NTUSER.DAT</string>
+      <string id="LastKnownGoodRegistry_Help">S'applique à : solution de profil basée sur des fichiers uniquement
+
+La stratégie de sauvegarde NTUSER.DAT est activée par défaut afin de faire une copie de sauvegarde du dernier chargement correct de NTUSER.DAT et restaurer cette copie si NTUSER.DAT est endommagé.
+
+Si vous ne configurez pas ce paramètre ici, Profile Management utilise les paramètres du fichier .ini.
+
+Si vous ne configurez pas ce paramètre ici où dans le fichier .ini, Profile Management ne fait pas de copie de sauvegarde de NTUSER.DAT.</string>
+      <string id="CEIPEnabled">Programme d'amélioration de l'expérience utilisateur</string>
+      <string id="CEIPEnabled_Help">S'applique à : solutions de profil basées sur des fichiers et des conteneurs
+
+Le Programme d'amélioration de l'expérience utilisateur est activé par défaut pour aider à améliorer la qualité et les performances des produits Citrix en envoyant des informations d'utilisation et des statistiques anonymes.
+
+Si ce paramètre n'est pas configuré ici, la valeur du fichier .ini est utilisée.
+
+</string>
+      <string id="UserGroupLevelConfigEnabled">Activer les paramètres de stratégie au niveau de l'utilisateur</string>
+      <string id="UserGroupLevelConfigEnabled_Help">S'applique à : solutions de profil basées sur des fichiers et des conteneurs
+
+Par défaut, les stratégies Profile Management fonctionnent au niveau de la machine. Lorsque cette stratégie est activée, les stratégies de Profile Management peuvent fonctionner au niveau de l'utilisateur. Cela peut s'appliquer à un utilisateur individuel ou à un groupe d'utilisateurs.
+
+Lorsqu'une session démarre, Profile Management détermine les paramètres de stratégie à appliquer en donnant la priorité aux paramètres utilisateur sur les paramètres du groupe d'utilisateurs et aux paramètres du groupe d'utilisateurs sur les paramètres de la machine.
+
+Si ce paramètre n'est pas configuré ici, la valeur du fichier .ini est utilisée.
+
+Si ce paramètre n'est configuré ni ici ni dans le fichier .ini, il est désactivé.
+
+</string>
+      <string id="OrderedGroups">Définir l'ordre de priorité des groupes d'utilisateurs</string>
+      <string id="OrderedGroups_Part">Ordre de priorité des groupes d'utilisateurs</string>
+      <string id="OrderedGroups_Part_gpfx">Définir l'ordre de priorité des groupes d'utilisateurs</string>
+      <string id="OrderedGroups_Help">S'applique à : solutions de profil basées sur des fichiers et des conteneurs
+
+Spécifiez l'ordre de priorité des groupes d'utilisateurs. L'ordre détermine quel groupe est prioritaire lorsqu'un utilisateur appartient à plusieurs groupes ayant des paramètres de stratégie différents. Dans le champ Ordre de priorité des groupes d'utilisateurs, entrez les identificateurs de sécurité (SID) ou les noms de domaine des groupes par ordre de priorité décroissant, en les séparant par des points-virgules (;).
+
+Exemples :
+ctxxa.local\groupb;S-1-5-21-674278408-26188528-2146851469-1174;ctxxa.local\groupc;
+
+Lorsqu'un utilisateur appartient à plusieurs groupes avec des paramètres de stratégie différents, tenez compte des points suivants :
+
+ - Si l'utilisateur appartient à un ou plusieurs groupes définis dans cette stratégie, le groupe ayant la priorité la plus élevée est prioritaire.
+
+ - Si l'utilisateur n'appartient à aucun des groupes définis dans cette stratégie, le groupe dont le SID est le premier dans l'ordre alphabétique est prioritaire.
+
+Si ce paramètre n'est pas configuré ici, la valeur du fichier .ini est utilisée.
+
+Si ce paramètre n'est configuré ni ici ni dans le fichier .ini, aucun ordre de priorité n'est spécifié.</string>
+      <string id="OutlookSearchRoamingEnabled">Autoriser roaming de l'index de recherche pour Outlook</string>
+      <string id="OutlookSearchRoamingEnabled_Help">S'applique à : solutions de profil basées sur des fichiers et des conteneurs
+
+Autorisez le stockage des recherches Outlook effectuées par les utilisateurs en envoyant automatiquement les données de recherche Outlook avec le profil utilisateur. De l'espace supplémentaire est requis dans le magasin de l'utilisateur pour stocker l'index de recherche pour Outlook.
+
+Vous devez vous déconnecter puis vous reconnecter pour que cette stratégie prenne effet.</string>
+      <string id="OutlookEdbBackupEnabled">Base de données d'index de recherche Outlook - sauvegarde et restauration</string>
+      <string id="OutlookEdbBackupEnabled_Help">S'applique à : solutions de profil basées sur des fichiers et des conteneurs
+
+Ce paramètre configure l'action exécutée par Profile Management lors de la connexion lorsque le paramètre de roaming de l'index de recherche pour Outlook est activé.
+
+S'il est activé, Profile Management enregistre une sauvegarde de la base de données d'index de recherche chaque fois que la base de données est montée avec succès lors de la connexion. Profile Management considère la sauvegarde comme une copie conforme de la base de données d'index de recherche. Lorsque la tentative de montage de la base de données d'index de recherche échoue parce que la base de données est corrompue, Profile Management rétablit automatiquement la base de données d'index de recherche sur la dernière copie valide connue.
+
+Remarque : Profile Management supprime la sauvegarde précédemment enregistrée après l'enregistrement d'une nouvelle sauvegarde. La sauvegarde consomme l’espace de stockage disponible des fichiers VHDX.</string>
+      <string id="OutlookSearchRoamingConcurrentSession">Activer la prise en charge des sessions simultanées pour le roaming des données de recherche de Outlook</string>
+      <string id="OutlookSearchRoamingConcurrentSession_Part">Nombre maximal de disques VHDX pour le stockage des fichiers OST Outlook </string>
+      <string id="OutlookSearchRoamingConcurrentSession_Part_gpfx">Nombre maximal de disques VHDX pour le stockage des fichiers OST Outlook </string>
+      <string id="OutlookSearchRoamingConcurrentSession_Help">S'applique à : solutions de profil basées sur des fichiers et des conteneurs
+
+Offre une expérience de recherche native lors de sessions simultanées dans Outlook. Utilisez cette stratégie avec la stratégie de roaming de l'index de recherche pour Outlook.
+
+Lorsque cette stratégie est activée, chaque session simultanée utilise un fichier OST Outlook distinct.
+
+Par défaut, seuls deux disques VHDX peuvent être utilisés pour stocker des fichiers OST Outlook (un fichier par disque). Si d'autres sessions démarrent, leurs fichiers OST Outlook sont stockés dans les profils utilisateur locaux. Vous pouvez spécifier le nombre maximum de disques VHDX pour stocker les fichiers OST Outlook.
+
+Exemple :
+Vous définissez le nombre sur 3. Par conséquent, Profile Management stocke les fichiers OST Outlook sur les disques VHDX pour la première, deuxième et troisième session simultanée et stocke le fichier OST pour la quatrième session simultanée dans le profil local.</string>
+      <string id="FSLogixProfileContainerSupport">Activer la réécriture multisession pour les conteneurs de profils</string>
+      <string id="FSLogixProfileContainerSupport_Help">S'applique à : solutions de profil basées sur des fichiers et des conteneurs
+
+Active la réécriture pour les conteneurs de profils dans les scénarios multisession. Si cette option est activée, les modifications apportées à toutes les sessions sont réécrites dans les conteneurs de profils. Sinon, seules les modifications apportées lors de la première session sont enregistrées car seule la première session est en mode lecture/écriture dans les conteneurs de profils. Les conteneurs de profils Citrix Profile Management sont pris en charge à compter de Citrix Profile Management 2103. FSLogix Profile Container est pris en charge à compter de Citrix Profile Management 2003
+
+Pour utiliser cette stratégie pour FSLogix Profile Container, assurez-vous que les conditions préalables suivantes sont remplies :
+1.La fonctionnalité FSLogix Profile Container est installée et activée.
+2.Le type de profil est défini sur « Try for read-write profile and fallback to read-only » dans FSLogix.</string>
+      <string id="MultiSiteReplication">Répliquer magasins d’utilisateurs</string>
+      <string id="MultiSiteReplication_Part">Chemins pour répliquer un magasin d’utilisateurs</string>
+      <string id="MultiSiteReplication_Part_gpfx">Répliquer magasins d’utilisateurs - Chemins pour répliquer un magasin d’utilisateurs</string>
+      <string id="MultiSiteReplication_Help">S'applique à : solutions de profil basées sur des fichiers et des conteneurs
+
+Vous permet de répliquer un magasin utilisateur sur plusieurs chemins en plus du chemin spécifié par la stratégie Chemin d'accès au magasin de l'utilisateur, à chaque connexion et déconnexion. Pour synchroniser les fichiers et dossiers du magasin utilisateur modifiés au cours d'une session, activez la réécriture active.
+
+ À compter de Profile Management version 2209, cette fonctionnalité est disponible pour le conteneur de profils complet. vous pouvez répliquer le conteneur sur de multiples chemins. Les conteneurs répliqués offrent une redondance des profils pour les connexion utilisateur mais pas pour le basculement dans les sessions.
+
+ Remarque : l'activation de la stratégie peut augmenter les E/S système et prolonger les déconnexions.
+
+Pour Profile Management version 2112 ou ultérieure, vous pouvez séparer les fichiers VHDX du magasin utilisateur répliqué et les stocker dans des chemins différents. Pour ce faire, ajoutez le chemin des fichiers VHDX après le chemin du magasin utilisateur répliqué et séparez les deux chemins par une barre verticale (|). 
+Exemple : \\path_a|\\path_b indique que le magasin utilisateur (avec les fichiers VHDX exclus) est stocké dans \\path_a et que les fichiers VHDX sont stockés dans \\path_b.</string>
+      <string id="CredBasedAccessEnabled">Activer l'accès basé sur les informations d'identification aux magasins d'utilisateurs</string>
+      <string id="CredBasedAccessEnabled_Help">S'applique à : solutions de profil basées sur des fichiers et des conteneurs
+
+Par défaut, Profile Management emprunte l'identité de l'utilisateur actuel pour accéder aux magasins d'utilisateurs. Par conséquent, l'utilisateur actuel doit avoir l'autorisation d'accéder directement aux magasins d'utilisateurs. Activez cette fonctionnalité si vous ne souhaitez pas que Profile Management emprunte l'identité de l'utilisateur actuel lors de l'accès aux magasins d'utilisateurs. Vous pouvez placer les magasins d'utilisateurs dans des référentiels de stockage (par exemple, Azure Files) auxquels l'utilisateur actuel n'a pas l'autorisation d'accéder.
+
+Pour vous assurer que Profile Management peut accéder aux magasins d'utilisateurs, enregistrez les informations d'identification du serveur de stockage de profils dans Workspace Environment Management ou le Gestionnaire des informations d’identification de Windows. Nous vous recommandons d'utiliser Workspace Environment Management pour éviter d'avoir à configurer les mêmes informations d'identification pour chaque ordinateur sur lequel Profile Management est exécuté. Si vous utilisez le Gestionnaire des informations d’identification de Windows, utilisez le compte Système local pour enregistrer les informations d'identification de manière sécurisée. 
+
+Remarque : à compter de Profile Management version 2212, cette fonctionnalité est disponible à la fois pour les solutions Profile Management basées sur fichiers et sur VHDX. Pour les versions de Profile Management antérieures à 2212, cette fonctionnalité est uniquement disponible pour la solution Profile Management basée sur VHDX.
+
+Si ce paramètre n'est pas configuré ici, la valeur du fichier .ini est utilisée. Si ce paramètre n'est configuré ni ici ni dans le fichier .ini, il est désactivé par défaut.
+
+</string>
+      <string id="VhdStorePath">Personnaliser le chemin de stockage des fichiers VHDX</string>
+      <string id="VhdStorePath_Part">Chemin de stockage des fichiers VHDX</string>
+      <string id="VhdStorePath_Part_gpfx">Personnaliser le chemin de stockage des fichiers VHDX</string>
+      <string id="VhdStorePath_Help">S'applique à : solutions de profil basées sur des fichiers et des conteneurs
+
+Par défaut, Profile Management stocke les fichiers VHDX dans le magasin utilisateur. Lorsque cette stratégie est activée, vous pouvez spécifier un chemin d'accès distinct pour stocker les fichiers VHDX.
+
+Les stratégies qui utilisent les fichiers VHDX sont les suivantes : Conteneur de profil, Roaming de l'index de recherche pour Outlook et Accélérer la mise en miroir des dossiers. Les fichiers VHDX de différentes stratégies sont stockés dans différents dossiers sous le chemin de stockage.</string>
+      <string id="AppAccessControl">Contrôle d'accès aux applications</string>
+      <string id="AppAccessControl_Part">Règles de contrôle d'accès aux applications</string>
+      <string id="AppAccessControl_Part_gpfx">Contrôle d'accès aux applications</string>
+      <string id="AppAccessControl_Help">S'applique à : solutions de profil basées sur des fichiers et des conteneurs
+
+Contrôle l'accès des utilisateurs aux applications en fonction de vos règles. Entrez les règles créées à l'aide du script PowerShell CPM_App_Access_Control_Config.ps1.
+
+Le script est disponible avec le package d'installation de Profile Management. Pour plus d'informations, consultez la documentation de Profile Management.</string>
+      <string id="EnableVolumeReattach">Rattacher automatiquement les disques VHDX dans les sessions</string>
+      <string id="EnableVolumeReattach_Help">S'applique à : solutions de profil basées sur des fichiers et des conteneurs
+
+Cette stratégie s'applique uniquement aux disques VHDX utilisés par Profile Management.
+
+Lorsque la stratégie est activée, si un disque VHDX est détaché dans une session, Profile Management peut détecter l'événement, puis rattacher le disque automatiquement.</string>
+      <string id="SyncGpoStateEnabled">Activer le traitement asynchrone pour la stratégie de groupe utilisateur à la connexion</string>
+      <string id="SyncGpoStateEnabled_Help">S'applique à : solutions de profil basées sur des fichiers et des conteneurs
+
+Windows propose deux modes de traitement pour la stratégie de groupe utilisateur : synchrone et asynchrone. Windows utilise une valeur de registre pour déterminer le mode de traitement pour la prochaine connexion de l'utilisateur. Si la valeur de registre n'existe pas, le mode synchrone est appliqué. La valeur de registre est un paramètre au niveau de la machine et ne se déplace pas avec les utilisateurs. Par conséquent, le mode asynchrone ne sera pas appliqué comme prévu si les utilisateurs :
+se connectent sur des machines différentes ;
+se connectent à la même machine sur laquelle la stratégie Supprimer les profils mis en cache localement à la fermeture de session est activée.
+
+Lorsque cette stratégie est activée, Citrix Profile Management laisse la valeur de registre se déplacer avec les utilisateurs. Par conséquent, le mode de traitement est appliqué à chaque fois que les utilisateurs se connectent.
+
+Pour que le mode asynchrone prenne effet sur les machines Windows Server, assurez-vous d'avoir installé le rôle Hôte de session Bureau à distance et défini les stratégies de groupe comme suit :
+ Configuration ordinateur | Modèles d'administration | Système | Ouverture de session | Toujours attendre le réseau lors du démarrage de l’ordinateur et de l’ouverture de session : Désactivé
+ Computer Config | Modèles d'administration | Système | Stratégie de groupe | Autoriser un traitement asynchrone de la stratégie de groupe utilisateur lors d’une ouverture de session par le biais des services Bureau à distance : Activé</string>
+      <string id="OneDriveContainer">Activer le conteneur OneDrive</string>
+      <string id="OneDriveContainer_Part">Liste des dossiers OneDrive</string>
+      <string id="OneDriveContainer_Part_gpfx">Conteneur OneDrive - Liste des dossiers OneDrive</string>
+      <string id="OneDriveContainer_Help">S'applique à : solutions de profil basées sur des fichiers et des conteneurs
+
+Lorsque cette stratégie est activée, Profile Management stocke les dossiers OneDrive sur un disque VHDX. Le disque est attaché lors des connexions et détaché lors des déconnexions. La stratégie permet aux dossiers OneDrive de se déplacer avec les utilisateurs.
+
+Spécifiez les dossiers OneDrive comme chemins relatifs au profil utilisateur. Par exemple, si un dossier OneDrive se trouve dans "%userprofile%\OneDrive - Citrix", ajoutez "OneDrive - Citrix" à la liste.
+
+À partir de la version 2311 de Profile Management, cette stratégie prend en charge la synchronisation OneDrive entre les sessions simultanées.</string>
+      <string id="FreeRatio4Compaction">Taux d'espace libre pour déclencher le compactage des disques VHD</string>
+      <string id="FreeRatio4Compaction_Part">Taux d'espace libre (pourcentage)</string>
+      <string id="FreeRatio4Compaction_Help">S'applique à : solutions de profil basées sur des fichiers et des conteneurs
+
+Permet de spécifier le taux d'espace libre pour déclencher le compactage des disques VHD. Lorsque le taux d'espace libre dépasse la valeur spécifiée à la fermeture de session utilisateur, le compactage du disque est déclenché.
+
+Taux d'espace libre = (taille actuelle du fichier VHD - taille de fichier VHD minimale requise*) / taille actuelle du fichier VHD
+
+* Obtenue à l'aide de la méthode GetSupportedSize de la classe MSFT_Partition du système d'exploitation Microsoft Windows.
+
+Si ce paramètre n'est pas configuré ici, la valeur du fichier .ini est utilisée.
+
+Si ce paramètre n'est pas configuré ici ni dans le fichier .ini, la valeur par défaut 20 (%) est utilisée.</string>
+      <string id="FreeRatio4Compaction_Part_gpfx">Taux d'espace libre pour déclencher le compactage des disques VHD</string>
+      <string id="NLogoffs4Compaction">Nombre de fermetures de session pour déclencher le compactage des disques VHD</string>
+      <string id="NLogoffs4Compaction_Part">Nombre de fermetures de session</string>
+      <string id="NLogoffs4Compaction_Help">S'applique à : solutions de profil basées sur des fichiers et des conteneurs
+
+Permet de spécifier le nombre de fermetures de session utilisateur pour déclencher le compactage des disques VHD.
+
+Lorsque le nombre de fermetures de session depuis le dernier compactage atteint la valeur spécifiée, le compactage du disque est à nouveau déclenché.
+
+Si ce paramètre n’est pas configuré ici, la valeur du fichier .ini est utilisée.
+
+Si ce paramètre n’est pas configuré ici ni dans le fichier .ini, la valeur par défaut de 5 est utilisée.</string>
+      <string id="NLogoffs4Compaction_Part_gpfx">Nombre de fermetures de session pour déclencher le compactage des disques VHD</string>
+      <string id="NDefrag4Compaction">Désactiver la défragmentation pour le compactage des disques VHD</string>
+      <string id="NDefrag4Compaction_Help">S'applique à : solutions de profil basées sur des fichiers et des conteneurs
+
+Permet de spécifier si la défragmentation des fichiers doit être désactivée pour le compactage des disques VHD. 
+
+Lorsque le compactage des disques VHD est activé, le fichier du disque VHD est d’abord automatiquement défragmenté à l’aide de l’outil de défragmentation intégré de Windows, puis compacté. La défragmentation des disques VHD produit de meilleurs résultats de compactage, tandis que sa désactivation permet d’économiser des ressources système.
+
+Si cette stratégie n’est pas configurée ici, la valeur du fichier .ini est utilisée.
+
+Si cette stratégie n’est pas configurée ici ni dans le fichier .ini, la défragmentation est activée par défaut.</string>
+      <string id="VhdContainerCapacity">Capacité par défaut des conteneurs VHD</string>
+      <string id="VhdContainerCapacity_Part">Capacité par défaut (en Go)</string>
+      <string id="VhdContainerCapacity_Part_gpfx">Capacité par défaut des conteneurs VHD</string>
+      <string id="VhdContainerCapacity_Help">S'applique à : solutions de profil basées sur des fichiers et des conteneurs
+
+Spécifie la capacité de stockage par défaut (en Go) des conteneurs VHD.
+
+Si cette stratégie n'est pas configurée ici, la valeur du fichier .ini est utilisée.
+
+Si cette stratégie n'est pas configurée ici ni dans le fichier .ini, la valeur par défaut est 50 (Go).</string>
+      <string id="VhdAutoExpansionThreshold">Seuil d'expansion automatique des conteneurs de profils</string>
+      <string id="VhdAutoExpansionThreshold_Part">Seuil d'expansion automatique (pourcentage)</string>
+      <string id="VhdAutoExpansionThreshold_Part_gpfx">Seuil d'expansion automatique des conteneurs de profils</string>
+      <string id="VhdAutoExpansionThreshold_Help">S'applique à : solutions de profil basées sur des fichiers et des conteneurs
+
+Spécifie le pourcentage d'utilisation de la capacité de stockage à partir duquel les conteneurs de profils déclenchent l'expansion automatique.
+
+Si cette stratégie n'est pas configurée ici, la valeur du fichier .ini est utilisée.
+
+Si cette stratégie n'est pas configurée ici ni dans le fichier .ini, la valeur par défaut est 90 (%) de la capacité de stockage.</string>
+      <string id="VhdAutoExpansionIncrement">Incrément d'expansion automatique des conteneurs de profils</string>
+      <string id="VhdAutoExpansionIncrement_Part">Incrément d'expansion automatique (en Go)</string>
+      <string id="VhdAutoExpansionIncrement_Part_gpfx">Incrément d'expansion automatique des conteneurs de profils</string>
+      <string id="VhdAutoExpansionIncrement_Help">S'applique à : solutions de profil basées sur des fichiers et des conteneurs
+
+Spécifie la quantité de capacité de stockage (en Go) selon laquelle les conteneurs de profils augmentent automatiquement lorsque l'expansion automatique est déclenchée.
+
+Si cette stratégie n'est pas configurée ici, la valeur du fichier .ini est utilisée.
+
+Si cette stratégie n'est pas configurée ici ni dans le fichier .ini, la valeur par défaut est 10 (Go).</string>
+      <string id="VhdAutoExpansionLimit">Limite d'expansion automatique des conteneurs de profils</string>
+      <string id="VhdAutoExpansionLimit_Part">Limite d'expansion automatique (en Go)</string>
+      <string id="VhdAutoExpansionLimit_Part_gpfx">Limite d'expansion automatique des conteneurs de profils</string>
+      <string id="VhdAutoExpansionLimit_Help">S'applique à : solutions de profil basées sur des fichiers et des conteneurs
+
+Spécifie la capacité de stockage maximale (en Go) à laquelle les conteneurs de profils peuvent s'étendre automatiquement lorsque l'expansion automatique est déclenchée.
+
+Si cette stratégie n'est pas configurée ici, la valeur du fichier .ini est utilisée.
+
+Si cette stratégie n'est pas configurée ici ni dans le fichier .ini, la valeur par défaut est 80 (Go).</string>
+      <string id="UwpAppsRoaming">Itinérance des applications UWP</string>
+      <string id="UwpAppsRoaming_Help">S'applique à : solutions de profil basées sur des fichiers et des conteneurs
+
+Permet aux applications UWP (Universal Windows Platform) de se déplacer avec les utilisateurs. Par conséquent, les utilisateurs peuvent accéder aux mêmes applications UWP à partir de différents appareils.
+
+Lorsque cette stratégie est activée, Profile Management permet aux applications UWP de se déplacer avec les utilisateurs en stockant les applications sur des disques VHDX distincts. Ces disques sont attachés lorsque les utilisateurs se connectent et détachés lorsqu'ils se déconnectent.
+
+Si ce paramètre n'est pas configuré ici, la valeur du fichier .ini est utilisée.
+
+Si ce paramètre n'est configuré ni ici ni dans le fichier .ini, cette fonctionnalité est désactivée.</string>
+      <string id="UserStoreSelection">Méthode de sélection du magasin utilisateur</string>
+      <string id="UserStoreSelection_Help">Spécifie la méthode par laquelle Profile Management sélectionne un magasin d'utilisateurs lorsque plusieurs magasins d'utilisateurs sont disponibles. Ce paramètre s'applique lorsque vous avez configuré des magasins d'utilisateurs répliqués en plus du magasin d'utilisateurs.
+Lorsque plusieurs magasins d'utilisateurs sont disponibles, Profile Management sélectionne d'abord celui dont le profil est le plus récent. S'il reste plusieurs options, il en sélectionne une en fonction de la méthode que vous avez choisie :
+- Ordre de configuration. Sélectionne le premier magasin configuré.
+- Performances d'accès. Sélectionne le magasin présentant les meilleures performances d'accès.
+
+Si ce paramètre n'est pas configuré ici, la valeur du fichier .ini est utilisée.
+
+Si ce paramètre n'est pas configuré ici où dans le fichier .ini, "Ordre de configuration" est utilisé.</string>
+      <string id="UserStoreSelection_Part">Sélection de la méthode :</string>
+      <string id="UserStoreSelection_Part_gpfx">Méthode de sélection du magasin utilisateur</string>
+      <string id="UserStoreSelectionEnum_Config">Ordre de configuration</string>
+      <string id="UserStoreSelectionEnum_AccPerf">Performances d'accès</string>
+      <string id="ProfileContainerSettings">Paramètres du conteneur de profils</string>
+      <string id="ProfileContainer">Conteneur de profil</string>
+      <string id="ProfileContainer_Part">Liste des dossiers devant figurer dans le disque de profil</string>
+      <string id="ProfileContainer_Part_gpfx">Conteneur de profil - Liste des dossiers devant figurer dans le disque de profil</string>
+      <string id="ProfileContainer_Help">S'applique à : solutions de profil basées sur des fichiers et des conteneurs
+
+Un conteneur de profils est une solution de profil basée sur VHDX qui vous permet de spécifier les dossiers devant figurer sur le disque de profil. Le conteneur de profils attache le disque de profil contenant ces dossiers, éliminant ainsi la nécessité de sauvegarder une copie des dossiers dans le profil local. Cela diminue les temps de connexion.
+
+Pour utiliser un conteneur de profils, activez cette stratégie et ajoutez les chemins d'accès relatifs des dossiers à la liste. Citrix vous recommande d'inclure les dossiers contenant des fichiers de cache volumineux dans la liste. Par exemple, ajoutez le dossier du cache de contenu de Citrix Files à la liste : AppData\Local\Citrix\Citrix Files\PartCache
+
+Pour activer un conteneur de profils pour le profil utilisateur entier, ajoutez un astérisque (*) à la liste. Les profils utilisateur suivants (le cas échéant) sont automatiquement migrés vers le conteneur lors de sa première utilisation :
+
+-    Profil utilisateur Windows local
+-    Profils utilisateur provenant de la solution de profil basée sur les fichiers Citrix
+
+Si ce paramètre n'est pas configuré ici, la valeur du fichier .ini est utilisée. Si ce paramètre n'est pas configuré ici ni dans le fichier .ini, il est désactivé par défaut.</string>
+      <string id="ProfileContainerExclusionListDir">Dossiers à exclure du conteneur de profils</string>
+      <string id="ProfileContainerExclusionListDir_Part">Liste des dossiers à exclure du conteneur de profils</string>
+      <string id="ProfileContainerExclusionListDir_Part_gpfx">Dossiers à exclure dans le conteneur de profils</string>
+      <string id="ProfileContainerExclusionListDir_Help">S'applique à : solutions de profil basées sur des fichiers et des conteneurs
+
+Liste des dossiers à exclure du conteneur de profils.
+
+Entrez les dossiers à exclure en tant que chemins d'accès relatifs au profil utilisateur.
+
+Les caractères génériques sont pris en charge mais ne sont pas appliqués de manière récursive.
+
+Exemples :
+Desktop spécifie le dossier Desktop.
+
+Downloads\* spécifie tous les sous-dossiers immédiats du dossier Downloads.
+
+Si ce paramètre est désactivé, aucun dossier n'est exclu.
+
+Si ce paramètre n'est pas configuré ici, la valeur du fichier .ini est utilisée.
+
+Si ce paramètre n'est pas configuré ici où dans le fichier .ini, aucun dossier n'est exclu.</string>
+      <string id="ProfileContainerInclusionListDir">Dossiers à inclure dans le conteneur de profils</string>
+      <string id="ProfileContainerInclusionListDir_Part">Liste des dossiers à conserver dans le conteneur de profils</string>
+      <string id="ProfileContainerInclusionListDir_Part_gpfx">Dossiers à inclure dans le conteneur de profils</string>
+      <string id="ProfileContainerInclusionListDir_Help">S'applique à : solutions de profil basées sur des fichiers et des conteneurs
+
+Liste des dossiers à conserver dans le conteneur de profils lorsque leurs dossiers parents sont exclus.
+
+Les dossiers de cette liste doivent être des sous-dossiers des dossiers exclus. Sinon, ce paramètre ne fonctionne pas.
+
+Les caractères génériques sont pris en charge mais ne sont pas appliqués de manière récursive.
+
+La désactivation de ce paramètre a le même effet que l'activation et la configuration d'une liste vide.
+
+Si ce paramètre n'est pas configuré ici, la valeur du fichier .ini est utilisée.
+
+Si ce paramètre n'est pas configuré ici où dans le fichier .ini, les dossiers qui ne figurent pas dans la liste d'exclusion sont inclus dans le conteneur de profils.</string>
+      <string id="ProfileContainerExclusionListFile">Fichiers à exclure du conteneur de profils</string>
+      <string id="ProfileContainerExclusionListFile_Part">Liste des fichiers à exclure du conteneur de profils</string>
+      <string id="ProfileContainerExclusionListFile_Part_gpfx">Fichiers à exclure du conteneur de profils</string>
+      <string id="ProfileContainerExclusionListFile_Help">S'applique à : solutions de profil basées sur des fichiers et des conteneurs
+
+Liste des fichiers à exclure du conteneur de profils.
+
+Spécifiez les fichiers à exclure sous la forme de chemins relatifs au profil utilisateur. Vous pouvez utiliser des caractères génériques. Les caractères génériques dans les noms de fichiers sont appliqués de manière récursive, contrairement aux caractères génériques dans les noms de dossier. Vous pouvez utiliser la barre verticale (|) pour restreindre la stratégie uniquement au dossier actuel afin que la stratégie ne s'applique pas aux sous-dossiers.
+
+Si ce paramètre est désactivé, aucun fichier n'est exclu.
+
+Si ce paramètre n'est pas configuré ici, la valeur du fichier .ini est utilisée.
+
+Si ce paramètre n'est configuré ni ici ni dans le fichier .ini, aucun fichier n'est exclu.
+
+Exemples :
+Desktop\Desktop.ini exclut le fichier Desktop\Desktop.ini du conteneur de profils.
+
+AppData\*.tmp exclut tous les fichiers avec l'extension .tmp dans le répertoire AppData et ses sous-dossiers.
+
+AppData\*.tmp| exclut tous les fichiers avec l'extension .tmp dans le répertoire AppData.
+
+Downloads\*\a.txt exclut a.txt dans tout sous-dossier immédiat du dossier Downloads. Notez que les caractères génériques dans les noms de dossier ne sont pas appliqués de manière récursive.</string>
+      <string id="ProfileContainerInclusionListFile">Fichiers à inclure dans le conteneur de profils</string>
+      <string id="ProfileContainerInclusionListFile_Part">Liste des fichiers à conserver dans le conteneur de profils</string>
+      <string id="ProfileContainerInclusionListFile_Part_gpfx">Fichiers à inclure dans le conteneur de profils</string>
+      <string id="ProfileContainerInclusionListFile_Help">S'applique à : solutions de profil basées sur des fichiers et des conteneurs
+
+Liste des fichiers à inclure dans le conteneur de profils lorsque leurs dossiers parents en sont exclus.
+
+Spécifiez les fichiers à inclure sous la forme de chemins d'accès relatifs au profil utilisateur. Vous pouvez utiliser des caractères génériques. Les caractères génériques dans les noms de fichiers sont appliqués de manière récursive, tandis que les caractères génériques des noms de dossiers ne le sont pas. Vous pouvez utiliser la barre verticale (|) pour limiter la stratégie uniquement au dossier actuel afin que la stratégie ne s'applique pas aux sous-dossiers.
+
+La désactivation de ce paramètre a le même effet que son activation et la configuration d'une liste vide.
+
+Si ce paramètre n'est pas configuré ici, la valeur du fichier .ini est utilisée.
+
+Si ce paramètre n'est pas configuré ici ni dans le fichier .ini, les dossiers qui ne figurent pas dans la liste d'exclusion sont inclus dans le conteneur de profils.
+
+Exemples :
+AppData\Local\Microsoft\Office\Access.qat inclut un fichier sous un dossier exclu de la configuration par défaut.
+
+AppData\Local\MyApp\*.cfg inclut tous les fichiers avec l'extension .cfg dans le dossier de profil AppData\Local\MyApp et ses sous-dossiers.
+
+AppData\Local\MyApp\*.cfg| inclut tous les fichiers avec l'extension .cfg dans le dossier de profil AppData\Local\MyApp.
+
+Downloads\*\b.txt inclut b.txt dans n'importe quel sous-dossier immédiat du dossier Downloads. Notez que les caractères génériques dans les noms de dossiers ne sont pas appliqués de manière récursive.</string>
+      <string id="ProfileContainerLocalCache">Activer la mise en cache locale pour les conteneurs de profils</string>
+      <string id="ProfileContainerLocalCache_Help">S'applique à : solution de profil basée sur des conteneurs uniquement
+
+Lorsque la mise en cache locale pour les conteneurs de profils est activée, chaque profil local sert de cache local pour son conteneur de profils. Si le streaming de profils est en cours d'utilisation, les fichiers mis en cache localement sont créés à la demande. Sinon, ils sont créés lors des connexions utilisateur.</string>
+      <string id="EnableVHDDiskCompaction">Activer le compactage des disques VHD</string>
+      <string id="EnableVHDDiskCompaction_Help">S'applique à : solutions de profil basées sur des fichiers et des conteneurs
+
+Permet de spécifier si les fichiers de disque VHD doivent être compactés à la fermeture de session utilisateur lorsque certaines conditions sont remplies. 
+Le compactage des disques permet d’économiser de l’espace pour le stockage central ou cloud.
+
+En fonction de vos besoins et des ressources disponibles, vous pouvez ajuster les paramètres de compactage et le comportement par défaut à l’aide des stratégies suivantes dans Paramètres avancés :
+
+- Taux d’espace libre pour déclencher le compactage des disques VHD
+- Nombre de fermetures de session pour déclencher le compactage des disques VHD
+- Désactiver la défragmentation pour le compactage des disques VHD
+
+Si cette stratégie n’est pas configurée ici, la valeur du fichier .ini est utilisée.
+
+Si cette stratégie n’est pas configurée ici ni dans le fichier .ini, le compactage des disques VHD n’est pas activé.</string>
+      <string id="EnableVHDAutoExtend">Activer expansion automatique du VHD pour les conteneurs de profils</string>
+      <string id="EnableVHDAutoExtend_Help">S'applique à : solutions de profil basées sur des fichiers et des conteneurs
+
+Spécifie si l'expansion automatique du VHD doit être activée pour le conteneur de profils. Lorsque cette option est activée, tous les paramètres d'expansion automatique du conteneur de profils s'appliquent au conteneur de profils.
+
+Si cette stratégie n'est pas configurée ici, la valeur du fichier .ini est utilisée.
+
+Si cette stratégie n'est pas configurée ici ni dans le fichier .ini, elle est désactivée.</string>
+      <string id="DisableConcurrentAccessToVHDContainers">Activer l'accès exclusif aux conteneurs VHD</string>
+      <string id="DisableConcurrentAccessToProfileContainer">Activer l'accès exclusif aux conteneurs VHD - Conteneur de profil</string>
+      <string id="DisableConcurrentAccessToOneDriveContainer">Activer l'accès exclusif aux conteneurs VHD - Conteneur OneDrive</string>
+      <string id="DisableConcurrentAccessToVHDContainers_Help">S'applique à : solutions de profil basées sur des fichiers et des conteneurs
+
+Par défaut, les conteneurs VHD autorisent l'accès simultané. Lorsque ce paramètre est activé, ils n'autorisent qu'un seul accès à la fois.
+
+Remarque : l'activation de ce paramètre pour les conteneurs de profils dans une solution de profil basée sur des conteneurs désactive automatiquement le paramètre "Activer la réécriture multisession pour les conteneurs de profils".
+
+Si cette stratégie n'est pas configurée ici, la valeur du fichier .ini est utilisée.
+
+Si cette stratégie n'est configurée ni ici ni dans le fichier .ini, le paramètre est désactivé.</string>
+      <string id="DisableConcurrentAccessToVHDContainers_Intro">Sélectionnez les conteneurs auxquels appliquer ce paramètre :</string>
+      <string id="PreventLoginWhenMountFailed">Fermer la session des utilisateurs lorsque le conteneur de profils n'est pas disponible lors de l'ouverture de session</string>
+      <string id="PreventLoginWhenMountFailed_Part">Message d'erreur à afficher</string>
+      <string id="PreventLoginWhenMountFailed_Part_gpfx">Fermer la session des utilisateurs lorsque le conteneur de profils n'est pas disponible lors de l'ouverture de session</string>
+      <string id="PreventLoginWhenMountFailed_Help">S'applique à : solution de profil basée sur conteneur uniquement
+
+Spécifie s'il faut fermer la session des utilisateurs lorsque le conteneur de profils n'est pas disponible lors de l'ouverture de session. Par défaut, les utilisateurs peuvent se connecter à l'aide de profils temporaires lorsque le conteneur de profils n'est pas disponible. L'activation de ce paramètre peut également afficher un message d'erreur destiné aux utilisateurs et les déconnecter une fois qu'ils ont cliqué sur OK. Saisissez le message d'erreur à afficher. Si vous le laissez vide, un message par défaut s'affichera.
+
+Si cette stratégie n'est pas configurée ici, le paramètre du fichier .ini est utilisé.
+
+Si cette stratégie n'est configurée ni ici ni dans le fichier .ini, le paramètre est désactivé.</string>
+      <string id="FileDeduplicationSettings">Déduplication de fichiers</string>
+      <string id="SharedStoreFileExclusionList">Fichiers à exclure du magasin partagé</string>
+      <string id="SharedStoreFileExclusionList_Part">Liste des fichiers à exclure du magasin partagé</string>
+      <string id="SharedStoreFileExclusionList_Part_gpfx">Fichiers à exclure du magasin partagé</string>
+      <string id="SharedStoreFileExclusionList_Help">S'applique à : solutions de profil basées sur des fichiers et des conteneurs
+
+Permet de spécifier les fichiers à exclure du magasin partagé. Utilisez cette stratégie avec la stratégie "Fichiers à inclure dans le magasin partagé pour la déduplication de fichiers".
+
+À partir de la version 2311 de Profile Management, cette stratégie s'applique aux conteneurs de profils.
+
+Spécifiez les noms de fichiers avec des chemins relatifs au profil utilisateur. Considérez ce qui suit :
+
+- Les caractères génériques sont pris en charge.
+
+- Les caractères génériques dans les noms de fichiers sont appliqués de manière récursive. Pour les restreindre uniquement au dossier en cours, utilisez la barre verticale (|).
+
+- Les caractères génériques dans les noms de dossier ne sont pas appliqués de manière récursive.
+
+Exemples :
+
+- Téléchargements\profilemgt_x64.msi spécifie le fichier profilemgt_x64.msi dans le dossier Téléchargements.
+
+- *.tmp spécifie les fichiers avec l'extension .tmp dans le dossier du profil utilisateur et ses sous-dossiers.
+
+- AppData\*.tmp spécifie les fichiers avec l'extension .tmp dans le dossier AppData et ses sous-dossiers.
+
+- AppData\*.tmp| spécifie les fichiers avec l'extension .tmp uniquement dans le dossier AppData.
+
+- Téléchargements\*\a.txt spécifie le fichier a.txt dans n'importe quel sous-dossier immédiat du dossier Téléchargements.
+
+Si ce paramètre est désactivé, aucun fichier n'est exclu.
+Si ce paramètre n'est pas configuré ici, la valeur du fichier .ini est utilisée.
+Si ce paramètre n'est configuré ni ici ni dans le fichier .ini, aucun fichier n'est exclu.</string>
+      <string id="SharedStoreFileInclusionList">Fichiers à inclure dans le magasin partagé pour la déduplication</string>
+      <string id="SharedStoreFileInclusionList_Part">Liste des fichiers à inclure dans le magasin partagé</string>
+      <string id="SharedStoreFileInclusionList_Part_gpfx">Fichiers à inclure dans le magasin partagé pour la déduplication</string>
+      <string id="SharedStoreFileInclusionList_Help">S'applique à : solutions de profil basées sur des fichiers et des conteneurs
+
+Des fichiers identiques peuvent exister entre différents profils d'utilisateurs. Le fait de séparer ces fichiers du magasin de l'utilisateur et de les stocker dans un emplacement central permet d'économiser de l'espace de stockage. Cela permet d'éviter les doublons. Cette stratégie vous permet de spécifier les fichiers que vous souhaitez inclure dans le magasin partagé sur le serveur hébergeant le magasin de l'utilisateur. Lorsque la stratégie est activée, Profile Management génère automatiquement le magasin partagé. Il stocke ensuite de manière centralisée les fichiers spécifiés dans le magasin partagé plutôt que dans chaque profil utilisateur du magasin de l'utilisateur.
+
+À partir de la version 2311 de Profile Management, cette stratégie s'applique aux conteneurs de profils.
+
+Spécifiez les noms de fichiers avec les chemins relatifs au profil utilisateur. Tenez compte des éléments suivants :
+
+- Les caractères génériques sont pris en charge.
+
+- Les caractères génériques dans les noms de fichiers sont appliqués de manière récursive. Pour les restreindre uniquement au dossier actuel, utilisez la barre verticale (|).
+
+- Les caractères génériques dans les noms de dossiers ne sont pas appliqués de manière récursive.
+
+Exemples :
+
+- Téléchargements\profilemgt_x64.msi spécifie le fichier profilemgt_x64.msi dans le dossier Téléchargements.
+
+- *.cfg spécifie les fichiers avec l'extension .cfg dans le dossier du profil utilisateur et ses sous-dossiers.
+
+- Musique\* spécifie les fichiers du dossier Musique et de ses sous-dossiers.
+
+- Téléchargements\*.iso spécifie les fichiers avec l'extension .iso dans le dossier Téléchargements et ses sous-dossiers.
+
+- Téléchargements\*.iso| spécifie les fichiers avec l'extension .iso uniquement dans le dossier Téléchargements.
+
+- AppData\Local\Microsoft\OneDrive\*\*.dll spécifie les fichiers avec l'extension .dll dans n'importe quel sous-dossier immédiat du dossier AppData\Local\Microsoft\OneDrive.
+
+Si ce paramètre est désactivé, le magasin partagé est désactivé.
+Si ce paramètre n'est pas configuré ici, la valeur du fichier .ini est utilisée.
+Si ce paramètre n'est configuré ni ici ni dans le fichier .ini, le magasin partagé est désactivé.</string>
+      <string id="SharedStoreProfileContainerFileSizeLimit">Taille minimale des fichiers à dédupliquer des conteneurs de profils</string>
+      <string id="SharedStoreProfileContainerFileSizeLimit_Part">Taille minimale en mégaoctets</string>
+      <string id="SharedStoreProfileContainerFileSizeLimit_Part_gpfx">Taille minimale des fichiers à dédupliquer des conteneurs de profils</string>
+      <string id="SharedStoreProfileContainerFileSizeLimit_Help">S'applique à : solutions de profil basées sur des fichiers et des conteneurs
+
+Spécifie la taille minimale (Mo) des fichiers à dédupliquer des conteneurs de profils. La valeur doit être égale ou supérieure à 256.
+Si ce paramètre n'est pas configuré ici, la valeur du fichier .ini est utilisée.
+Si ce paramètre n'est configuré ni ici ni dans le fichier .ini, la valeur est 256.</string>
+      <string id="GroupsToAccessProfileContainer">Utilisateurs et groupes autorisés à accéder au conteneur de profils</string>
+      <string id="GroupsToAccessProfileContainer_Part">Utilisateurs et groupes autorisés à accéder au conteneur de profils</string>
+      <string id="GroupsToAccessProfileContainer_Part_gpfx">Utilisateurs et groupes autorisés à accéder au conteneur de profils</string>
+      <string id="GroupsToAccessProfileContainer_Help">S'applique aux solutions de profil basées sur des fichiers et des conteneurs.
+
+Spécifie les utilisateurs et les groupes de domaine dotés de l'autorisation Lire &amp; Exécuter sur les conteneurs de profils. Entrez un utilisateur ou un groupe de domaine en utilisant : &lt;Nom Domaine&gt;\&lt;Nom d'utilisateur ou de groupe&gt; ou Identifiant de sécurité (SID).
+
+Si cette stratégie n'est pas configurée ici, la valeur du fichier .ini est utilisée. 
+
+Si cette stratégie n'est configurée ni ici ni dans le fichier .ini, le conteneur de profils n'est accessible que par son propriétaire.</string>
+      <string id="LogSettings">Paramètres de journal</string>
+      <string id="DebugMode">Activer la journalisation</string>
+      <string id="DebugMode_Help">S'applique à : solutions de profil basées sur des fichiers et des conteneurs
+
+L'activation de ce paramètre active le mode de débogage (journalisation détaillée). En mode de débogage, les informations d'état complètes sont consignées dans les fichiers journaux dans « %SystemRoot%\System32\Logfiles\UserProfileManager » ou dans l'emplacement spécifié par le paramètre de stratégie « Chemin vers le fichier journal ».
+
+Si ce paramètre est désactivé, seules les erreurs sont consignées.
+
+Si ce paramètre n'est pas configuré ici, la valeur du fichier .ini est utilisée.
+
+Si ce paramètre n'est pas configuré ici où dans le fichier .ini, seules les erreurs sont consignées.</string>
+      <string id="LogLevel">Paramètres de journal</string>
+      <string id="LogLevel_Help">S'applique à : solutions de profil basées sur des fichiers et des conteneurs
+
+Paramètres de journal détaillés.
+
+Définissent les événements ou actions qui sont consignés en détail par Profile Management.
+
+Si ce paramètre n'est pas configuré ici, Profile Management utilise les paramètres du fichier .ini.
+
+Si ce paramètre n'est pas configuré ici où dans le fichier .ini, les erreurs et les informations générales sont consignées.</string>
+      <string id="LogLevel_Intro">Définissez les événements ou actions qui sont consignés en détail par Profile Management :</string>
+      <string id="LogLevel_UserName">Informations utilisateur personnalisées</string>
+      <string id="LogLevel_Warnings">Avertissements courants</string>
+      <string id="LogLevel_Information">Informations courantes</string>
+      <string id="LogLevel_FileSystemNotification">Notifications du système de fichiers</string>
+      <string id="LogLevel_FileSystemActions">Actions du système de fichiers</string>
+      <string id="LogLevel_RegistryActions">Actions du registre</string>
+      <string id="LogLevel_RegistryDifference">Différences de registre à la fermeture de session</string>
+      <string id="LogLevel_PolicyUserLogon">Valeurs de stratégie à l'ouverture et fermeture de session</string>
+      <string id="LogLevel_ActiveDirectoryActions">Actions Active Directory</string>
+      <string id="LogLevel_Logon">Ouverture de session</string>
+      <string id="LogLevel_Logoff">Fermeture de session</string>
+      <string id="MaxLogSize">Taille maximale du fichier journal</string>
+      <string id="MaxLogSize_Part">Taille maximale en octets</string>
+      <string id="MaxLogSize_Part_gpfx">Taille maximale du fichier journal</string>
+      <string id="MaxLogSize_Help">S'applique à : solutions de profil basées sur des fichiers et des conteneurs
+
+Définit la taille maximale du fichier journal en octets. Si le fichier journal dépasse cette limite, le fichier de sauvegarde existant (.bak) est supprimé, le fichier journal est renommé .bak et un nouveau fichier journal est créé.
+
+Le fichier journal est créé dans « %SystemRoot%\System32\Logfiles\UserProfileManager » ou dans l'emplacement spécifié par le paramètre de stratégie « Chemin vers le fichier journal ».
+
+Si ce paramètre est désactivé, la valeur par défaut de 10 Mo est utilisée.
+
+Si ce paramètre n'est pas configuré ici, la valeur du fichier .ini est utilisée.
+
+Si ce paramètre n'est pas configuré ici où dans le fichier .ini, la valeur par défaut de 10 Mo est utilisée.</string>
+      <string id="DebugFilePath">Chemin vers le fichier journal</string>
+      <string id="DebugFilePath_Part">Chemin vers le fichier journal</string>
+      <string id="DebugFilePath_Help">S'applique à : solutions de profil basées sur des fichiers et des conteneurs
+
+Définit un chemin d'accès alternatif sur lequel les fichiers journaux sont enregistrés.
+
+Le chemin d'accès peut pointer vers un lecteur local ou un lecteur réseau distant (chemin d'accès UNC). Les chemins d'accès distants peuvent s'avérer utiles dans les environnements distribués étendus mais peuvent engendrer un trafic réseau important, ce qui n'est pas idéal pour les fichiers journaux. Pour les machines virtuelles provisionnées équipées d'un disque dur persistant, définissez un chemin d'accès local vers ce disque. Cela garantit que les fichiers journaux sont conservés lorsque la machine redémarre. Pour les machines virtuelles sans disque dur persistant, la définition d'un chemin d'accès UNC vous permet de conserver les fichiers journaux, mais le compte système des machines doit avoir accès en écriture au partage UNC. Utilisez un chemin d'accès local pour les ordinateurs portables gérés par la fonctionnalité de profils déconnectés.
+
+Exemples :
+D:\LogFiles\ProfileManagement.
+\\ nomserveur\LogFiles\ProfileManagement
+
+Si ce paramètre n'est pas configuré ici, la valeur du fichier .ini est utilisée.
+
+Si ce paramètre n'est pas configuré ici où dans le fichier .ini, l'emplacement par défaut « %SystemRoot%\System32\Logfiles\UserProfileManager » est utilisé.
+
+Si un chemin d'accès UNC est utilisé pour les fichiers journaux, alors Citrix recommande d'appliquer une liste de contrôle d'accès appropriée au dossier des fichiers journaux pour s'assurer que seuls les comptes d'ordinateurs ou d'utilisateurs autorisés peuvent accéder aux fichiers stockés.</string>
+      <string id="RegistrySettings">Registre</string>
+      <string id="ExclusionList">Liste d'exclusion</string>
+      <string id="ExclusionList_Part">Liste d'exclusion</string>
+      <string id="ExclusionList_Part_gpfx">Liste d'exclusion</string>
+      <string id="ExclusionList_Help">S'applique à : solution de profil basée sur des fichiers uniquement
+
+Liste des clés de registre dans la ruche HKCU qui sont ignorées durant la fermeture de session.
+
+Exemple :
+Software\Policies.
+
+Si ce paramètre est désactivé, aucune clé de registre n'est exclue.
+
+Si ce paramètre n'est pas configuré ici, la valeur du fichier .ini est utilisée.
+
+Si ce paramètre n'est pas configuré ici où dans le fichier .ini, aucune clé de registre n'est exclue.</string>
+      <string id="DefaultExclusionList">Activer liste d'exclusion par défaut</string>
+      <string id="ExclusionDefaultReg01">Software\Microsoft\AppV\Client\Integration</string>
+      <string id="ExclusionDefaultReg02">Software\Microsoft\AppV\Client\Publishing</string>
+      <string id="ExclusionDefaultReg03">Software\Microsoft\Speech_OneCore</string>
+      <string id="DefaultExclusionList_Help">S'applique à : solution de profil basée sur des fichiers uniquement
+
+Liste par défaut des clés de registre dans la ruche HKCU qui ne sont pas synchronisées avec le profil de l'utilisateur.
+
+Si vous désactivez ce paramètre, les clés de registre ne sont pas exclues par défaut.
+
+Si vous ne configurez pas ce paramètre ici, la valeur du fichier .ini est utilisée.
+
+Si vous ne configurez pas ce paramètre ici où dans le fichier .ini, les clés de registre ne sont pas exclues par défaut.
+
+Remarque : Software\Miscrosoft\Speech_OneCore est obsolète dans Profile Management 5.8 et versions ultérieures.</string>
+      <string id="IncludeListRegistry">Liste d'inclusion</string>
+      <string id="IncludeListRegistry_Part">Liste d'inclusion</string>
+      <string id="IncludeListRegistry_Part_gpfx">Liste d'inclusion</string>
+      <string id="IncludeListRegistry_Help">S'applique à : solution de profil basée sur des fichiers uniquement
+
+Liste des clés de registre dans la ruche HKCU qui sont traitées durant la fermeture de session. Exemple : Software\Adobe.
+
+Si ce paramètre est activé, seules les clés figurant dans cette liste sont traitées.
+
+Si ce paramètre est désactivé, la ruche HKCU entière est traitée.
+
+Si ce paramètre n'est pas configuré ici, la valeur du fichier .ini est utilisée.
+
+Si ce paramètre n'est pas configuré ici où dans le fichier .ini, toutes les entrées HKCU sont traitées.</string>
+      <string id="FileSystemSettings">Système de fichiers</string>
+      <string id="ExclusionListSyncFiles">Liste d'exclusion - fichiers</string>
+      <string id="ExclusionListSyncFiles_Part">Liste des fichiers à exclure</string>
+      <string id="ExclusionListSyncFiles_Part_gpfx">Liste d'exclusion - fichiers</string>
+      <string id="ExclusionListSyncFiles_Help">S'applique à : solution de profil basée sur des fichiers uniquement
+
+Liste des fichiers ignorés lors de la synchronisation.
+
+Les noms de fichiers doivent être spécifiés en tant que chemins relatifs au profil utilisateur. Les caractères génériques sont autorisés. Les caractères génériques dans les noms de fichiers sont appliqués de manière récursive, contrairement aux caractères génériques dans les noms de dossier.
+
+Remarque : à partir de Profile Management 7.15, vous pouvez utiliser la barre verticale '|' pour appliquer une stratégie uniquement au dossier actuel sans la propager aux sous-dossiers.
+
+Exemples :
+Desktop\Desktop.ini ignore le fichier Desktop.ini dans le dossier Desktop.
+
+AppData\*.tmp ignore tous les fichiers avec l'extension .tmp dans le dossier AppData et ses sous-dossiers.
+
+AppData\*.tmp| ignore tous les fichiers avec l'extension .tmp dans le dossier AppData.
+
+Downloads\*\a.txt ignore a.txt dans tout sous-dossier immédiat du dossier Downloads. Notez que les caractères génériques dans les noms de dossiers ne sont pas appliqués de manière récursive.
+
+Si ce paramètre est désactivé, aucun fichier n'est exclu.
+
+Si ce paramètre n'est pas configuré ici, la valeur du fichier .ini est utilisée.
+
+Si ce paramètre n'est pas configuré ici où dans le fichier .ini, aucun fichier n'est exclu.</string>
+      <string id="ExclusionListSyncDir">Liste d'exclusion - répertoires</string>
+      <string id="ExclusionListSyncDir_Part">Liste des répertoires à exclure</string>
+      <string id="ExclusionListSyncDir_Part_gpfx">Liste d'exclusion - répertoires</string>
+      <string id="ExclusionListSyncDir_Help">S'applique à : solution de profil basée sur des fichiers uniquement
+
+Liste des répertoires ignorés lors de la synchronisation.
+
+Les noms de dossier doivent être spécifiés en tant que chemins relatifs au profil utilisateur.
+
+Les caractères génériques sont pris en charge mais ils ne sont pas appliqués de manière récursive.
+
+Exemples :
+Desktop ignore le dossier Desktop dans le profil utilisateur.
+
+Downloads\* ignore tous les sous-dossiers immédiats du dossier Downloads.
+
+Si ce paramètre est désactivé, aucun dossier n'est exclu.
+
+Si ce paramètre n'est pas configuré ici, la valeur du fichier .ini est utilisée.
+
+Si ce paramètre n'est pas configuré ici où dans le fichier .ini, aucun dossier n'est exclu.</string>
+      <string id="StreamingExclusionList">Liste d’exclusion de streaming des profils - répertoires</string>
+      <string id="StreamingExclusionList_Part">Liste des répertoires à exclure du streaming des profils</string>
+      <string id="StreamingExclusionList_Part_gpfx">Liste d’exclusion de streaming des profils - répertoires</string>
+      <string id="StreamingExclusionList_Help">S'applique à : solution de profil basée sur des fichiers uniquement
+
+Liste des répertoires ignorés par le streaming des profils.
+Les noms de dossiers doivent être spécifiés en tant que chemins d'accès relatifs au profil utilisateur.
+
+Exemples :
+Si vous entrez « Bureau » (sans guillemets), le répertoire Bureau est ignoré dans le profil utilisateur.
+
+Si ce paramètre est désactivé, aucun dossier n'est exclu.
+
+Si ce paramètre n'est pas configuré ici, la valeur du fichier .ini est utilisée.
+
+Si ce paramètre n'est pas configuré ici où dans le fichier .ini, aucun dossier n'est exclu. 
+
+Remarque :
+Les exclusions du streaming de profils ne signifient pas que les dossiers configurés sont exclus du traitement des profils. Ils sont toujours traités par Citrix Profile Management.</string>
+      <string id="DefaultExclusionListSyncDir">Activer liste d'exclusion par défaut - répertoires</string>
+      <string id="ExclusionDefaultDir01">!ctx_internetcache!</string>
+      <string id="ExclusionDefaultDir02">!ctx_localappdata!\Google\Chrome\User Data\Default\Cache</string>
+      <string id="ExclusionDefaultDir03">!ctx_localappdata!\Google\Chrome\User Data\Default\Cached Theme Images</string>
+      <string id="ExclusionDefaultDir04">!ctx_localappdata!\Google\Chrome\User Data\Default\JumpListIcons</string>
+      <string id="ExclusionDefaultDir05">!ctx_localappdata!\Google\Chrome\User Data\Default\JumpListIconsOld</string>
+      <string id="ExclusionDefaultDir06">!ctx_localappdata!\GroupPolicy</string>
+      <string id="ExclusionDefaultDir07">!ctx_localappdata!\Microsoft\AppV</string>
+      <string id="ExclusionDefaultDir08">!ctx_localappdata!\Microsoft\Messenger</string>
+      <string id="ExclusionDefaultDir09">!ctx_localappdata!\Microsoft\Office\15.0\Lync\Tracing</string>
+      <string id="ExclusionDefaultDir10">!ctx_localappdata!\Microsoft\OneNote</string>
+      <string id="ExclusionDefaultDir11">!ctx_localappdata!\Microsoft\Outlook</string>
+      <string id="ExclusionDefaultDir12">!ctx_localappdata!\Microsoft\Terminal Server Client</string>
+      <string id="ExclusionDefaultDir13">!ctx_localappdata!\Microsoft\UEV</string>
+      <string id="ExclusionDefaultDir14">!ctx_localappdata!\Microsoft\Windows Live</string>
+      <string id="ExclusionDefaultDir15">!ctx_localappdata!\Microsoft\Windows Live Contacts</string>
+      <string id="ExclusionDefaultDir16">!ctx_localappdata!\Microsoft\Windows\Application Shortcuts</string>
+      <string id="ExclusionDefaultDir17">!ctx_localappdata!\Microsoft\Windows\Burn</string>
+      <string id="ExclusionDefaultDir18">!ctx_localappdata!\Microsoft\Windows\CD Burning</string>
+      <string id="ExclusionDefaultDir19">!ctx_localappdata!\Microsoft\Windows
+otifications</string>
+      <string id="ExclusionDefaultDir20">!ctx_localappdata!\Packages</string>
+      <string id="ExclusionDefaultDir21">!ctx_localappdata!\Sun</string>
+      <string id="ExclusionDefaultDir22">!ctx_localappdata!\Windows Live</string>
+      <string id="ExclusionDefaultDir23">!ctx_localsettings!\Temp</string>
+      <string id="ExclusionDefaultDir24">!ctx_roamingappdata!\Microsoft\AppV\Client\Catalog</string>
+      <string id="ExclusionDefaultDir25">!ctx_roamingappdata!\Sun\Java\Deployment\cache</string>
+      <string id="ExclusionDefaultDir26">!ctx_roamingappdata!\Sun\Java\Deployment\log</string>
+      <string id="ExclusionDefaultDir27">!ctx_roamingappdata!\Sun\Java\Deployment\tmp</string>
+      <string id="ExclusionDefaultDir28">$Recycle.Bin</string>
+      <string id="ExclusionDefaultDir29">AppData\LocalLow</string>
+      <string id="ExclusionDefaultDir30">Traçage</string>
+      <string id="DefaultExclusionListSyncDir_Help">S'applique à : solution de profil basée sur des fichiers uniquement
+
+Liste des répertoires ignorés par défaut durant la synchronisation.
+
+Si vous désactivez ce paramètre, les dossiers ne sont pas exclus par défaut.
+
+Si vous ne configurez pas ce paramètre ici, la valeur du fichier .ini est utilisée.
+
+Si vous ne configurez pas ce paramètre ici où dans le fichier .ini, les dossiers ne sont pas exclus par défaut.</string>
+      <string id="LogonExclusionCheck">Vérification des éléments exclus à l'ouverture de session</string>
+      <string id="LogonExclusionCheck_Help">S'applique à : solution de profil basée sur des fichiers uniquement
+
+Ce paramètre configure les opérations effectuées par Profile Management si un profil dans le magasin de l'utilisateur contient des fichiers ou dossiers exclus.
+
+Si ce paramètre est désactivé ou défini sur la valeur par défaut « Synchroniser les fichiers ou dossiers exclus à l'ouverture de session », Profile Management synchronise ces fichiers ou dossiers exclus depuis le magasin de l'utilisateur vers le profil local lorsqu'un utilisateur ouvre une session.
+
+Si ce paramètre est défini sur « Ignorer les fichiers ou dossiers exclus à l'ouverture de session », Profile Management ignore les fichiers ou dossiers exclus du magasin de l'utilisateur lorsqu'un utilisateur ouvre une session.
+
+Si ce paramètre est défini sur « Supprimer les fichiers ou dossiers exclus à l'ouverture de session », Profile Management supprime les fichiers ou dossiers exclus du magasin de l'utilisateur lorsqu'un utilisateur ouvre une session.
+
+Si ce paramètre n'est pas configuré ici, la valeur du fichier .ini est utilisée.
+
+Si ce paramètre n'est pas configuré ici où dans le fichier .ini, les fichiers ou dossiers exclus sont synchronisés depuis le magasin de l'utilisateur vers le profil local lorsqu'un utilisateur ouvre une session.</string>
+      <string id="LogonExclusionCheck_Part_1">Si le profil du magasin de l'utilisateur contient des fichiers ou dossiers</string>
+      <string id="LogonExclusionCheck_Part">qui ont été exclus</string>
+      <string id="LogonExclusionCheck_Part_gpfx">Vérification des éléments exclus à l'ouverture de session </string>
+      <string id="LogonExclusionCheckEnum_Disable">Synchroniser les fichiers ou dossiers exclus</string>
+      <string id="LogonExclusionCheckEnum_Ignore">Ignorer les fichiers ou dossiers exclus</string>
+      <string id="LogonExclusionCheckEnum_Delete">Supprimer les fichiers ou dossiers exclus</string>
+      <string id="LargeFileHandlingList">Traitement de fichiers de grande taille : fichiers à créer en tant que liens symboliques</string>
+      <string id="LargeFileHandlingList_Part">Liste des fichiers à créer en tant que liens symboliques</string>
+      <string id="LargeFileHandlingList_Part_gpfx">Liste de traitement de fichiers de grande taille : fichiers à créer en tant que liens symboliques</string>
+      <string id="LargeFileHandlingList_Help">S'applique à : solution de profil basée sur des fichiers uniquement
+
+Pour améliorer les performances de connexion et traiter les fichiers de grande taille, un lien symbolique est créé plutôt qu'une copie pour les fichiers de cette liste.
+
+Vous pouvez utiliser des caractères génériques dans les stratégies faisant référence à des fichiers. Par exemple, !ctx_localappdata!\Microsoft\Outlook\*.OST. 
+
+Pour traiter le fichier de dossiers en mode hors connexion (*.ost) de Microsoft Outlook, assurez-vous que le dossier Outlook n'est pas exclu pour Citrix Profile Management.
+
+Notez que ces fichiers ne sont pas accessibles simultanément dans les sessions multiples.</string>
+      <string id="FSSynchronization">Synchronisation</string>
+      <string id="SyncDirList">Répertoires à synchroniser</string>
+      <string id="SyncDirList_Part">Liste des répertoires à synchroniser</string>
+      <string id="SyncDirList_Part_gpfx">Répertoires à synchroniser</string>
+      <string id="SyncDirList_Help">S'applique à : solution de profil basée sur des fichiers uniquement
+
+Profile Management synchronise le profil entier de chaque utilisateur entre le système sur lequel le profil est installé et le magasin de l'utilisateur.
+
+Cela permet d'inclure des sous-dossiers se trouvant sous les dossiers exclus.
+
+Les chemins d'accès sur cette liste doivent être relatifs au profil utilisateur.
+
+Les caractères génériques sont pris en charge mais ne sont pas appliqués de manière récursive.
+
+Exemples :
+Desktop\exclude\include spécifie le sous-dossier à inclure au dossier Desktop\exclude.
+
+\Desktop\exclude\* spécifie tous les sous-dossiers immédiats du dossier Desktop\exclude.
+
+La désactivation de ce paramètre équivaut à l'activer et à configurer une liste vide.
+
+Si ce paramètre n'est pas configuré ici, la valeur du fichier .ini est utilisée.
+
+Si ce paramètre n'est pas configuré ici où dans le fichier .ini, seuls les dossiers non-exclus dans le profil utilisateur sont synchronisés.</string>
+      <string id="SyncFileList">Fichiers à synchroniser</string>
+      <string id="SyncFileList_Part">Liste des fichiers à synchroniser</string>
+      <string id="SyncFileList_Part_gpfx">Fichiers à synchroniser</string>
+      <string id="SyncFileList_Help">S'applique à : solution de profil basée sur des fichiers uniquement
+
+Profile Management synchronise le profil entier de chaque utilisateur entre le système sur lequel le profil est installé et le magasin de l'utilisateur.
+
+Ce paramètre permet d'inclure des fichiers sous les dossiers exclus.
+
+Les chemins d'accès sur cette liste doivent être relatifs au profil utilisateur. Les caractères génériques sont autorisés. Les caractères génériques dans les noms de fichiers sont appliqués de manière récursive mais pas les noms de dossiers.
+
+Remarque : à compter de Profile Management 7.15, vous pouvez utiliser la barre verticale « | » pour appliquer une stratégie uniquement au dossier en cours et non à ses sous-dossiers.
+
+Exemples :
+AppData\Local\Microsoft\Office\Access.qat spécifie un fichier sous un dossier exclu dans la configuration par défaut.
+
+AppData\Local\MyApp\*.cfg spécifie tous les fichiers avec l'extension .cfg dans le dossier de profil AppData\Local\MyApp et ses sous-dossiers.
+
+AppData\Local\MyApp\*.cfg| spécifie tous les fichiers avec l'extension .cfg dans le dossier de profil AppData\Local\MyApp.
+
+Downloads\*\b.txt spécifie b.txt dans tout sous-dossier immédiat du dossier Downloads. Notez que les caractères génériques dans les noms de dossiers ne sont pas appliqués de manière récursive.
+
+La désactivation de ce paramètre équivaut à l'activer et à configurer une liste vide.
+
+Si ce paramètre n'est pas configuré ici, la valeur du fichier .ini est utilisée.
+
+Si ce paramètre n'est pas configuré ici où dans le fichier .ini, seuls les fichiers non-exclus dans le profil utilisateur sont synchronisés.</string>
+      <string id="MirrorFoldersList">Dossiers en miroir</string>
+      <string id="MirrorFoldersList_Part">Liste des dossiers en miroir</string>
+      <string id="MirrorFoldersList_Part_gpfx">Dossiers en miroir</string>
+      <string id="MirrorFoldersList_Help">S'applique à : solution de profil basée sur des fichiers uniquement
+
+Profile Management peut créer une image-miroir d'un dossier relatif au dossier racine du profil. Utilisez ce paramètre pour les fichiers dont le contenu indexe les données et dans lesquels des instances distinctes des données sont susceptibles d'exister. Par exemple, vous pouvez créer une image-miroir du dossier cookies d'Internet Explorer de manière à ce que index.dat soit synchronisé avec les cookies qu'il indexe. N'oubliez pas que dans ces situations, la règle « last write wins » s'applique, si bien que les dossiers en miroir qui ont été modifiés dans plus d'une session sont écrasés par la dernière mise à jour, ce qui entraîne la perte des modifications apportées au profil.</string>
+      <string id="AccelerateFolderMirroring">Accélérer la mise en miroir des dossiers</string>
+      <string id="AccelerateFolderMirroring_Help">S'applique à : solution de profil basée sur des fichiers uniquement
+
+Lorsque cette stratégie et la stratégie Dossiers en miroir sont activées, Profile Management stocke les dossiers en miroir sur un disque virtuel basé sur VHDX. Il attache le disque virtuel lors des ouvertures de session et le détache lors des déconnexions. L'activation de cette stratégie élimine le besoin de copier les dossiers entre le magasin d'utilisateurs et les profils locaux et accélère la mise en miroir des dossiers.</string>
+      <string id="PSSettings">Profils utilisateur streamés</string>
+      <string id="PSEnabled">Streaming des profils</string>
+      <string id="PSEnabled_Help">S'applique à : solution de profil basée sur des fichiers uniquement
+
+Grâce au streaming de profil, les profils des utilisateurs sont synchronisés sur l'ordinateur local uniquement lorsqu'ils sont requis. Les entrées de registre sont placées en cache immédiatement, mais les fichiers et dossiers ne sont placés en cache que lorsque des utilisateurs y accèdent.</string>
+      <string id="PSForFoldersEnabled">Activer le streaming de profils pour les dossiers</string>
+      <string id="PSForFoldersEnabled_Help">S'applique à : solution de profil basée sur des fichiers uniquement
+
+Lorsque le streaming de profils pour les dossiers est activé, les dossiers ne sont récupérés que lorsqu'ils sont consultés. Cette approche élimine le besoin de parcourir tous les dossiers pendant les connexions utilisateur.</string>
+      <string id="PSForPendingAreaEnabled">Activer le streaming de profils pour la zone d'attente</string>
+      <string id="PSForPendingAreaEnabled_Help">S'applique à : solution de profil basée sur des fichiers uniquement
+
+Lorsque cette stratégie est activée, les fichiers de la zone d'attente sont récupérés dans le profil local uniquement lorsqu'ils sont demandés. Utilisez la stratégie associée à la stratégie Streaming des profils pour garantir une expérience d'ouverture de session optimale dans les scénarios de sessions simultanées.
+
+La stratégie s'applique aux dossiers de la zone d'attente lorsque la stratégie Activer le streaming de profils pour les dossiers est activée.
+
+Par défaut, cette stratégie est désactivée. Tous les fichiers et dossiers de la zone d'attente sont récupérés dans le profil local lors de l'ouverture de session.
+
+La zone d'attente est utilisée pour garantir la cohérence des profils lorsque le streaming des profils est activé. Elle stocke temporairement les fichiers de profils et les dossiers modifiés lors de sessions simultanées.</string>
+      <string id="PSAlwaysCache">Toujours mettre en cache</string>
+      <string id="PSAlwaysCache_Help">S'applique à : solution de profil basée sur des fichiers uniquement
+
+Vous pouvez, éventuellement, utiliser ce paramètre avec le paramètre de streaming de profils pour améliorer l'expérience utilisateur. Cela impose une limite inférieure à la taille des fichiers qui sont streamés. Tous les fichiers d'une taille égale ou supérieure sont placés en cache dès que possible après l'ouverture de session. Pour utiliser la fonctionnalité de mise en cache du profil entier, réglez cette limite sur zéro (tout le contenu du profil est mis en cache).</string>
+      <string id="PSAlwaysCache_Part">Placer en cache les fichiers de cette taille ou supérieurs (mégaoctets)</string>
+      <string id="PSAlwaysCache_Part_gpfx">Taille au-delà de laquelle toujours mettre en cache</string>
+      <string id="PSMidSessionWriteBack">Réécriture active</string>
+      <string id="PSMidSessionWriteBack_Help">S'applique à : solution de profil basée sur des fichiers uniquement
+
+Grâce à ce paramètre, les fichiers et dossiers (mais pas les entrées de registre) qui sont modifiés peuvent être synchronisés avec le magasin de l'utilisateur au milieu d'une session, avant la fermeture de session.
+
+Si ce paramètre n'est pas configuré ici, la valeur du fichier .ini est utilisée.
+
+Si ce paramètre n'est pas configuré ici où dans le fichier .ini, la réécriture active est désactivée.</string>
+      <string id="PSMidSessionWriteBackReg">Registre en réécriture active</string>
+      <string id="PSMidSessionWriteBackReg_Help">S'applique à : solution de profil basée sur des fichiers uniquement
+
+Utilisez cette stratégie avec l'option « Réécriture active » activée.
+
+Les entrées de registre qui sont modifiées peuvent être synchronisées avec le magasin de l'utilisateur au milieu d'une session.
+
+Si ce paramètre n'est pas configuré ici, la valeur du fichier .ini est utilisée.
+
+Si ce paramètre n'est pas configuré ici où dans le fichier .ini, le registre en réécriture active est désactivé.</string>
+      <string id="PSMidSessionWriteBackSessionLock">Réécriture active sur verrouillage et déconnexion de session</string>
+      <string id="PSMidSessionWriteBackSessionLock_Help">S'applique à : solution de profil basée sur des fichiers uniquement
+
+Utilisez cette stratégie comme extension des stratégies « Réécriture active » et « Registre en réécriture active ».
+
+Lorsque la stratégie « Réécriture active » est activée, par défaut, les fichiers et dossiers sont réécrits depuis l’ordinateur local dans le magasin utilisateur toutes les cinq minutes. Lorsque cette nouvelle stratégie et la stratégie « Réécriture active » sont activées, les fichiers et dossiers sont réécrits uniquement lorsqu’une session est verrouillée ou déconnectée.
+
+Lorsque les stratégies « Réécriture active » et « Registre en réécriture active » sont activées, par défaut, les entrées du registre sont réécrites depuis l’ordinateur local dans le magasin utilisateur toutes les cinq minutes. Lorsque cette nouvelle stratégie et les stratégies « Réécriture active » et « Registre en réécriture active » sont activées, les entrées du registre sont réécrites uniquement lorsqu’une session est verrouillée ou déconnectée.
+
+Si ce paramètre n’est pas configuré ici, la valeur du fichier .ini est utilisée.
+
+Si ce paramètre n’est configuré ni ici ni dans le fichier .ini, cette fonctionnalité est désactivée.</string>
+      <string id="OfflineSupport">Prise en charge des profils déconnectés</string>
+      <string id="OfflineSupport_Help">S'applique à : solution de profil basée sur des fichiers uniquement
+
+Active la fonctionnalité de profils déconnectés. Elle est destinée aux ordinateurs qui ne sont pas connectés aux réseaux, généralement des ordinateurs portables ou périphériques mobiles et non des serveurs ou bureaux.
+
+Si ce paramètre n'est pas configuré ici, la valeur du fichier .ini est utilisée.
+
+Si ce paramètre n'est pas configuré ici où dans le fichier .ini, la prise en charge des profils déconnectés est désactivée.</string>
+      <string id="PSPendingLockTimeout">Délai de réécriture des fichiers en cas de verrouillage (jours)</string>
+      <string id="PSPendingLockTimeout_Help">S'applique à : solution de profil basée sur des fichiers uniquement
+
+Vous pouvez définir un délai d'expiration après lequel les fichiers utilisateur sont libérés de façon à être réécrits sur le magasin d'utilisateur à partir de la zone d'attente au cas où le magasin d'utilisateur reste verrouillé lorsqu'un serveur ne répond plus (par exemple s'il tombe en panne). Utilisez ce paramètre pour éviter l'engorgement dans la zone d'attente et vous assurer que le magasin d'utilisateur contienne toujours la dernière version des fichiers.</string>
+      <string id="PSUserGroups">Groupes des profils utilisateurs streamés</string>
+      <string id="PSUserGroups_Help">S'applique à : solution de profil basée sur des fichiers uniquement
+
+Entrez un ou plusieurs groupes d'utilisateurs Windows.
+
+Si ce paramètre est activé, seuls les profils des membres appartenant à ces groupes sont streamés. Si ce paramètre est désactivé, tous les groupes d'utilisateurs sont traités.
+
+Si ce paramètre n'est pas configuré ici, la valeur du fichier .ini est utilisée.
+
+Si ce paramètre n'est pas configuré ici où dans le fichier .ini, tous les utilisateurs sont traités.</string>
+      <string id="PSUserGroups_Part">Liste des groupes d'utilisateurs avec des profils utilisateurs streamés</string>
+      <string id="PSUserGroups_Part_gpfx">Groupes des profils utilisateurs streamés</string>
+      <string id="CPSettings">Paramètres multi-plateformes</string>
+      <string id="CPEnable">Activer les paramètres multi-plateformes</string>
+      <string id="CPEnable_Help">S'applique à : solutions de profil basées sur des fichiers et des conteneurs
+
+Par défaut, les paramètres multi-plateformes sont désactivés pour faciliter le déploiement.
+
+L'activation de ce paramètre permet d'activer le traitement.
+
+Si ce paramètre n'est pas configuré ici, la valeur du fichier .ini est utilisée.
+
+Si ce paramètre n'est pas configuré ici où dans le fichier .ini, aucun paramètre multi-plateforme n'est appliqué.</string>
+      <string id="CPUserGroups">Groupes d'utilisateurs de paramètres multi-plateformes</string>
+      <string id="CPUserGroups_Help">S'applique à : solutions de profil basées sur des fichiers et des conteneurs
+
+Entrez un ou plusieurs groupes d'utilisateurs Windows.
+
+Si ce paramètre est configuré, la fonctionnalité de paramètres multi-plateformes de Profile Management traite uniquement les membres appartenant à ces groupes d'utilisateurs. Si ce paramètre est désactivé, tous les groupes d'utilisateurs sont traités.
+
+Si ce paramètre n'est pas configuré ici, la valeur du fichier .ini est utilisée.
+
+Si ce paramètre n'est pas configuré ici où dans le fichier .ini, tous les groupes d'utilisateurs sont traités.</string>
+      <string id="CPUserGroups_Part">Liste de groupes d'utilisateurs à traiter sur les plates-formes</string>
+      <string id="CPUserGroups_Part_gpfx">Paramètres multi-plateformes des groupes d'utilisateurs</string>
+      <string id="CPSchemaPath">Chemin d'accès aux définitions multi-plateformes</string>
+      <string id="CPSchemaPath_Help">S'applique à : solutions de profil basées sur des fichiers et des conteneurs
+
+Spécifie l'emplacement du dossier sur lequel figure les fichiers de définition.
+
+Si ce paramètre n'est pas configuré ici, la valeur du fichier .ini est utilisée.
+
+Si ce paramètre n'est pas configuré ici où dans le fichier .ini, aucun paramètre multi-plateforme n'est appliqué.
+
+Remarque :
+* Le dossier peut être local où il peut résider sur un partage de fichiers SMB.</string>
+      <string id="CPSchemaPathData">Chemin d'accès aux définitions multi-plateformes :</string>
+      <string id="CPSchemaPathData_gpfx">Chemin d'accès aux définitions multi-plateformes</string>
+      <string id="CPPath">Chemin d'accès au magasin des paramètres multi-plateformes</string>
+      <string id="CPPath_Help">S'applique à : solutions de profil basées sur des fichiers et des conteneurs
+
+Définit le chemin d'accès au répertoire dans lequel les paramètres multi-plateformes des utilisateurs sont enregistrés (magasin des paramètres multi-plateformes).
+
+Le chemin d'accès peut être un chemin UNC absolu où un chemin relatif au répertoire de base.
+
+Dans les deux cas, les types de variables suivants peuvent être utilisés : variables d'environnement système entourées de symboles pourcentage et attributs de l'objet utilisateur Active Directory entourés de hachages.
+
+Les variables d'environnement utilisateur ne peuvent pas être utilisées, à l'exception de %username% et %userdomain%.
+
+Si ce paramètre est désactivé, le chemin Windows\PM_CP est utilisé.
+
+Si ce paramètre n'est pas configuré ici, la valeur du fichier .ini est utilisée.
+
+Si ce paramètre n'est pas configuré ici où dans le fichier .ini, la valeur par défaut Windows\PM_CP est utilisée.</string>
+      <string id="CPPathData">Chemin d'accès au magasin des paramètres multi-plateformes :</string>
+      <string id="CPPathData_gpfx">Chemin d'accès au magasin des paramètres multi-plateformes</string>
+      <string id="CPMigrationFromBaseProfileToCPStore">Source utilisée pour créer les paramètres multi-plateformes</string>
+      <string id="CPMigrationFromBaseProfileToCPStore_Help">S'applique à : solutions de profil basées sur des fichiers et des conteneurs
+
+Valeur par défaut : désactivé
+
+Les fichiers de définition contiennent un jeu de définitions destiné à configurer une application. Si le magasin des paramètres multi-plateformes contient une définition sans données, ou que les données de cache du profil mono-plateforme sont plus récentes que les données de la définition figurant dans le magasin, Profile Management procède à la migration des données du profil mono-plateforme vers le magasin uniquement si vous activez ce paramètre.</string>
+      <string id="XenAppOptimizationSettings">Paramètres d'optimisation de Citrix Virtual Apps</string>
+      <string id="XenAppOptimizationEnabled">Activer l'optimisation de Citrix Virtual Apps</string>
+      <string id="XenAppOptimizationEnabled_Help">S'applique à : solution de profil basée sur des fichiers uniquement
+
+Lorsque vous activez cette fonctionnalité, seuls les paramètres spécifiques aux applications publiées qu'un utilisateur démarre ou quitte sont synchronisés.
+
+Si ce paramètre n'est pas configuré ici, la valeur du fichier .ini est utilisée.
+
+Si ce paramètre n'est pas configuré ici ou dans le fichier .ini, aucun paramètre d'optimisation de Citrix Virtual Apps n'est appliqué.</string>
+      <string id="XenAppOptimizationDefinitionPath">Chemin des définitions d'optimisation de Citrix Virtual Apps</string>
+      <string id="XenAppOptimizationDefinitionPathData">Chemin des définitions d'optimisation de Citrix Virtual Apps :</string>
+      <string id="XenAppOptimizationDefinitionPath_Help">S'applique à : solution de profil basée sur des fichiers uniquement
+
+Spécifie l'emplacement du dossier sur lequel figure les fichiers de définition d'optimisation de Citrix Virtual Apps.
+
+Si ce paramètre n'est pas configuré ici, la valeur du fichier .ini est utilisée.
+
+Si ce paramètre n'est pas configuré ici ou dans le fichier .ini, aucun paramètre d'optimisation de Citrix Virtual Apps n'est appliqué.
+
+Remarque :
+* Le dossier peut être local où il peut résider sur un partage de fichiers SMB.</string>
+      <string id="FolderRedirection">Redirection de dossiers</string>
+      <string id="AppAccessControlSettings">Contrôle d'accès aux applications</string>
+      <string id="FRAdminAccess">Accorder l'accès administrateur</string>
+      <string id="FRAdminAccess_Help">S'applique à : solution de profil basée sur des fichiers uniquement
+
+Par défaut, un accès exclusif au contenu des dossiers redirigés est accordé aux utilisateurs.
+
+L'activation de cette option permet à l'administrateur d'accéder au contenu des dossiers redirigés des utilisateurs.</string>
+      <string id="FRAdminAccess_Part">Accorder l'accès administrateur</string>
+      <string id="FRAdminAccess_Part_gpfx">Accorder l'accès administrateur</string>
+      <string id="FRAppDataEnum_RedirectUncPath">Rediriger vers le chemin UNC suivant</string>
+      <string id="FRDesktopEnum_RedirectUncPath">Rediriger vers le chemin UNC suivant</string>
+      <string id="FRStartMenuEnum_RedirectUncPath">Rediriger vers le chemin UNC suivant</string>
+      <string id="FRDocumentsEnum_RedirectUncPath">Rediriger vers le chemin UNC suivant</string>
+      <string id="FRPicturesEnum_RedirectUncPath">Rediriger vers le chemin UNC suivant</string>
+      <string id="FRMusicEnum_RedirectUncPath">Rediriger vers le chemin UNC suivant</string>
+      <string id="FRVideosEnum_RedirectUncPath">Rediriger vers le chemin UNC suivant</string>
+      <string id="FRFavoritesEnum_RedirectUncPath">Rediriger vers le chemin UNC suivant</string>
+      <string id="FRContactsEnum_RedirectUncPath">Rediriger vers le chemin UNC suivant</string>
+      <string id="FRDownloadsEnum_RedirectUncPath">Rediriger vers le chemin UNC suivant</string>
+      <string id="FRLinksEnum_RedirectUncPath">Rediriger vers le chemin UNC suivant</string>
+      <string id="FRSearchesEnum_RedirectUncPath">Rediriger vers le chemin UNC suivant</string>
+      <string id="FRSavedGamesEnum_RedirectUncPath">Rediriger vers le chemin UNC suivant</string>
+      <string id="FRIncDomainName">Inclure le nom de domaine</string>
+      <string id="FRIncDomainName_Help">S'applique à : solution de profil basée sur des fichiers uniquement
+
+L'activation de cette option inclut la variable d'environnement %userdomain% dans le chemin d'accès UNC.</string>
+      <string id="FRIncDomainName_Part">Inclure le nom de domaine dans le chemin d'accès UNC</string>
+      <string id="FRIncDomainName_Part_gpfx">Inclure le nom de domaine</string>
+      <string id="FRDocumentsEnum_RedirectRelativeHome">Rediriger vers le répertoire de base de l'utilisateur</string>
+      <string id="FRPicturesEnum_RedirectRelativeDocuments">Rediriger en fonction du dossier Mes documents</string>
+      <string id="FRMusicEnum_RedirectRelativeDocuments">Rediriger en fonction du dossier Mes documents</string>
+      <string id="FRVideosEnum_RedirectRelativeDocuments">Rediriger en fonction du dossier Mes documents</string>
+      <string id="FRAppData">AppData(Roaming)</string>
+      <string id="FRAppDataEnable">Rediriger le dossier AppData(Roaming)</string>
+      <string id="FRAppDataEnable_Help">S'applique à : solution de profil basée sur des fichiers uniquement
+
+Permet de spécifier comment rediriger le dossier AppData(Roaming). Pour ce faire, sélectionnez Activé, puis tapez le chemin redirigé.
+Attention : une perte de données potentielle peut se produire. Voir ci-dessous pour plus de détails.
+Vous pouvez modifier le chemin d'accès après l'application de la stratégie. Toutefois, tenez compte de la perte potentielle de données avant de procéder. Les données contenues dans le dossier redirigé peuvent être supprimées si le chemin modifié pointe vers le même emplacement que le chemin précédent.
+Par exemple, supposons que vous spécifiez le chemin d'accès Contacts comme chemin1. Plus tard, vous changez chemin1 en chemin2. Si chemin1 et chemin2 pointent vers le même emplacement, toutes les données contenues dans le dossier redirigé sont supprimées après l'entrée en vigueur de la stratégie.
+Pour éviter la perte potentielle de données, procédez comme suit :
+  1. Appliquez la stratégie Microsoft aux machines sur lesquelles Profile Management s'exécute via des objets de stratégie de groupe Active Directory. Pour ce faire, ouvrez la Console de gestion des stratégies de groupe, accédez à Configuration ordinateur &gt; Modèles d'administration &gt; Composants Windows &gt; Explorateur de fichiers et activez le paramètre Vérifier que les anciennes et nouvelles cibles de redirection de dossiers pointent vers le même partage qu’avant la redirection.
+  2. Le cas échéant, appliquez des correctifs aux machines sur lesquelles Profile Management est exécuté. Pour plus de détails, voir https://support.microsoft.com/en-us/help/977229 et https://support.microsoft.com/en-us/help/2799904.</string>
+      <string id="FRAppData_Part">Paramètres de redirection du dossier AppData(Roaming)</string>
+      <string id="FRAppDataPath_Help">S'applique à : solution de profil basée sur des fichiers uniquement
+
+Spécifie l'emplacement de redirection du dossier AppData(Roaming) en tant que chemin d'accès UNC.
+
+La sélection de l'option « Inclure le nom de domaine » inclut la variable d'environnement %userdomain% dans le chemin d'accès UNC.</string>
+      <string id="FRAppDataPath_Part">Chemin</string>
+      <string id="FRAppDataPath_Part_gpfx">Chemins d'accès au dossier AppData(Roaming)</string>
+      <string id="FRDesktop">Bureau</string>
+      <string id="FRDesktopEnable">Rediriger le dossier Bureau</string>
+      <string id="FRDesktopEnable_Help">S'applique à : solution de profil basée sur des fichiers uniquement
+
+Permet de spécifier comment rediriger le dossier Bureau. Pour ce faire, sélectionnez Activé, puis tapez le chemin redirigé.
+Attention : une perte de données potentielle peut se produire. Voir ci-dessous pour plus de détails.
+Vous pouvez modifier le chemin d'accès après l'application de la stratégie. Toutefois, tenez compte de la perte potentielle de données avant de procéder. Les données contenues dans le dossier redirigé peuvent être supprimées si le chemin modifié pointe vers le même emplacement que le chemin précédent.
+Par exemple, supposons que vous spécifiez le chemin d'accès Contacts comme chemin1. Plus tard, vous changez chemin1 en chemin2. Si chemin1 et chemin2 pointent vers le même emplacement, toutes les données contenues dans le dossier redirigé sont supprimées après l'entrée en vigueur de la stratégie.
+Pour éviter la perte potentielle de données, procédez comme suit :
+  1. Appliquez la stratégie Microsoft aux machines sur lesquelles Profile Management s'exécute via des objets de stratégie de groupe Active Directory. Pour ce faire, ouvrez la Console de gestion des stratégies de groupe, accédez à Configuration ordinateur &gt; Modèles d'administration &gt; Composants Windows &gt; Explorateur de fichiers et activez le paramètre Vérifier que les anciennes et nouvelles cibles de redirection de dossiers pointent vers le même partage qu’avant la redirection.
+  2. Le cas échéant, appliquez des correctifs aux machines sur lesquelles Profile Management est exécuté. Pour plus de détails, voir https://support.microsoft.com/en-us/help/977229 et https://support.microsoft.com/en-us/help/2799904.</string>
+      <string id="FRDesktop_Part">Paramètres de redirection du dossier Bureau</string>
+      <string id="FRDesktopPath_Help">S'applique à : solution de profil basée sur des fichiers uniquement
+
+Spécifie l'emplacement de redirection du dossier Bureau en tant que chemin d'accès UNC.
+
+La sélection de l'option « Inclure le nom de domaine » inclut la variable d'environnement %userdomain% dans le chemin d'accès UNC.</string>
+      <string id="FRDesktopPath_Part">Chemin</string>
+      <string id="FRDesktopPath_Part_gpfx">Chemin d'accès au dossier Bureau</string>
+      <string id="FRStartMenu">Menu Démarrer</string>
+      <string id="FRStartMenuEnable">Rediriger le dossier du menu Démarrer</string>
+      <string id="FRStartMenuEnable_Help">S'applique à : solution de profil basée sur des fichiers uniquement
+
+Permet de spécifier comment rediriger le dossier Menu Démarrer. Pour ce faire, sélectionnez Activé, puis tapez le chemin redirigé.
+Attention : une perte de données potentielle peut se produire. Voir ci-dessous pour plus de détails.
+Vous pouvez modifier le chemin d'accès après l'application de la stratégie. Toutefois, tenez compte de la perte potentielle de données avant de procéder. Les données contenues dans le dossier redirigé peuvent être supprimées si le chemin modifié pointe vers le même emplacement que le chemin précédent.
+Par exemple, supposons que vous spécifiez le chemin d'accès Contacts comme chemin1. Plus tard, vous changez chemin1 en chemin2. Si chemin1 et chemin2 pointent vers le même emplacement, toutes les données contenues dans le dossier redirigé sont supprimées après l'entrée en vigueur de la stratégie.
+Pour éviter la perte potentielle de données, procédez comme suit :
+  1. Appliquez la stratégie Microsoft aux machines sur lesquelles Profile Management s'exécute via des objets de stratégie de groupe Active Directory. Pour ce faire, ouvrez la Console de gestion des stratégies de groupe, accédez à Configuration ordinateur &gt; Modèles d'administration &gt; Composants Windows &gt; Explorateur de fichiers et activez le paramètre Vérifier que les anciennes et nouvelles cibles de redirection de dossiers pointent vers le même partage qu’avant la redirection.
+  2. Le cas échéant, appliquez des correctifs aux machines sur lesquelles Profile Management est exécuté. Pour plus de détails, voir https://support.microsoft.com/en-us/help/977229 et https://support.microsoft.com/en-us/help/2799904.</string>
+      <string id="FRStartMenu_Part">Paramètres de redirection du menu Démarrer</string>
+      <string id="FRStartMenuPath_Help">S'applique à : solution de profil basée sur des fichiers uniquement
+
+Spécifie l'emplacement de redirection du dossier du menu Démarrer en tant que chemin d'accès UNC.
+
+La sélection de l'option « Inclure le nom de domaine » inclut la variable d'environnement %userdomain% dans le chemin d'accès UNC.</string>
+      <string id="FRStartMenuPath_Part">Chemin</string>
+      <string id="FRStartMenuPath_Part_gpfx">Chemin d'accès au menu Démarrer</string>
+      <string id="FRDocuments">Mes documents</string>
+      <string id="FRDocumentsEnable">Rediriger le dossier Mes documents</string>
+      <string id="FRDocumentsEnable_Help">S'applique à : solution de profil basée sur des fichiers uniquement
+
+Permet de spécifier comment rediriger le dossier Documents. Pour ce faire, sélectionnez Activé, puis tapez le chemin redirigé.
+Attention : une perte de données potentielle peut se produire. Voir ci-dessous pour plus de détails.
+Vous pouvez modifier le chemin d'accès après l'application de la stratégie. Toutefois, tenez compte de la perte potentielle de données avant de procéder. Les données contenues dans le dossier redirigé peuvent être supprimées si le chemin modifié pointe vers le même emplacement que le chemin précédent.
+Par exemple, supposons que vous spécifiez le chemin d'accès Contacts comme chemin1. Plus tard, vous changez chemin1 en chemin2. Si chemin1 et chemin2 pointent vers le même emplacement, toutes les données contenues dans le dossier redirigé sont supprimées après l'entrée en vigueur de la stratégie.
+Pour éviter la perte potentielle de données, procédez comme suit :
+  1. Appliquez la stratégie Microsoft aux machines sur lesquelles Profile Management s'exécute via des objets de stratégie de groupe Active Directory. Pour ce faire, ouvrez la Console de gestion des stratégies de groupe, accédez à Configuration ordinateur &gt; Modèles d'administration &gt; Composants Windows &gt; Explorateur de fichiers et activez le paramètre Vérifier que les anciennes et nouvelles cibles de redirection de dossiers pointent vers le même partage qu’avant la redirection.
+  2. Le cas échéant, appliquez des correctifs aux machines sur lesquelles Profile Management est exécuté. Pour plus de détails, voir https://support.microsoft.com/en-us/help/977229 et https://support.microsoft.com/en-us/help/2799904.</string>
+      <string id="FRDocuments_Part">Paramètres de redirection du dossier Mes documents</string>
+      <string id="FRDocumentsPath_Help">S'applique à : solution de profil basée sur des fichiers uniquement
+
+Spécifie l'emplacement de redirection du dossier Mes documents, en tant que chemin d'accès UNC ou chemin d'accès relatif au répertoire de base.
+
+La sélection de l'option « Inclure le nom de domaine » inclut la variable d'environnement %userdomain% dans le chemin d'accès UNC.</string>
+      <string id="FRDocumentsPath_Part">Chemin</string>
+      <string id="FRDocumentsPath_Part_gpfx">Chemin d'accès au dossier Mes documents</string>
+      <string id="FRPictures">Mes images</string>
+      <string id="FRPicturesEnable">Rediriger le dossier Mes images</string>
+      <string id="FRPicturesEnable_Help">S'applique à : solution de profil basée sur des fichiers uniquement
+
+Permet de spécifier comment rediriger le dossier Images. Pour ce faire, sélectionnez Activé, puis tapez le chemin redirigé.
+Attention : une perte de données potentielle peut se produire. Voir ci-dessous pour plus de détails.
+Vous pouvez modifier le chemin d'accès après l'application de la stratégie. Toutefois, tenez compte de la perte potentielle de données avant de procéder. Les données contenues dans le dossier redirigé peuvent être supprimées si le chemin modifié pointe vers le même emplacement que le chemin précédent.
+Par exemple, supposons que vous spécifiez le chemin d'accès Contacts comme chemin1. Plus tard, vous changez chemin1 en chemin2. Si chemin1 et chemin2 pointent vers le même emplacement, toutes les données contenues dans le dossier redirigé sont supprimées après l'entrée en vigueur de la stratégie.
+Pour éviter la perte potentielle de données, procédez comme suit :
+  1. Appliquez la stratégie Microsoft aux machines sur lesquelles Profile Management s'exécute via des objets de stratégie de groupe Active Directory. Pour ce faire, ouvrez la Console de gestion des stratégies de groupe, accédez à Configuration ordinateur &gt; Modèles d'administration &gt; Composants Windows &gt; Explorateur de fichiers et activez le paramètre Vérifier que les anciennes et nouvelles cibles de redirection de dossiers pointent vers le même partage qu’avant la redirection.
+  2. Le cas échéant, appliquez des correctifs aux machines sur lesquelles Profile Management est exécuté. Pour plus de détails, voir https://support.microsoft.com/en-us/help/977229 et https://support.microsoft.com/en-us/help/2799904.</string>
+      <string id="FRPictures_Part">Paramètres de redirection du dossier Mes images</string>
+      <string id="FRPicturesPath_Help">S'applique à : solution de profil basée sur des fichiers uniquement
+
+Spécifie l'emplacement de redirection du dossier Mes images, en tant que chemin d'accès UNC ou chemin d'accès relatif au dossier Mes documents.
+
+La sélection de l'option « Inclure le nom de domaine » inclut la variable d'environnement %userdomain% dans le chemin d'accès UNC.</string>
+      <string id="FRPicturesPath_Part">Chemin</string>
+      <string id="FRPicturesPath_Part_gpfx">Chemin d'accès au dossier Mes images</string>
+      <string id="FRMusic">Ma musique</string>
+      <string id="FRMusicEnable">Rediriger le dossier Ma musique</string>
+      <string id="FRMusicEnable_Help">S'applique à : solution de profil basée sur des fichiers uniquement
+
+Permet de spécifier comment rediriger le dossier Musique. Pour ce faire, sélectionnez Activé, puis tapez le chemin redirigé.
+Attention : une perte de données potentielle peut se produire. Voir ci-dessous pour plus de détails.
+Vous pouvez modifier le chemin d'accès après l'application de la stratégie. Toutefois, tenez compte de la perte potentielle de données avant de procéder. Les données contenues dans le dossier redirigé peuvent être supprimées si le chemin modifié pointe vers le même emplacement que le chemin précédent.
+Par exemple, supposons que vous spécifiez le chemin d'accès Contacts comme chemin1. Plus tard, vous changez chemin1 en chemin2. Si chemin1 et chemin2 pointent vers le même emplacement, toutes les données contenues dans le dossier redirigé sont supprimées après l'entrée en vigueur de la stratégie.
+Pour éviter la perte potentielle de données, procédez comme suit :
+  1. Appliquez la stratégie Microsoft aux machines sur lesquelles Profile Management s'exécute via des objets de stratégie de groupe Active Directory. Pour ce faire, ouvrez la Console de gestion des stratégies de groupe, accédez à Configuration ordinateur &gt; Modèles d'administration &gt; Composants Windows &gt; Explorateur de fichiers et activez le paramètre Vérifier que les anciennes et nouvelles cibles de redirection de dossiers pointent vers le même partage qu’avant la redirection.
+  2. Le cas échéant, appliquez des correctifs aux machines sur lesquelles Profile Management est exécuté. Pour plus de détails, voir https://support.microsoft.com/en-us/help/977229 et https://support.microsoft.com/en-us/help/2799904.</string>
+      <string id="FRMusic_Part">Paramètres de redirection du dossier Ma musique</string>
+      <string id="FRMusicPath_Help">S'applique à : solution de profil basée sur des fichiers uniquement
+
+Spécifie l'emplacement de redirection du dossier Ma musique, en tant que chemin d'accès UNC ou chemin d'accès relatif au dossier Mes documents.
+
+La sélection de l'option « Inclure le nom de domaine » inclut la variable d'environnement %userdomain% dans le chemin d'accès UNC.</string>
+      <string id="FRMusicPath_Part">Chemin</string>
+      <string id="FRMusicPath_Part_gpfx">Chemin d'accès au dossier Ma musique</string>
+      <string id="FRVideos">Mes vidéos</string>
+      <string id="FRVideosEnable">Rediriger le dossier Mes vidéos</string>
+      <string id="FRVideosEnable_Help">S'applique à : solution de profil basée sur des fichiers uniquement
+
+Permet de spécifier comment rediriger le dossier Vidéos. Pour ce faire, sélectionnez Activé, puis tapez le chemin redirigé.
+Attention : une perte de données potentielle peut se produire. Voir ci-dessous pour plus de détails.
+Vous pouvez modifier le chemin d'accès après l'application de la stratégie. Toutefois, tenez compte de la perte potentielle de données avant de procéder. Les données contenues dans le dossier redirigé peuvent être supprimées si le chemin modifié pointe vers le même emplacement que le chemin précédent.
+Par exemple, supposons que vous spécifiez le chemin d'accès Contacts comme chemin1. Plus tard, vous changez chemin1 en chemin2. Si chemin1 et chemin2 pointent vers le même emplacement, toutes les données contenues dans le dossier redirigé sont supprimées après l'entrée en vigueur de la stratégie.
+Pour éviter la perte potentielle de données, procédez comme suit :
+  1. Appliquez la stratégie Microsoft aux machines sur lesquelles Profile Management s'exécute via des objets de stratégie de groupe Active Directory. Pour ce faire, ouvrez la Console de gestion des stratégies de groupe, accédez à Configuration ordinateur &gt; Modèles d'administration &gt; Composants Windows &gt; Explorateur de fichiers et activez le paramètre Vérifier que les anciennes et nouvelles cibles de redirection de dossiers pointent vers le même partage qu’avant la redirection.
+  2. Le cas échéant, appliquez des correctifs aux machines sur lesquelles Profile Management est exécuté. Pour plus de détails, voir https://support.microsoft.com/en-us/help/977229 et https://support.microsoft.com/en-us/help/2799904.</string>
+      <string id="FRVideos_Part">Paramètres de redirection du dossier Mes vidéos</string>
+      <string id="FRVideosPath_Help">S'applique à : solution de profil basée sur des fichiers uniquement
+
+Spécifie l'emplacement de redirection du dossier Mes vidéos, en tant que chemin d'accès UNC ou chemin d'accès relatif au dossier Mes documents.
+
+La sélection de l'option « Inclure le nom de domaine » inclut la variable d'environnement %userdomain% dans le chemin d'accès UNC.</string>
+      <string id="FRVideosPath_Part">Chemin</string>
+      <string id="FRVideosPath_Part_gpfx">Chemin d'accès au dossier Mes vidéos</string>
+      <string id="FRFavorites">Favoris</string>
+      <string id="FRFavoritesEnable">Rediriger le dossier Favoris</string>
+      <string id="FRFavoritesEnable_Help">S'applique à : solution de profil basée sur des fichiers uniquement
+
+Permet de spécifier comment rediriger le dossier Favoris. Pour ce faire, sélectionnez Activé, puis tapez le chemin redirigé.
+Attention : une perte de données potentielle peut se produire. Voir ci-dessous pour plus de détails.
+Vous pouvez modifier le chemin d'accès après l'application de la stratégie. Toutefois, tenez compte de la perte potentielle de données avant de procéder. Les données contenues dans le dossier redirigé peuvent être supprimées si le chemin modifié pointe vers le même emplacement que le chemin précédent.
+Par exemple, supposons que vous spécifiez le chemin d'accès Contacts comme chemin1. Plus tard, vous changez chemin1 en chemin2. Si chemin1 et chemin2 pointent vers le même emplacement, toutes les données contenues dans le dossier redirigé sont supprimées après l'entrée en vigueur de la stratégie.
+Pour éviter la perte potentielle de données, procédez comme suit :
+  1. Appliquez la stratégie Microsoft aux machines sur lesquelles Profile Management s'exécute via des objets de stratégie de groupe Active Directory. Pour ce faire, ouvrez la Console de gestion des stratégies de groupe, accédez à Configuration ordinateur &gt; Modèles d'administration &gt; Composants Windows &gt; Explorateur de fichiers et activez le paramètre Vérifier que les anciennes et nouvelles cibles de redirection de dossiers pointent vers le même partage qu’avant la redirection.
+  2. Le cas échéant, appliquez des correctifs aux machines sur lesquelles Profile Management est exécuté. Pour plus de détails, voir https://support.microsoft.com/en-us/help/977229 et https://support.microsoft.com/en-us/help/2799904.</string>
+      <string id="FRFavorites_Part">Paramètres de redirection du dossier Favoris</string>
+      <string id="FRFavoritesPath_Help">S'applique à : solution de profil basée sur des fichiers uniquement
+
+Spécifie l'emplacement de redirection du dossier Favoris en tant que chemin d'accès UNC.
+
+La sélection de l'option « Inclure le nom de domaine » inclut la variable d'environnement %userdomain% dans le chemin d'accès UNC.</string>
+      <string id="FRFavoritesPath_Part">Chemin</string>
+      <string id="FRFavoritesPath_Part_gpfx">Chemin d'accès au dossier Favoris</string>
+      <string id="FRContacts">Contacts</string>
+      <string id="FRContactsEnable">Rediriger le dossier Contacts</string>
+      <string id="FRContactsEnable_Help">S'applique à : solution de profil basée sur des fichiers uniquement
+
+Permet de spécifier comment rediriger le dossier Contacts. Pour ce faire, sélectionnez Activé, puis tapez le chemin redirigé.
+Attention : une perte de données potentielle peut se produire. Voir ci-dessous pour plus de détails.
+Vous pouvez modifier le chemin d'accès après l'application de la stratégie. Toutefois, tenez compte de la perte potentielle de données avant de procéder. Les données contenues dans le dossier redirigé peuvent être supprimées si le chemin modifié pointe vers le même emplacement que le chemin précédent.
+Par exemple, supposons que vous spécifiez le chemin d'accès Contacts comme chemin1. Plus tard, vous changez chemin1 en chemin2. Si chemin1 et chemin2 pointent vers le même emplacement, toutes les données contenues dans le dossier redirigé sont supprimées après l'entrée en vigueur de la stratégie.
+Pour éviter la perte potentielle de données, procédez comme suit :
+  1. Appliquez la stratégie Microsoft aux machines sur lesquelles Profile Management s'exécute via des objets de stratégie de groupe Active Directory. Pour ce faire, ouvrez la Console de gestion des stratégies de groupe, accédez à Configuration ordinateur &gt; Modèles d'administration &gt; Composants Windows &gt; Explorateur de fichiers et activez le paramètre Vérifier que les anciennes et nouvelles cibles de redirection de dossiers pointent vers le même partage qu’avant la redirection.
+  2. Le cas échéant, appliquez des correctifs aux machines sur lesquelles Profile Management est exécuté. Pour plus de détails, voir https://support.microsoft.com/en-us/help/977229 et https://support.microsoft.com/en-us/help/2799904.</string>
+      <string id="FRContacts_Part">Paramètres de redirection du dossier Contacts</string>
+      <string id="FRContactsPath_Help">S'applique à : solution de profil basée sur des fichiers uniquement
+
+Spécifie l'emplacement de redirection du dossier Contacts en tant que chemin d'accès UNC.
+
+La sélection de l'option « Inclure le nom de domaine » inclut la variable d'environnement %userdomain% dans le chemin d'accès UNC.</string>
+      <string id="FRContactsPath_Part">Chemin</string>
+      <string id="FRContactsPath_Part_gpfx">Chemin d'accès au dossier Contacts</string>
+      <string id="FRDownloads">Téléchargements</string>
+      <string id="FRDownloadsEnable">Rediriger le dossier Téléchargements</string>
+      <string id="FRDownloadsEnable_Help">S'applique à : solution de profil basée sur des fichiers uniquement
+
+Permet de spécifier comment rediriger le dossier Téléchargements. Pour ce faire, sélectionnez Activé, puis tapez le chemin redirigé.
+Attention : une perte de données potentielle peut se produire. Voir ci-dessous pour plus de détails.
+Vous pouvez modifier le chemin d'accès après l'application de la stratégie. Toutefois, tenez compte de la perte potentielle de données avant de procéder. Les données contenues dans le dossier redirigé peuvent être supprimées si le chemin modifié pointe vers le même emplacement que le chemin précédent.
+Par exemple, supposons que vous spécifiez le chemin d'accès Contacts comme chemin1. Plus tard, vous changez chemin1 en chemin2. Si chemin1 et chemin2 pointent vers le même emplacement, toutes les données contenues dans le dossier redirigé sont supprimées après l'entrée en vigueur de la stratégie.
+Pour éviter la perte potentielle de données, procédez comme suit :
+  1. Appliquez la stratégie Microsoft aux machines sur lesquelles Profile Management s'exécute via des objets de stratégie de groupe Active Directory. Pour ce faire, ouvrez la Console de gestion des stratégies de groupe, accédez à Configuration ordinateur &gt; Modèles d'administration &gt; Composants Windows &gt; Explorateur de fichiers et activez le paramètre Vérifier que les anciennes et nouvelles cibles de redirection de dossiers pointent vers le même partage qu’avant la redirection.
+  2. Le cas échéant, appliquez des correctifs aux machines sur lesquelles Profile Management est exécuté. Pour plus de détails, voir https://support.microsoft.com/en-us/help/977229 et https://support.microsoft.com/en-us/help/2799904.</string>
+      <string id="FRDownloads_Part">Paramètres de redirection du dossier Téléchargements</string>
+      <string id="FRDownloadsPath_Help">S'applique à : solution de profil basée sur des fichiers uniquement
+
+Spécifie l'emplacement de redirection du dossier Téléchargements en tant que chemin d'accès UNC.
+
+La sélection de l'option « Inclure le nom de domaine » inclut la variable d'environnement %userdomain% dans le chemin d'accès UNC.</string>
+      <string id="FRDownloadsPath_Part">Chemin</string>
+      <string id="FRDownloadsPath_Part_gpfx">Chemin d'accès au dossier Téléchargements</string>
+      <string id="FRLinks">Liens</string>
+      <string id="FRLinksEnable">Rediriger le dossier Liens</string>
+      <string id="FRLinksEnable_Help">S'applique à : solution de profil basée sur des fichiers uniquement
+
+Permet de spécifier comment rediriger le dossier Liens. Pour ce faire, sélectionnez Activé, puis tapez le chemin redirigé.
+Attention : une perte de données potentielle peut se produire. Voir ci-dessous pour plus de détails.
+Vous pouvez modifier le chemin d'accès après l'application de la stratégie. Toutefois, tenez compte de la perte potentielle de données avant de procéder. Les données contenues dans le dossier redirigé peuvent être supprimées si le chemin modifié pointe vers le même emplacement que le chemin précédent.
+Par exemple, supposons que vous spécifiez le chemin d'accès Contacts comme chemin1. Plus tard, vous changez chemin1 en chemin2. Si chemin1 et chemin2 pointent vers le même emplacement, toutes les données contenues dans le dossier redirigé sont supprimées après l'entrée en vigueur de la stratégie.
+Pour éviter la perte potentielle de données, procédez comme suit :
+  1. Appliquez la stratégie Microsoft aux machines sur lesquelles Profile Management s'exécute via des objets de stratégie de groupe Active Directory. Pour ce faire, ouvrez la Console de gestion des stratégies de groupe, accédez à Configuration ordinateur &gt; Modèles d'administration &gt; Composants Windows &gt; Explorateur de fichiers et activez le paramètre Vérifier que les anciennes et nouvelles cibles de redirection de dossiers pointent vers le même partage qu’avant la redirection.
+  2. Le cas échéant, appliquez des correctifs aux machines sur lesquelles Profile Management est exécuté. Pour plus de détails, voir https://support.microsoft.com/en-us/help/977229 et https://support.microsoft.com/en-us/help/2799904.</string>
+      <string id="FRLinks_Part">Paramètres de redirection du dossier Liens</string>
+      <string id="FRLinksPath_Help">S'applique à : solution de profil basée sur des fichiers uniquement
+
+Spécifie l'emplacement de redirection du dossier Liens en tant que chemin d'accès UNC.
+
+La sélection de l'option « Inclure le nom de domaine » inclut la variable d'environnement %userdomain% dans le chemin d'accès UNC.</string>
+      <string id="FRLinksPath_Part">Chemin</string>
+      <string id="FRLinksPath_Part_gpfx">Chemin d'accès au dossier Liens</string>
+      <string id="FRSearches">Recherches</string>
+      <string id="FRSearchesEnable">Rediriger le dossier Recherches</string>
+      <string id="FRSearchesEnable_Help">S'applique à : solution de profil basée sur des fichiers uniquement
+
+Permet de spécifier comment rediriger le dossier Recherches. Pour ce faire, sélectionnez Activé, puis tapez le chemin redirigé.
+Attention : une perte de données potentielle peut se produire. Voir ci-dessous pour plus de détails.
+Vous pouvez modifier le chemin d'accès après l'application de la stratégie. Toutefois, tenez compte de la perte potentielle de données avant de procéder. Les données contenues dans le dossier redirigé peuvent être supprimées si le chemin modifié pointe vers le même emplacement que le chemin précédent.
+Par exemple, supposons que vous spécifiez le chemin d'accès Contacts comme chemin1. Plus tard, vous changez chemin1 en chemin2. Si chemin1 et chemin2 pointent vers le même emplacement, toutes les données contenues dans le dossier redirigé sont supprimées après l'entrée en vigueur de la stratégie.
+Pour éviter la perte potentielle de données, procédez comme suit :
+  1. Appliquez la stratégie Microsoft aux machines sur lesquelles Profile Management s'exécute via des objets de stratégie de groupe Active Directory. Pour ce faire, ouvrez la Console de gestion des stratégies de groupe, accédez à Configuration ordinateur &gt; Modèles d'administration &gt; Composants Windows &gt; Explorateur de fichiers et activez le paramètre Vérifier que les anciennes et nouvelles cibles de redirection de dossiers pointent vers le même partage qu’avant la redirection.
+  2. Le cas échéant, appliquez des correctifs aux machines sur lesquelles Profile Management est exécuté. Pour plus de détails, voir https://support.microsoft.com/en-us/help/977229 et https://support.microsoft.com/en-us/help/2799904.</string>
+      <string id="FRSearches_Part">Paramètres de redirection du dossier Recherches</string>
+      <string id="FRSearchesPath_Help">S'applique à : solution de profil basée sur des fichiers uniquement
+
+Spécifie l'emplacement de redirection du dossier Recherches en tant que chemin d'accès UNC.
+
+La sélection de l'option « Inclure le nom de domaine » inclut la variable d'environnement %userdomain% dans le chemin d'accès UNC.</string>
+      <string id="FRSearchesPath_Part">Chemin</string>
+      <string id="FRSearchesPath_Part_gpfx">Chemin d'accès au dossier Recherches</string>
+      <string id="FRSavedGames">Parties enregistrées</string>
+      <string id="FRSavedGamesEnable">Rediriger le dossier Parties enregistrées</string>
+      <string id="FRSavedGamesEnable_Help">S'applique à : solution de profil basée sur des fichiers uniquement
+
+Permet de spécifier comment rediriger le dossier Parties enregistrés. Pour ce faire, sélectionnez Activé, puis tapez le chemin redirigé.
+Attention : une perte de données potentielle peut se produire. Voir ci-dessous pour plus de détails.
+Vous pouvez modifier le chemin d'accès après l'application de la stratégie. Toutefois, tenez compte de la perte potentielle de données avant de procéder. Les données contenues dans le dossier redirigé peuvent être supprimées si le chemin modifié pointe vers le même emplacement que le chemin précédent.
+Par exemple, supposons que vous spécifiez le chemin d'accès Contacts comme chemin1. Plus tard, vous changez chemin1 en chemin2. Si chemin1 et chemin2 pointent vers le même emplacement, toutes les données contenues dans le dossier redirigé sont supprimées après l'entrée en vigueur de la stratégie.
+Pour éviter la perte potentielle de données, procédez comme suit :
+  1. Appliquez la stratégie Microsoft aux machines sur lesquelles Profile Management s'exécute via des objets de stratégie de groupe Active Directory. Pour ce faire, ouvrez la Console de gestion des stratégies de groupe, accédez à Configuration ordinateur &gt; Modèles d'administration &gt; Composants Windows &gt; Explorateur de fichiers et activez le paramètre Vérifier que les anciennes et nouvelles cibles de redirection de dossiers pointent vers le même partage qu’avant la redirection.
+  2. Le cas échéant, appliquez des correctifs aux machines sur lesquelles Profile Management est exécuté. Pour plus de détails, voir https://support.microsoft.com/en-us/help/977229 et https://support.microsoft.com/en-us/help/2799904.</string>
+      <string id="FRSavedGames_Part">Paramètres de redirection du dossier Parties enregistrées</string>
+      <string id="FRSavedGamesPath_Help">S'applique à : solution de profil basée sur des fichiers uniquement
+
+Spécifie l'emplacement de redirection du dossier Parties enregistrées en tant que chemin d'accès UNC.
+
+La sélection de l'option « Inclure le nom de domaine » inclut la variable d'environnement %userdomain% dans le chemin d'accès UNC.</string>
+      <string id="FRSavedGamesPath_Part">Chemin</string>
+      <string id="FRSavedGamesPath_Part_gpfx">Chemin d'accès au dossier Parties enregistrées</string>
+      <string id="GPFXDefaultUIEnabledString">Ce paramètre sera activé.</string>
+      <string id="GPFXDefaultUIDisabledString">Ce paramètre sera désactivé.</string>
+      <string id="GPFXDefaultDirPrefix">UPM - </string>
+      <string id="GPFXDefaultRegPrefix">UPM - </string>
+      <string id="GPFXDefaultForListBox">Remarque : utilisez Entrée pour séparer les entrées multiples.</string>
+      <string id="GPFXCategory_BasicSettings">Paramètres de base</string>
+      <string id="GPFXCategory_FRCommonSettings">Paramètres communs</string>
+      <string id="GPFXCategory_FSExclusions">Exclusions</string>
+      <string id="GPFXCategory_DefaultFSExclusions">Exclusions par défaut</string>
+      <string id="GPFXCategory_DefaultREGExclusions">Exclusions par défaut</string>
+      <string id="SpinValidationMessage">La valeur doit être comprise entre {0} et {1}.</string>
+      <string id="ProcessedGroups_exclude_gpfx">TRUE</string>
+      <string id="ExcludedGroups_exclude_gpfx">TRUE</string>
+      <string id="ExclusionList_exclude_gpfx">TRUE</string>
+      <string id="IncludeListRegistry_exclude_gpfx">TRUE</string>
+      <string id="ExclusionListSyncFiles_exclude_gpfx">TRUE</string>
+      <string id="ExclusionListSyncDir_exclude_gpfx">TRUE</string>
+      <string id="SyncDirList_exclude_gpfx">TRUE</string>
+      <string id="SyncFileList_exclude_gpfx">TRUE</string>
+      <string id="MirrorFoldersList_exclude_gpfx">TRUE</string>
+      <string id="PSUserGroups_exclude_gpfx">TRUE</string>
+      <string id="CPUserGroups_exclude_gpfx">TRUE</string>
+      <string id="StreamingExclusionList_exclude_gpfx">TRUE</string>
+      <string id="LastKnownGoodRegistry_default_enable_gpfx">TRUE</string>
+      <string id="CEIPEnabled_default_enable_gpfx">TRUE</string>
+      <string id="EnableVolumeReattach_default_enable_gpfx">TRUE</string>
+      <string id="PSAlwaysCache_Part_unit_gpfx">Mo</string>
+      <string id="LargeFileHandlingList_exclude_gpfx">TRUE</string>
+      <string id="MultiSiteReplication_exclude_gpfx">TRUE</string>
+      <string id="ProfileContainer_exclude_gpfx">TRUE</string>
+      <string id="ProfileContainerExclusionListDir_exclude_gpfx">TRUE</string>
+      <string id="ProfileContainerInclusionListDir_exclude_gpfx">TRUE</string>
+      <string id="ProfileContainerExclusionListFile_exclude_gpfx">TRUE</string>
+      <string id="ProfileContainerInclusionListFile_exclude_gpfx">TRUE</string>
+      <string id="MigrateWindowsProfilesToUserStore_exclude_gpfx">TRUE</string>
+      <string id="OneDriveContainer_exclude_gpfx">TRUE</string>
+      <string id="SharedStoreFileInclusionList_exclude_gpfx">TRUE</string>
+      <string id="SharedStoreFileExclusionList_exclude_gpfx">TRUE</string>
+      <string id="GroupsToAccessProfileContainer_exclude_gpfx">TRUE</string>
+      <string id="ServiceActive_gpfx_category">BasicSettings</string>
+      <string id="ProcessedGroups_gpfx_category">BasicSettings</string>
+      <string id="ExcludedGroups_gpfx_category">BasicSettings</string>
+      <string id="ProcessAdmins_gpfx_category">BasicSettings</string>
+      <string id="DATPath_gpfx_category">BasicSettings</string>
+      <string id="MigrateUserStore_gpfx_category">BasicSettings</string>
+      <string id="PSMidSessionWriteBack_gpfx_category">BasicSettings</string>
+      <string id="PSMidSessionWriteBackReg_gpfx_category">BasicSettings</string>
+      <string id="PSMidSessionWriteBackSessionLock_gpfx_category">BasicSettings</string>
+      <string id="OfflineSupport_gpfx_category">BasicSettings</string>
+      <string id="FRAdminAccess_gpfx_category">FRCommonSettings</string>
+      <string id="FRIncDomainName_gpfx_category">FRCommonSettings</string>
+      <string id="ExclusionListSyncFiles_gpfx_category">FSExclusions</string>
+      <string id="ExclusionListSyncDir_gpfx_category">FSExclusions</string>
+      <string id="DefaultExclusionList_gpfx_category">DefaultREGExclusions</string>
+      <string id="ExclusionDefaultReg01_gpfx_category">DefaultREGExclusions</string>
+      <string id="ExclusionDefaultReg02_gpfx_category">DefaultREGExclusions</string>
+      <string id="ExclusionDefaultReg03_gpfx_category">DefaultREGExclusions</string>
+      <string id="DefaultExclusionListSyncDir_gpfx_category">DefaultFSExclusions</string>
+      <string id="ExclusionDefaultDir01_gpfx_category">DefaultFSExclusions</string>
+      <string id="ExclusionDefaultDir02_gpfx_category">DefaultFSExclusions</string>
+      <string id="ExclusionDefaultDir03_gpfx_category">DefaultFSExclusions</string>
+      <string id="ExclusionDefaultDir04_gpfx_category">DefaultFSExclusions</string>
+      <string id="ExclusionDefaultDir05_gpfx_category">DefaultFSExclusions</string>
+      <string id="ExclusionDefaultDir06_gpfx_category">DefaultFSExclusions</string>
+      <string id="ExclusionDefaultDir07_gpfx_category">DefaultFSExclusions</string>
+      <string id="ExclusionDefaultDir08_gpfx_category">DefaultFSExclusions</string>
+      <string id="ExclusionDefaultDir09_gpfx_category">DefaultFSExclusions</string>
+      <string id="ExclusionDefaultDir10_gpfx_category">DefaultFSExclusions</string>
+      <string id="ExclusionDefaultDir11_gpfx_category">DefaultFSExclusions</string>
+      <string id="ExclusionDefaultDir12_gpfx_category">DefaultFSExclusions</string>
+      <string id="ExclusionDefaultDir13_gpfx_category">DefaultFSExclusions</string>
+      <string id="ExclusionDefaultDir14_gpfx_category">DefaultFSExclusions</string>
+      <string id="ExclusionDefaultDir15_gpfx_category">DefaultFSExclusions</string>
+      <string id="ExclusionDefaultDir16_gpfx_category">DefaultFSExclusions</string>
+      <string id="ExclusionDefaultDir17_gpfx_category">DefaultFSExclusions</string>
+      <string id="ExclusionDefaultDir18_gpfx_category">DefaultFSExclusions</string>
+      <string id="ExclusionDefaultDir19_gpfx_category">DefaultFSExclusions</string>
+      <string id="ExclusionDefaultDir20_gpfx_category">DefaultFSExclusions</string>
+      <string id="ExclusionDefaultDir21_gpfx_category">DefaultFSExclusions</string>
+      <string id="ExclusionDefaultDir22_gpfx_category">DefaultFSExclusions</string>
+      <string id="ExclusionDefaultDir23_gpfx_category">DefaultFSExclusions</string>
+      <string id="ExclusionDefaultDir24_gpfx_category">DefaultFSExclusions</string>
+      <string id="ExclusionDefaultDir25_gpfx_category">DefaultFSExclusions</string>
+      <string id="ExclusionDefaultDir26_gpfx_category">DefaultFSExclusions</string>
+      <string id="ExclusionDefaultDir27_gpfx_category">DefaultFSExclusions</string>
+      <string id="ExclusionDefaultDir28_gpfx_category">DefaultFSExclusions</string>
+      <string id="ExclusionDefaultDir29_gpfx_category">DefaultFSExclusions</string>
+      <string id="ExclusionDefaultDir30_gpfx_category">DefaultFSExclusions</string>
+      <string id="ProfileContainer_customized_gpfx_category">UserProfileManager\FileSystemSettings\FSSynchronization</string>
+    </stringTable>
+    <presentationTable>
+      <presentation id="ServiceActive" />
+      <presentation id="ProcessedGroups">
+        <listBox refId="ProcessedGroups_Part">Groupes traités</listBox>
+      </presentation>
+      <presentation id="ExcludedGroups">
+        <listBox refId="ExcludedGroups_Part">Groupes exclus</listBox>
+      </presentation>
+      <presentation id="ProcessAdmins" />
+      <presentation id="DATPath">
+        <textBox refId="DATPath_Part">
+          <label>Chemin d'accès absolu ou relatif au répertoire de base</label>
+        </textBox>
+      </presentation>
+      <presentation id="MigrateUserStore">
+        <textBox refId="MigrateUserStore_Part">
+          <label>Entrez le chemin d'accès au magasin utilisateur que vous avez précédemment utilisé</label>
+        </textBox>
+      </presentation>
+      <presentation id="PSMidSessionWriteBack" />
+      <presentation id="PSMidSessionWriteBackReg" />
+      <presentation id="PSMidSessionWriteBackSessionLock" />
+      <presentation id="OfflineSupport" />
+      <presentation id="DeleteCachedProfilesOnLogoff" />
+      <presentation id="ProfileDeleteDelay">
+        <decimalTextBox refId="ProfileDeleteDelay_Part" defaultValue="0" spinStep="10">Délai (secondes)</decimalTextBox>
+      </presentation>
+      <presentation id="MigrateWindowsProfilesToUserStore">
+        <dropdownList refId="MigrateWindowsProfilesToUserStore_Part">Types de profils utilisateur à migrer si le magasin de l'utilisateur est vide</dropdownList>
+      </presentation>
+      <presentation id="ApplicationProfilesAutoMigration" />
+      <presentation id="LocalProfileConflictHandling">
+        <text>Si un profil utilisateur Windows local et un profil utilisateur</text>
+        <dropdownList refId="LocalProfileConflictHandling_Part">Citrix existent tous deux dans le magasin de l'utilisateur</dropdownList>
+      </presentation>
+      <presentation id="TemplateProfile">
+        <textBox refId="TemplateProfilePath">
+          <label>Chemin d'accès au profil modèle :</label>
+        </textBox>
+        <checkBox refId="TemplateProfileOverridesLocalProfile">Le profil modèle remplace le profil local</checkBox>
+        <checkBox refId="TemplateProfileOverridesRoamingProfile">Le profil modèle remplace le profil itinérant</checkBox>
+        <checkBox refId="TemplateProfileIsMandatory">Profil modèle utilisé en tant que profil Citrix obligatoire pour toutes les ouvertures de session</checkBox>
+      </presentation>
+      <presentation id="LoadRetries">
+        <decimalTextBox refId="LoadRetries_Part" defaultValue="5" spinStep="1">Nombre de tentatives</decimalTextBox>
+      </presentation>
+      <presentation id="ProcessCookieFiles" />
+      <presentation id="DisableDynamicConfig" />
+      <presentation id="LogoffRatherThanTempProfile" />
+      <presentation id="CEIPEnabled" />
+      <presentation id="OutlookSearchRoamingEnabled" />
+      <presentation id="OutlookEdbBackupEnabled" />
+      <presentation id="OutlookSearchRoamingConcurrentSession">
+        <decimalTextBox refId="OutlookSearchRoamingConcurrentSession_Part" defaultValue="2" spinStep="1024">Nombre maximal de disques VHDX pour le stockage des fichiers OST Outlook </decimalTextBox>
+      </presentation>
+      <presentation id="FSLogixProfileContainerSupport" />
+      <presentation id="MultiSiteReplication">
+        <listBox refId="MultiSiteReplication_Part">Chemins pour répliquer un magasin d’utilisateurs</listBox>
+      </presentation>
+      <presentation id="CredBasedAccessEnabled" />
+      <presentation id="VhdStorePath">
+        <textBox refId="VhdStorePath_Part">
+          <label>Chemin de stockage des fichiers VHDX</label>
+        </textBox>
+      </presentation>
+      <presentation id="EnableVolumeReattach" />
+      <presentation id="SyncGpoStateEnabled" />
+      <presentation id="OneDriveContainer">
+        <listBox refId="OneDriveContainer_Part">Liste des dossiers OneDrive</listBox>
+      </presentation>
+      <presentation id="FreeRatio4Compaction">
+        <decimalTextBox refId="FreeRatio4Compaction_Part" defaultValue="20" spinStep="1">Taux d'espace libre (pourcentage)</decimalTextBox>
+      </presentation>
+      <presentation id="NLogoffs4Compaction">
+        <decimalTextBox refId="NLogoffs4Compaction_Part" defaultValue="5" spinStep="1">Nombre de fermetures de session</decimalTextBox>
+      </presentation>
+      <presentation id="NDefrag4Compaction" />
+      <presentation id="UserGroupLevelConfigEnabled" />
+      <presentation id="OrderedGroups">
+        <textBox refId="OrderedGroups_Part">
+          <label>Ordre de priorité des groupes d'utilisateurs</label>
+        </textBox>
+      </presentation>
+      <presentation id="VhdContainerCapacity">
+        <decimalTextBox refId="VhdContainerCapacity_Part" defaultValue="50" spinStep="10">Capacité par défaut (en Go)</decimalTextBox>
+      </presentation>
+      <presentation id="VhdAutoExpansionThreshold">
+        <decimalTextBox refId="VhdAutoExpansionThreshold_Part" defaultValue="90" spinStep="10">Seuil d'expansion automatique (pourcentage)</decimalTextBox>
+      </presentation>
+      <presentation id="VhdAutoExpansionIncrement">
+        <decimalTextBox refId="VhdAutoExpansionIncrement_Part" defaultValue="10" spinStep="10">Incrément d'expansion automatique (en Go)</decimalTextBox>
+      </presentation>
+      <presentation id="VhdAutoExpansionLimit">
+        <decimalTextBox refId="VhdAutoExpansionLimit_Part" defaultValue="80" spinStep="10">Limite d'expansion automatique (en Go)</decimalTextBox>
+      </presentation>
+      <presentation id="UwpAppsRoaming" />
+      <presentation id="UserStoreSelection">
+        <dropdownList refId="UserStoreSelection_Part">Sélection de la méthode :</dropdownList>
+      </presentation>
+      <presentation id="ProfileContainer">
+        <listBox refId="ProfileContainer_Part">Liste des dossiers devant figurer dans le disque de profil</listBox>
+      </presentation>
+      <presentation id="ProfileContainerLocalCache" />
+      <presentation id="ProfileContainerExclusionListDir">
+        <listBox refId="ProfileContainerExclusionListDir_Part">Liste des dossiers à exclure du conteneur de profils</listBox>
+      </presentation>
+      <presentation id="ProfileContainerInclusionListDir">
+        <listBox refId="ProfileContainerInclusionListDir_Part">Liste des dossiers à conserver dans le conteneur de profils</listBox>
+      </presentation>
+      <presentation id="ProfileContainerExclusionListFile">
+        <listBox refId="ProfileContainerExclusionListFile_Part">Liste des fichiers à exclure du conteneur de profils</listBox>
+      </presentation>
+      <presentation id="ProfileContainerInclusionListFile">
+        <listBox refId="ProfileContainerInclusionListFile_Part">Liste des fichiers à conserver dans le conteneur de profils</listBox>
+      </presentation>
+      <presentation id="EnableVHDDiskCompaction" />
+      <presentation id="EnableVHDAutoExtend" />
+      <presentation id="DisableConcurrentAccessToVHDContainers">
+        <text>Sélectionnez les conteneurs auxquels appliquer ce paramètre :</text>
+        <checkBox refId="DisableConcurrentAccessToProfileContainer" defaultChecked="true">Activer l'accès exclusif aux conteneurs VHD - Conteneur de profil</checkBox>
+        <checkBox refId="DisableConcurrentAccessToOneDriveContainer" defaultChecked="true">Activer l'accès exclusif aux conteneurs VHD - Conteneur OneDrive</checkBox>
+      </presentation>
+      <presentation id="PreventLoginWhenMountFailed">
+        <textBox refId="PreventLoginWhenMountFailed_Part">
+          <label>Message d'erreur à afficher</label>
+        </textBox>
+      </presentation>
+      <presentation id="GroupsToAccessProfileContainer">
+        <listBox refId="GroupsToAccessProfileContainer_Part">Utilisateurs et groupes autorisés à accéder au conteneur de profils</listBox>
+      </presentation>
+      <presentation id="DebugMode" />
+      <presentation id="LogLevel">
+        <text>Définissez les événements ou actions qui sont consignés en détail par Profile Management :</text>
+        <checkBox refId="LogLevel_Warnings" defaultChecked="true">Avertissements courants</checkBox>
+        <checkBox refId="LogLevel_Information" defaultChecked="true">Informations courantes</checkBox>
+        <checkBox refId="LogLevel_FileSystemNotification">Notifications du système de fichiers</checkBox>
+        <checkBox refId="LogLevel_FileSystemActions">Actions du système de fichiers</checkBox>
+        <checkBox refId="LogLevel_RegistryActions">Actions du registre</checkBox>
+        <checkBox refId="LogLevel_RegistryDifference">Différences de registre à la fermeture de session</checkBox>
+        <checkBox refId="LogLevel_ActiveDirectoryActions">Actions Active Directory</checkBox>
+        <checkBox refId="LogLevel_PolicyUserLogon">Valeurs de stratégie à l'ouverture et fermeture de session</checkBox>
+        <checkBox refId="LogLevel_Logon">Ouverture de session</checkBox>
+        <checkBox refId="LogLevel_Logoff">Fermeture de session</checkBox>
+        <checkBox refId="LogLevel_UserName" defaultChecked="true">Informations utilisateur personnalisées</checkBox>
+      </presentation>
+      <presentation id="MaxLogSize">
+        <decimalTextBox refId="MaxLogSize_Part" defaultValue="10485760" spinStep="1024">Taille maximale en octets</decimalTextBox>
+      </presentation>
+      <presentation id="DebugFilePath">
+        <textBox refId="DebugFilePath_Part">
+          <label>Chemin vers le fichier journal</label>
+        </textBox>
+      </presentation>
+      <presentation id="ExclusionList">
+        <listBox refId="ExclusionList_Part">Liste d'exclusion</listBox>
+      </presentation>
+      <presentation id="DefaultExclusionList">
+        <checkBox refId="ExclusionDefaultReg01" defaultChecked="true">Software\Microsoft\AppV\Client\Integration</checkBox>
+        <checkBox refId="ExclusionDefaultReg02" defaultChecked="true">Software\Microsoft\AppV\Client\Publishing</checkBox>
+        <checkBox refId="ExclusionDefaultReg03" defaultChecked="true">Software\Microsoft\Speech_OneCore</checkBox>
+      </presentation>
+      <presentation id="IncludeListRegistry">
+        <listBox refId="IncludeListRegistry_Part">Liste d'inclusion</listBox>
+      </presentation>
+      <presentation id="LastKnownGoodRegistry" />
+      <presentation id="ExclusionListSyncFiles">
+        <listBox refId="ExclusionListSyncFiles_Part">Liste des fichiers à exclure</listBox>
+      </presentation>
+      <presentation id="DefaultExclusionListSyncDir">
+        <checkBox refId="ExclusionDefaultDir01" defaultChecked="true">!ctx_internetcache!</checkBox>
+        <checkBox refId="ExclusionDefaultDir02" defaultChecked="true">!ctx_localappdata!\Google\Chrome\User Data\Default\Cache</checkBox>
+        <checkBox refId="ExclusionDefaultDir03" defaultChecked="true">!ctx_localappdata!\Google\Chrome\User Data\Default\Cached Theme Images</checkBox>
+        <checkBox refId="ExclusionDefaultDir04" defaultChecked="true">!ctx_localappdata!\Google\Chrome\User Data\Default\JumpListIcons</checkBox>
+        <checkBox refId="ExclusionDefaultDir05" defaultChecked="true">!ctx_localappdata!\Google\Chrome\User Data\Default\JumpListIconsOld</checkBox>
+        <checkBox refId="ExclusionDefaultDir06" defaultChecked="true">!ctx_localappdata!\GroupPolicy</checkBox>
+        <checkBox refId="ExclusionDefaultDir07" defaultChecked="true">!ctx_localappdata!\Microsoft\AppV</checkBox>
+        <checkBox refId="ExclusionDefaultDir08" defaultChecked="true">!ctx_localappdata!\Microsoft\Messenger</checkBox>
+        <checkBox refId="ExclusionDefaultDir09" defaultChecked="true">!ctx_localappdata!\Microsoft\Office\15.0\Lync\Tracing</checkBox>
+        <checkBox refId="ExclusionDefaultDir10" defaultChecked="true">!ctx_localappdata!\Microsoft\OneNote</checkBox>
+        <checkBox refId="ExclusionDefaultDir11" defaultChecked="true">!ctx_localappdata!\Microsoft\Outlook</checkBox>
+        <checkBox refId="ExclusionDefaultDir12" defaultChecked="true">!ctx_localappdata!\Microsoft\Terminal Server Client</checkBox>
+        <checkBox refId="ExclusionDefaultDir13" defaultChecked="true">!ctx_localappdata!\Microsoft\UEV</checkBox>
+        <checkBox refId="ExclusionDefaultDir14" defaultChecked="true">!ctx_localappdata!\Microsoft\Windows Live</checkBox>
+        <checkBox refId="ExclusionDefaultDir15" defaultChecked="true">!ctx_localappdata!\Microsoft\Windows Live Contacts</checkBox>
+        <checkBox refId="ExclusionDefaultDir16" defaultChecked="true">!ctx_localappdata!\Microsoft\Windows\Application Shortcuts</checkBox>
+        <checkBox refId="ExclusionDefaultDir17" defaultChecked="true">!ctx_localappdata!\Microsoft\Windows\Burn</checkBox>
+        <checkBox refId="ExclusionDefaultDir18" defaultChecked="true">!ctx_localappdata!\Microsoft\Windows\CD Burning</checkBox>
+        <checkBox refId="ExclusionDefaultDir19" defaultChecked="true">!ctx_localappdata!\Microsoft\Windows\Notifications</checkBox>
+        <checkBox refId="ExclusionDefaultDir20" defaultChecked="true">!ctx_localappdata!\Packages</checkBox>
+        <checkBox refId="ExclusionDefaultDir21" defaultChecked="true">!ctx_localappdata!\Sun</checkBox>
+        <checkBox refId="ExclusionDefaultDir22" defaultChecked="true">!ctx_localappdata!\Windows Live</checkBox>
+        <checkBox refId="ExclusionDefaultDir23" defaultChecked="true">!ctx_localsettings!\Temp</checkBox>
+        <checkBox refId="ExclusionDefaultDir24" defaultChecked="true">!ctx_roamingappdata!\Microsoft\AppV\Client\Catalog</checkBox>
+        <checkBox refId="ExclusionDefaultDir25" defaultChecked="true">!ctx_roamingappdata!\Sun\Java\Deployment\cache</checkBox>
+        <checkBox refId="ExclusionDefaultDir26" defaultChecked="true">!ctx_roamingappdata!\Sun\Java\Deployment\log</checkBox>
+        <checkBox refId="ExclusionDefaultDir27" defaultChecked="true">!ctx_roamingappdata!\Sun\Java\Deployment\tmp</checkBox>
+        <checkBox refId="ExclusionDefaultDir28" defaultChecked="true">$Recycle.Bin</checkBox>
+        <checkBox refId="ExclusionDefaultDir29" defaultChecked="true">AppData\LocalLow</checkBox>
+        <checkBox refId="ExclusionDefaultDir30" defaultChecked="true">Traçage</checkBox>
+      </presentation>
+      <presentation id="ExclusionListSyncDir">
+        <listBox refId="ExclusionListSyncDir_Part">Liste des répertoires à exclure</listBox>
+      </presentation>
+      <presentation id="LogonExclusionCheck">
+        <text>Si le profil du magasin de l'utilisateur contient des fichiers ou dossiers</text>
+        <dropdownList refId="LogonExclusionCheck_Part">qui ont été exclus</dropdownList>
+      </presentation>
+      <presentation id="LargeFileHandlingList">
+        <listBox refId="LargeFileHandlingList_Part">Liste des fichiers à créer en tant que liens symboliques</listBox>
+      </presentation>
+      <presentation id="SyncDirList">
+        <listBox refId="SyncDirList_Part">Liste des répertoires à synchroniser</listBox>
+      </presentation>
+      <presentation id="SyncFileList">
+        <listBox refId="SyncFileList_Part">Liste des fichiers à synchroniser</listBox>
+      </presentation>
+      <presentation id="MirrorFoldersList">
+        <listBox refId="MirrorFoldersList_Part">Liste des dossiers en miroir</listBox>
+      </presentation>
+      <presentation id="AccelerateFolderMirroring" />
+      <presentation id="PSEnabled" />
+      <presentation id="PSForFoldersEnabled" />
+      <presentation id="PSForPendingAreaEnabled" />
+      <presentation id="PSAlwaysCache">
+        <decimalTextBox refId="PSAlwaysCache_Part" defaultValue="0" spinStep="1">Placer en cache les fichiers de cette taille ou supérieurs (mégaoctets)</decimalTextBox>
+      </presentation>
+      <presentation id="PSPendingLockTimeout">
+        <decimalTextBox refId="PSPendingLockTimeout" defaultValue="1" spinStep="1">Délai de réécriture des fichiers en cas de verrouillage (jours)</decimalTextBox>
+      </presentation>
+      <presentation id="PSUserGroups">
+        <listBox refId="PSUserGroups_Part">Liste des groupes d'utilisateurs avec des profils utilisateurs streamés</listBox>
+      </presentation>
+      <presentation id="StreamingExclusionList">
+        <listBox refId="StreamingExclusionList_Part">Liste des répertoires à exclure du streaming des profils</listBox>
+      </presentation>
+      <presentation id="CPEnable" />
+      <presentation id="CPUserGroups">
+        <listBox refId="CPUserGroups_Part">Liste de groupes d'utilisateurs à traiter sur les plates-formes</listBox>
+      </presentation>
+      <presentation id="CPSchemaPath">
+        <textBox refId="CPSchemaPathData">
+          <label>Chemin d'accès aux définitions multi-plateformes :</label>
+        </textBox>
+      </presentation>
+      <presentation id="CPPath">
+        <textBox refId="CPPathData">
+          <label>Chemin d'accès au magasin des paramètres multi-plateformes :</label>
+        </textBox>
+      </presentation>
+      <presentation id="CPMigrationFromBaseProfileToCPStore" />
+      <presentation id="XenAppOptimizationEnabled" />
+      <presentation id="XenAppOptimizationDefinitionPath">
+        <textBox refId="XenAppOptimizationDefinitionPathData">
+          <label>Chemin des définitions d'optimisation de Citrix Virtual Apps :</label>
+        </textBox>
+      </presentation>
+      <presentation id="SharedStoreFileInclusionList">
+        <listBox refId="SharedStoreFileInclusionList_Part">Liste des fichiers à inclure dans le magasin partagé</listBox>
+      </presentation>
+      <presentation id="SharedStoreFileExclusionList">
+        <listBox refId="SharedStoreFileExclusionList_Part">Liste des fichiers à exclure du magasin partagé</listBox>
+      </presentation>
+      <presentation id="SharedStoreProfileContainerFileSizeLimit">
+        <decimalTextBox refId="SharedStoreProfileContainerFileSizeLimit_Part" defaultValue="256" spinStep="1">Taille minimale en mégaoctets</decimalTextBox>
+      </presentation>
+      <presentation id="AppAccessControl">
+        <textBox refId="AppAccessControl_Part">
+          <label>Règles de contrôle d'accès aux applications</label>
+        </textBox>
+      </presentation>
+      <presentation id="FRAdminAccess">
+        <checkBox refId="FRAdminAccess_Part">Accorder l'accès administrateur</checkBox>
+      </presentation>
+      <presentation id="FRIncDomainName">
+        <checkBox refId="FRIncDomainName_Part">Inclure le nom de domaine dans le chemin d'accès UNC</checkBox>
+      </presentation>
+      <presentation id="FRAppDataEnable">
+        <dropdownList refId="FRAppData_Part">Paramètres de redirection du dossier AppData(Roaming)</dropdownList>
+        <textBox refId="FRAppDataPath_Part">
+          <label>Chemin</label>
+        </textBox>
+      </presentation>
+      <presentation id="FRDesktopEnable">
+        <dropdownList refId="FRDesktop_Part">Paramètres de redirection du dossier Bureau</dropdownList>
+        <textBox refId="FRDesktopPath_Part">
+          <label>Chemin</label>
+        </textBox>
+      </presentation>
+      <presentation id="FRStartMenuEnable">
+        <dropdownList refId="FRStartMenu_Part">Paramètres de redirection du menu Démarrer</dropdownList>
+        <textBox refId="FRStartMenuPath_Part">
+          <label>Chemin</label>
+        </textBox>
+      </presentation>
+      <presentation id="FRDocumentsEnable">
+        <dropdownList refId="FRDocuments_Part">Paramètres de redirection du dossier Mes documents</dropdownList>
+        <textBox refId="FRDocumentsPath_Part">
+          <label>Chemin</label>
+        </textBox>
+      </presentation>
+      <presentation id="FRPicturesEnable">
+        <dropdownList refId="FRPictures_Part">Paramètres de redirection du dossier Mes images</dropdownList>
+        <textBox refId="FRPicturesPath_Part">
+          <label>Chemin</label>
+        </textBox>
+      </presentation>
+      <presentation id="FRMusicEnable">
+        <dropdownList refId="FRMusic_Part">Paramètres de redirection du dossier Ma musique</dropdownList>
+        <textBox refId="FRMusicPath_Part">
+          <label>Chemin</label>
+        </textBox>
+      </presentation>
+      <presentation id="FRVideosEnable">
+        <dropdownList refId="FRVideos_Part">Paramètres de redirection du dossier Mes vidéos</dropdownList>
+        <textBox refId="FRVideosPath_Part">
+          <label>Chemin</label>
+        </textBox>
+      </presentation>
+      <presentation id="FRFavoritesEnable">
+        <dropdownList refId="FRFavorites_Part">Paramètres de redirection du dossier Favoris</dropdownList>
+        <textBox refId="FRFavoritesPath_Part">
+          <label>Chemin</label>
+        </textBox>
+      </presentation>
+      <presentation id="FRContactsEnable">
+        <dropdownList refId="FRContacts_Part">Paramètres de redirection du dossier Contacts</dropdownList>
+        <textBox refId="FRContactsPath_Part">
+          <label>Chemin</label>
+        </textBox>
+      </presentation>
+      <presentation id="FRDownloadsEnable">
+        <dropdownList refId="FRDownloads_Part">Paramètres de redirection du dossier Téléchargements</dropdownList>
+        <textBox refId="FRDownloadsPath_Part">
+          <label>Chemin</label>
+        </textBox>
+      </presentation>
+      <presentation id="FRLinksEnable">
+        <dropdownList refId="FRLinks_Part">Paramètres de redirection du dossier Liens</dropdownList>
+        <textBox refId="FRLinksPath_Part">
+          <label>Chemin</label>
+        </textBox>
+      </presentation>
+      <presentation id="FRSearchesEnable">
+        <dropdownList refId="FRSearches_Part">Paramètres de redirection du dossier Recherches</dropdownList>
+        <textBox refId="FRSearchesPath_Part">
+          <label>Chemin</label>
+        </textBox>
+      </presentation>
+      <presentation id="FRSavedGamesEnable">
+        <dropdownList refId="FRSavedGames_Part">Paramètres de redirection du dossier Parties enregistrées</dropdownList>
+        <textBox refId="FRSavedGamesPath_Part">
+          <label>Chemin</label>
+        </textBox>
+      </presentation>
+    </presentationTable>
+  </resources>
+</policyDefinitionResources>
